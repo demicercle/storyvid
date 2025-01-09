@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="439901dd-fbf5-45a7-81db-20a1b0342c03" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Storyvid/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Storyvid/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StoryPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StoryPlayer.cs" afterDir="false" />
-    </list>
+    <list default="true" id="439901dd-fbf5-45a7-81db-20a1b0342c03" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -88,7 +84,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1736446591621</updated>
-      <workItem from="1736446595264" duration="3479000" />
+      <workItem from="1736446595264" duration="3794000" />
     </task>
     <servers />
   </component>
