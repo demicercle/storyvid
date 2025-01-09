@@ -39,6 +39,17 @@ public class StoryPlayer : MonoBehaviour
 
     public System.Action storyComplete;
     
+
+    public bool IsPathUnlocked(string path)
+    {
+        return PlayerPrefs.GetInt(path) != 0;
+    }
+
+    public void UnlockPath(string path)
+    {
+        PlayerPrefs.SetInt(path, 1);
+    }
+    
     public List<string> GetKnots() => knots;
     
     private string lastContent;
@@ -68,9 +79,12 @@ public class StoryPlayer : MonoBehaviour
         
         inkStory = new Story(storyFile.text);
         knots = GetKnotAndStitches(inkStory);
-        knots.ForEach(knot =>
+        
+        inkStory.BindExternalFunction("unlock", (string path) =>
         {
-            Debug.Log(knot);
+            Debug.Log("unlock() " + path);
+            
+            UnlockPath(path);
         });
         
         inkStory.BindExternalFunction ("playVideo", (string file) =>

@@ -2,11 +2,13 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EpisodeVideoList : MonoBehaviour
 {
     public int episodeIndex;
     public TMPro.TMP_Text header;
+    public Button episodeButton;
     public List<EpisodeVideoElement> videoElements;
     
     private GameManager gameManager;
@@ -14,6 +16,11 @@ public class EpisodeVideoList : MonoBehaviour
     private void Awake()
     {
         gameManager = FindObjectOfType<GameManager>();
+        
+        episodeButton.onClick.AddListener(() =>
+        {
+            gameManager.PlayPath("episode_" + episodeIndex);
+        });
     }
 
     private void Start()

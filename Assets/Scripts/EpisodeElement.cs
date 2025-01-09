@@ -16,9 +16,7 @@ public class EpisodeElement : MonoBehaviour
         header.text = "Episode " + episodeIndex;
         playButton.onClick.AddListener(() =>
         {
-            gameManager.SetCurrentPanel(GameManager.Panels.PlayVideo);
-            gameManager.storyPlayer.isPlaying = true;
-            gameManager.storyPlayer.inkStory.ChoosePathString("episode_" + episodeIndex );
+            gameManager.PlayPath("episode_" + episodeIndex);
         });
         continueButton.onClick.AddListener(() =>
         {

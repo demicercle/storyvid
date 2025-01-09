@@ -16,9 +16,12 @@ public class EpisodeVideoElement : MonoBehaviour
         
         button.onClick.AddListener(() =>
         {
-            gameManager.SetCurrentPanel(GameManager.Panels.PlayVideo);
-            gameManager.storyPlayer.isPlaying = true;
-            gameManager.storyPlayer.inkStory.ChoosePathString(path);
+            gameManager.PlayPath(path);
         });
+    }
+
+    private void Update()
+    {
+        button.interactable = gameManager.storyPlayer.IsPathUnlocked(path);
     }
 }

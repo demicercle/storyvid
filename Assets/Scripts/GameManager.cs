@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -33,16 +34,24 @@ public class GameManager : MonoBehaviour
         currentPanel = panel;
     }
 
+    public void PlayPath(string path)
+    {
+        storyPlayer.inkStory.ChoosePathString(path);
+        storyPlayer.isPlaying = true;
+        storyPlayer.storyComplete += () =>
+        {
+            storyPlayer.storyComplete = null;
+            SetCurrentPanel(Panels.SelectVideo);
+        };
+        
+        SetCurrentPanel(Panels.PlayVideo);
+    }
+
     private void Awake()
     {
         Localize.LoadLines();
         
         SetCurrentPanel(0);
-
-        storyPlayer.storyComplete += () =>
-        {
-            SetCurrentPanel(Panels.SelectVideo);
-        };
         
         playButton.onClick.AddListener(() =>
         {
