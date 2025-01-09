@@ -11,6 +11,7 @@ public class StoryPlayer : MonoBehaviour
     public float textDelay;
     public VideoPlayer videoPlayer;
 
+    public Fader fader;
     public TMPro.TMP_Text uiText;
     public UnityEngine.UI.Button nextButton;
     public List<CustomButton> choiceButtons;
@@ -68,9 +69,14 @@ public class StoryPlayer : MonoBehaviour
             while (!isPlaying)
                 yield return null;
             
+            fader.Fade0();
+            
             while (inkStory.canContinue)
             {
                 lastContent = inkStory.Continue();
+
+                while (fader.isFading)
+                    yield return null;
                 
                 charIndex = 0;
                 while (charIndex < lastContent.Length)
@@ -102,6 +108,10 @@ public class StoryPlayer : MonoBehaviour
                 nextButton.gameObject.SetActive(false);
                 choiceButtons.ForEach(btn => btn.gameObject.SetActive(false));
             }
+
+            fader.Fade1();
+            while (fader.isFading)
+                yield return null;
 
             isPlaying = false;
             videoPlayer.Stop();
