@@ -98,8 +98,6 @@ public class StoryPlayer : MonoBehaviour
             
             yield return null;
         }
-        
-        Application.Quit();
     }
 
     private void LateUpdate()
