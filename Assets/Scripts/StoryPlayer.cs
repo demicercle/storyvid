@@ -4,9 +4,27 @@ using System.Collections.Generic;
 using UnityEngine;
 using Ink.Runtime;
 using UnityEngine.Video;
+using System.Linq;
 
 public class StoryPlayer : MonoBehaviour
-{
+{private static List<string> GetKnotAndStitches(Story story)
+    {
+        var output = new List<string>();
+        var knots = story.mainContentContainer.namedContent.Keys;
+        knots.ToList().ForEach((knot) =>
+        {
+            output.Add(knot);
+
+            var container = story.KnotContainerWithName(knot);
+            var stitchKeys = container.namedContent.Keys;
+            stitchKeys.ToList().ForEach((stitch) =>
+            {
+                output.Add(knot + "." + stitch);
+            });
+        });
+        return output;
+    }
+    
     public TextAsset storyFile;
     public float textDelay;
     public VideoPlayer videoPlayer;
@@ -25,6 +43,7 @@ public class StoryPlayer : MonoBehaviour
     private string displayContent;
     private int charIndex;
     private int choiceCount;
+    private List<string> knots;
 
     private void Awake()
     {
@@ -46,6 +65,11 @@ public class StoryPlayer : MonoBehaviour
         });
         
         inkStory = new Story(storyFile.text);
+        knots = GetKnotAndStitches(inkStory);
+        knots.ForEach(knot =>
+        {
+            Debug.Log(knot);
+        });
         
         inkStory.BindExternalFunction ("playVideo", (string file) =>
         {
