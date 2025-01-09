@@ -14,8 +14,12 @@ public class StoryPlayer : MonoBehaviour
     public TMPro.TMP_Text uiText;
     public UnityEngine.UI.Button nextButton;
     public List<CustomButton> choiceButtons;
+
+    public bool isPlaying;
+    public Story inkStory { get; private set; }
+
+    public System.Action storyComplete;
     
-    private Story inkStory;
     private string lastContent;
     private string displayContent;
     private int charIndex;
@@ -39,10 +43,7 @@ public class StoryPlayer : MonoBehaviour
                 inkStory.ChooseChoiceIndex((int)userData);
             };
         });
-    }
-
-    IEnumerator Start()
-    {
+        
         inkStory = new Story(storyFile.text);
         
         inkStory.BindExternalFunction ("playVideo", (string file) =>
@@ -55,12 +56,18 @@ public class StoryPlayer : MonoBehaviour
                 Resources.UnloadAsset(videoPlayer.clip);
             }
             
-            videoPlayer.clip = Resources.Load<VideoClip>(file) as VideoClip;
+            videoPlayer.clip = Resources.Load<VideoClip>("Videos/" + file) as VideoClip;
             videoPlayer.Play();
         });
-        
+    }
+
+    IEnumerator Start()
+    {
         while (true)
         {
+            while (!isPlaying)
+                yield return null;
+            
             while (inkStory.canContinue)
             {
                 lastContent = inkStory.Continue();
@@ -95,6 +102,10 @@ public class StoryPlayer : MonoBehaviour
                 nextButton.gameObject.SetActive(false);
                 choiceButtons.ForEach(btn => btn.gameObject.SetActive(false));
             }
+
+            isPlaying = false;
+            videoPlayer.Stop();
+            storyComplete?.Invoke();
             
             yield return null;
         }

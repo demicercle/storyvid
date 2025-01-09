@@ -281,6 +281,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc6bca4929ff64947b7452d1641fd25a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  storyPlayer: {fileID: 717282717}
   currentPanel: 0
   panels:
   - {fileID: 1389699341}
@@ -492,7 +493,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 518184128}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -668,6 +669,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 441044651}
     m_Modifications:
+    - target: {fileID: 1887993187252027105, guid: 20f173b39eddc4a6a84bbc60184b878b, type: 3}
+      propertyPath: episodeIndex
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2734921385991729509, guid: 20f173b39eddc4a6a84bbc60184b878b, type: 3}
       propertyPath: m_Name
       value: EpisodeContainer (2)
@@ -1201,6 +1206,7 @@ MonoBehaviour:
   choiceButtons:
   - {fileID: 138890421}
   - {fileID: 1297634398}
+  isPlaying: 0
 --- !u!1001 &1090548503
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1209,6 +1215,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 441044651}
     m_Modifications:
+    - target: {fileID: 1887993187252027105, guid: 20f173b39eddc4a6a84bbc60184b878b, type: 3}
+      propertyPath: episodeIndex
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 2734921385991729509, guid: 20f173b39eddc4a6a84bbc60184b878b, type: 3}
       propertyPath: m_Name
       value: EpisodeContainer (3)
@@ -1741,7 +1751,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1389699341}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -2112,6 +2122,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 441044651}
     m_Modifications:
+    - target: {fileID: 1887993187252027105, guid: 20f173b39eddc4a6a84bbc60184b878b, type: 3}
+      propertyPath: episodeIndex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2734921385991729509, guid: 20f173b39eddc4a6a84bbc60184b878b, type: 3}
       propertyPath: m_Name
       value: EpisodeContainer (1)
@@ -2290,6 +2304,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 441044651}
     m_Modifications:
+    - target: {fileID: 1887993187252027105, guid: 20f173b39eddc4a6a84bbc60184b878b, type: 3}
+      propertyPath: episodeIndex
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 2734921385991729509, guid: 20f173b39eddc4a6a84bbc60184b878b, type: 3}
       propertyPath: m_Name
       value: EpisodeContainer (4)
@@ -2472,7 +2490,7 @@ GameObject:
   - component: {fileID: 1823762692}
   - component: {fileID: 1823762691}
   m_Layer: 0
-  m_Name: PlayStory
+  m_Name: PlayVideo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2505,7 +2523,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1823762689}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -2591,7 +2609,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2118609775}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 

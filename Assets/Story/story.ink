@@ -1,8 +1,10 @@
  EXTERNAL playVideo(file)
  
- -> episode_1.video_1
+ -> DONE
  
  === episode_1 ===
+ 
+ -> video_1
  
  = video_1
  

@@ -10,7 +10,8 @@ public class GameManager : MonoBehaviour
         SelectVideo,
         PlayVideo
     }
-    
+
+    public StoryPlayer storyPlayer;
     public int currentPanel;
     public GameObject[] panels;
 
@@ -20,6 +21,11 @@ public class GameManager : MonoBehaviour
     private void OnDrawGizmosSelected()
     {
         UpdatePanels();
+    }
+
+    public void SetCurrentPanel(Panels panel)
+    {
+        currentPanel = (int)panel;
     }
 
     public void SetCurrentPanel(int panel)
@@ -32,6 +38,11 @@ public class GameManager : MonoBehaviour
         Localize.LoadLines();
         
         SetCurrentPanel(0);
+
+        storyPlayer.storyComplete += () =>
+        {
+            SetCurrentPanel(Panels.SelectEpisode);
+        };
         
         playButton.onClick.AddListener(() =>
         {
