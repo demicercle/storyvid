@@ -39,6 +39,8 @@ public class StoryPlayer : MonoBehaviour
 
     public System.Action storyComplete;
     
+    public List<string> GetKnots() => knots;
+    
     private string lastContent;
     private string displayContent;
     private int charIndex;

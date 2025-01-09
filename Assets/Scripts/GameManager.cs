@@ -41,7 +41,7 @@ public class GameManager : MonoBehaviour
 
         storyPlayer.storyComplete += () =>
         {
-            SetCurrentPanel(Panels.SelectEpisode);
+            SetCurrentPanel(Panels.SelectVideo);
         };
         
         playButton.onClick.AddListener(() =>

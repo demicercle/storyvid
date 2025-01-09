@@ -6,6 +6,7 @@ public class EpisodeElement : MonoBehaviour
     public int episodeIndex;
     public TMPro.TMP_Text header;
     public UnityEngine.UI.Button playButton;
+    public UnityEngine.UI.Button continueButton;
 
     private GameManager gameManager;
     
@@ -18,6 +19,10 @@ public class EpisodeElement : MonoBehaviour
             gameManager.SetCurrentPanel(GameManager.Panels.PlayVideo);
             gameManager.storyPlayer.isPlaying = true;
             gameManager.storyPlayer.inkStory.ChoosePathString("episode_" + episodeIndex );
+        });
+        continueButton.onClick.AddListener(() =>
+        {
+            gameManager.SetCurrentPanel(GameManager.Panels.SelectVideo);
         });
     }
 }
