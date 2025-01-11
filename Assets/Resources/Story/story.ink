@@ -4,10 +4,12 @@
  -> DONE
  
  === episode_1 ===
+ #image: "Shot 1"
  
  -> video_1
  
  = video_1
+ #image: "Shot 1"
  
  ~unlock("episode_1.video_1")
  ~playVideo("Shot 1")
@@ -19,6 +21,7 @@
  + [La mort] -> video_13
  
  = video_10
+ #image: "Shot 10"
  
  ~unlock("episode_1.video_10")
  ~playVideo("Shot 10")
@@ -27,6 +30,7 @@ Praesent euismod metus nec velit vehicula, ac bibendum erat auctor.
 -> video_21
  
  = video_13
+ #image: "Shot 13"
  
  ~unlock("episode_1.video_13")
  ~playVideo("Shot 13")
@@ -36,6 +40,7 @@ Quisque at erat nec enim fermentum sollicitudin convallis non purus.
  
  
  = video_21
+ #image: "Shot 21"
  
  ~unlock("episode_1.video_21")
  ~playVideo("Shot 21")
@@ -45,6 +50,7 @@ Aliquam rutrum, tellus eu ullamcorper luctus, purus dui venenatis elit, eget orn
 -> video_25
  
  = video_25
+ #image: "Shot 25"
  
  ~unlock("episode_1.video_25")
  ~playVideo("Shot 25")

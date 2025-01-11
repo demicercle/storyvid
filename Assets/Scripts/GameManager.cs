@@ -47,6 +47,31 @@ public class GameManager : MonoBehaviour
         SetCurrentPanel(Panels.PlayVideo);
     }
 
+    public bool GetImageForPath(string path, out Texture texture)
+    {
+        var tags = storyPlayer.inkStory.TagsForContentAtPath(path);
+        if (tags != null)
+        {
+            foreach (string tag in tags)
+            {
+                if (tag.StartsWith("image:"))
+                {
+                    var assetPath = "Images/" + tag.Substring("image:".Length).Replace('"', ' ').Trim();
+                    texture = Resources.Load<Texture>(assetPath);
+                    if (texture != null)
+                        return true;
+                    else
+                    {
+                        Debug.LogWarning("Cannot find image: " + assetPath);
+                    }
+                }
+            }
+        }
+
+        texture = null;
+        return false;
+    }
+
     private void Awake()
     {
         Localize.LoadLines();

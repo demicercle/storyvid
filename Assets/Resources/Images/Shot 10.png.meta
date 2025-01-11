@@ -1,15 +1,15 @@
 fileFormatVersion: 2
-guid: 09b8cf00ca8ce48b6a2faca832ceae2d
+guid: 02161834341b54d9a8f56e87a0618602
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5264324885004404614
-    second: video-icon_0
+      213: 8179473139765447514
+    second: Shot 10_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 0
+    enableMipMap: 1
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -57,7 +57,7 @@ TextureImporter:
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 8
+  textureType: 0
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -72,7 +72,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 128
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: video-icon_0
+      name: Shot 10_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 23
-        width: 512
-        height: 466
+        y: 27
+        width: 128
+        height: 74
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 687cfe06793ae0940800000000000000
-      internalID: 5264324885004404614
+      spriteID: a5b8191eb73538170800000000000000
+      internalID: 8179473139765447514
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      video-icon_0: 5264324885004404614
+      Shot 10_0: 8179473139765447514
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
