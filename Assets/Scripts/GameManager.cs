@@ -1,7 +1,11 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Ink.UnityIntegration;
 using UnityEngine;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 public class GameManager : MonoBehaviour
 {
@@ -13,8 +17,6 @@ public class GameManager : MonoBehaviour
         PlayVideo
     }
 
-    public List<CSVReader> csvs = new List<CSVReader>();
-
     public StoryPlayer storyPlayer;
     public int currentPanel;
     public GameObject[] panels;
@@ -24,6 +26,9 @@ public class GameManager : MonoBehaviour
     public UnityEngine.UI.Button playButton;
     public UnityEngine.UI.Button quitButton;
 
+    public TextAsset jsonAsset;
+    public Newtonsoft.Json.Linq.JObject jsonData;
+    
     private void OnDrawGizmosSelected()
     {
         UpdatePanels();
@@ -39,11 +44,6 @@ public class GameManager : MonoBehaviour
         currentPanel = panel;
     }
 
-    public CSVReader GetEpisodeCSV(int episode)
-    {
-        return csvs.FirstOrDefault(csv => csv.textAsset.name.ToLower() == "episode" + episode);
-    }
-
     public string GetVideoID(int video)
     {
         return "video" + (video < 10 ? "0" : "") + video;
@@ -51,13 +51,11 @@ public class GameManager : MonoBehaviour
     
     public void PlayStory(int episode, string videoID = null)
     {
-        var episodeCSV = GetEpisodeCSV(episode);
-        if (videoID == null)
+        if (string.IsNullOrEmpty(videoID))
             videoID = GetVideoIDs(episode).FirstOrDefault();
-        storyPlayer.lines.Clear();
-        var content = episodeCSV.GetCellContent(videoID, "script_" + language);
+        var content = GetVideoContent(episode, videoID);
         storyPlayer.lines.AddRange(content.Split('\n'));
-        storyPlayer.PlayVideo(episodeCSV.GetCellContent(videoID, "video_file"));
+        storyPlayer.PlayVideo(GetVideoFile(episode, videoID));
         storyPlayer.isPlaying = true;
         SetCurrentPanel(Panels.PlayVideo);
     }
@@ -65,31 +63,84 @@ public class GameManager : MonoBehaviour
     public bool GetImageForVideo(out Texture texture, int episode, string videoID = null)
     {
         texture = null;
-        var episodeCSV = GetEpisodeCSV(episode);
-        if (episodeCSV == null)
-            return false;
         if (string.IsNullOrEmpty(videoID))
             videoID = GetVideoIDs(episode).FirstOrDefault();
-        if (string.IsNullOrEmpty(videoID))
-            return false;
-        texture = Resources.Load<Texture>("Images/" + episodeCSV.GetCellContent(videoID, "image_file"));
-        return false;
+        if (!string.IsNullOrEmpty(videoID))
+            texture = Resources.Load<Texture>("Images/" + GetVideoImageFile(episode, videoID));
+        return texture != null;
     }
 
     public string[] GetVideoIDs(int episode)
     {
-        var episodeCSV = GetEpisodeCSV(episode);
-        if (episodeCSV == null)
-            return new string[0];
+        var keys = new List<string>();
+
+        if (jsonData.ContainsKey("episode" + episode))
+        {
+            foreach (JProperty jProp in (jsonData["episode" + episode] as JObject).Properties())
+            {
+                keys.Add(jProp.Name.ToString());
+            }
+        }
+
+        return keys.ToArray();
+    }
+
+    [ContextMenu("Parse JSON")]
+    private void ParseJson()
+    {
+        Debug.Log("ParseJson:" + jsonAsset.text);
+        jsonData = JsonConvert.DeserializeObject<Newtonsoft.Json.Linq.JObject>(jsonAsset.text);
+        Debug.Log(GetLocalizedText("play"));
+        Debug.Log(GetVideoContent(1, "video01"));
+        Debug.Log(string.Join(",", GetVideoIDs(1)));
+    }
+
+    public string GetLocalizedText(string key)
+    {
+        return ((jsonData["interface"] as JObject)[key] as JObject)["text_" + language].ToString();
+    }
+
+    public JObject GetVideoData(int episode, string videoID)
+    {
+        var episodeData = jsonData["episode" + episode] as JObject;
+        if (episodeData != null)
+            return (episodeData[videoID] as JObject);
         else
-            return episodeCSV.GetRowIDs();
+            return null;
+    }
+
+    public string GetVideoImageFile(int episode, string videoID)
+    {
+        var videoData = GetVideoData(episode, videoID);
+        if (videoData != null)
+            return videoData["image_file"].ToString();
+        else
+            return string.Empty;
+    }
+
+    public string GetVideoFile(int episode, string videoID)
+    {
+        var videoData = GetVideoData(episode, videoID);
+        if (videoData != null)
+            return videoData["video_file"].ToString();
+        else
+            return string.Empty;
+    }
+
+    public string GetVideoContent(int episode, string videoID)
+    {
+        var videoData = GetVideoData(episode, videoID);
+        if (videoData != null)
+            return videoData["script_" + language].ToString();
+        else
+            return string.Empty;
     }
 
     private void Awake()
     {
         Localize.LoadLines();
-
-        csvs.ForEach(csv => csv.ParseTextAsset());
+        
+        ParseJson();
         
         SetCurrentPanel(0);
         
