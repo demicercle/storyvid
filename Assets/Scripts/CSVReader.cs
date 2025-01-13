@@ -8,18 +8,38 @@ public class CSVReader
     
     public TextAsset textAsset;
     
-    public List<string> colIDs;
-    public List<string> rowIDs;
     public List<List<string>> csv;
 
     public string GetCellContent(string rowID, string columnID)
     {
-        var r = rowIDs.IndexOf(rowID);
-        if (r < 0) Debug.LogError("Cannot find cell with rowID=" + rowID);
-        var c = colIDs.IndexOf(columnID);
-        if (c < 0) Debug.LogError("Cannot find cell with columnID=" + columnID);
-        Debug.Log("GetCellContent " + rowID + "," + columnID + " = " + c + "/" + r);
-        return GetCellContent(r,c);
+        var colIndex = csv[0].IndexOf(columnID);
+        if (colIndex < 0)
+        {
+            Debug.LogError("Cannot find column with ID: " + columnID);
+            return string.Empty;
+        }
+
+        foreach (List<string> row in csv)
+        {
+            if (row[0] == rowID)
+            {
+                return row[colIndex];
+            }
+        }
+        
+        Debug.LogError("Cannot find row with ID: " + rowID);
+        return string.Empty;
+    }
+
+    public string[] GetRowIDs(int startIndex = 1)
+    {
+        List<string> ids = new List<string>();
+        for (int i = startIndex; i < csv.Count; i++)
+        {
+            ids.Add(csv[i][0]);
+        }
+
+        return ids.ToArray();
     }
     
     public string GetCellContent(int row, int col)
@@ -35,37 +55,12 @@ public class CSVReader
     public void Parse(string text)
     {
         csv = new List<List<string>>();
-        colIDs = new List<string>();
-        rowIDs = new List<string>();
 
         var rows = text.Split('\n');
         for (int r = 0; r < rows.Length; r++)
         {
-            var row = rows[r];
-            var cols = row.Split(SEPARATOR);
-            csv.Add(new List<string>(cols));
+            csv.Add(new List<string>(rows[r].Split(SEPARATOR)));
         }
-
-        for (int r = 0; r < csv.Count; r++)
-        {
-            for (int c = 0; c < csv[r].Count; c++)
-            {
-                if (r == 0)
-                {
-                    colIDs.Add(csv[r][c].Trim());
-                }
-                
-                else if (c == 0)
-                {
-                    rowIDs.Add(csv[r][c].Trim());
-                }
-            }
-        }
-        
-        Debug.Log("CSVReader Parsed");
-        Debug.Log("cols: " + string.Join(',', colIDs));
-        Debug.Log("rows: " + string.Join(',', rowIDs));
-        PrintCSV();
     }
 
     private void PrintCSV()

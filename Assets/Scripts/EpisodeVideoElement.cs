@@ -11,6 +11,12 @@ public class EpisodeVideoElement : MonoBehaviour
 
     private GameManager gameManager;
     private Texture pathImage;
+
+    public void UpdateImage()
+    {
+        if (gameManager.GetImageForVideo(out pathImage, episode, videoID))
+            imageComponent.texture = pathImage;
+    }
     
     private void Awake()
     {
@@ -25,11 +31,5 @@ public class EpisodeVideoElement : MonoBehaviour
     private void Update()
     {
         button.interactable = gameManager.storyPlayer.IsPathUnlocked(episode, videoID);
-
-        if (pathImage == null)
-        {
-            if (gameManager.GetImageForVideo(out pathImage, episode, videoID))
-                imageComponent.texture = pathImage;
-        }
     }
 }

@@ -82,7 +82,7 @@ public class GameManager : MonoBehaviour
         if (episodeCSV == null)
             return new string[0];
         else
-            return episodeCSV.rowIDs.ToArray();
+            return episodeCSV.GetRowIDs();
     }
 
     private void Awake()

@@ -38,6 +38,7 @@ public class EpisodeVideoList : MonoBehaviour
             videoElements[lastVideoElement].gameObject.SetActive(true);
             videoElements[lastVideoElement].episode = episodeIndex;
             videoElements[lastVideoElement].videoID = videoID;
+            videoElements[lastVideoElement].UpdateImage();
             lastVideoElement++;
         }
     }
