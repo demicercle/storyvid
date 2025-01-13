@@ -57,8 +57,10 @@ public class GameManager : MonoBehaviour
         var content = GetVideoContent(episode, videoID);
         storyPlayer.lines.AddRange(content.Split('\n'));
         storyPlayer.links = GetLinks(episode, videoID);
+        storyPlayer.episode = episode;
         storyPlayer.PlayVideo(GetVideoFile(episode, videoID));
         storyPlayer.isPlaying = true;
+        storyPlayer.UnlockPath(episode, videoID);
         SetCurrentPanel(Panels.PlayVideo);
     }
 
@@ -167,6 +169,19 @@ public class GameManager : MonoBehaviour
         ParseJson();
         
         SetCurrentPanel(0);
+
+        storyPlayer.storyComplete += () =>
+        {
+            if (!string.IsNullOrEmpty(storyPlayer.nextVideo))
+            {
+                PlayStory(storyPlayer.episode, storyPlayer.nextVideo);
+                storyPlayer.nextVideo = string.Empty;
+            }
+            else
+            {
+                SetCurrentPanel(Panels.SelectVideo);
+            }
+        };
         
         playButton.onClick.AddListener(() =>
         {

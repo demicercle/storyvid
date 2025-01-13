@@ -22,6 +22,8 @@ public class StoryPlayer : MonoBehaviour
 
     public List<string> lines = new List<string>();
     public List<VideoLink> links = new List<VideoLink>();
+    public int episode;
+    public string nextVideo;
     
     public bool IsPathUnlocked(int episode, string videoID)
     {
@@ -70,6 +72,7 @@ public class StoryPlayer : MonoBehaviour
             btn.onClick += (userData) =>
             {
                 displayContent = lastContent = string.Empty;
+                nextVideo = ((VideoLink)userData).videoTo;
                 choiceButtons.ForEach(btn => btn.gameObject.SetActive(false));
             };
         });
