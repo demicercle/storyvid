@@ -392,9 +392,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc6bca4929ff64947b7452d1641fd25a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  csvs:
-  - textAsset: {fileID: 4900000, guid: 0349bc4044f924d618b2076f5b851e0d, type: 3}
-  - textAsset: {fileID: 4900000, guid: 7c13334f2fca645f3972d47d202e271a, type: 3}
   storyPlayer: {fileID: 717282717}
   currentPanel: 2
   panels:
@@ -406,6 +403,7 @@ MonoBehaviour:
   playButton: {fileID: 579927319}
   quitButton: {fileID: 1871781604}
   jsonAsset: {fileID: 4900000, guid: 89a09af8c62ad4dda8bd13a654f87a78, type: 3}
+  allLinks: []
 --- !u!4 &217878202
 Transform:
   m_ObjectHideFlags: 0
@@ -2262,7 +2260,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 596737980}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.47540984
+  m_Size: 0.47295082
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -3125,7 +3123,6 @@ MonoBehaviour:
   - {fileID: 1297634398}
   isPlaying: 0
   lines: []
-  choices: []
   links: []
   gameManager: {fileID: 0}
 --- !u!1 &761155681

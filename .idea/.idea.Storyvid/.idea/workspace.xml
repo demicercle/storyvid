@@ -5,16 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="439901dd-fbf5-45a7-81db-20a1b0342c03" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameData.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameData.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Storyvid/.idea/.name" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/VideoLink.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/VideoLink.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Storyvid/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Storyvid/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/CSV.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/CSV/episode1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/CSV/episode1.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/CSV/interface.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/CSV/interface.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/CSV/storyvid data.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/CSV/storyvid data.json.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CSVReader.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CSVReader.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StoryPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StoryPlayer.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +106,7 @@
       <workItem from="1736754988413" duration="8314000" />
       <workItem from="1736785211479" duration="366000" />
       <workItem from="1736785597667" duration="252000" />
-      <workItem from="1736785864282" duration="804000" />
+      <workItem from="1736785864282" duration="3824000" />
     </task>
     <servers />
   </component>

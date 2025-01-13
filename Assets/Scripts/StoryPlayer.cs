@@ -21,8 +21,7 @@ public class StoryPlayer : MonoBehaviour
     public System.Action storyComplete;
 
     public List<string> lines = new List<string>();
-    public List<string> choices = new List<string>();
-    public List<string> links = new List<string>();
+    public List<VideoLink> links = new List<VideoLink>();
     
     public bool IsPathUnlocked(int episode, string videoID)
     {
@@ -92,37 +91,32 @@ public class StoryPlayer : MonoBehaviour
                 lastContent = lines[0];
                 lines.RemoveAt(0);
 
-                if (lastContent.StartsWith("#"))
+                charIndex = 0;
+                while (charIndex < lastContent.Length)
                 {
-                    lastContent = lastContent.Substring(1);
-                    
-                    if (lastContent.ToLower().StartsWith("choice"))
-                    {
-                        for (int i = 0; i < choiceButtons.Count; i++)
-                        {
-                            var btn = choiceButtons[i];
-                            if (!btn.gameObject.activeSelf)
-                            {
-                                btn.gameObject.SetActive(true);
-                                btn.SetText(lastContent);
-                            }
-                        }
-                    }
+                    displayContent = lastContent.Substring(0, charIndex);
+                    charIndex++;
+                    yield return Input.GetMouseButton(0) ? null : new WaitForSeconds(textDelay);
                 }
-                else
+
+                nextButton.gameObject.SetActive(true);
+                
+                if (lines.Count == 0)
                 {
-                    charIndex = 0;
-                    while (charIndex < lastContent.Length)
+                    for (int i = 0; i < links.Count; i++)
                     {
-                        displayContent = lastContent.Substring(0, charIndex);
-                        charIndex++;
-                        yield return Input.GetMouseButton(0) ? null : new WaitForSeconds(textDelay);
+                        nextButton.gameObject.SetActive(false);
+                        
+                        var btn = choiceButtons[i];
+                        btn.gameObject.SetActive(true);
+                        btn.SetText(links[i].text);
+                        btn.userData = links[i];
                     }
                 }
                 
-                nextButton.gameObject.SetActive(!choiceButtons.Any(btn => btn.gameObject.activeSelf));
                 while (!string.IsNullOrWhiteSpace(lastContent))
                     yield return null;
+                
                 nextButton.gameObject.SetActive(false);
                 choiceButtons.ForEach(btn => btn.gameObject.SetActive(false));
             }

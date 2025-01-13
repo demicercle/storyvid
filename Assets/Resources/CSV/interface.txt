@@ -1,7 +1,0 @@
-id	text_fr	text_en	text_es	text_de
-play	Jouer			
-quit	Quitter			
-next	Suivant			
-return	Retour			
-continue	Continuer			
-options	Paramètres			

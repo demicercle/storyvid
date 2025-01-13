@@ -28,6 +28,7 @@ public class GameManager : MonoBehaviour
 
     public TextAsset jsonAsset;
     public Newtonsoft.Json.Linq.JObject jsonData;
+    public List<VideoLink> allLinks;
     
     private void OnDrawGizmosSelected()
     {
@@ -55,6 +56,7 @@ public class GameManager : MonoBehaviour
             videoID = GetVideoIDs(episode).FirstOrDefault();
         var content = GetVideoContent(episode, videoID);
         storyPlayer.lines.AddRange(content.Split('\n'));
+        storyPlayer.links = GetLinks(episode, videoID);
         storyPlayer.PlayVideo(GetVideoFile(episode, videoID));
         storyPlayer.isPlaying = true;
         SetCurrentPanel(Panels.PlayVideo);
@@ -85,11 +87,28 @@ public class GameManager : MonoBehaviour
         return keys.ToArray();
     }
 
+    private void ParseLinks()
+    {
+        allLinks.Clear();
+        
+        var linksData = jsonData["links"] as JArray;
+        foreach (var data in linksData)
+        {
+            var link = new VideoLink();
+            link.episode = int.Parse(data["episode"].ToString());
+            link.videoFrom = data["video_from"].ToString();
+            link.videoTo = data["video_to"].ToString();
+            link.text = data["text_" + language].ToString();
+            allLinks.Add(link);
+        }
+    }
+    
     [ContextMenu("Parse JSON")]
     private void ParseJson()
     {
         Debug.Log("ParseJson:" + jsonAsset.text);
         jsonData = JsonConvert.DeserializeObject<Newtonsoft.Json.Linq.JObject>(jsonAsset.text);
+        ParseLinks();
         Debug.Log(GetLocalizedText("play"));
         Debug.Log(GetVideoContent(1, "video01"));
         Debug.Log(string.Join(",", GetVideoIDs(1)));
@@ -134,6 +153,11 @@ public class GameManager : MonoBehaviour
             return videoData["script_" + language].ToString();
         else
             return string.Empty;
+    }
+
+    public List<VideoLink> GetLinks(int episode, string videoFrom)
+    {
+        return allLinks.Where(link => link.episode == episode && link.videoFrom == videoFrom).ToList();
     }
 
     private void Awake()
