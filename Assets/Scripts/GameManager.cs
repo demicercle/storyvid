@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
@@ -11,6 +12,8 @@ public class GameManager : MonoBehaviour
         SelectVideo,
         PlayVideo
     }
+
+    public List<CSVReader> csvs = new List<CSVReader>();
 
     public StoryPlayer storyPlayer;
     public int currentPanel;
@@ -75,6 +78,8 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         Localize.LoadLines();
+
+        csvs.ForEach(csv => csv.ParseTextAsset());
         
         SetCurrentPanel(0);
         
