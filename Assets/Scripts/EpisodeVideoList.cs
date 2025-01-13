@@ -19,7 +19,7 @@ public class EpisodeVideoList : MonoBehaviour
         
         episodeButton.onClick.AddListener(() =>
         {
-            gameManager.PlayStory(episodeIndex);
+            gameManager.PlayEpisode(episodeIndex);
         });
     }
 

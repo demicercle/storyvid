@@ -24,7 +24,7 @@ public class EpisodeVideoElement : MonoBehaviour
         
         button.onClick.AddListener(() =>
         {
-            gameManager.PlayStory(episode, videoID);
+            gameManager.PlayVideo(episode, videoID);
         });
     }
 

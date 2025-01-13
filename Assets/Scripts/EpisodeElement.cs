@@ -21,7 +21,7 @@ public class EpisodeElement : MonoBehaviour
         header.text = "Episode " + episodeIndex;
         playButton.onClick.AddListener(() =>
         {
-            gameManager.PlayStory(episodeIndex);
+            gameManager.PlayEpisode(episodeIndex);
         });
         continueButton.onClick.AddListener(() =>
         {

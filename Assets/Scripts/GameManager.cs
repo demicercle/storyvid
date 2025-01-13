@@ -50,14 +50,18 @@ public class GameManager : MonoBehaviour
         return "video" + (video < 10 ? "0" : "") + video;
     }
     
-    public void PlayStory(int episode, string videoID = null)
+    public void PlayEpisode(int episode)
     {
-        if (string.IsNullOrEmpty(videoID))
-            videoID = GetVideoIDs(episode).FirstOrDefault();
+        PlayVideo(episode, GetVideoIDs(episode).FirstOrDefault());
+    }
+    
+    public void PlayVideo(int episode, string videoID)
+    {
         var content = GetVideoContent(episode, videoID);
         storyPlayer.lines.AddRange(content.Split('\n'));
         storyPlayer.links = GetLinks(episode, videoID);
         storyPlayer.episode = episode;
+        storyPlayer.nextVideo = GetNextVideoID(episode, videoID);
         storyPlayer.PlayVideo(GetVideoFile(episode, videoID));
         storyPlayer.isPlaying = true;
         storyPlayer.UnlockPath(episode, videoID);
@@ -87,6 +91,17 @@ public class GameManager : MonoBehaviour
         }
 
         return keys.ToArray();
+    }
+
+    public string GetNextVideoID(int episode, string videoID)
+    {
+        var videoIDs = GetVideoIDs(episode).ToList();
+        var videoIndex = videoIDs.IndexOf(videoID);
+        videoIndex += 1;
+        if (videoIndex < videoIDs.Count)
+            return videoIDs[videoIndex];
+        else
+            return string.Empty;
     }
 
     private void ParseLinks()
@@ -174,8 +189,7 @@ public class GameManager : MonoBehaviour
         {
             if (!string.IsNullOrEmpty(storyPlayer.nextVideo))
             {
-                PlayStory(storyPlayer.episode, storyPlayer.nextVideo);
-                storyPlayer.nextVideo = string.Empty;
+                PlayVideo(storyPlayer.episode, storyPlayer.nextVideo);
             }
             else
             {
