@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class EpisodeElement : MonoBehaviour
 {
-    public string episodePath => "episode_" + episodeIndex;
+    public string episodeID => "episode_" + episodeIndex;
     
     public int episodeIndex;
     public TMPro.TMP_Text header;
@@ -21,7 +21,7 @@ public class EpisodeElement : MonoBehaviour
         header.text = "Episode " + episodeIndex;
         playButton.onClick.AddListener(() =>
         {
-            gameManager.PlayPath(episodePath);
+            gameManager.PlayStory(episodeIndex);
         });
         continueButton.onClick.AddListener(() =>
         {
@@ -33,7 +33,7 @@ public class EpisodeElement : MonoBehaviour
     {
         if (pathImage == null)
         {
-            gameManager.GetImageForPath(episodePath, out pathImage);
+            gameManager.GetImageForVideo(out pathImage, episodeIndex);
             imageContainer.texture = pathImage;
         }
     }

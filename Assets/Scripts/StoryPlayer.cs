@@ -7,25 +7,7 @@ using UnityEngine.Video;
 using System.Linq;
 
 public class StoryPlayer : MonoBehaviour
-{private static List<string> GetKnotAndStitches(Story story)
-    {
-        var output = new List<string>();
-        var knots = story.mainContentContainer.namedContent.Keys;
-        knots.ToList().ForEach((knot) =>
-        {
-            output.Add(knot);
-
-            var container = story.KnotContainerWithName(knot);
-            var stitchKeys = container.namedContent.Keys;
-            stitchKeys.ToList().ForEach((stitch) =>
-            {
-                output.Add(knot + "." + stitch);
-            });
-        });
-        return output;
-    }
-    
-    public TextAsset storyFile;
+{
     public float textDelay;
     public VideoPlayer videoPlayer;
 
@@ -35,28 +17,44 @@ public class StoryPlayer : MonoBehaviour
     public List<CustomButton> choiceButtons;
 
     public bool isPlaying;
-    public Story inkStory { get; private set; }
 
     public System.Action storyComplete;
-    
 
-    public bool IsPathUnlocked(string path)
+    public List<string> lines = new List<string>();
+    public List<string> choices = new List<string>();
+    public List<string> links = new List<string>();
+    
+    public bool IsPathUnlocked(int episode, string videoID)
     {
-        return PlayerPrefs.GetInt(path) != 0;
+        return PlayerPrefs.GetInt("episode" + episode + "." + videoID) != 0;
     }
 
-    public void UnlockPath(string path)
+    public void UnlockPath(int episode, string videoID)
     {
-        PlayerPrefs.SetInt(path, 1);
+        PlayerPrefs.SetInt("episode" + episode + "." + videoID, 1);
     }
-    
-    public List<string> GetKnots() => knots;
+
+    public void PlayVideo(string file)
+    {
+        if (videoPlayer.clip != null)
+        {
+            videoPlayer.Stop();
+            Resources.UnloadAsset(videoPlayer.clip);
+        }
+            
+        videoPlayer.clip = Resources.Load<VideoClip>("Videos/" + file) as VideoClip;
+        videoPlayer.Play();
+    }
+
+    public GameManager gameManager;
     
     private string lastContent;
     private string displayContent;
     private int charIndex;
     private int choiceCount;
     private List<string> knots;
+    private int selectChoice = -1;
+
 
     private void Awake()
     {
@@ -73,32 +71,8 @@ public class StoryPlayer : MonoBehaviour
             btn.onClick += (userData) =>
             {
                 displayContent = lastContent = string.Empty;
-                inkStory.ChooseChoiceIndex((int)userData);
+                choiceButtons.ForEach(btn => btn.gameObject.SetActive(false));
             };
-        });
-        
-        inkStory = new Story(storyFile.text);
-        knots = GetKnotAndStitches(inkStory);
-        
-        inkStory.BindExternalFunction("unlock", (string path) =>
-        {
-            Debug.Log("unlock() " + path);
-            
-            UnlockPath(path);
-        });
-        
-        inkStory.BindExternalFunction ("playVideo", (string file) =>
-        {
-            Debug.Log("playVideo() " + file);
-            
-            if (videoPlayer.clip != null)
-            {
-                videoPlayer.Stop();
-                Resources.UnloadAsset(videoPlayer.clip);
-            }
-            
-            videoPlayer.clip = Resources.Load<VideoClip>("Videos/" + file) as VideoClip;
-            videoPlayer.Play();
         });
     }
 
@@ -110,41 +84,45 @@ public class StoryPlayer : MonoBehaviour
                 yield return null;
             
             fader.Fade0();
+            while (fader.isFading)
+                yield return null;
             
-            while (inkStory.canContinue)
+            while (lines.Count > 0)
             {
-                lastContent = inkStory.Continue();
+                lastContent = lines[0];
+                lines.RemoveAt(0);
 
-                while (fader.isFading)
-                    yield return null;
-                
-                charIndex = 0;
-                while (charIndex < lastContent.Length)
+                if (lastContent.StartsWith("#"))
                 {
-                    displayContent = lastContent.Substring(0, charIndex);
-                    charIndex++;
-                    yield return Input.GetMouseButton(0) ? null : new WaitForSeconds(textDelay);
-                }
-                
-                choiceCount = inkStory.currentChoices.Count;
-                for (int i = 0; i < choiceButtons.Count; i++)
-                {
-                    if (i < choiceCount)
+                    lastContent = lastContent.Substring(1);
+                    
+                    if (lastContent.ToLower().StartsWith("choice"))
                     {
-                        choiceButtons[i].gameObject.SetActive(true);
-                        choiceButtons[i].SetText(inkStory.currentChoices[i].text);
-                    }
-                    else
-                    {
-                        choiceButtons[i].gameObject.SetActive(false);
+                        for (int i = 0; i < choiceButtons.Count; i++)
+                        {
+                            var btn = choiceButtons[i];
+                            if (!btn.gameObject.activeSelf)
+                            {
+                                btn.gameObject.SetActive(true);
+                                btn.SetText(lastContent);
+                            }
+                        }
                     }
                 }
-
-                nextButton.gameObject.SetActive(choiceCount == 0);
+                else
+                {
+                    charIndex = 0;
+                    while (charIndex < lastContent.Length)
+                    {
+                        displayContent = lastContent.Substring(0, charIndex);
+                        charIndex++;
+                        yield return Input.GetMouseButton(0) ? null : new WaitForSeconds(textDelay);
+                    }
+                }
                 
+                nextButton.gameObject.SetActive(!choiceButtons.Any(btn => btn.gameObject.activeSelf));
                 while (!string.IsNullOrWhiteSpace(lastContent))
                     yield return null;
-                
                 nextButton.gameObject.SetActive(false);
                 choiceButtons.ForEach(btn => btn.gameObject.SetActive(false));
             }

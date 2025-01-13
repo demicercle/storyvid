@@ -6,16 +6,100 @@
   <component name="ChangeListManager">
     <list default="true" id="439901dd-fbf5-45a7-81db-20a1b0342c03" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Storyvid/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Storyvid/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/EpisodeElement.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/EpisodeElement.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/VideoElement.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/VideoElement.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Story/story.ink" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Story/story.ink" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Story/story.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Story/story.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Animal Example.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Animal Example/Animal Stats google sheets link.url" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Animal Example/Animal Stats google sheets link.url.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Animal Example/Animal Stats.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Animal Example/Animal Stats/Badger.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Animal Example/Animal Stats/Badger.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Animal Example/Animal Stats/Cat.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Animal Example/Animal Stats/Cat.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Animal Example/Animal Stats/Dog.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Animal Example/Animal Stats/Dog.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Animal Example/Animal Stats/Mouse.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Animal Example/Animal Stats/Mouse.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Animal Example/Example Scenes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Animal Example/Example Scenes/Private Sheet.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Animal Example/Example Scenes/Private Sheet/Private Animal Example.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Animal Example/Example Scenes/Private Sheet/Private Animal Example.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Animal Example/Example Scenes/Public Sheet.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Animal Example/Example Scenes/Public Sheet/Public Animals Example.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Animal Example/Example Scenes/Public Sheet/Public Animals Example.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Animal Example/Resources.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Animal Example/Resources/AnimalContainer.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Animal Example/Resources/AnimalContainer.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Animal Example/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Animal Example/Scripts/AnimalManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Animal Example/Scripts/AnimalManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Animal Example/Scripts/AnimalObject.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Animal Example/Scripts/AnimalObject.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Animal Example/Scripts/Scriptable Objects.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Animal Example/Scripts/Scriptable Objects/Animal.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Animal Example/Scripts/Scriptable Objects/Animal.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Animal Example/Scripts/Scriptable Objects/AnimalContainer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Animal Example/Scripts/Scriptable Objects/AnimalContainer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Google Sheets to Unity Documentation.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Google Sheets to Unity Documentation.pdf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Resources.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Resources/GSTU_Config.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Resources/GSTU_Config.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Scripts/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Scripts/Editor/GoogleSheetsToUnityEditorWindow.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Scripts/Editor/GoogleSheetsToUnityEditorWindow.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Scripts/Utils.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Scripts/Utils/EditorCoroutineRunner.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Scripts/Utils/EditorCoroutineRunner.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Scripts/Utils/GoogleSheetsToUnityConfig.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Scripts/Utils/GoogleSheetsToUnityConfig.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Scripts/Utils/GoogleSheetsToUnityUtilities.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Scripts/Utils/GoogleSheetsToUnityUtilities.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Scripts/Utils/SecondaryKeyDictionary.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Scripts/Utils/SecondaryKeyDictionary.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Scripts/Utils/Task.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Scripts/Utils/Task.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Scripts/v3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Scripts/v3/OAuth2.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Scripts/v3/OAuth2.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Scripts/v3/Plugins.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Scripts/v3/Plugins/Google.GData.AccessControl.DLL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Scripts/v3/Plugins/Google.GData.AccessControl.DLL.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Scripts/v3/Plugins/Google.GData.Client.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Scripts/v3/Plugins/Google.GData.Client.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Scripts/v3/Plugins/Google.GData.Documents.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Scripts/v3/Plugins/Google.GData.Documents.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Scripts/v3/Plugins/Google.GData.Extensions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Scripts/v3/Plugins/Google.GData.Extensions.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Scripts/v3/Plugins/Google.GData.Spreadsheets.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Scripts/v3/Plugins/Google.GData.Spreadsheets.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Scripts/v3/Plugins/Newtonsoft.Json.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Scripts/v3/Plugins/Newtonsoft.Json.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Scripts/v3/Plugins/TinyJSON.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Scripts/v3/Plugins/TinyJSON.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Scripts/v3/PublicSpreadSheetManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Scripts/v3/PublicSpreadSheetManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Scripts/v3/SecurityPolicy.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Scripts/v3/SecurityPolicy.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Scripts/v3/SpreadSheetManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Scripts/v3/SpreadSheetManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Scripts/v4.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Scripts/v4/GoogleAuthrisationHelper.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Scripts/v4/GoogleAuthrisationHelper.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Scripts/v4/Private.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Scripts/v4/Private/SpreadsheetManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Scripts/v4/Private/SpreadsheetManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Scripts/v4/Public.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Scripts/v4/Public/SpreadsheetManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Scripts/v4/Public/SpreadsheetManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Scripts/v4/Spreadsheet.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Google Sheets to Unity/Scripts/v4/Spreadsheet.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CSVReader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CSVReader.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/EpisodeElement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EpisodeElement.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/EpisodeVideoElement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EpisodeVideoElement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EpisodeVideoList.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EpisodeVideoList.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/video-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/video-icon.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StoryPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StoryPlayer.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,18 +123,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "dev",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/6000.0.25f1/Unity.app/Contents/MacOS/Unity" />
@@ -100,7 +184,8 @@
       <workItem from="1736446595264" duration="3794000" />
       <workItem from="1736451548350" duration="3586000" />
       <workItem from="1736497041108" duration="577000" />
-      <workItem from="1736585694341" duration="1823000" />
+      <workItem from="1736585694341" duration="2434000" />
+      <workItem from="1736754988413" duration="5766000" />
     </task>
     <servers />
   </component>

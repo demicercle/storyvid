@@ -5,8 +5,9 @@ public class EpisodeVideoElement : MonoBehaviour
 {
     public UnityEngine.UI.RawImage imageComponent;
     public UnityEngine.UI.Button button;
-    
-    public string path;
+
+    public string videoID;
+    public int episode;
 
     private GameManager gameManager;
     private Texture pathImage;
@@ -17,17 +18,17 @@ public class EpisodeVideoElement : MonoBehaviour
         
         button.onClick.AddListener(() =>
         {
-            gameManager.PlayPath(path);
+            gameManager.PlayStory(episode, videoID);
         });
     }
 
     private void Update()
     {
-        button.interactable = gameManager.storyPlayer.IsPathUnlocked(path);
+        button.interactable = gameManager.storyPlayer.IsPathUnlocked(episode, videoID);
 
         if (pathImage == null)
         {
-            if (gameManager.GetImageForPath(path, out pathImage))
+            if (gameManager.GetImageForVideo(out pathImage, episode, videoID))
                 imageComponent.texture = pathImage;
         }
     }

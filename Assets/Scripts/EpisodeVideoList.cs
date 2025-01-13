@@ -19,7 +19,7 @@ public class EpisodeVideoList : MonoBehaviour
         
         episodeButton.onClick.AddListener(() =>
         {
-            gameManager.PlayPath("episode_" + episodeIndex);
+            gameManager.PlayStory(episodeIndex);
         });
     }
 
@@ -32,16 +32,12 @@ public class EpisodeVideoList : MonoBehaviour
             episodeVideoElement.gameObject.SetActive(false);
         }
 
-        var knots = gameManager.storyPlayer.GetKnots();
         var lastVideoElement = 0;
-        foreach (string knot in knots)
+        foreach (string videoID in gameManager.GetVideoIDs(episodeIndex))
         {
-            if (knot.StartsWith("episode_" + episodeIndex.ToString()) && knot.Split(".").Length > 1)
-            {
-                videoElements[lastVideoElement].gameObject.SetActive(true);
-                videoElements[lastVideoElement].path = knot;
-            }
-            
+            videoElements[lastVideoElement].gameObject.SetActive(true);
+            videoElements[lastVideoElement].episode = episodeIndex;
+            videoElements[lastVideoElement].videoID = videoID;
             lastVideoElement++;
         }
     }

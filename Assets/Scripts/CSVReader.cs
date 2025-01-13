@@ -8,15 +8,18 @@ public class CSVReader
     
     public TextAsset textAsset;
     
-    
-    
-    private List<string> colIDs;
-    private List<string> rowIDs;
-    private List<List<string>> csv;
+    public List<string> colIDs;
+    public List<string> rowIDs;
+    public List<List<string>> csv;
 
     public string GetCellContent(string rowID, string columnID)
     {
-        return GetCellContent(rowIDs.IndexOf(rowID), colIDs.IndexOf(columnID));
+        var r = rowIDs.IndexOf(rowID);
+        if (r < 0) Debug.LogError("Cannot find cell with rowID=" + rowID);
+        var c = colIDs.IndexOf(columnID);
+        if (c < 0) Debug.LogError("Cannot find cell with columnID=" + columnID);
+        Debug.Log("GetCellContent " + rowID + "," + columnID + " = " + c + "/" + r);
+        return GetCellContent(r,c);
     }
     
     public string GetCellContent(int row, int col)
@@ -49,12 +52,12 @@ public class CSVReader
             {
                 if (r == 0)
                 {
-                    colIDs.Add(csv[r][c]);
+                    colIDs.Add(csv[r][c].Trim());
                 }
                 
                 else if (c == 0)
                 {
-                    rowIDs.Add(csv[r][c]);
+                    rowIDs.Add(csv[r][c].Trim());
                 }
             }
         }
@@ -62,6 +65,24 @@ public class CSVReader
         Debug.Log("CSVReader Parsed");
         Debug.Log("cols: " + string.Join(',', colIDs));
         Debug.Log("rows: " + string.Join(',', rowIDs));
+        PrintCSV();
+    }
+
+    private void PrintCSV()
+    {
+        int r = 0;
+        string output = "";
+        csv.ForEach(row =>
+        {
+            output += r.ToString() + "\t";
+            row.ForEach(cell =>
+            {
+                output += cell + "\t";
+            });
+            output += "\n";
+            r++;
+        });
+        Debug.Log(output);
     }
 
     public CSVReader(TextAsset textAsset)

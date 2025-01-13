@@ -19,6 +19,8 @@ public class GameManager : MonoBehaviour
     public int currentPanel;
     public GameObject[] panels;
 
+    public string language = "fr";
+    
     public UnityEngine.UI.Button playButton;
     public UnityEngine.UI.Button quitButton;
 
@@ -37,42 +39,50 @@ public class GameManager : MonoBehaviour
         currentPanel = panel;
     }
 
-    public void PlayPath(string path)
+    public CSVReader GetEpisodeCSV(int episode)
     {
-        storyPlayer.inkStory.ChoosePathString(path);
+        return csvs.FirstOrDefault(csv => csv.textAsset.name.ToLower() == "episode" + episode);
+    }
+
+    public string GetVideoID(int video)
+    {
+        return "video" + (video < 10 ? "0" : "") + video;
+    }
+    
+    public void PlayStory(int episode, string videoID = null)
+    {
+        var episodeCSV = GetEpisodeCSV(episode);
+        if (videoID == null)
+            videoID = GetVideoIDs(episode).FirstOrDefault();
+        storyPlayer.lines.Clear();
+        var content = episodeCSV.GetCellContent(videoID, "script_" + language);
+        storyPlayer.lines.AddRange(content.Split('\n'));
+        storyPlayer.PlayVideo(episodeCSV.GetCellContent(videoID, "video_file"));
         storyPlayer.isPlaying = true;
-        storyPlayer.storyComplete += () =>
-        {
-            storyPlayer.storyComplete = null;
-            SetCurrentPanel(Panels.SelectVideo);
-        };
-        
         SetCurrentPanel(Panels.PlayVideo);
     }
 
-    public bool GetImageForPath(string path, out Texture texture)
+    public bool GetImageForVideo(out Texture texture, int episode, string videoID = null)
     {
-        var tags = storyPlayer.inkStory.TagsForContentAtPath(path);
-        if (tags != null)
-        {
-            foreach (string tag in tags)
-            {
-                if (tag.StartsWith("image:"))
-                {
-                    var assetPath = "Images/" + tag.Substring("image:".Length).Replace('"', ' ').Trim();
-                    texture = Resources.Load<Texture>(assetPath);
-                    if (texture != null)
-                        return true;
-                    else
-                    {
-                        Debug.LogWarning("Cannot find image: " + assetPath);
-                    }
-                }
-            }
-        }
-
         texture = null;
+        var episodeCSV = GetEpisodeCSV(episode);
+        if (episodeCSV == null)
+            return false;
+        if (string.IsNullOrEmpty(videoID))
+            videoID = GetVideoIDs(episode).FirstOrDefault();
+        if (string.IsNullOrEmpty(videoID))
+            return false;
+        texture = Resources.Load<Texture>("Images/" + episodeCSV.GetCellContent(videoID, "image_file"));
         return false;
+    }
+
+    public string[] GetVideoIDs(int episode)
+    {
+        var episodeCSV = GetEpisodeCSV(episode);
+        if (episodeCSV == null)
+            return new string[0];
+        else
+            return episodeCSV.rowIDs.ToArray();
     }
 
     private void Awake()
