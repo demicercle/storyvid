@@ -37,64 +37,201 @@
       "text_de": null
     }
   },
-  "links": [
-    {
-      "episode": 1,
-      "video_from": "video01",
-      "video_to": "video10",
-      "text_fr": "La vie",
-      "text_es": null,
-      "text_de": null
-    },
-    {
-      "episode": 1,
-      "video_from": "video01",
-      "video_to": "video13",
-      "text_fr": "La mort",
-      "text_es": null,
-      "text_de": null
-    }
-  ],
+  "links": [],
   "episode1": {
     "video01": {
-      "video_file": "Shot 1",
-      "image_file": "Shot 1",
-      "script_fr": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non iaculis quam. In hac habitasse platea dictumst. Ut commodo varius vehicula. \n Fusce commodo vehicula diam ac dapibus. Nullam sollicitudin lacus eget leo convallis, ut dignissim sapien tincidunt. \n Etiam euismod imperdiet mauris, vestibulum eleifend ipsum posuere vitae. Nulla facilisi. Nam consectetur dolor nec tortor venenatis, et pharetra sapien iaculis.",
+      "video_file": "video 1",
+      "image_file": "video 1",
+      "script_fr": "Il y a des jours qu’on n'oublie jamais. Ce 15 février 2089. Ce couloir long, froid, la lumière clignotante au-dessus de ma tête. Pas de bruit. Juste le son de mes pas. \r\nLes affaires étaient de moins en moins nombreuses, ces derniers temps. Ce n’était plus le chaos des dernières années, quand tout s’effondrait autour de nous. Non, désormais, c’étaient des disparitions, des ombres fugaces qu’on nous donnait à élucider. Des vies qui s'éteignaient sans raison apparente.\r\nJe me souviens avoir fait une pause devant la porte de la salle d’interrogatoire. Juste pour sentir l’air, pour me préparer, et puis je suis entré. Elle était là. Xian.",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video02": {
+      "video_file": "video 2",
+      "image_file": "video 2",
+      "script_fr": "Xian… Ses cheveux, longs, en cascade, se fondaient dans l’obscurité de la pièce. Son visage était pâle, presque irréel : ses pommettes hautes, ses yeux… verts. Comme une mer d'émeraude. Ils semblaient voir à travers tout, au-delà des apparences. De moi, de tout. Elle n'avait pas demandé d'avocat.\r\nLa salle d’interrogatoire était froide, austère, presque clinique et la lumière blanche qui en émanait rendait tout encore plus oppressant. Une table métallique, trop grande se dressait entre nous. Des chaises en acier, rigides, semblaient plus là pour punir que pour accueillir. \r\nEt ça démarrait mal : les gens extrêmement beaux et sophistiqués ont tendance à jouer à pile ou face constamment : pile le charme, face la froideur. Xian jouait à ce jeu avec une aisance déconcertante. Un regard, un sourire mesuré, et l’atmosphère autour d’elle semblait se densifier. \r\nPourquoi n’avait-elle pas demandé d’avocat ? Pourquoi semblait-elle aussi calme face à cette situation qui aurait pu anéantir n’importe qui d’autre ? Chaque mouvement, chaque geste semblait calculé. Mais il y avait quelque chose de plus que ça. Un secret, un mystère qu’elle portait comme une malédiction. Quelque chose qu'elle refusait de livrer, même sous la pression.",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video03": {
+      "video_file": "video 3",
+      "image_file": "video 3",
+      "script_fr": "Xian en train de danser, c’est la première image qui m’est venue, la première idée. C’est ça, un interrogatoire : une danse. Un ballet étrange où chaque mot a son poids, où chaque silence est chargé de secrets. Une chorégraphie d’évasion, de manipulation. Et moi, au centre, contraint de suivre le rythme et les règles de l’accusée, si je veux la pousser à avouer.",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video04": {
+      "video_file": "video 4",
+      "image_file": "video 4",
+      "script_fr": "Les premiers mots qu’elle a dits, presque pour tester ma réactivité, c’est qu’il n’avait pas plu depuis 460 jours. Pourquoi me livrer cette information, à moi ? Pourquoi cette précision, comme si elle cherchait à m’orienter vers quelque chose que je n’arrivais pas encore à saisir ?\r\nJe lui ai fait remarquer que son nom revenait fréquemment dans des affaires de disparitions, et là, un sourire a traversé son visage, un sourire net, précis, presque tranchant. Elle devait savoir que mes soupçons n’étaient pas encore assez solides pour justifier son accusation.",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video05": {
+      "video_file": "video 5",
+      "image_file": "video 5",
+      "script_fr": "J’ai commencé l’interrogatoire en lui faisant remarquer qu’après chacune de ses réceptions, un invité disparaissait. Puis, elle a éclaté de rire. Un rire léger, presque trop insouciant, trop calme, trop facile, comme si tout cela n’avait aucune importance. Elle a ensuite ajouté que peut-être elle était simplement ennuyeuse. Je n’ai pas pu m’empêcher de réagir. Je lui ai répondu, sans trop y réfléchir, que je ne pensais pas qu’elle était ennuyeuse.\r\nElle m’a regardé, et l’expression dans ses yeux a changé. Elle m’a défié et m’a demandé si je la flattais.",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video06": {
+      "video_file": "video 6",
+      "image_file": "video 6",
+      "script_fr": "J’ai continué mon travail : \"Et le mardi 27 janvier, où étiez-vous ?\" Sa réponse m’a semblé calme, presque amusée. Elle m’a dit qu’elle était chez elle, seule. Elle semblait presque me défier, suggérant que vouloir être seule ne devrait pas être vu comme un crime. L’appartement,  surement un cube de verre et d’acier, suspendu dans le vide au sommet d’une mégatour grise, perdue dans un ciel perpétuellement couvert. Le sol est glacé sous les pieds, un béton poli qui amplifie l’écho de chaque mouvement. Chaque détail respire une froideur calculée, une vie où le passé semble figé et le futur inexistant. Un silence oppressant règne, interrompu parfois par le bourdonnement d’un drone de surveillance qui passe lentement devant les baies vitrées, comme pour s'assurer que l’habitante de cet espace sans chaleur est toujours sous contrôle.",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video07": {
+      "video_file": "video 7",
+      "image_file": "video 7",
+      "script_fr": "Elle jouait avec moi. J’ai tenté de la déstabiliser, de l’amener à m’expliquer les disparitions en chaîne, en évoquant des témoins qui l’avaient vue dans des quartiers sombres de la ville. \r\nCette ville, que certains pourraient décrire comme un lieu calme avec des avenues gigantesques qui s’étendent à perte de vue, des parcs recouverts de jeunes peupliers, de pins et de chênes, et enfin des petites rues éclairées par des braseros. Mais moi, je ne vois que ce froid intense, où tout semble mort : les rues sans lumières, les monuments d’une autre époque, et les tours d’habitation aux fenêtres minuscules, conçues pour empêcher la faible chaleur des logements de s’échapper. \r\nJe me souviens de mon enfance avant que le froid ne s’installe, cette époque où la vie semblait simple. J’allais souvent avec mes frères au bord de la mer. Nous jouions dans le sable, insouciants. Puis, un jour, le froid est tombé, brutalement, comme une ombre qui engloutit tout sur son passage. Il n’a pas seulement refroidi l’air, il a gelé les cœurs et les esprits.\r\nAvec ce froid, sont venus des comportements extrêmes, comme si chacun luttait pour survivre dans une réalité devenue hostile. Les enfants que nous étions ont grandi trop vite, perdant peu à peu l’étincelle de l’innocence. Nous sommes devenus des adultes sans espoir.\r\nL’agressivité a remplacé les rires et les discussions. Elle est devenue le seul langage commun.  \r\nEt dans ce monde froid depuis plus de 35ans, elle, Xian dans sa voiture de luxe, à l’affût d’un peu de chaleur humaine, son visage se reflétant sur la vitre de son véhicule, avançant silencieusement comme une créature de glace sur sa proie.",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video08": {
+      "video_file": "video 8",
+      "image_file": "video 8",
+      "script_fr": "Je lui ai posé la question, concernant monsieur Echo Draiven, le dernier disparu, après leur rencontre. J’ai espéré une réaction, quelque chose, un geste, un mouvement dans ses yeux, une faille qui aurait trahi sa froideur. Mais non, encore une fois, elle n’a pas nié, elle m’a confirmé leur rencontre. Et a insisté encore une fois pour que je reste immobile sur ma chaise, peut-être un levier pour la déstabiliser ?\r\nElle m’a même parlé de monsieur Echo Draiven d’une manière hautaine, le décrivant comme un homme charmant et fragile, avec un bon goût. J’ai insisté : plus aucune empreinte génétique, aucun capteur de présence, ni la moindre trace dans les vidéos d’enregistrement de Monsieur Echo Draiven après sa visite chez elle. Et son regard, toujours insondable.",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video09": {
+      "video_file": "video 9",
+      "image_file": "video 9",
+      "script_fr": "Xian est-elle un ange ou un démon ? J’ai un instant pensé qu’elle pouvait être une malade mentale qui dévorait ses convives, Comme toutes ces sectes apparues avec le froid. Chacune d’elles se distinguait par ses accoutrements particuliers, des tenues étranges qui semblaient refléter leur vision du monde : des robes sombres et austères pour les unes, des ornements extravagants et presque grotesques pour les autres. Elles se présentaient comme des guides, des sauveurs, prétendant détenir des vérités absolues dans ce chaos glacial.\r\nElles nous répétaient inlassablement que nous devions abandonner ce qui faisait de nous des êtres rationnels : ne plus nous soigner, comme si le corps devait se plier à la volonté d’une force supérieure, et ne plus nous éduquer, comme si la connaissance elle-même était une menace. Tout devait passer par elles. Leur message était clair : il fallait écouter aveuglément leurs paroles, obéir à leurs règles absurdes et ne jamais, au grand jamais, remettre quoi que ce soit en question.\r\nCe qui était le plus terrifiant, c’était leur pouvoir d’attraction. Face au froid, au désespoir, et à la perte de repères, beaucoup ont cédé. Ils se sont raccrochés à ces doctrines, aussi irrationnelles soient-elles, parce qu’elles offraient l’illusion d’une certitude dans un monde où plus rien n’avait de sens. Et ainsi, ces sectes se sont multipliées, nourries par la peur et l’ignorance, tissant leur toile sur des sociétés déjà fragilisées, imposant le silence et l’obéissance là où régnait autrefois la liberté de penser. Seules les guerres qui ont suivi les ont fait disparaître.\r\nMais elle jouait avec moi. Ses mots étaient des pièges, des détours pour m’égarer, m’interrogeant à son tour sur mes secrets enfouis ou plus profonds de mon être.",
       "script_en": null,
       "script_es": null,
       "script_de": null
     },
     "video10": {
-      "video_file": "Shot 10",
-      "image_file": "Shot 10",
-      "script_fr": "Ut auctor suscipit cursus. Sed eu risus nulla. Morbi ultrices vehicula tincidunt. Donec lobortis lacus a sollicitudin lacinia. \nPraesent euismod metus nec velit vehicula, ac bibendum erat auctor.",
+      "video_file": "video 10",
+      "image_file": "video 10",
+      "script_fr": "J’ai gardé le silence, car oui, il y a des secrets, des blessures, des choses que je n'avais jamais dites, jamais osées, pas même à mes collègues. Comme cette douleur, cette perte : Le décès de ma femme, après une longue maladie, reste une blessure que je porte encore en moi. Durant ces années d’épreuves, j’aurais dû être à ses côtés, lui tenir la main, lui parler. Mais je ne l’ai pas fait. Je me suis réfugié dans mon travail, me persuadant que j’étais utile autrement, que j’apportais ma part, en réglant les factures, en restant \"fort\".\nLa vérité, c’est que je fuyais. Je me cachais dans un silence gêné, incapable d’affronter sa souffrance et mes propres émotions. Chaque visite à l’hôpital j’évitais les conversations profondes, de peur qu’elles n’ouvrent des blessures encore plus grandes. Je me disais qu’il valait mieux ne rien dire que dire quelque chose de maladroit, \nÀ la fin, je n’étais pas là autant que je l’aurais voulu, autant qu’elle aurait eu besoin de moi. Je me suis laissé piéger par mes propres faiblesses, par cette incapacité à affronter la réalité en face. \nLes scientifiques ont trouvé le remède, mais trop tard, bien trop tard. Six mois après qu’elle soit partie. Et moi, là, avec ce vide, ce poids dans la poitrine. Pourquoi la science est-elle toujours en retard pour sauver ceux qu’on aime?",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video11": {
+      "video_file": "video 11",
+      "image_file": "video 11",
+      "script_fr": "Elle jouait sur un terrain dangereux, mêlant vérité et manipulation, cherchant à me déstabiliser. J’ai crié : \"Stoppez immédiatement votre jeu !\" Ma voix tremblait de colère. \"On a des témoins.\"\r\nEt là, elle a lâché cette phrase étrange : \"Les gens disent tellement de choses… Et les portes aussi.\"",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video12": {
+      "video_file": "video 12",
+      "image_file": "video 12",
+      "script_fr": "Elle a montré la porte derrière moi, elle a souri, presque avec tendresse, et a dit calmement :\r\n\"Elle est bloquée. Vous ne pouvez pas sortir, pas sans moi.\"\r\nSon visage est devenu grave.\r\n\"Je suis sérieuse. La porte ne s’ouvrira qu’avec un code. Et je suis la seule à le connaître.\"",
       "script_en": null,
       "script_es": null,
       "script_de": null
     },
     "video13": {
-      "video_file": "Shot 13",
-      "image_file": "Shot 13",
-      "script_fr": "Mauris orci leo, pharetra nec diam in, sagittis feugiat arcu. Vivamus vitae urna sem. \nQuisque at erat nec enim fermentum sollicitudin convallis non purus.",
+      "video_file": "video 13",
+      "image_file": "video 13",
+      "script_fr": "Puis elle a enchaîné d’un ton monocorde :\r\n\"Si vous vous levez de votre chaise pour vérifier, tout explose. Vous comprenez ?\"\r\nUne bombe sous ma chaise. Elle délirait, personne ne peut faire ça puis j’ai pensé : Un agent va venir d’ici peu vérifier si tout va bien. Mais, comme si elle lisait mes pensées, elle secoua la tête et me dit :\r\n\"Tous les habitants de cette planète vivent actuellement une épreuve comme la vôtre. Personne ne va venir.\"\r\nJ’ai imaginé cette pièce explosé, mais mon instinct…",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video14": {
+      "video_file": "video 14",
+      "image_file": "video 14",
+      "script_fr": "Mon instinct a pris le contrôle. J’étais habitué à l’écouter. Mon métier implique de lui faire confiance, comme lorsqu’il m’indique de me méfier d’une personne qui a appuyé son regard une fraction de seconde de trop sur mon arme pendant un interrogatoire, ou lorsqu’il me dit d’apprécier une personne même si elle évite de me regarder. \r\nMais oui, j'ai aussi eu l'envie de me lever. Elle m'offrait cette possibilité. Je doutais. Non, pas aujourd'hui, du moins pas maintenant. Autant continuer, quitte à risquer le tout pour le tout.",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video15": {
+      "video_file": "video 15",
+      "image_file": "video 15",
+      "script_fr": "Elle hocha la tête.\r\n\"Croyez-moi, détective. Vous voulez sortir d’ici ? Vous devez résoudre le problème. Pas vous battre, pas vous lever. Juste réfléchir. Un test de patience, d’intelligence. Si vous ne comprenez pas ça, vous ne serez même pas capable de survivre assez longtemps pour voir la porte s’ouvrir.\"\r\nEt là, dans ce silence oppressant, j’ai su qu’elle avait gagné. Elle avait pris le contrôle. Dans quel but ? Je n'avais rien. La ville tenait debout par miracle et, surtout, je n'étais pas une personne qui avait de la valeur pour les autres, quelqu'un à protéger.",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video16": {
+      "video_file": "video 16",
+      "image_file": "video 16",
+      "script_fr": "La folie a gagné mon esprit, et il m’est difficile de tout me rappeler. Tout se mélange : les détails de cette salle d’interrogatoire. Elle avait pointé du doigt le néon vacillant, là, dans ce coin. C’était quoi, déjà ? Une lumière clignotante, un chiffre… quatre. Quatre. Je l’ai vu, je l’ai ressenti avant même de l’identifier.\r\nMais ça ne s’est pas arrêté là. Non, il y a eu ces marques sur le mur, ces formes abstraites… un sept couché. Un sept, ou quelque chose qui y ressemblait. Pourquoi un sept ?\r\nPuis les symboles au sol : ces trois points, ce cercle. Comment tout cela se connecte-t-il ? C’était comme un puzzle qui s’assemblait devant moi, mais que je ne pouvais pas encore toucher.",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video17": {
+      "video_file": "video 17",
+      "image_file": "video 17",
+      "script_fr": "Autour de moi, tout est devenu silencieux. Dans ce bâtiment, le moindre bruit provoque un écho, ce qui donne l’étrange sensation d’être constamment surveillé, même en l’absence de caméras ou de surveillants. Nos actes, nos gestes, deviennent des signaux de notre présence, chaque son produit trahit notre existence. On finit par calculer chaque mouvement, produisant parfois un bruit pour indiquer volontairement notre présence, mais surtout en évitant tout geste qui pourrait attirer l’attention des autres.\r\nMais là, il n’y a plus d’écho. Aucun son ne provient d’une autre salle d’interrogatoire, ni du passage d’un policier dans les couloirs glacés. Ce silence est anormal, presque oppressant, suspect. \r\nÀ l’extérieur, pas de bruit. Depuis la guerre de 2039, des débris de vieilles stations spatiales abandonnées ou de missiles de protection censés être stationnaires au-dessus des grandes villes tombent régulièrement, souvent sans causer de dégâts, dans un bruit sourd. Et je n'entendais rien.",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video18": {
+      "video_file": "video 18",
+      "image_file": "video 18",
+      "script_fr": "Je me souviens l’avoir vue assise sur la table, dominant la situation d’un regard droit, me laissant chuter dans mes abîmes.\r\nPuis elle s’est mise à parler des autres, des gens hors de cette salle d’interrogatoire. Elle en parlait comme si ce que je vivais n’était rien, juste un fragment d’un plan plus vaste. Un test, une épreuve, une leçon. Pour moi, pour les autres.\r\nCes autres, ces gens… Je les sentais là, loin, à l’arrière de mon esprit. Eux aussi étaient en train de vivre, de souffrir, d’échouer peut-être. Et elle… Elle voulait m’amener à comprendre cela, à voir que tout faisait partie d’un tout. \r\nC’était dérangeant. Dérangeant comme une certitude qui ne se laisse jamais saisir.",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video19": {
+      "video_file": "video 19",
+      "image_file": "video 19",
+      "script_fr": "J’ai dit stop. Je veux comprendre : comment peut-on faire cela ? Une épreuve que l’on doit réussir sous peine de mort, et cela pour tous les habitants de la Terre et en même temps… ? Elle a souri, comme une mère qui explique une nouvelle chose à son enfant. Peut-être était-ce la première fois qu’un peu d’humanité éclairait son visage.\r\nElle m’a expliqué que nous sommes tous à l’intérieur de bulles transparentes, regardant l’extérieur déformé par la paroi sphérique, et si l’on s’approche trop des bords, son propre reflet masque ce qui l’entoure. Voilà notre perception de l’univers. Elle n’a eu qu’à rendre opaques ces sphères et introduire une question, une simple question, une question qui remplace tout et nous donne un unique sens à notre vie : y répondre.\r\nJe lui ai demandé si elle était un dieu ou un être venu d’un autre monde. Sa réponse n’a été qu’un sourire et un chuchotement : « Bientôt, tu le seras. » Puis son sourire s’est estompé et le code est revenu hanter mon esprit.",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video20": {
+      "video_file": "video 20",
+      "image_file": "video 20",
+      "script_fr": "J’ai tout analysé pour trouver ce code. Les indices. Le néon, les marques, les symboles. Je les ai scrutés, cherchés, décomposés. Tout semblait évident, mais hors de portée. Pourquoi ?\r\nPourquoi ça m’échappait encore ? Je pensais avoir la combinaison : 4, 7, 3. C’était presque ça. Presque. C’était trop simple, trop direct, trop… cliché.\r\nElle a dit, presque moqueuse : \"Peut-être que les chiffres ne sont pas dans le bon ordre.\"\r\nAlors, j’ai repris. Depuis le début. Chaque détail. Chaque mouvement. Le néon, les chaises dans la salle, les cadres dans le couloir. Tout cela, tous ces morceaux. Tout s’emboîtait. C’était ça, la clé, la progression logique.\r\nLe code suivait un ordre précis. Le premier chiffre était le nombre de fenêtres dans le couloir avant la porte d’entrée. Le deuxième, le nombre de chaises. Et le troisième, le nombre de cadres accrochés au mur.\r\n3, 4, 7. Les chiffres s’étaient révélés. J’avais le code ! Comme un chemin tracé devant moi. C’était presque naturel, facile, une fois que tout s’était assemblé.",
       "script_en": null,
       "script_es": null,
       "script_de": null
     },
     "video21": {
-      "video_file": "Shot 21",
-      "image_file": "Shot 21",
-      "script_fr": "Etiam imperdiet est ipsum, at congue mi venenatis id. Etiam bibendum elit et pulvinar bibendum. \nMorbi lobortis nibh eget justo fermentum iaculis. \nAliquam rutrum, tellus eu ullamcorper luctus, purus dui venenatis elit, eget ornare est erat vel tortor.",
+      "video_file": "video 21",
+      "image_file": "video 21",
+      "script_fr": "Le code de la porte qui venait de s'ouvrir Un bruit martèle mon esprit, constant et étouffant. Il dérange tout, s’insinuant comme une gêne impossible à ignorer. Une cloche implacable qui résonne sans fin, rythmant chaque seconde de son écho lancinant.  Puis le silence.\r\nLe code n'était que l’ordre chronologique des choses que j'avais rencontrées sur mon chemin. Tout n'était que la conséquence des chemins que l’on prend. Puis je me suis penché pour voir la bombe sous ma chaise, mais il n’y avait rien. J’ai regardé Xiam, presque déçu, et elle m’a dit : « La bombe a explosé à l’instant, fracassant en mille morceaux la bulle de cristal qui t’enfermait, toi et tous les autres. »",
       "script_en": null,
       "script_es": null,
       "script_de": null
     },
-    "video25": {
-      "video_file": "Shot 25",
-      "image_file": "Shot 25",
-      "script_fr": "Aenean sem purus, vestibulum id odio eu, vestibulum rutrum diam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris commodo eleifend auctor. \nProin in laoreet risus. Morbi vel sem at justo semper mattis a sit amet quam. Fusce fringilla vestibulum augue id sodales. Aliquam a enim at nisi pellentesque imperdiet ut at justo.",
+    "video22": {
+      "video_file": "video 22",
+      "image_file": "video 22",
+      "script_fr": "Xian m’a dit de ne pas m’inquiéter pour les disparus comme monsieur Echo Draiven : ils étaient tous des êtres comme elle. Elle m’a expliqué qu’elle était l’espoir de tous les êtres vivants, que cet espoir avait pris une forme, sa forme, Que cela était déjà arrivé, lorsque nous, les humains, avons décidé, à l’aube de l’humanité, de voir ce qu’il y avait derrière les montagnes ou les océans, animés par une curiosité qui nous a menés à de nouvelles connaissances.\r\nElle a ajouté : « Le code n’est qu’une partie du voyage. Derrière cette ouverture, il y a encore plus de questions, alimentées par l’espoir. »",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video23": {
+      "video_file": "video 23",
+      "image_file": "video 23",
+      "script_fr": "Un monde où la science n’a cessé d’évoluer depuis les débuts de l’humanité. Où chaque habitant de la Terre, quel que soit son lieu de naissance, a pu contribuer au progrès. Car la connaissance a souvent été freinée par des croyances obscures, et une partie de la population a été oubliée ou mise de côté : les femmes, ou ceux qui n’avaient pas accès à l’éducation à cause de leur lieu de naissance. La connaissance naît partout, qu’importe, au final qui nous la délivre, son apparence, son âge ou de ses origines. Si ses propos sont vrais, et même s’ils déstabilisent nos convictions nous devons l’accepter, Comme un poème la connaissance peut nous émouvoir et nous déstabiliser. Donc derrière cette porte, il y a le même même monde, mais avec des milliers d’années d’avance technologique. Un monde où la connaissance guide nos actes et l’art nourrit nos espoirs.",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video24": {
+      "video_file": "video 24",
+      "image_file": "video 24",
+      "script_fr": "Je me tenais là, devant cette porte. Partagé. Figé. La méfiance et l’espoir se mélangeaient. Tout était flou. Mais une chose était claire : Xian avait déjà changé ma perception de tout cela. Ce n’était pas juste une porte. Ce n’était pas juste un test.\r\nNon, c’était une invitation. Une invitation à réinventer ma réalité. À voir, à sentir, à comprendre autrement. Mais étais-je prêt à franchir cette porte ?",
       "script_en": null,
       "script_es": null,
       "script_de": null
     }
-  }
+  },
+  "episode2": {},
+  "episode3": {}
 }
