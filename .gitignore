@@ -73,6 +73,7 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 
 /[Aa]ssets/Resources/Videos
+/[Aa]ssets/Resources/Images
 
 /.idea/*
 
