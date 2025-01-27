@@ -14,6 +14,7 @@ public class StoryPlayer : MonoBehaviour
     public Fader fader;
     public TMPro.TMP_Text uiText;
     public UnityEngine.UI.Button nextButton;
+    public UnityEngine.UI.Button prevButton;
     public List<CustomButton> choiceButtons;
 
     public bool isPlaying { get; private set; }
@@ -60,10 +61,6 @@ public class StoryPlayer : MonoBehaviour
             videoPlayer.clip = null;
         }
         
-        charIndex = 0;
-        displayContent = lastContent = string.Empty;
-        nextButton.gameObject.SetActive(false);
-        choiceButtons.ForEach(btn => btn.gameObject.SetActive(false));
         isPlaying = false;
     }
 
@@ -72,16 +69,24 @@ public class StoryPlayer : MonoBehaviour
     private string lastContent;
     private string displayContent;
     private int charIndex;
+    private int lineIndex;
     private int choiceCount;
     private List<string> knots;
     private int selectChoice = -1;
-
 
     private void Awake()
     {
         nextButton.gameObject.SetActive(false);
         nextButton.onClick.AddListener(() =>
         {
+            lineIndex += 1;
+            displayContent = lastContent = string.Empty;
+        });
+        
+        prevButton.gameObject.SetActive(false);
+        prevButton.onClick.AddListener(() =>
+        {
+            lineIndex = Mathf.Max(0, lineIndex - 1);
             displayContent = lastContent = string.Empty;
         });
         
@@ -100,33 +105,40 @@ public class StoryPlayer : MonoBehaviour
 
     IEnumerator Play()
     {
+        lineIndex = 0;
+        charIndex = 0;
+        displayContent = lastContent = string.Empty;
+        nextButton.gameObject.SetActive(false);
+        prevButton.gameObject.SetActive(false);
+        choiceButtons.ForEach(btn => btn.gameObject.SetActive(false));
+        
         while (isPlaying)
         {
             fader.Fade0();
             while (fader.isFading)
                 yield return null;
             
-            while (lines.Count > 0)
+            while (lineIndex < lines.Count)
             {
-                lastContent = lines[0];
-                lines.RemoveAt(0);
-
+                Debug.Log("lineIndex: " + lineIndex + " / " + lines.Count);
+                lastContent = lines[lineIndex];
+                
                 charIndex = 0;
+                    
                 while (charIndex < lastContent.Length)
                 {
                     displayContent = lastContent.Substring(0, charIndex);
                     charIndex++;
                     yield return Input.GetMouseButton(0) ? null : new WaitForSeconds(textDelay);
                 }
-
-                nextButton.gameObject.SetActive(true);
                 
-                if (lines.Count == 0)
+                nextButton.gameObject.SetActive(lineIndex < lines.Count);
+                prevButton.gameObject.SetActive(lineIndex > 0);
+
+                if (lineIndex + 1 >= lines.Count)
                 {
                     for (int i = 0; i < links.Count; i++)
                     {
-                        nextButton.gameObject.SetActive(false);
-                        
                         var btn = choiceButtons[i];
                         btn.gameObject.SetActive(true);
                         btn.SetText(links[i].text);
@@ -135,9 +147,12 @@ public class StoryPlayer : MonoBehaviour
                 }
                 
                 while (!string.IsNullOrWhiteSpace(lastContent))
+                {
                     yield return null;
-                
+                }
+                    
                 nextButton.gameObject.SetActive(false);
+                prevButton.gameObject.SetActive(false);
                 choiceButtons.ForEach(btn => btn.gameObject.SetActive(false));
             }
 

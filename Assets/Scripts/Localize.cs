@@ -10,6 +10,9 @@ public class Localize : MonoBehaviour
     {
         id = id.ToLower();
         UpdateText();
+#if UNITY_EDITOR
+        UnityEditor.EditorUtility.SetDirty(gameObject);
+#endif
     }
 
     private void OnDisable()

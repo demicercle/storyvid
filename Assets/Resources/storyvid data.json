@@ -18,6 +18,12 @@
       "text_es": null,
       "text_de": null
     },
+    "previous": {
+      "text_fr": "Précédent",
+      "text_en": "Previous",
+      "text_es": null,
+      "text_de": null
+    },
     "return": {
       "text_fr": "Retour",
       "text_en": "Previous",
@@ -50,6 +56,7 @@
     }
   },
   "links": [],
+  "musics": {},
   "episode1": {
     "video01": {
       "video_file": "video 1",
