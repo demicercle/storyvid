@@ -47,6 +47,8 @@ public class StoryPlayer : MonoBehaviour
         videoPlayer.clip = Resources.Load<VideoClip>("Videos/" + file) as VideoClip;
         videoPlayer.time = 0;
         videoPlayer.Play();
+
+        StartCoroutine("Play");
     }
 
     public void StopVideo()
@@ -58,8 +60,8 @@ public class StoryPlayer : MonoBehaviour
             videoPlayer.clip = null;
         }
         
-        displayContent = lastContent = string.Empty;
         charIndex = 0;
+        displayContent = lastContent = string.Empty;
         nextButton.gameObject.SetActive(false);
         choiceButtons.ForEach(btn => btn.gameObject.SetActive(false));
         isPlaying = false;
@@ -96,15 +98,10 @@ public class StoryPlayer : MonoBehaviour
         });
     }
 
-    IEnumerator Start()
+    IEnumerator Play()
     {
-        while (true)
+        while (isPlaying)
         {
-            while (!isPlaying)
-            {
-                yield return null;
-            }
-            
             fader.Fade0();
             while (fader.isFading)
                 yield return null;
@@ -148,12 +145,10 @@ public class StoryPlayer : MonoBehaviour
             while (fader.isFading)
                 yield return null;
 
-            isPlaying = false;
-            videoPlayer.Stop();
-            storyComplete?.Invoke();
-            
-            yield return null;
+            StopVideo();
         }
+        
+        storyComplete?.Invoke();
     }
 
     private void LateUpdate()
