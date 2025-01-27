@@ -9,23 +9,33 @@ using Newtonsoft.Json.Linq;
 
 public class GameManager : MonoBehaviour
 {
+    static public GameManager instance { get; private set; }
+    
     public enum Panels
     {
         Home,
         SelectEpisode,
         SelectVideo,
-        PlayVideo
+        PlayVideo,
+        Options
     }
 
     public StoryPlayer storyPlayer;
     public int currentPanel;
     public GameObject[] panels;
 
-    public string language = "fr";
+    public string language { get; private set; }
+
+   static public System.Action onLanguageChanged;
+    public void SetLanguage(string key)
+    {
+        language = key;
+        onLanguageChanged?.Invoke();
+    }
     
     public UnityEngine.UI.Button playButton;
     public UnityEngine.UI.Button quitButton;
-
+    
     public TextAsset jsonAsset;
     public Newtonsoft.Json.Linq.JObject jsonData;
     public List<VideoLink> allLinks;
@@ -58,14 +68,20 @@ public class GameManager : MonoBehaviour
     public void PlayVideo(int episode, string videoID)
     {
         var content = GetVideoContent(episode, videoID);
+        storyPlayer.lines.Clear();
         storyPlayer.lines.AddRange(content.Split('\n'));
         storyPlayer.links = GetLinks(episode, videoID);
         storyPlayer.episode = episode;
         storyPlayer.nextVideo = GetNextVideoID(episode, videoID);
         storyPlayer.PlayVideo(GetVideoFile(episode, videoID));
-        storyPlayer.isPlaying = true;
         storyPlayer.UnlockPath(episode, videoID);
         SetCurrentPanel(Panels.PlayVideo);
+    }
+
+    public void StopVideo()
+    {
+        storyPlayer.StopVideo();
+        SetCurrentPanel((int)Panels.SelectVideo);
     }
 
     public bool GetImageForVideo(out Texture texture, int episode, string videoID = null)
@@ -133,7 +149,17 @@ public class GameManager : MonoBehaviour
 
     public string GetLocalizedText(string key)
     {
-        return ((jsonData["interface"] as JObject)[key] as JObject)["text_" + language].ToString();
+        var jo = (jsonData["interface"] as JObject);
+        if (!jo.ContainsKey(key))
+        {
+            Debug.LogError("localize key not found: " + key);
+        }
+        jo = jo[key] as JObject;
+        if (!jo.ContainsKey("text_" + language))
+        {
+            Debug.LogError("localized language " + language + " not found in key: " + key);
+        }
+        return jo["text_" + language].ToString();
     }
 
     public JObject GetVideoData(int episode, string videoID)
@@ -179,7 +205,8 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
-        Localize.LoadLines();
+        instance = this;
+        language = "fr";
         
         ParseJson();
         

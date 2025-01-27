@@ -2,37 +2,49 @@
   "interface": {
     "play": {
       "text_fr": "Jouer",
-      "text_en": null,
+      "text_en": "Play",
       "text_es": null,
       "text_de": null
     },
     "quit": {
       "text_fr": "Quitter",
-      "text_en": null,
+      "text_en": "Quit",
       "text_es": null,
       "text_de": null
     },
     "next": {
       "text_fr": "Suivant",
-      "text_en": null,
+      "text_en": "Next",
       "text_es": null,
       "text_de": null
     },
     "return": {
       "text_fr": "Retour",
-      "text_en": null,
+      "text_en": "Previous",
       "text_es": null,
       "text_de": null
     },
     "continue": {
       "text_fr": "Continuer",
-      "text_en": null,
+      "text_en": "Continue",
       "text_es": null,
       "text_de": null
     },
     "options": {
       "text_fr": "Paramètres",
-      "text_en": null,
+      "text_en": "Options",
+      "text_es": null,
+      "text_de": null
+    },
+    "language": {
+      "text_fr": "Langue",
+      "text_en": "Language",
+      "text_es": null,
+      "text_de": null
+    },
+    "back": {
+      "text_fr": "Retour",
+      "text_en": "Back",
       "text_es": null,
       "text_de": null
     }
@@ -43,7 +55,7 @@
       "video_file": "video 1",
       "image_file": "video 1",
       "script_fr": "Il y a des jours qu’on n'oublie jamais. Ce 15 février 2089. Ce couloir long, froid, la lumière clignotante au-dessus de ma tête. Pas de bruit. Juste le son de mes pas. \r\nLes affaires étaient de moins en moins nombreuses, ces derniers temps. Ce n’était plus le chaos des dernières années, quand tout s’effondrait autour de nous. Non, désormais, c’étaient des disparitions, des ombres fugaces qu’on nous donnait à élucider. Des vies qui s'éteignaient sans raison apparente.\r\nJe me souviens avoir fait une pause devant la porte de la salle d’interrogatoire. Juste pour sentir l’air, pour me préparer, et puis je suis entré. Elle était là. Xian.",
-      "script_en": null,
+      "script_en": "There are days you never forget. That February 15, 2089. That long, cold hallway, the light flashing above my head. No noise. Just the sound of my footsteps.\nThe cases had been fewer and fewer, lately. It was no longer the chaos of the last few years, when everything was falling apart around us. No, now, they were disappearances, fleeting shadows that we were given to solve. Lives that were extinguished for no apparent reason.\nI remember pausing in front of the door of the interrogation room. Just to smell the air, to prepare myself, and then I went in. She was there. Xian.",
       "script_es": null,
       "script_de": null
     },
@@ -51,7 +63,7 @@
       "video_file": "video 2",
       "image_file": "video 2",
       "script_fr": "Xian… Ses cheveux, longs, en cascade, se fondaient dans l’obscurité de la pièce. Son visage était pâle, presque irréel : ses pommettes hautes, ses yeux… verts. Comme une mer d'émeraude. Ils semblaient voir à travers tout, au-delà des apparences. De moi, de tout. Elle n'avait pas demandé d'avocat.\r\nLa salle d’interrogatoire était froide, austère, presque clinique et la lumière blanche qui en émanait rendait tout encore plus oppressant. Une table métallique, trop grande se dressait entre nous. Des chaises en acier, rigides, semblaient plus là pour punir que pour accueillir. \r\nEt ça démarrait mal : les gens extrêmement beaux et sophistiqués ont tendance à jouer à pile ou face constamment : pile le charme, face la froideur. Xian jouait à ce jeu avec une aisance déconcertante. Un regard, un sourire mesuré, et l’atmosphère autour d’elle semblait se densifier. \r\nPourquoi n’avait-elle pas demandé d’avocat ? Pourquoi semblait-elle aussi calme face à cette situation qui aurait pu anéantir n’importe qui d’autre ? Chaque mouvement, chaque geste semblait calculé. Mais il y avait quelque chose de plus que ça. Un secret, un mystère qu’elle portait comme une malédiction. Quelque chose qu'elle refusait de livrer, même sous la pression.",
-      "script_en": null,
+      "script_en": "Xian… Her hair, long and cascading, blended into the darkness of the room. Her face was pale, almost unreal: her high cheekbones, her eyes… green. Like a sea of ​​emeralds. They seemed to see through everything, beyond appearances. Of me, of everything. She hadn’t asked for a lawyer.\nThe interrogation room was cold, austere, almost clinical, and the white light that emanated from it made everything even more oppressive. A metal table, too large, stood between us. Rigid steel chairs seemed there more to punish than to welcome.\nAnd it was starting badly: extremely beautiful and sophisticated people tend to play a game of heads or tails constantly: heads charm, tails coldness. Xian played this game with disconcerting ease. A look, a measured smile, and the atmosphere around her seemed to thicken.\nWhy hadn’t she asked for a lawyer? Why did she seem so calm in the face of this situation who could have destroyed anyone else? Every move, every gesture seemed calculated. But there was something more than that. A secret, a mystery that she carried like a curse. Something she refused to give up, even under pressure.",
       "script_es": null,
       "script_de": null
     },
@@ -59,7 +71,7 @@
       "video_file": "video 3",
       "image_file": "video 3",
       "script_fr": "Xian en train de danser, c’est la première image qui m’est venue, la première idée. C’est ça, un interrogatoire : une danse. Un ballet étrange où chaque mot a son poids, où chaque silence est chargé de secrets. Une chorégraphie d’évasion, de manipulation. Et moi, au centre, contraint de suivre le rythme et les règles de l’accusée, si je veux la pousser à avouer.",
-      "script_en": null,
+      "script_en": "Xian dancing, that’s the first image that came to me, the first idea. That’s what an interrogation is: a dance. A strange ballet where each word has its weight, where each silence is loaded with secrets. A choreography of escape, of manipulation. And me, in the center, forced to follow the rhythm and the rules of the accused, if I want to push her to confess.",
       "script_es": null,
       "script_de": null
     },
@@ -67,7 +79,7 @@
       "video_file": "video 4",
       "image_file": "video 4",
       "script_fr": "Les premiers mots qu’elle a dits, presque pour tester ma réactivité, c’est qu’il n’avait pas plu depuis 460 jours. Pourquoi me livrer cette information, à moi ? Pourquoi cette précision, comme si elle cherchait à m’orienter vers quelque chose que je n’arrivais pas encore à saisir ?\r\nJe lui ai fait remarquer que son nom revenait fréquemment dans des affaires de disparitions, et là, un sourire a traversé son visage, un sourire net, précis, presque tranchant. Elle devait savoir que mes soupçons n’étaient pas encore assez solides pour justifier son accusation.",
-      "script_en": null,
+      "script_en": "The first words she said, almost to test my reactivity, were that it hadn't rained for 460 days. Why give me this information? Why this precision, as if she was trying to direct me towards something that I couldn't yet grasp?\nI pointed out to her that her name came up frequently in cases of disappearances, and then a smile crossed her face, a clear, precise, almost cutting smile. She must have known that my suspicions were not yet solid enough to justify her accusation.",
       "script_es": null,
       "script_de": null
     },
@@ -75,7 +87,7 @@
       "video_file": "video 5",
       "image_file": "video 5",
       "script_fr": "J’ai commencé l’interrogatoire en lui faisant remarquer qu’après chacune de ses réceptions, un invité disparaissait. Puis, elle a éclaté de rire. Un rire léger, presque trop insouciant, trop calme, trop facile, comme si tout cela n’avait aucune importance. Elle a ensuite ajouté que peut-être elle était simplement ennuyeuse. Je n’ai pas pu m’empêcher de réagir. Je lui ai répondu, sans trop y réfléchir, que je ne pensais pas qu’elle était ennuyeuse.\r\nElle m’a regardé, et l’expression dans ses yeux a changé. Elle m’a défié et m’a demandé si je la flattais.",
-      "script_en": null,
+      "script_en": "I began the interrogation by pointing out that after each of her receptions, a guest disappeared. Then she burst out laughing. A light laugh, almost too carefree, too calm, too easy, as if none of this mattered. She then added that maybe she was just boring. I couldn't help but react. I answered her, without thinking too much, that I didn't think she was boring.\nShe looked at me, and the expression in her eyes changed. She challenged me and asked me if I was flattering her.",
       "script_es": null,
       "script_de": null
     },
@@ -83,7 +95,7 @@
       "video_file": "video 6",
       "image_file": "video 6",
       "script_fr": "J’ai continué mon travail : \"Et le mardi 27 janvier, où étiez-vous ?\" Sa réponse m’a semblé calme, presque amusée. Elle m’a dit qu’elle était chez elle, seule. Elle semblait presque me défier, suggérant que vouloir être seule ne devrait pas être vu comme un crime. L’appartement,  surement un cube de verre et d’acier, suspendu dans le vide au sommet d’une mégatour grise, perdue dans un ciel perpétuellement couvert. Le sol est glacé sous les pieds, un béton poli qui amplifie l’écho de chaque mouvement. Chaque détail respire une froideur calculée, une vie où le passé semble figé et le futur inexistant. Un silence oppressant règne, interrompu parfois par le bourdonnement d’un drone de surveillance qui passe lentement devant les baies vitrées, comme pour s'assurer que l’habitante de cet espace sans chaleur est toujours sous contrôle.",
-      "script_en": null,
+      "script_en": "I continued my work: “And on Tuesday, January 27, where were you?” Her answer seemed calm to me, almost amused. She told me she was at home, alone. She seemed almost to challenge me, suggesting that wanting to be alone should not be seen as a crime. The apartment, surely a cube of glass and steel, suspended in the void at the top of a gray megatower, lost in a perpetually overcast sky. The floor is icy underfoot, polished concrete that amplifies the echo of every movement. Every detail breathes a calculated coldness, a life where the past seems frozen and the future nonexistent. An oppressive silence reigns, interrupted sometimes by the buzzing of a surveillance drone that passes slowly in front of the bay windows, as if to ensure that the inhabitant of this heatless space is always under control.",
       "script_es": null,
       "script_de": null
     },
@@ -91,7 +103,7 @@
       "video_file": "video 7",
       "image_file": "video 7",
       "script_fr": "Elle jouait avec moi. J’ai tenté de la déstabiliser, de l’amener à m’expliquer les disparitions en chaîne, en évoquant des témoins qui l’avaient vue dans des quartiers sombres de la ville. \r\nCette ville, que certains pourraient décrire comme un lieu calme avec des avenues gigantesques qui s’étendent à perte de vue, des parcs recouverts de jeunes peupliers, de pins et de chênes, et enfin des petites rues éclairées par des braseros. Mais moi, je ne vois que ce froid intense, où tout semble mort : les rues sans lumières, les monuments d’une autre époque, et les tours d’habitation aux fenêtres minuscules, conçues pour empêcher la faible chaleur des logements de s’échapper. \r\nJe me souviens de mon enfance avant que le froid ne s’installe, cette époque où la vie semblait simple. J’allais souvent avec mes frères au bord de la mer. Nous jouions dans le sable, insouciants. Puis, un jour, le froid est tombé, brutalement, comme une ombre qui engloutit tout sur son passage. Il n’a pas seulement refroidi l’air, il a gelé les cœurs et les esprits.\r\nAvec ce froid, sont venus des comportements extrêmes, comme si chacun luttait pour survivre dans une réalité devenue hostile. Les enfants que nous étions ont grandi trop vite, perdant peu à peu l’étincelle de l’innocence. Nous sommes devenus des adultes sans espoir.\r\nL’agressivité a remplacé les rires et les discussions. Elle est devenue le seul langage commun.  \r\nEt dans ce monde froid depuis plus de 35ans, elle, Xian dans sa voiture de luxe, à l’affût d’un peu de chaleur humaine, son visage se reflétant sur la vitre de son véhicule, avançant silencieusement comme une créature de glace sur sa proie.",
-      "script_en": null,
+      "script_en": "She played with me. I tried to destabilize her, to get her to explain the chain of disappearances, by mentioning witnesses who had seen her in dark neighborhoods of the city.\nThis city, which some might describe as a calm place with gigantic avenues that stretch as far as the eye can see, parks covered with young poplars, pines and oaks, and finally small streets lit by braziers. But I only see this intense cold, where everything seems dead: the streets without lights, the monuments of another era, and the apartment towers with tiny windows, designed to prevent the weak heat of the homes from escaping.\nI remember my childhood before the cold set in, that time when life seemed simple. I often went with my brothers to the seaside. We played in the sand, carefree. Then, one day, the cold fell, brutally, like a shadow that swallows everything in its passage. It didn't just chill the air, it froze hearts and minds.\nWith this cold, came extreme behaviors, as if everyone was struggling to survive in a reality that had become hostile. The children we were grew up too fast, gradually losing the spark of innocence. We became hopeless adults.\nAggression replaced laughter and discussions. It became the only common language.\nAnd in this cold world for more than 35 years, she, Xian in her luxury car, on the lookout for a little human warmth, her face reflected on the window of her vehicle, advancing silently like an ice creature on its prey.",
       "script_es": null,
       "script_de": null
     },
@@ -99,7 +111,7 @@
       "video_file": "video 8",
       "image_file": "video 8",
       "script_fr": "Je lui ai posé la question, concernant monsieur Echo Draiven, le dernier disparu, après leur rencontre. J’ai espéré une réaction, quelque chose, un geste, un mouvement dans ses yeux, une faille qui aurait trahi sa froideur. Mais non, encore une fois, elle n’a pas nié, elle m’a confirmé leur rencontre. Et a insisté encore une fois pour que je reste immobile sur ma chaise, peut-être un levier pour la déstabiliser ?\r\nElle m’a même parlé de monsieur Echo Draiven d’une manière hautaine, le décrivant comme un homme charmant et fragile, avec un bon goût. J’ai insisté : plus aucune empreinte génétique, aucun capteur de présence, ni la moindre trace dans les vidéos d’enregistrement de Monsieur Echo Draiven après sa visite chez elle. Et son regard, toujours insondable.",
-      "script_en": null,
+      "script_en": "I asked her about Mr. Echo Draiven, the last one to disappear, after their meeting. I hoped for a reaction, something, a gesture, a movement in her eyes, a flaw that would have betrayed her coldness. But no, once again, she didn't deny it, she confirmed their meeting. And insisted once again that I stay still on my chair, perhaps a lever to destabilize her?\nShe even spoke to me about Mr. Echo Draiven in a haughty way, describing him as a charming and fragile man, with good taste. I insisted: no more genetic fingerprints, no presence sensors, nor the slightest trace in the recording videos of Mr. Echo Draiven after his visit to her home. And his gaze, always unfathomable.",
       "script_es": null,
       "script_de": null
     },
@@ -107,7 +119,7 @@
       "video_file": "video 9",
       "image_file": "video 9",
       "script_fr": "Xian est-elle un ange ou un démon ? J’ai un instant pensé qu’elle pouvait être une malade mentale qui dévorait ses convives, Comme toutes ces sectes apparues avec le froid. Chacune d’elles se distinguait par ses accoutrements particuliers, des tenues étranges qui semblaient refléter leur vision du monde : des robes sombres et austères pour les unes, des ornements extravagants et presque grotesques pour les autres. Elles se présentaient comme des guides, des sauveurs, prétendant détenir des vérités absolues dans ce chaos glacial.\r\nElles nous répétaient inlassablement que nous devions abandonner ce qui faisait de nous des êtres rationnels : ne plus nous soigner, comme si le corps devait se plier à la volonté d’une force supérieure, et ne plus nous éduquer, comme si la connaissance elle-même était une menace. Tout devait passer par elles. Leur message était clair : il fallait écouter aveuglément leurs paroles, obéir à leurs règles absurdes et ne jamais, au grand jamais, remettre quoi que ce soit en question.\r\nCe qui était le plus terrifiant, c’était leur pouvoir d’attraction. Face au froid, au désespoir, et à la perte de repères, beaucoup ont cédé. Ils se sont raccrochés à ces doctrines, aussi irrationnelles soient-elles, parce qu’elles offraient l’illusion d’une certitude dans un monde où plus rien n’avait de sens. Et ainsi, ces sectes se sont multipliées, nourries par la peur et l’ignorance, tissant leur toile sur des sociétés déjà fragilisées, imposant le silence et l’obéissance là où régnait autrefois la liberté de penser. Seules les guerres qui ont suivi les ont fait disparaître.\r\nMais elle jouait avec moi. Ses mots étaient des pièges, des détours pour m’égarer, m’interrogeant à son tour sur mes secrets enfouis ou plus profonds de mon être.",
-      "script_en": null,
+      "script_en": "Is Xian an angel or a demon? I thought for a moment that she could be a mental patient who devoured her guests, like all these sects that appeared with the cold. Each of them was distinguished by their particular accoutrements, strange outfits that seemed to reflect their vision of the world: dark and austere dresses for some, extravagant and almost grotesque ornaments for others. They presented themselves as guides, saviors, claiming to hold absolute truths in this icy chaos. They tirelessly repeated to us that we had to abandon what made us rational beings: no longer heal ourselves, as if the body had to bend to the will of a higher force, and no longer educate ourselves, as if knowledge itself were a threat. Everything had to go through them. Their message was clear: we had to listen blindly to their words, obey their absurd rules and never, ever, put anything back that it was in question.\nWhat was most terrifying was their power of attraction. Faced with the cold, the despair, and the loss of bearings, many gave in. They clung to these doctrines, however irrational they were, because they offered the illusion of certainty in a world where nothing made sense anymore. And so, these sects multiplied, fueled by fear and ignorance, weaving their web over already weakened societies, imposing silence and obedience where freedom of thought once reigned. Only the wars that followed made them disappear.\nBut she was playing with me. Her words were traps, detours to lead me astray, questioning me in turn about my buried secrets or the deeper parts of my being.",
       "script_es": null,
       "script_de": null
     },

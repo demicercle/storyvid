@@ -610,6 +610,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 994258103919708567, guid: bffa449f7f5fd4bf389d811254e10131, type: 3}
+      propertyPath: id
+      value: continue
+      objectReference: {fileID: 0}
+    - target: {fileID: 994258103919708567, guid: bffa449f7f5fd4bf389d811254e10131, type: 3}
       propertyPath: lineIndex
       value: 3
       objectReference: {fileID: 0}
@@ -619,7 +623,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1692032589356184742, guid: bffa449f7f5fd4bf389d811254e10131, type: 3}
       propertyPath: m_text
-      value: Continuer
+      value: continue
       objectReference: {fileID: 0}
     - target: {fileID: 1692032589356184742, guid: bffa449f7f5fd4bf389d811254e10131, type: 3}
       propertyPath: m_fontSize
@@ -776,7 +780,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1692032589356184742, guid: bffa449f7f5fd4bf389d811254e10131, type: 3}
       propertyPath: m_text
-      value: Jouer
+      value: play
       objectReference: {fileID: 0}
     - target: {fileID: 1692032589356184742, guid: bffa449f7f5fd4bf389d811254e10131, type: 3}
       propertyPath: m_fontSize

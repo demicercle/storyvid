@@ -16,7 +16,7 @@ public class StoryPlayer : MonoBehaviour
     public UnityEngine.UI.Button nextButton;
     public List<CustomButton> choiceButtons;
 
-    public bool isPlaying;
+    public bool isPlaying { get; private set; }
 
     public System.Action storyComplete;
 
@@ -42,9 +42,27 @@ public class StoryPlayer : MonoBehaviour
             videoPlayer.Stop();
             Resources.UnloadAsset(videoPlayer.clip);
         }
-            
+
+        isPlaying = true;
         videoPlayer.clip = Resources.Load<VideoClip>("Videos/" + file) as VideoClip;
+        videoPlayer.time = 0;
         videoPlayer.Play();
+    }
+
+    public void StopVideo()
+    {
+        if (videoPlayer.isPlaying)
+        {
+            videoPlayer.Stop();
+            Resources.UnloadAsset(videoPlayer.clip);
+            videoPlayer.clip = null;
+        }
+        
+        displayContent = lastContent = string.Empty;
+        charIndex = 0;
+        nextButton.gameObject.SetActive(false);
+        choiceButtons.ForEach(btn => btn.gameObject.SetActive(false));
+        isPlaying = false;
     }
 
     public GameManager gameManager;
@@ -83,7 +101,9 @@ public class StoryPlayer : MonoBehaviour
         while (true)
         {
             while (!isPlaying)
+            {
                 yield return null;
+            }
             
             fader.Fade0();
             while (fader.isFading)

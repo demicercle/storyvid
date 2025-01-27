@@ -1,41 +1,34 @@
 using System;
+using TMPro;
 using UnityEngine;
 
 public class Localize : MonoBehaviour
 {
-    static private string[] lines;
-
-    static public void LoadLines()
-    {
-        var textAsset = Resources.Load<TextAsset>("dialog");
-        if (textAsset != null)
-            lines = textAsset.text.Split('\n');
-    }
-    
-    static public string GetLine(int index)
-    {
-        if (lines == null)
-            LoadLines();
-        
-        if (lines != null && index >= 0 && index < lines.Length)
-            return lines[index];
-        else
-            return string.Empty;
-    }
-
-    public int lineIndex;
+    public string id;
 
     private void OnDrawGizmosSelected()
     {
-        Awake();
+        id = id.ToLower();
+        UpdateText();
     }
 
-    private void Awake()
+    private void OnDisable()
+    {
+        GameManager.onLanguageChanged -= UpdateText;
+    }
+
+    private void OnEnable()
+    {
+        UpdateText();
+        GameManager.onLanguageChanged += UpdateText;
+    }
+
+    private void UpdateText()
     {
         var textComponent = GetComponent<TMPro.TMP_Text>();
         if (textComponent != null)
         {
-            textComponent.text = GetLine(lineIndex);
+            textComponent.text = Application.isPlaying ? GameManager.instance.GetLocalizedText(id) : id;
         }
     }
 }
