@@ -98,7 +98,7 @@ public class StoryPlayer : MonoBehaviour
             {
                 displayContent = lastContent = string.Empty;
                 nextVideo = ((VideoLink)userData).videoTo;
-                choiceButtons.ForEach(btn => btn.gameObject.SetActive(false));
+                lineIndex = lines.Count;
             };
         });
     }
@@ -131,11 +131,15 @@ public class StoryPlayer : MonoBehaviour
                     charIndex++;
                     yield return Input.GetMouseButton(0) ? null : new WaitForSeconds(textDelay);
                 }
-                
-                nextButton.gameObject.SetActive(lineIndex < lines.Count);
-                prevButton.gameObject.SetActive(lineIndex > 0);
 
-                if (lineIndex + 1 >= lines.Count)
+                var firstLine = lineIndex == 0;
+                var lastLine = lineIndex + 1 >= lines.Count;
+                var hasLinks = links.Count > 0;
+                
+                nextButton.gameObject.SetActive(!lastLine || !hasLinks);
+                prevButton.gameObject.SetActive(!firstLine);
+
+                if (lastLine && hasLinks)
                 {
                     for (int i = 0; i < links.Count; i++)
                     {

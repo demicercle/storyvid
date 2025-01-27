@@ -55,7 +55,24 @@
       "text_de": null
     }
   },
-  "links": [],
+  "links": [
+    {
+      "episode": 1,
+      "video_from": "video02",
+      "video_to": "video03",
+      "text_fr": "Me concentrer, la voir danser",
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 1,
+      "video_from": "video02",
+      "video_to": "video04",
+      "text_fr": "elle risque quoi ?",
+      "text_es": null,
+      "text_de": null
+    }
+  ],
   "musics": {},
   "episode1": {
     "video01": {
