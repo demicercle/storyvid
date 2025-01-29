@@ -16,6 +16,7 @@ public class StoryPlayer : MonoBehaviour
     public UnityEngine.UI.Button nextButton;
     public UnityEngine.UI.Button prevButton;
     public List<CustomButton> choiceButtons;
+    public AudioSource musicAudioSource;
 
     public bool isPlaying { get; private set; }
 
@@ -23,8 +24,21 @@ public class StoryPlayer : MonoBehaviour
 
     public List<string> lines = new List<string>();
     public List<VideoLink> links = new List<VideoLink>();
+    
     public int episode;
     public string nextVideo;
+    public string musicFile;
+    
+    //public GameManager gameManager;
+    
+    private string lastContent;
+    private string displayContent;
+    private int charIndex;
+    private int lineIndex;
+    private int choiceCount;
+    private List<string> knots;
+    private int selectChoice = -1;
+    private bool isFadingMusic;
     
     public bool IsPathUnlocked(int episode, string videoID)
     {
@@ -64,15 +78,15 @@ public class StoryPlayer : MonoBehaviour
         isPlaying = false;
     }
 
-    public GameManager gameManager;
-    
-    private string lastContent;
-    private string displayContent;
-    private int charIndex;
-    private int lineIndex;
-    private int choiceCount;
-    private List<string> knots;
-    private int selectChoice = -1;
+    public void StopMusic()
+    {
+        if (musicAudioSource.isPlaying)
+        {
+            musicAudioSource.Stop();
+            musicAudioSource.clip = null;
+            musicAudioSource.time = 0;
+        }
+    }
 
     private void Awake()
     {
@@ -111,6 +125,16 @@ public class StoryPlayer : MonoBehaviour
         nextButton.gameObject.SetActive(false);
         prevButton.gameObject.SetActive(false);
         choiceButtons.ForEach(btn => btn.gameObject.SetActive(false));
+
+        if (!string.IsNullOrEmpty(musicFile))
+        {
+            var newClip = Resources.Load<AudioClip>("Music/" + musicFile);
+            if (newClip != musicAudioSource.clip)
+            {
+                musicAudioSource.clip = newClip;
+                musicAudioSource.Play();
+            }
+        }
         
         while (isPlaying)
         {

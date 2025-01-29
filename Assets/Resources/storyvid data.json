@@ -73,7 +73,13 @@
       "text_de": null
     }
   ],
-  "musics": {},
+  "musics": [
+    {
+      "episode": 1,
+      "video": "video01",
+      "music": "awakening"
+    }
+  ],
   "episode1": {
     "video01": {
       "video_file": "video 1",

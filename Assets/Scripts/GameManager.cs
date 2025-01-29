@@ -6,6 +6,7 @@ using Ink.UnityIntegration;
 using UnityEngine;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using UnityEngine.Serialization;
 
 public class GameManager : MonoBehaviour
 {
@@ -38,7 +39,8 @@ public class GameManager : MonoBehaviour
     
     public TextAsset jsonAsset;
     public Newtonsoft.Json.Linq.JObject jsonData;
-    public List<VideoLink> allLinks;
+    public List<VideoLink> videoLinks;
+    public List<MusicLink> musicLinks;
     
     private void OnDrawGizmosSelected()
     {
@@ -73,6 +75,7 @@ public class GameManager : MonoBehaviour
         storyPlayer.links = GetLinks(episode, videoID);
         storyPlayer.episode = episode;
         storyPlayer.nextVideo = GetNextVideoID(episode, videoID);
+        storyPlayer.musicFile = GetMusicFile(episode, videoID);
         storyPlayer.PlayVideo(GetVideoFile(episode, videoID));
         storyPlayer.UnlockPath(episode, videoID);
         SetCurrentPanel(Panels.PlayVideo);
@@ -81,7 +84,13 @@ public class GameManager : MonoBehaviour
     public void StopVideo()
     {
         storyPlayer.StopVideo();
+        storyPlayer.StopMusic();
         SetCurrentPanel((int)Panels.SelectVideo);
+    }
+
+    public string GetMusicFile(int episode, string videoID)
+    {
+        return musicLinks.FirstOrDefault(m => m.episode == episode && m.videoFrom == videoID).musicFile;
     }
 
     public bool GetImageForVideo(out Texture texture, int episode, string videoID = null)
@@ -122,7 +131,7 @@ public class GameManager : MonoBehaviour
 
     private void ParseLinks()
     {
-        allLinks.Clear();
+        videoLinks.Clear();
         
         var linksData = jsonData["links"] as JArray;
         foreach (var data in linksData)
@@ -132,7 +141,22 @@ public class GameManager : MonoBehaviour
             link.videoFrom = data["video_from"].ToString();
             link.videoTo = data["video_to"].ToString();
             link.text = data["text_" + language].ToString();
-            allLinks.Add(link);
+            videoLinks.Add(link);
+        }
+    }
+
+    private void ParseMusics()
+    {
+        musicLinks.Clear();
+
+        var musicsData = jsonData["musics"] as JArray;
+        foreach (var data in musicsData)
+        {
+            var music = new MusicLink();
+            music.episode = int.Parse(data["episode"].ToString());
+            music.videoFrom = data["video"].ToString();
+            music.musicFile = data["music"].ToString();
+            musicLinks.Add(music);
         }
     }
     
@@ -142,9 +166,7 @@ public class GameManager : MonoBehaviour
         Debug.Log("ParseJson:" + jsonAsset.text);
         jsonData = JsonConvert.DeserializeObject<Newtonsoft.Json.Linq.JObject>(jsonAsset.text);
         ParseLinks();
-        Debug.Log(GetLocalizedText("play"));
-        Debug.Log(GetVideoContent(1, "video01"));
-        Debug.Log(string.Join(",", GetVideoIDs(1)));
+        ParseMusics();
     }
 
     public string GetLocalizedText(string key)
@@ -200,7 +222,7 @@ public class GameManager : MonoBehaviour
 
     public List<VideoLink> GetLinks(int episode, string videoFrom)
     {
-        return allLinks.Where(link => link.episode == episode && link.videoFrom == videoFrom).ToList();
+        return videoLinks.Where(link => link.episode == episode && link.videoFrom == videoFrom).ToList();
     }
 
     private void Awake()
