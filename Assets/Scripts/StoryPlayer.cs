@@ -151,19 +151,22 @@ public class StoryPlayer : MonoBehaviour
 
                 var firstLine = lineIndex == 0;
                 var lastLine = lineIndex + 1 >= lines.Count;
-                var hasLinks = links.Count > 0;
+                var hasLinks = links.Count > 1;
                 
                 nextButton.gameObject.SetActive(!lastLine || !hasLinks);
                 prevButton.gameObject.SetActive(!firstLine);
 
                 if (lastLine && hasLinks)
                 {
-                    for (int i = 0; i < links.Count; i++)
+                    if (links.Count > 1)
                     {
-                        var btn = choiceButtons[i];
-                        btn.gameObject.SetActive(true);
-                        btn.SetText(links[i].text);
-                        btn.userData = links[i];
+                        for (int i = 0; i < links.Count; i++)
+                        {
+                            var btn = choiceButtons[i];
+                            btn.gameObject.SetActive(true);
+                            btn.SetText(links[i].text);
+                            btn.userData = links[i];
+                        }
                     }
                 }
                 

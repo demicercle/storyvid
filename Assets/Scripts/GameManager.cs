@@ -73,8 +73,15 @@ public class GameManager : MonoBehaviour
         storyPlayer.lines.Clear();
         storyPlayer.lines.AddRange(content.Split('\n'));
         storyPlayer.links = GetLinks(episode, videoID);
+        if (storyPlayer.links.Count == 1 && string.IsNullOrWhiteSpace(storyPlayer.links.First().text))
+        {
+            storyPlayer.nextVideo = storyPlayer.links[0].videoTo;
+        }
+        else
+        {
+            storyPlayer.nextVideo = string.Empty;
+        }
         storyPlayer.episode = episode;
-        storyPlayer.nextVideo = GetNextVideoID(episode, videoID);
         storyPlayer.musicFile = GetMusicFile(episode, videoID);
         storyPlayer.PlayVideo(GetVideoFile(episode, videoID));
         storyPlayer.UnlockPath(episode, videoID);
@@ -116,17 +123,6 @@ public class GameManager : MonoBehaviour
         }
 
         return keys.ToArray();
-    }
-
-    public string GetNextVideoID(int episode, string videoID)
-    {
-        var videoIDs = GetVideoIDs(episode).ToList();
-        var videoIndex = videoIDs.IndexOf(videoID);
-        videoIndex += 1;
-        if (videoIndex < videoIDs.Count)
-            return videoIDs[videoIndex];
-        else
-            return string.Empty;
     }
 
     private void ParseLinks()
@@ -242,7 +238,7 @@ public class GameManager : MonoBehaviour
             }
             else
             {
-                SetCurrentPanel(Panels.SelectVideo);
+                StopVideo();
             }
         };
         
