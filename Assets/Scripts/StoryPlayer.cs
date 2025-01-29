@@ -16,8 +16,7 @@ public class StoryPlayer : MonoBehaviour
     public UnityEngine.UI.Button nextButton;
     public UnityEngine.UI.Button prevButton;
     public List<CustomButton> choiceButtons;
-    public AudioSource musicAudioSource;
-
+    
     public bool isPlaying { get; private set; }
 
     public System.Action storyComplete;
@@ -80,12 +79,7 @@ public class StoryPlayer : MonoBehaviour
 
     public void StopMusic()
     {
-        if (musicAudioSource.isPlaying)
-        {
-            musicAudioSource.Stop();
-            musicAudioSource.clip = null;
-            musicAudioSource.time = 0;
-        }
+        MusicPlayer.StopMusic();
     }
 
     private void Awake()
@@ -128,12 +122,11 @@ public class StoryPlayer : MonoBehaviour
 
         if (!string.IsNullOrEmpty(musicFile))
         {
-            var newClip = Resources.Load<AudioClip>("Music/" + musicFile);
-            if (newClip != musicAudioSource.clip)
-            {
-                musicAudioSource.clip = newClip;
-                musicAudioSource.Play();
-            }
+            MusicPlayer.PlayMusic(musicFile);
+        }
+        else
+        {
+            MusicPlayer.StopMusic();
         }
         
         while (isPlaying)
