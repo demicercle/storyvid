@@ -1,12 +1,8 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using Ink.UnityIntegration;
 using UnityEngine;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using UnityEngine.Serialization;
 
 public class GameManager : MonoBehaviour
 {
