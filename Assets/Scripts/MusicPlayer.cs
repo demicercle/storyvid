@@ -14,6 +14,11 @@ public class MusicPlayer : MonoBehaviour
             Debug.LogError("Unknown music file: " + file);
             return;
         }
+
+        if (lastMusic != null && lastMusic.audioClip == audioClip)
+        {
+            return;
+        }
         
         StopMusic();
         lastMusic = new GameObject("MusicPlayer (" + file + ")").AddComponent<MusicPlayer>();
