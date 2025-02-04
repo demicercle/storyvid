@@ -4338,7 +4338,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1a704ea3c8ec4c11b4dcff5ae699caa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textDelay: 0.1
+  textDelay: 0.02
   videoPlayer: {fileID: 1701982731}
   fader: {fileID: 1680581302}
   uiText: {fileID: 1471730882}
@@ -4347,13 +4347,11 @@ MonoBehaviour:
   choiceButtons:
   - {fileID: 138890421}
   - {fileID: 1297634398}
-  musicAudioSource: {fileID: 519420033}
   lines: []
   links: []
   episode: 0
   nextVideo: 
   musicFile: 
-  gameManager: {fileID: 0}
 --- !u!1001 &727395925
 PrefabInstance:
   m_ObjectHideFlags: 0
