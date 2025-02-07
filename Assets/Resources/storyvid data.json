@@ -53,6 +53,12 @@
       "text_en": "Back",
       "text_es": null,
       "text_de": null
+    },
+    "resolution": {
+      "text_fr": "Resolution",
+      "text_en": "Resolution",
+      "text_es": null,
+      "text_de": null
     }
   },
   "links": [
@@ -85,6 +91,14 @@
       "video_from": "video02",
       "video_to": "video04",
       "text_fr": "elle risque quoi ?",
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 1,
+      "video_from": "video05",
+      "video_to": "video06",
+      "text_fr": null,
       "text_es": null,
       "text_de": null
     },
@@ -203,13 +217,48 @@
       "episode": 1,
       "video": "video02",
       "music": "awakening"
+    },
+    {
+      "episode": 1,
+      "video": "video03",
+      "music": "awakening"
+    },
+    {
+      "episode": 1,
+      "video": "video04",
+      "music": "awakening"
+    },
+    {
+      "episode": 1,
+      "video": "video05",
+      "music": "awakening"
+    },
+    {
+      "episode": 1,
+      "video": "video06",
+      "music": "awakening"
+    },
+    {
+      "episode": 1,
+      "video": "video07",
+      "music": "awakening"
+    },
+    {
+      "episode": 1,
+      "video": "video08",
+      "music": "awakening"
+    },
+    {
+      "episode": 1,
+      "video": "video09",
+      "music": "awakening"
     }
   ],
   "episode1": {
     "video01": {
       "video_file": "video 1",
       "image_file": "video 1",
-      "script_fr": "Des couloirs long froid, la lumière clignotante au-dessus de ma tête. Pas de bruit. Juste le son de mes pas. j’ai envie de tout casser…\r\nIl y a des jours qu’on n'oublie jamais. Ce jour froid de 2089 je ne vais pas l’oublier. \r\nLes affaires sont de moins nombreuses, ces derniers temps. Ce n’était plus le chaos des dernières années, quand tout s’effondrait autour de nous. Non, c’est des disparitions, des ombres qu’on nous donne à élucider. Des vies qui disparaissent sans raison.\r\nJe ne fais pas de pause devant la porte de la salle d'interrogatoire. Pas juste un instant pour sentir l'air, pour me préparer, je suis entré. Elle est là. Xian.",
+      "script_fr": "Des couloirs long froid, la lumière clignotante au-dessus de ma tête. \r\nPas de bruit. Juste le son de mes pas. \r\nj’ai envie de tout casser…\r\nIl y a des jours qu’on n'oublie jamais. Ce jour froid de 2089 je ne vais pas l’oublier. \r\nLes affaires sont de moins nombreuses, ces derniers temps. Ce n’était plus le chaos des dernières années, quand tout s’effondrait autour de nous. \r\nNon, c’est des disparitions, des ombres qu’on nous donne à élucider. Des vies qui disparaissent sans raison.\r\nJe ne fais pas de pause devant la porte de la salle d'interrogatoire. Pas juste un instant pour sentir l'air, pour me préparer, je rentre. Xian est là..",
       "script_en": "There are days you never forget. That February 15, 2089. That long, cold hallway, the light flashing above my head. No noise. Just the sound of my footsteps.\nThe cases had been fewer and fewer, lately. It was no longer the chaos of the last few years, when everything was falling apart around us. No, now, they were disappearances, fleeting shadows that we were given to solve. Lives that were extinguished for no apparent reason.\nI remember pausing in front of the door of the interrogation room. Just to smell the air, to prepare myself, and then I went in. She was there. Xian.",
       "script_es": null,
       "script_de": null
@@ -217,7 +266,7 @@
     "video02": {
       "video_file": "video 2",
       "image_file": "video 2",
-      "script_fr": "Xian… Ses cheveux, longs, en cascade, se fondent dans l’obscurité de la pièce. Son visage est pâle, presque irréel : ses pommettes hautes, ses yeux… verts. Comme une mer d'émeraude. Ils semblent voir à travers tout, au-delà des apparences. De moi, de tout. \nElle ne demande pas d'avocat. Je ne vais pas faire comme d’habitude, je vais contrôler ma violence. Je n’ai pas le choix, ni même l’envie. \nLa salle d’interrogatoire est froide, austère, presque clinique, et la lumière blanche qui en émane rend tout encore plus oppressant. Une table métallique, trop grande, se dresse entre nous. Des chaises en acier, rigides, semblent plus là pour punir que pour accueillir.\nEt ça démarre mal : les gens extrêmement beaux et sophistiqués ont tendance à jouer à pile ou face constamment : pile le charme, face la froideur. Xian joue à ce jeu avec une aisance déconcertante. Un regard, un sourire mesuré, et l’atmosphère autour d’elle semble se densifier.\nPourquoi ne demande-t-elle pas d’avocat ? Pourquoi semble-t-elle aussi calme face à cette situation qui pourrait anéantir n’importe qui d’autre ? Chaque mouvement, chaque geste semble calculé. \nMais il y a quelque chose de plus que ça. Un secret, un mystère qu’elle porte comme une malédiction. Quelque chose qu'elle refuse de livrer, même sous la pression.\nLa salle d’interrogatoire était froide, austère, presque clinique et la lumière blanche qui en émanait rendait tout encore plus oppressant. Une table métallique, trop grande se dressait entre nous. Des chaises en acier, rigides, semblaient plus là pour punir que pour accueillir. \nEt ça démarrait mal : les gens extrêmement beaux et sophistiqués ont tendance à jouer à pile ou face constamment : pile le charme, face la froideur. Xian jouait à ce jeu avec une aisance déconcertante. Un regard, un sourire mesuré, et l’atmosphère autour d’elle semblait se densifier. \nPourquoi n’avait-elle pas demandé d’avocat ? Pourquoi semblait-elle aussi calme face à cette situation qui aurait pu anéantir n’importe qui d’autre ? Chaque mouvement, chaque geste semblait calculé. Mais il y avait quelque chose de plus que ça. Un secret, un mystère qu’elle portait comme une malédiction. Quelque chose qu'elle refusait de livrer, même sous la pression.",
+      "script_fr": "Xian… Ses cheveux, longs, en cascade, se fondent dans l’obscurité de la pièce. \r\nSon visage est pâle, presque irréel : ses pommettes hautes, ses yeux… verts. Comme une mer d'émeraude. \r\nIls semblent voir à travers tout, au-delà des apparences. De moi, de tout. \r\nEt ça démarre mal : les gens extrêmement beaux et sophistiqués ont tendance à jouer à pile ou face constamment : pile le charme, face la froideur. Xian joue à ce jeu avec une aisance déconcertante. \r\nUn regard, un sourire mesuré, et l’atmosphère autour d’elle semble se densifier.\r\nPourquoi ne demande-t-elle pas d’avocat ? Pourquoi semble-t-elle aussi calme face à cette situation qui pourrait anéantir n’importe qui d’autre ? \r\nChaque mouvement, chaque geste semble calculé. \r\nMais il y a quelque chose de plus que ça. Un secret, un mystère qu’elle porte comme une malédiction. \r\nQuelque chose qu'elle refuse de livrer, même sous la pression.",
       "script_en": "Xian… Her hair, long and cascading, blended into the darkness of the room. Her face was pale, almost unreal: her high cheekbones, her eyes… green. Like a sea of ​​emeralds. They seemed to see through everything, beyond appearances. Of me, of everything. She hadn’t asked for a lawyer.\nThe interrogation room was cold, austere, almost clinical, and the white light that emanated from it made everything even more oppressive. A metal table, too large, stood between us. Rigid steel chairs seemed there more to punish than to welcome.\nAnd it was starting badly: extremely beautiful and sophisticated people tend to play a game of heads or tails constantly: heads charm, tails coldness. Xian played this game with disconcerting ease. A look, a measured smile, and the atmosphere around her seemed to thicken.\nWhy hadn’t she asked for a lawyer? Why did she seem so calm in the face of this situation who could have destroyed anyone else? Every move, every gesture seemed calculated. But there was something more than that. A secret, a mystery that she carried like a curse. Something she refused to give up, even under pressure.",
       "script_es": null,
       "script_de": null
@@ -233,7 +282,7 @@
     "video04": {
       "video_file": "video 4",
       "image_file": "video 4",
-      "script_fr": "Elle va finir, 15ans, dans une cellule de béton brut au plafond bas, couvert de moisissures. Le sol, fait de pierres glacé.  \nLa folie arrive d’abord en éclats, dans de petits gestes absurdes, des regards fuyants, des murmures. Puis elle se déploie dans les recoins de l’esprit. Parfois, elle va se surprendre à parler seule, juste pour entendre des mots sortir de sa bouche. Ses se perdent dans des boucles sans fin.\nLa réalité elle-même se déchire sous le poids du froid et du temps. \nPuis un rire, un rire sans joie, un rire qui n’a ni cause ni raison. Elle va se demander si elle n’a pas perdu sa raison, si elle est encore là, dans ce corps, à attendre quelque chose. \nMais la folie s’insinue à nouveau, plus douce, plus douce encore, jusqu’à ce qu’il n’y ait plus rien d’autre que le froid.",
+      "script_fr": "Elle va finir là, 15 ans, enfermée entre quatre murs de béton brut. \nUne cellule exiguë où le plafond bas suinte d’humidité, recouvert de moisissures sombres qui s’étendent comme des veines pourrissantes. \nL’air est lourd, saturé d’une odeur stagnante, un mélange de pierre froide et de solitude.\nLe sol, lui, est une étendue de pierres glacées, rugueuses sous la peau, volées à la chaleur du monde extérieur.\nChaque pas y résonne, creux, étouffé, avalé par l’espace clos. \nIci, le silence est pesant, oppressant, seulement troublé par le goutte-à-goutte lointain d’une fuite invisible ou par le grattement furtif d’un rat en quête de miettes.\nLa folie ne vient pas d’un coup. \nElle s’insinue doucement, comme un venin subtil. \nAu début, ce ne sont que des éclats : un mouvement de main inutile, un frisson d’agitation, un regard qui fuit sans raison, des murmures à peine audibles. \nDes gestes absurdes, presque anodins. Puis, peu à peu, elle grandit, elle s’étale dans les recoins de l’esprit, grignote la raison morceau par morceau.\nParfois, elle se surprend à parler à voix haute. \nQuelques mots, pour combler le vide, pour s’assurer qu’elle existe encore. \nLe son de sa propre voix est étrange, presque étranger. \nIl résonne contre les murs et revient à elle, comme un écho lointain d’une autre vie, d’un autre monde.\nPuis la réalité elle-même commence à se fissurer sous le poids du froid et du temps. Tout devient flou. \nLe béton semble bouger dans l’ombre, les ombres murmurent des choses qu’elle ne comprend pas. \nSes souvenirs s’effilochent, se dérobent sous ses doigts. \nA-t-elle toujours été ici ? \nY a-t-il eu quelque chose avant ?\nEt puis vient le rire.\nUn rire sans joie, vide, insensé. \nIl s’échappe de sa gorge sans qu’elle ne sache pourquoi, un son sec, tranchant, étranglé. \nUn rire qui n’a ni cause, ni raison. \nIl résonne un instant, puis s’éteint, avalé par le silence.\nAlors, elle se demande. Est-ce qu’elle est encore là, quelque part sous cette peau glacée ? \nEst-ce qu’elle attend encore quelque chose ? \nOu est-ce que tout cela n’a plus de sens ?\nMais la folie revient, plus douce cette fois. \nElle caresse, elle rassure, elle berce. \nPlus de questions, plus d’attente. \nJuste le froid. \nLe froid, et plus rien d’autre.",
       "script_en": "The first words she said, almost to test my reactivity, were that it hadn't rained for 460 days. Why give me this information? Why this precision, as if she was trying to direct me towards something that I couldn't yet grasp?\nI pointed out to her that her name came up frequently in cases of disappearances, and then a smile crossed her face, a clear, precise, almost cutting smile. She must have known that my suspicions were not yet solid enough to justify her accusation.",
       "script_es": null,
       "script_de": null

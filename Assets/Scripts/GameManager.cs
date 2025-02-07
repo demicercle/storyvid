@@ -18,7 +18,6 @@ public class GameManager : MonoBehaviour
     }
 
     public StoryPlayer storyPlayer;
-    public int currentPanel;
     public GameObject[] panels;
 
     public string language { get; private set; }
@@ -38,19 +37,23 @@ public class GameManager : MonoBehaviour
     public List<VideoLink> videoLinks;
     public List<MusicLink> musicLinks;
     
-    private void OnDrawGizmosSelected()
+    public int currentPanel { get; private set; }
+
+  /*  private void OnDrawGizmosSelected()
     {
         UpdatePanels();
-    }
+    }*/
 
     public void SetCurrentPanel(Panels panel)
     {
         currentPanel = (int)panel;
+        UpdatePanels();
     }
 
     public void SetCurrentPanel(int panel)
     {
         currentPanel = panel;
+        UpdatePanels();
     }
 
     public string GetVideoID(int video)
@@ -250,10 +253,7 @@ public class GameManager : MonoBehaviour
             #endif
             Application.Quit();
         });
-    }
-
-    private void Update()
-    {
+        
         UpdatePanels();
     }
 
