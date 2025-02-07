@@ -20,13 +20,12 @@ public class Fader : MonoBehaviour
     public bool isFading => currentAlpha != targetAlpha;
 
     private Image imageComponent;
-    private float currentAlpha;
-    private float targetAlpha;
+    private float currentAlpha = 1f;
+    private float targetAlpha = 1f;
 
     private void Awake()
     {
         imageComponent = GetComponent<Image>();
-        currentAlpha = targetAlpha = 1.0f;
     }
 
     void Update()

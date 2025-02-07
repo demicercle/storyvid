@@ -111,6 +111,8 @@ public class StoryPlayer : MonoBehaviour
 
     IEnumerator Play()
     {
+        Debug.Log(this + " Play");
+        
         lineIndex = 0;
         charIndex = 0;
         displayContent = lastContent = string.Empty;
@@ -130,6 +132,7 @@ public class StoryPlayer : MonoBehaviour
         while (isPlaying)
         {
             fader.Fade0();
+            
             while (fader.isFading)
                 yield return null;
             
