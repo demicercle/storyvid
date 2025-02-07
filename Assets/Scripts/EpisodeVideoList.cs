@@ -11,11 +11,10 @@ public class EpisodeVideoList : MonoBehaviour
     public Button episodeButton;
     
     private List<EpisodeVideoElement> videoElements;
-    private GameManager gameManager;
+    private GameManager gameManager => GameManager.instance;
 
     private void Awake()
     {
-        gameManager = FindObjectOfType<GameManager>();
 
         videoElements = new List<EpisodeVideoElement>();
         videoElements.AddRange(GetComponentsInChildren<EpisodeVideoElement>());

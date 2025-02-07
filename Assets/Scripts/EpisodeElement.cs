@@ -12,12 +12,11 @@ public class EpisodeElement : MonoBehaviour
     public Button continueButton;
     public RawImage imageContainer;
     
-    private GameManager gameManager;
+    private GameManager gameManager => GameManager.instance;
     private Texture pathImage;
     
     private void Awake()
     {
-        gameManager = FindObjectOfType<GameManager>();
         header.text = "Episode " + episodeIndex;
         playButton.onClick.AddListener(() =>
         {

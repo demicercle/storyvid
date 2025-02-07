@@ -9,7 +9,7 @@ public class EpisodeVideoElement : MonoBehaviour
     public string videoID;
     public int episode;
 
-    private GameManager gameManager;
+    private GameManager gameManager => GameManager.instance;
     private Texture pathImage;
 
     public void UpdateImage()
@@ -20,8 +20,6 @@ public class EpisodeVideoElement : MonoBehaviour
     
     private void Awake()
     {
-        gameManager = FindObjectOfType<GameManager>();
-        
         button.onClick.AddListener(() =>
         {
             gameManager.PlayVideo(episode, videoID);
