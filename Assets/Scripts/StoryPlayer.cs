@@ -2,7 +2,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Ink.Runtime;
 using UnityEngine.Video;
 using System.Linq;
 
@@ -36,7 +35,6 @@ public class StoryPlayer : MonoBehaviour
     private int lineIndex;
     private int choiceCount;
     private List<string> knots;
-    private int selectChoice = -1;
     private bool isFadingMusic;
     
     public bool IsPathUnlocked(int episode, string videoID)
