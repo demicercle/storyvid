@@ -18,11 +18,13 @@ public class EpisodeElement : MonoBehaviour
     private void Awake()
     {
         header.text = "Episode " + episodeIndex;
-        playButton.onClick.AddListener(() =>
+        if (playButton != null)
+            playButton.onClick.AddListener(() =>
         {
             gameManager.PlayEpisode(episodeIndex);
         });
-        continueButton.onClick.AddListener(() =>
+        if (continueButton != null)
+            continueButton.onClick.AddListener(() =>
         {
             gameManager.SetCurrentPanel(GameManager.Panels.SelectVideo);
         });

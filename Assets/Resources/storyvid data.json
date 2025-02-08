@@ -59,6 +59,12 @@
       "text_en": "Resolution",
       "text_es": null,
       "text_de": null
+    },
+    "gallery": {
+      "text_fr": "Galerie",
+      "text_en": "Gallery",
+      "text_es": null,
+      "text_de": null
     }
   },
   "links": [
@@ -211,54 +217,54 @@
     {
       "episode": 1,
       "video": "video01",
-      "music": "awakening"
+      "music": "audiov1"
     },
     {
       "episode": 1,
       "video": "video02",
-      "music": "awakening"
+      "music": "audiov1"
     },
     {
       "episode": 1,
       "video": "video03",
-      "music": "awakening"
+      "music": "audiov1"
     },
     {
       "episode": 1,
       "video": "video04",
-      "music": "awakening"
+      "music": "audiov1"
     },
     {
       "episode": 1,
       "video": "video05",
-      "music": "awakening"
+      "music": "audiov1"
     },
     {
       "episode": 1,
       "video": "video06",
-      "music": "awakening"
+      "music": "audiov1"
     },
     {
       "episode": 1,
       "video": "video07",
-      "music": "awakening"
+      "music": "audiov1"
     },
     {
       "episode": 1,
       "video": "video08",
-      "music": "awakening"
+      "music": "audiov1"
     },
     {
       "episode": 1,
       "video": "video09",
-      "music": "awakening"
+      "music": "audiov1"
     }
   ],
   "episode1": {
     "video01": {
       "video_file": "video 1",
       "image_file": "video 1",
-      "script_fr": "Des couloirs long froid, la lumière clignotante au-dessus de ma tête. \r\nPas de bruit. Juste le son de mes pas. \r\nj’ai envie de tout casser…\r\nIl y a des jours qu’on n'oublie jamais. Ce jour froid de 2089 je ne vais pas l’oublier. \r\nLes affaires sont de moins nombreuses, ces derniers temps. Ce n’était plus le chaos des dernières années, quand tout s’effondrait autour de nous. \r\nNon, c’est des disparitions, des ombres qu’on nous donne à élucider. Des vies qui disparaissent sans raison.\r\nJe ne fais pas de pause devant la porte de la salle d'interrogatoire. Pas juste un instant pour sentir l'air, pour me préparer, je rentre. Xian est là..",
+      "script_fr": "Des couloirs long froid, la lumière clignotante au-dessus de ma tête. \nPas de bruit. Juste le son de mes pas. \n@500j’ai envie de tout casser…\nIl y a des jours qu’on n'oublie jamais. Ce jour froid de 2089 je ne vais pas l’oublier. \nLes affaires sont de moins nombreuses, ces derniers temps. Ce n’était plus le chaos des dernières années, quand tout s’effondrait autour de nous. \n@100 Non, c’est des disparitions, des ombres qu’on nous donne à élucider. Des vies qui disparaissent sans raison.\nJe ne fais pas de pause devant la porte de la salle d'interrogatoire. Pas juste un instant pour sentir l'air, pour me préparer, je rentre. Xian est là..",
       "script_en": "There are days you never forget. That February 15, 2089. That long, cold hallway, the light flashing above my head. No noise. Just the sound of my footsteps.\nThe cases had been fewer and fewer, lately. It was no longer the chaos of the last few years, when everything was falling apart around us. No, now, they were disappearances, fleeting shadows that we were given to solve. Lives that were extinguished for no apparent reason.\nI remember pausing in front of the door of the interrogation room. Just to smell the air, to prepare myself, and then I went in. She was there. Xian.",
       "script_es": null,
       "script_de": null
