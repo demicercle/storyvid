@@ -4,6 +4,12 @@ using UnityEditor;
 
 public static class EditorTools 
 {
+    [MenuItem("Tools/Clear PlayerPrefs")]
+    static public void ClearPlayerPrefs()
+    {
+        PlayerPrefs.DeleteAll();
+    }
+    
     [MenuItem("Tools/Save Selected Assets Thumbnails")]
     static public void SaveSelectedAssetsThumbnails()
     {
