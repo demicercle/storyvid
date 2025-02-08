@@ -38,6 +38,7 @@ public class GameManager : MonoBehaviour
     public List<MusicLink> musicLinks;
     
     public int currentPanel { get; private set; }
+    public int previousPanel { get; private set; }
 
   /*  private void OnDrawGizmosSelected()
     {
@@ -46,8 +47,14 @@ public class GameManager : MonoBehaviour
 
     public void SetCurrentPanel(Panels panel)
     {
+        previousPanel = currentPanel;
         currentPanel = (int)panel;
         UpdatePanels();
+    }
+
+    public void SetPreviousPanel()
+    {
+        SetCurrentPanel(previousPanel);
     }
 
     public void SetCurrentPanel(int panel)
@@ -91,7 +98,7 @@ public class GameManager : MonoBehaviour
     {
         storyPlayer.StopVideo();
         storyPlayer.StopMusic();
-        SetCurrentPanel((int)Panels.SelectVideo);
+        SetPreviousPanel();
     }
 
     public string GetMusicFile(int episode, string videoID)
