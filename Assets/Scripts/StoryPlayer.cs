@@ -145,9 +145,30 @@ public class StoryPlayer : MonoBehaviour
                     
                 while (charIndex < lastContent.Length)
                 {
-                    displayContent = lastContent.Substring(0, charIndex);
-                    charIndex++;
-                    yield return Input.GetMouseButton(0) ? null : new WaitForSeconds(textDelay);
+                    var ch = lastContent[charIndex];
+                    if (ch == '@')
+                    {
+                        var delayStr = "";
+                        do
+                        {
+                            lastContent = lastContent.Remove(charIndex, 1);
+                            delayStr += lastContent[charIndex];
+                        } while (charIndex < lastContent.Length && lastContent[charIndex] != ' ');
+                        var delay = 0;
+                        if(!int.TryParse(delayStr, out delay))
+                            Debug.LogError("Unable to parse delay " + delayStr + " in content: " + lastContent);
+                        else
+                        {
+                            Debug.Log("Wait: " + delay);
+                            yield return new WaitForSeconds((float)delay / 100f);
+                        }
+                    }
+                    else
+                    {
+                        displayContent = lastContent.Substring(0, charIndex);
+                        charIndex++;
+                        yield return Input.GetMouseButton(0) ? null : new WaitForSeconds(textDelay);
+                    }
                 }
 
                 var firstLine = lineIndex == 0;
