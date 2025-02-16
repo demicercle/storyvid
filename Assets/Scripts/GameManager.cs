@@ -3,6 +3,8 @@ using System.Linq;
 using UnityEngine;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using UnityEngine.Serialization;
+using UnityEngine.Video;
 
 public class GameManager : MonoBehaviour
 {
@@ -19,7 +21,8 @@ public class GameManager : MonoBehaviour
 
     public StoryPlayer storyPlayer;
     public GameObject[] panels;
-
+    [FormerlySerializedAs("menuVideo")] public VideoClip menuVideoClip;
+    
     public string language { get; private set; }
 
    static public System.Action onLanguageChanged;
@@ -38,23 +41,11 @@ public class GameManager : MonoBehaviour
     public List<MusicLink> musicLinks;
     
     public int currentPanel { get; private set; }
-    public int previousPanel { get; private set; }
-
-  /*  private void OnDrawGizmosSelected()
-    {
-        UpdatePanels();
-    }*/
 
     public void SetCurrentPanel(Panels panel)
     {
-        previousPanel = currentPanel;
         currentPanel = (int)panel;
         UpdatePanels();
-    }
-
-    public void SetPreviousPanel()
-    {
-        SetCurrentPanel(previousPanel);
     }
 
     public void SetCurrentPanel(int panel)
@@ -98,7 +89,7 @@ public class GameManager : MonoBehaviour
     {
         storyPlayer.StopVideo();
         storyPlayer.StopMusic();
-        SetPreviousPanel();
+        SetCurrentPanel(Panels.SelectEpisode);
     }
 
     public string GetMusicFile(int episode, string videoID)
@@ -270,6 +261,15 @@ public class GameManager : MonoBehaviour
         for (int i = 0; i < panels.Length; ++i)
         {
             panels[i].SetActive(i == currentPanel);
+        }
+
+        if (currentPanel != (int)Panels.PlayVideo)
+        {
+            if (storyPlayer.videoPlayer.clip != menuVideoClip)
+            {
+                storyPlayer.videoPlayer.clip = menuVideoClip;
+                storyPlayer.videoPlayer.Play();
+            }
         }
     }
 }

@@ -298,14 +298,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 944575931287667541, guid: 43ae04388ab314ff1a4941021523915c, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 180
-      objectReference: {fileID: 0}
-    - target: {fileID: 944575931287667541, guid: 43ae04388ab314ff1a4941021523915c, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 944575931287667541, guid: 43ae04388ab314ff1a4941021523915c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -357,25 +349,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: ChoiceButton (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 1331806208942589041, guid: 43ae04388ab314ff1a4941021523915c, type: 3}
-      propertyPath: m_MinWidth
-      value: 180
-      objectReference: {fileID: 0}
-    - target: {fileID: 1331806208942589041, guid: 43ae04388ab314ff1a4941021523915c, type: 3}
-      propertyPath: m_MinHeight
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 1331806208942589041, guid: 43ae04388ab314ff1a4941021523915c, type: 3}
-      propertyPath: m_FlexibleWidth
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1331806208942589041, guid: 43ae04388ab314ff1a4941021523915c, type: 3}
-      propertyPath: m_PreferredWidth
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1331806208942589041, guid: 43ae04388ab314ff1a4941021523915c, type: 3}
-      propertyPath: m_PreferredHeight
-      value: -1
+    - target: {fileID: 1692032589356184742, guid: 43ae04388ab314ff1a4941021523915c, type: 3}
+      propertyPath: m_text
+      value: choice
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -582,6 +558,7 @@ MonoBehaviour:
   - {fileID: 2118609775}
   - {fileID: 1823762689}
   - {fileID: 589892149}
+  menuVideoClip: {fileID: 32900000, guid: bddd27f21cd374d46b50e63505d4077c, type: 3}
   playButton: {fileID: 579927319}
   quitButton: {fileID: 1871781604}
   jsonAsset: {fileID: 4900000, guid: 89a09af8c62ad4dda8bd13a654f87a78, type: 3}
@@ -7771,14 +7748,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 944575931287667541, guid: 43ae04388ab314ff1a4941021523915c, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 180
-      objectReference: {fileID: 0}
-    - target: {fileID: 944575931287667541, guid: 43ae04388ab314ff1a4941021523915c, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 944575931287667541, guid: 43ae04388ab314ff1a4941021523915c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -7829,26 +7798,6 @@ PrefabInstance:
     - target: {fileID: 996918097673778544, guid: 43ae04388ab314ff1a4941021523915c, type: 3}
       propertyPath: m_Name
       value: ChoiceButton (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1331806208942589041, guid: 43ae04388ab314ff1a4941021523915c, type: 3}
-      propertyPath: m_MinWidth
-      value: 180
-      objectReference: {fileID: 0}
-    - target: {fileID: 1331806208942589041, guid: 43ae04388ab314ff1a4941021523915c, type: 3}
-      propertyPath: m_MinHeight
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 1331806208942589041, guid: 43ae04388ab314ff1a4941021523915c, type: 3}
-      propertyPath: m_FlexibleWidth
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1331806208942589041, guid: 43ae04388ab314ff1a4941021523915c, type: 3}
-      propertyPath: m_PreferredWidth
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1331806208942589041, guid: 43ae04388ab314ff1a4941021523915c, type: 3}
-      propertyPath: m_PreferredHeight
-      value: -1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
