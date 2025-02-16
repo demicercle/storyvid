@@ -134,6 +134,22 @@
     },
     {
       "episode": 1,
+      "video_from": "video09",
+      "video_to": "video10",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 1,
+      "video_from": "video10",
+      "video_to": "video11",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 1,
       "video_from": "video11",
       "video_to": "video12",
       "text_fr": "mes blessures",
@@ -158,6 +174,30 @@
     },
     {
       "episode": 1,
+      "video_from": "video13",
+      "video_to": "video14",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 1,
+      "video_from": "video14",
+      "video_to": "video15",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 1,
+      "video_from": "video15",
+      "video_to": "video16",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 1,
       "video_from": "video16",
       "video_to": "video17",
       "text_fr": "Penser à ma femme et ne pas me lever ?",
@@ -168,7 +208,7 @@
       "episode": 1,
       "video_from": "video16",
       "video_to": "video18",
-      "text_fr": "devenir violant ?(",
+      "text_fr": "devenir violant ?",
       "text_es": null,
       "text_de": null
     },
@@ -176,6 +216,30 @@
       "episode": 1,
       "video_from": "video17",
       "video_to": "video19",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 1,
+      "video_from": "video18",
+      "video_to": "video19",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 1,
+      "video_from": "video19",
+      "video_to": "video20",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 1,
+      "video_from": "video20",
+      "video_to": "video21",
       "text_fr": null,
       "text_es": null,
       "text_de": null
@@ -199,6 +263,14 @@
     {
       "episode": 1,
       "video_from": "video22",
+      "video_to": "video23",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 1,
+      "video_from": "video23",
       "video_to": "video24",
       "text_fr": null,
       "text_es": null,
@@ -206,7 +278,775 @@
     },
     {
       "episode": 1,
-      "video_from": null,
+      "video_from": "video25",
+      "video_to": "video26",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 1,
+      "video_from": "video26",
+      "video_to": "video27",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 1,
+      "video_from": "video27",
+      "video_to": "video28",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 1,
+      "video_from": "video28",
+      "video_to": null,
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 2,
+      "video_from": "video29",
+      "video_to": "video30",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 2,
+      "video_from": "video30",
+      "video_to": "video31",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 2,
+      "video_from": "video31",
+      "video_to": "video32",
+      "text_fr": "Connaître l'aménagement du bunker",
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 2,
+      "video_from": "video31",
+      "video_to": "video33",
+      "text_fr": "continuer",
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 2,
+      "video_from": "video32",
+      "video_to": "video33",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 2,
+      "video_from": "video33",
+      "video_to": "video34",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 2,
+      "video_from": "video34",
+      "video_to": "video35",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 2,
+      "video_from": "video35",
+      "video_to": "video36",
+      "text_fr": "Connaître le passé de Oiu",
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 2,
+      "video_from": "video35",
+      "video_to": "video37",
+      "text_fr": "continuer",
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 2,
+      "video_from": "video36",
+      "video_to": "video37",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 2,
+      "video_from": "video37",
+      "video_to": "video38",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 2,
+      "video_from": "video38",
+      "video_to": "video39",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 2,
+      "video_from": "video39",
+      "video_to": "video40",
+      "text_fr": "la beauté de la nature",
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 2,
+      "video_from": "video39",
+      "video_to": "video41",
+      "text_fr": "continuer",
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 2,
+      "video_from": "video40",
+      "video_to": "video40",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 2,
+      "video_from": "video41",
+      "video_to": "video42",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 2,
+      "video_from": "video42",
+      "video_to": "video43",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 2,
+      "video_from": "video43",
+      "video_to": "video44",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 2,
+      "video_from": "video44",
+      "video_to": "video45",
+      "text_fr": "mon passé",
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 2,
+      "video_from": "video44",
+      "video_to": "video46",
+      "text_fr": "continuer",
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 2,
+      "video_from": "video45",
+      "video_to": "video46",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 2,
+      "video_from": "video46",
+      "video_to": "video47",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 2,
+      "video_from": "video47",
+      "video_to": "video48",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 2,
+      "video_from": "video48",
+      "video_to": "video49",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 2,
+      "video_from": "video49",
+      "video_to": "video50",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 2,
+      "video_from": "video50",
+      "video_to": "video51",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 2,
+      "video_from": "video51",
+      "video_to": "video52",
+      "text_fr": "Connaître le passé de Kaik",
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 2,
+      "video_from": "video51",
+      "video_to": "video53",
+      "text_fr": "continuer",
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 2,
+      "video_from": "video52",
+      "video_to": "video52",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 2,
+      "video_from": "video53",
+      "video_to": null,
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 3,
+      "video_from": "video54",
+      "video_to": "video55",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 3,
+      "video_from": "video55",
+      "video_to": "video56",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 3,
+      "video_from": "video56",
+      "video_to": "video57",
+      "text_fr": "connaitre le passé de Lyra Shade",
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 3,
+      "video_from": "video56",
+      "video_to": "video58",
+      "text_fr": "continuer",
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 3,
+      "video_from": "video57",
+      "video_to": "video58",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 3,
+      "video_from": "video58",
+      "video_to": "video59",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 3,
+      "video_from": "video59",
+      "video_to": "video60",
+      "text_fr": "connaitre le passé l’homme du bureaux",
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 3,
+      "video_from": "video59",
+      "video_to": "video61",
+      "text_fr": "continuer",
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 3,
+      "video_from": "video60",
+      "video_to": "video61",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 3,
+      "video_from": "video61",
+      "video_to": "video62",
+      "text_fr": "connaitre le passé de la surveillante",
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 3,
+      "video_from": "video61",
+      "video_to": "video63",
+      "text_fr": "continuer",
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 3,
+      "video_from": "video62",
+      "video_to": "video63",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 3,
+      "video_from": "video63",
+      "video_to": "video64",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 3,
+      "video_from": "video64",
+      "video_to": "video65",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 3,
+      "video_from": "video65",
+      "video_to": "video66",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 3,
+      "video_from": "video66",
+      "video_to": "video67",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 3,
+      "video_from": "video67",
+      "video_to": "video68",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 3,
+      "video_from": "video68",
+      "video_to": "video69",
+      "text_fr": "connaitre le système politique",
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 3,
+      "video_from": "video68",
+      "video_to": "video70",
+      "text_fr": "continuer",
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 3,
+      "video_from": "video69",
+      "video_to": "video70",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 3,
+      "video_from": "video70",
+      "video_to": "video71",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 3,
+      "video_from": "video71",
+      "video_to": "video72",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 3,
+      "video_from": "video72",
+      "video_to": "video73",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 3,
+      "video_from": "video73",
+      "video_to": "video74",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 3,
+      "video_from": "video74",
+      "video_to": "video75",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 3,
+      "video_from": "video75",
+      "video_to": "video76",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 3,
+      "video_from": "video76",
+      "video_to": "video77",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 3,
+      "video_from": "video77",
+      "video_to": "video78",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 3,
+      "video_from": "video78",
+      "video_to": "video79",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 3,
+      "video_from": "video79",
+      "video_to": null,
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video80",
+      "video_to": "video81",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video81",
+      "video_to": "video82",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video82",
+      "video_to": "video83",
+      "text_fr": "Le monde depuis 2089",
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video82",
+      "video_to": "video84",
+      "text_fr": "penser à autre chose",
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video83",
+      "video_to": "video85",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video84",
+      "video_to": "video85",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video85",
+      "video_to": "video86",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video86",
+      "video_to": "video87",
+      "text_fr": "Chercher une grotte où se réfugier",
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video86",
+      "video_to": "video88",
+      "text_fr": "Chercher un arbre où se réfugier",
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video87",
+      "video_to": "video89",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video88",
+      "video_to": "video89",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video89",
+      "video_to": "video90",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video90",
+      "video_to": "video91",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video91",
+      "video_to": "video92",
+      "text_fr": "mes rencontres",
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video91",
+      "video_to": "video93",
+      "text_fr": "continuer",
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video92",
+      "video_to": "video93",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video93",
+      "video_to": "video94",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video94",
+      "video_to": "video95",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video95",
+      "video_to": "video96",
+      "text_fr": "qui est Yuan ?",
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video95",
+      "video_to": "video97",
+      "text_fr": "Elle peut être où ??",
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video96",
+      "video_to": "video98",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video97",
+      "video_to": "video98",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video98",
+      "video_to": "video99",
+      "text_fr": "où va l’avion ?",
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video98",
+      "video_to": "video100",
+      "text_fr": "continuer la mission",
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video99",
+      "video_to": "video100",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video100",
+      "video_to": "video101",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video101",
+      "video_to": "video102",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video102",
+      "video_to": "video103",
+      "text_fr": "il y a quoi dans le colis ?",
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video102",
+      "video_to": "video104",
+      "text_fr": "continuer la mission",
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video103",
+      "video_to": "video104",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video104",
+      "video_to": "video105",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video105",
+      "video_to": "video106",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video106",
       "video_to": null,
       "text_fr": null,
       "text_es": null,
@@ -258,234 +1098,1347 @@
       "episode": 1,
       "video": "video09",
       "music": "audiov1"
+    },
+    {
+      "episode": 1,
+      "video": "video10",
+      "music": "audiov1"
+    },
+    {
+      "episode": 1,
+      "video": "video11",
+      "music": "audiov1"
+    },
+    {
+      "episode": 1,
+      "video": "video12",
+      "music": "audiov1"
+    },
+    {
+      "episode": 1,
+      "video": "video13",
+      "music": "audiov1"
+    },
+    {
+      "episode": 1,
+      "video": "video14",
+      "music": "audiov1"
+    },
+    {
+      "episode": 1,
+      "video": "video15",
+      "music": "audiov1"
+    },
+    {
+      "episode": 1,
+      "video": "video16",
+      "music": "audiov1"
+    },
+    {
+      "episode": 1,
+      "video": "video17",
+      "music": "audiov1"
+    },
+    {
+      "episode": 1,
+      "video": "video18",
+      "music": "audiov1"
+    },
+    {
+      "episode": 1,
+      "video": "video19",
+      "music": "audiov1"
+    },
+    {
+      "episode": 1,
+      "video": "video20",
+      "music": "audiov1"
+    },
+    {
+      "episode": 1,
+      "video": "video21",
+      "music": "audiov1"
+    },
+    {
+      "episode": 1,
+      "video": "video22",
+      "music": "audiov1"
+    },
+    {
+      "episode": 1,
+      "video": "video23",
+      "music": "audiov1"
+    },
+    {
+      "episode": 1,
+      "video": "video24",
+      "music": "audiov1"
+    },
+    {
+      "episode": 1,
+      "video": "video25",
+      "music": "audiov1"
+    },
+    {
+      "episode": 1,
+      "video": "video26",
+      "music": "audiov1"
+    },
+    {
+      "episode": 1,
+      "video": "video27",
+      "music": "audiov1"
+    },
+    {
+      "episode": 1,
+      "video": "video28",
+      "music": "audiov1"
+    },
+    {
+      "episode": 2,
+      "video": "video29",
+      "music": "audiov1"
+    },
+    {
+      "episode": 2,
+      "video": "video30",
+      "music": "audiov1"
+    },
+    {
+      "episode": 2,
+      "video": "video31",
+      "music": "audiov1"
+    },
+    {
+      "episode": 2,
+      "video": "video32",
+      "music": "audiov1"
+    },
+    {
+      "episode": 2,
+      "video": "video33",
+      "music": "audiov1"
+    },
+    {
+      "episode": 2,
+      "video": "video34",
+      "music": "audiov1"
+    },
+    {
+      "episode": 2,
+      "video": "video35",
+      "music": "audiov1"
+    },
+    {
+      "episode": 2,
+      "video": "video36",
+      "music": "audiov1"
+    },
+    {
+      "episode": 2,
+      "video": "video37",
+      "music": "audiov1"
+    },
+    {
+      "episode": 2,
+      "video": "video38",
+      "music": "audiov1"
+    },
+    {
+      "episode": 2,
+      "video": "video39",
+      "music": "audiov1"
+    },
+    {
+      "episode": 2,
+      "video": "video40",
+      "music": "audiov1"
+    },
+    {
+      "episode": 2,
+      "video": "video41",
+      "music": "audiov1"
+    },
+    {
+      "episode": 2,
+      "video": "video42",
+      "music": "audiov1"
+    },
+    {
+      "episode": 2,
+      "video": "video43",
+      "music": "audiov1"
+    },
+    {
+      "episode": 2,
+      "video": "video44",
+      "music": "audiov1"
+    },
+    {
+      "episode": 2,
+      "video": "video45",
+      "music": "audiov1"
+    },
+    {
+      "episode": 2,
+      "video": "video46",
+      "music": "audiov1"
+    },
+    {
+      "episode": 2,
+      "video": "video47",
+      "music": "audiov1"
+    },
+    {
+      "episode": 2,
+      "video": "video48",
+      "music": "audiov1"
+    },
+    {
+      "episode": 2,
+      "video": "video49",
+      "music": "audiov1"
+    },
+    {
+      "episode": 2,
+      "video": "video50",
+      "music": "audiov1"
+    },
+    {
+      "episode": 2,
+      "video": "video51",
+      "music": "audiov1"
+    },
+    {
+      "episode": 2,
+      "video": "video52",
+      "music": "audiov1"
+    },
+    {
+      "episode": 2,
+      "video": "video53",
+      "music": "audiov1"
+    },
+    {
+      "episode": 3,
+      "video": "video54",
+      "music": "audiov1"
+    },
+    {
+      "episode": 3,
+      "video": "video55",
+      "music": "audiov1"
+    },
+    {
+      "episode": 3,
+      "video": "video56",
+      "music": "audiov1"
+    },
+    {
+      "episode": 3,
+      "video": "video57",
+      "music": "audiov1"
+    },
+    {
+      "episode": 3,
+      "video": "video58",
+      "music": "audiov1"
+    },
+    {
+      "episode": 3,
+      "video": "video59",
+      "music": "audiov1"
+    },
+    {
+      "episode": 3,
+      "video": "video60",
+      "music": "audiov1"
+    },
+    {
+      "episode": 3,
+      "video": "video61",
+      "music": "audiov1"
+    },
+    {
+      "episode": 3,
+      "video": "video62",
+      "music": "audiov1"
+    },
+    {
+      "episode": 3,
+      "video": "video63",
+      "music": "audiov1"
+    },
+    {
+      "episode": 3,
+      "video": "video64",
+      "music": "audiov1"
+    },
+    {
+      "episode": 3,
+      "video": "video65",
+      "music": "audiov1"
+    },
+    {
+      "episode": 3,
+      "video": "video66",
+      "music": "audiov1"
+    },
+    {
+      "episode": 3,
+      "video": "video67",
+      "music": "audiov1"
+    },
+    {
+      "episode": 3,
+      "video": "video68",
+      "music": "audiov1"
+    },
+    {
+      "episode": 3,
+      "video": "video69",
+      "music": "audiov1"
+    },
+    {
+      "episode": 3,
+      "video": "video70",
+      "music": "audiov1"
+    },
+    {
+      "episode": 3,
+      "video": "video71",
+      "music": "audiov1"
+    },
+    {
+      "episode": 3,
+      "video": "video72",
+      "music": "audiov1"
+    },
+    {
+      "episode": 3,
+      "video": "video73",
+      "music": "audiov1"
+    },
+    {
+      "episode": 3,
+      "video": "video74",
+      "music": "audiov1"
+    },
+    {
+      "episode": 3,
+      "video": "video75",
+      "music": "audiov1"
+    },
+    {
+      "episode": 3,
+      "video": "video76",
+      "music": "audiov1"
+    },
+    {
+      "episode": 3,
+      "video": "video77",
+      "music": "audiov1"
+    },
+    {
+      "episode": 3,
+      "video": "video78",
+      "music": "audiov1"
+    },
+    {
+      "episode": 3,
+      "video": "video79",
+      "music": "audiov1"
+    },
+    {
+      "episode": 4,
+      "video": "video80",
+      "music": "audiov1"
+    },
+    {
+      "episode": 4,
+      "video": "video81",
+      "music": "audiov1"
+    },
+    {
+      "episode": 4,
+      "video": "video82",
+      "music": "audiov1"
+    },
+    {
+      "episode": 4,
+      "video": "video83",
+      "music": "audiov1"
+    },
+    {
+      "episode": 4,
+      "video": "video84",
+      "music": "audiov1"
+    },
+    {
+      "episode": 4,
+      "video": "video85",
+      "music": "audiov1"
+    },
+    {
+      "episode": 4,
+      "video": "video86",
+      "music": "audiov1"
+    },
+    {
+      "episode": 4,
+      "video": "video87",
+      "music": "audiov1"
+    },
+    {
+      "episode": 4,
+      "video": "video88",
+      "music": "audiov1"
+    },
+    {
+      "episode": 4,
+      "video": "video89",
+      "music": "audiov1"
+    },
+    {
+      "episode": 4,
+      "video": "video90",
+      "music": "audiov1"
+    },
+    {
+      "episode": 4,
+      "video": "video91",
+      "music": "audiov1"
+    },
+    {
+      "episode": 4,
+      "video": "video92",
+      "music": "audiov1"
+    },
+    {
+      "episode": 4,
+      "video": "video93",
+      "music": "audiov1"
+    },
+    {
+      "episode": 4,
+      "video": "video94",
+      "music": "audiov1"
+    },
+    {
+      "episode": 4,
+      "video": "video95",
+      "music": "audiov1"
+    },
+    {
+      "episode": 4,
+      "video": "video96",
+      "music": "audiov1"
+    },
+    {
+      "episode": 4,
+      "video": "video97",
+      "music": "audiov1"
+    },
+    {
+      "episode": 4,
+      "video": "video98",
+      "music": "audiov1"
+    },
+    {
+      "episode": 4,
+      "video": "video99",
+      "music": "audiov1"
+    },
+    {
+      "episode": 4,
+      "video": "video100",
+      "music": "audiov1"
+    },
+    {
+      "episode": 4,
+      "video": "video101",
+      "music": "audiov1"
+    },
+    {
+      "episode": 4,
+      "video": "video102",
+      "music": "audiov1"
+    },
+    {
+      "episode": 4,
+      "video": "video103",
+      "music": "audiov1"
+    },
+    {
+      "episode": 4,
+      "video": "video104",
+      "music": "audiov1"
+    },
+    {
+      "episode": 4,
+      "video": "video105",
+      "music": "audiov1"
+    },
+    {
+      "episode": 4,
+      "video": "video106",
+      "music": "audiov1"
     }
   ],
   "episode1": {
     "video01": {
-      "video_file": "video 1",
-      "image_file": "video 1",
-      "script_fr": "Des couloirs long froid, la lumière clignotante au-dessus de ma tête. \nPas de bruit. Juste le son de mes pas. \n@50 J’ai envie de tout casser…\nIl y a des jours qu’on n'oublie jamais. Ce jour froid de 2089 je ne vais pas l’oublier. \nLes affaires sont de moins nombreuses, ces derniers temps. Ce n’était plus le chaos des dernières années, quand tout s’effondrait autour de nous. \n@100 Non, c’est des disparitions, des ombres qu’on nous donne à élucider. Des vies qui disparaissent sans raison.\nJe ne fais pas de pause devant la porte de la salle d'interrogatoire. Pas juste un instant pour sentir l'air, pour me préparer, je rentre. Xian est là..",
+      "video_file": "video01",
+      "image_file": "video01",
+      "script_fr": "Des couloirs long froid, la lumière clignotante au-dessus de ma tête. \nPas de bruit. Juste le son de mes pas. \nj’ai envie de tout casser…\nIl y a des jours qu’on n'oublie jamais. Ce jour froid de 2089 je ne vais pas l’oublier. \nLes affaires sont moins nombreuses, ces derniers temps. \nCe n’est plus le chaos des dernières années, quand tout s’effondrait autour de nous. \nNon, c’est des disparitions, des ombres qu’on nous donne à élucider. \nDes vies qui disparaissent sans raison.\nJe ne fais pas de pause devant la porte de la salle d'interrogatoire. \nPas juste un instant pour sentir l'air, pour me préparer, je rentre.",
       "script_en": "There are days you never forget. That February 15, 2089. That long, cold hallway, the light flashing above my head. No noise. Just the sound of my footsteps.\nThe cases had been fewer and fewer, lately. It was no longer the chaos of the last few years, when everything was falling apart around us. No, now, they were disappearances, fleeting shadows that we were given to solve. Lives that were extinguished for no apparent reason.\nI remember pausing in front of the door of the interrogation room. Just to smell the air, to prepare myself, and then I went in. She was there. Xian.",
       "script_es": null,
       "script_de": null
     },
     "video02": {
-      "video_file": "video 2",
-      "image_file": "video 2",
-      "script_fr": "Xian… Ses cheveux, longs, en cascade, se fondent dans l’obscurité de la pièce. \r\nSon visage est pâle, presque irréel : ses pommettes hautes, ses yeux… verts. Comme une mer d'émeraude. \r\nIls semblent voir à travers tout, au-delà des apparences. De moi, de tout. \r\nEt ça démarre mal : les gens extrêmement beaux et sophistiqués ont tendance à jouer à pile ou face constamment : pile le charme, face la froideur. Xian joue à ce jeu avec une aisance déconcertante. \r\nUn regard, un sourire mesuré, et l’atmosphère autour d’elle semble se densifier.\r\nPourquoi ne demande-t-elle pas d’avocat ? Pourquoi semble-t-elle aussi calme face à cette situation qui pourrait anéantir n’importe qui d’autre ? \r\nChaque mouvement, chaque geste semble calculé. \r\nMais il y a quelque chose de plus que ça. Un secret, un mystère qu’elle porte comme une malédiction. \r\nQuelque chose qu'elle refuse de livrer, même sous la pression.",
+      "video_file": "video02",
+      "image_file": "video02",
+      "script_fr": "Xian… Son visage est pâle, presque irréel, ses yeux… verts.\r\nIls semblent voir à travers tout, au-delà des apparences. De moi, de tout. \r\nEt ça démarre mal : les gens extrêmement beaux et sophistiqués ont tendance à jouer à pile ou face constamment : pile le charme, face la froideur. Xian joue à ce jeu avec une aisance déconcertante. \r\nUn regard, un sourire mesuré, et l’atmosphère autour d’elle semble se densifier.\r\nPourquoi ne demande-t-elle pas d’avocat ? Pourquoi semble-t-elle aussi calme face à cette situation qui pourrait anéantir n’importe qui d’autre ? \r\nChaque mouvement, chaque geste semble calculé. \r\nMais il y a quelque chose de plus que ça. Un secret, un mystère qu’elle porte comme une malédiction. \r\nQuelque chose qu'elle refuse de livrer, même sous la pression.",
       "script_en": "Xian… Her hair, long and cascading, blended into the darkness of the room. Her face was pale, almost unreal: her high cheekbones, her eyes… green. Like a sea of ​​emeralds. They seemed to see through everything, beyond appearances. Of me, of everything. She hadn’t asked for a lawyer.\nThe interrogation room was cold, austere, almost clinical, and the white light that emanated from it made everything even more oppressive. A metal table, too large, stood between us. Rigid steel chairs seemed there more to punish than to welcome.\nAnd it was starting badly: extremely beautiful and sophisticated people tend to play a game of heads or tails constantly: heads charm, tails coldness. Xian played this game with disconcerting ease. A look, a measured smile, and the atmosphere around her seemed to thicken.\nWhy hadn’t she asked for a lawyer? Why did she seem so calm in the face of this situation who could have destroyed anyone else? Every move, every gesture seemed calculated. But there was something more than that. A secret, a mystery that she carried like a curse. Something she refused to give up, even under pressure.",
       "script_es": null,
       "script_de": null
     },
     "video03": {
-      "video_file": "video 3",
-      "image_file": "video 3",
-      "script_fr": "Le suspect en train de danser m’aide à me concentre. C’est la première image qui me vient, la première idée.\nC’est ça, un interrogatoire : une danse. Un ballet étrange où chaque mot a son poids, où chaque silence est chargé de secrets. \nUne chorégraphie d’évasion, de manipulation. Et moi, au centre, contraint de suivre le rythme et les règles de l’accusée, si je veux la pousser à avouer.",
+      "video_file": "video03",
+      "image_file": "video03",
+      "script_fr": "Elle danse, Le suspect en train de danser m’aide à me concentre. \r\nC’est la première image qui me vient, la première idée.\r\nC’est ça, un interrogatoire : une danse. Un ballet étrange où chaque mot a son poids, où chaque silence est chargé de secrets. \r\nUne chorégraphie d’évasion, de manipulation. \r\nEt moi, au centre, contraint de suivre le rythme et les règles de l’accusée, si je veux la pousser à avouer.",
       "script_en": "Xian dancing, that’s the first image that came to me, the first idea. That’s what an interrogation is: a dance. A strange ballet where each word has its weight, where each silence is loaded with secrets. A choreography of escape, of manipulation. And me, in the center, forced to follow the rhythm and the rules of the accused, if I want to push her to confess.",
       "script_es": null,
       "script_de": null
     },
     "video04": {
-      "video_file": "video 4",
-      "image_file": "video 4",
-      "script_fr": "Elle va finir là, 15 ans, enfermée entre quatre murs de béton brut. \nUne cellule exiguë où le plafond bas suinte d’humidité, recouvert de moisissures sombres qui s’étendent comme des veines pourrissantes. \nL’air est lourd, saturé d’une odeur stagnante, un mélange de pierre froide et de solitude.\nLe sol, lui, est une étendue de pierres glacées, rugueuses sous la peau, volées à la chaleur du monde extérieur.\nChaque pas y résonne, creux, étouffé, avalé par l’espace clos. \nIci, le silence est pesant, oppressant, seulement troublé par le goutte-à-goutte lointain d’une fuite invisible ou par le grattement furtif d’un rat en quête de miettes.\nLa folie ne vient pas d’un coup. \nElle s’insinue doucement, comme un venin subtil. \nAu début, ce ne sont que des éclats : un mouvement de main inutile, un frisson d’agitation, un regard qui fuit sans raison, des murmures à peine audibles. \nDes gestes absurdes, presque anodins. Puis, peu à peu, elle grandit, elle s’étale dans les recoins de l’esprit, grignote la raison morceau par morceau.\nParfois, elle se surprend à parler à voix haute. \nQuelques mots, pour combler le vide, pour s’assurer qu’elle existe encore. \nLe son de sa propre voix est étrange, presque étranger. \nIl résonne contre les murs et revient à elle, comme un écho lointain d’une autre vie, d’un autre monde.\nPuis la réalité elle-même commence à se fissurer sous le poids du froid et du temps. Tout devient flou. \nLe béton semble bouger dans l’ombre, les ombres murmurent des choses qu’elle ne comprend pas. \nSes souvenirs s’effilochent, se dérobent sous ses doigts. \nA-t-elle toujours été ici ? \nY a-t-il eu quelque chose avant ?\nEt puis vient le rire.\nUn rire sans joie, vide, insensé. \nIl s’échappe de sa gorge sans qu’elle ne sache pourquoi, un son sec, tranchant, étranglé. \nUn rire qui n’a ni cause, ni raison. \nIl résonne un instant, puis s’éteint, avalé par le silence.\nAlors, elle se demande. Est-ce qu’elle est encore là, quelque part sous cette peau glacée ? \nEst-ce qu’elle attend encore quelque chose ? \nOu est-ce que tout cela n’a plus de sens ?\nMais la folie revient, plus douce cette fois. \nElle caresse, elle rassure, elle berce. \nPlus de questions, plus d’attente. \nJuste le froid. \nLe froid, et plus rien d’autre.",
+      "video_file": "video04",
+      "image_file": "video04",
+      "script_fr": "Elle va finir 15 ans, enfermée entre quatre murs de béton brut. \nUne cellule exiguë où le plafond bas suinte d’humidité, recouvert de moisissures sombres qui s’étendent comme des veines pourrissantes. \nL’air est lourd, saturé d’une odeur stagnante, un mélange de pierre froide et de solitude.\nLe sol, lui, est une étendue de pierres glacées, rugueuses sous la peau, volées à la chaleur du monde extérieur.\nChaque pas y résonne, creux, étouffé, avalé par l’espace clos. \nIci, le silence est pesant, oppressant, seulement troublé par le goutte-à-goutte lointain d’une fuite invisible ou par le grattement furtif d’un rat en quête de miettes.\nLa folie ne vient pas d’un coup. \nLa folie s’insinue doucement, comme un venin subtil. \nAu début, ce ne sont que des éclats : un mouvement de main inutile, un frisson d’agitation, un regard qui fuit sans raison, des murmures à peine audibles. \nDes gestes absurdes, presque anodins. Puis, peu à peu, la folie grandit, elle s’étale dans les recoins de l’esprit, grignote la raison morceau par morceau.\nParfois, Xiam va se surprendre à parler à voix haute. \nQuelques mots, pour combler le vide, pour s’assurer qu’elle existe encore. \nLe son de sa propre voix est étrange, presque étranger. \nIl résonne contre les murs et revient à elle, comme un écho lointain d’une autre vie, d’un autre monde.\nPuis la réalité elle-même commence à se fissurer sous le poids du froid et du temps. Tout devient flou. \nLe béton semble bouger dans l’ombre, les ombres murmurent des choses qu’elle ne comprend pas. \nSes souvenirs s’effilochent, se dérobent sous ses doigts. \nA-t-elle toujours été ici ? \nY a-t-il eu quelque chose avant ?\nEt puis vient le rire.\nUn rire sans joie, vide, insensé. \nIl s’échappe de sa gorge sans qu’elle ne sache pourquoi, un son sec, tranchant, étranglé. \nUn rire qui n’a ni cause, ni raison. \nIl résonne un instant, puis s’éteint, avalé par le silence.\nAlors, Xiam va se demander. Est-ce qu’elle est encore là, quelque part sous cette peau glacée ? \nEst-ce qu’elle attend encore quelque chose ? \nOu est-ce que tout cela n’a plus de sens ?\nMais la folie revient, plus douce cette fois. \nLa folie caresse, elle rassure, elle berce. \nPlus de questions, plus d’attente. \nJuste le froid. \nLe froid, et plus rien d’autre.",
       "script_en": "The first words she said, almost to test my reactivity, were that it hadn't rained for 460 days. Why give me this information? Why this precision, as if she was trying to direct me towards something that I couldn't yet grasp?\nI pointed out to her that her name came up frequently in cases of disappearances, and then a smile crossed her face, a clear, precise, almost cutting smile. She must have known that my suspicions were not yet solid enough to justify her accusation.",
       "script_es": null,
       "script_de": null
     },
     "video05": {
-      "video_file": "video 5",
-      "image_file": "video 5",
-      "script_fr": "Mon dossier est vide, juste une impression et les premiers mots qu’elle dit, presque pour tester ma réactivité, c’est qu’il n’a pas neigé depuis 460 jours. \nPourquoi me livrer cette information, à moi ? Pourquoi cette précision, comme si elle cherche à m’orienter vers quelque chose que je n’arrive pas encore à saisir ?\nUn sourire traverse son visage, un sourire net, précis, presque tranchant. Elle sait que mes soupçons ne sont pas encore assez solides pour justifier son accusation. \nJe lui fais remarquer que son nom revient fréquemment dans des affaires de disparitions.",
+      "video_file": "video05",
+      "image_file": "video05",
+      "script_fr": "Mon dossier est vide. \nChaque page est dénuée de contenu, chaque ligne n'a rien à offrir, juste le blanc désespéré de l'absence de preuves. \nRien ne vient étayer les murmures, les doutes, les idées floues qui trottent dans ma tête depuis un certain temps. \nElle sait. Elle sait très bien que mes soupçons, aussi tenaces soient-ils, ne sont pas encore assez solides pour justifier son accusation. \nElle sait que je doute encore, que je n'ai pas encore franchi le seuil de la certitude. \nMais chaque jour qui passe, les pièces de ce puzzle se rapprochent un peu plus. \nSi seulement j'arrivais à assembler les bonnes pièces, à relier les indices, à faire émerger la vérité d'un jeu de manipulations invisibles. \nMais, pour l'instant, je suis dans cette attente frustrante où tout est flou, incertain. \nJe lui fais remarquer que son nom revient fréquemment dans des affaires de disparitions.",
       "script_en": "I began the interrogation by pointing out that after each of her receptions, a guest disappeared. Then she burst out laughing. A light laugh, almost too carefree, too calm, too easy, as if none of this mattered. She then added that maybe she was just boring. I couldn't help but react. I answered her, without thinking too much, that I didn't think she was boring.\nShe looked at me, and the expression in her eyes changed. She challenged me and asked me if I was flattering her.",
       "script_es": null,
       "script_de": null
     },
     "video06": {
-      "video_file": "video 6",
-      "image_file": "video 6",
-      "script_fr": "Elle éclate de rire. Un rire léger, presque trop insouciant, trop calme, trop facile, comme si tout cela n’avait aucune importance quand Je commence l’interrogatoire en lui faisant remarquer qu’après chacune de ses réceptions, un invité disparaît. \nPuis,. Elle ajoute que peut-être elle est simplement ennuyeuse. Je ne peux pas m’empêcher de réagir. Je lui réponds, sans trop réfléchir, que je ne pense pas qu’elle soit ennuyeuse.\nElle me regarde, et l’expression dans ses yeux change. Elle me défie et me demande si je la flatte.",
+      "video_file": "video06",
+      "image_file": "video06",
+      "script_fr": "Elle éclate de rire. Un rire léger, presque trop insouciant, trop calme, trop facile, comme si tout cela n’avait aucune importance.\r\nJe commence l’interrogatoire en lui faisant remarquer qu’après chacune de ses réceptions, un invité disparaît. \r\nPuis,. Elle ajoute que peut-être elle est simplement ennuyeuse. \r\nJe ne peux pas m’empêcher de réagir. Je lui réponds, sans trop réfléchir, que je ne pense pas qu’elle soit ennuyeuse.\r\nElle me regarde, et l’expression dans ses yeux change. Elle me défie et me demande si je la flatte.",
       "script_en": "I continued my work: “And on Tuesday, January 27, where were you?” Her answer seemed calm to me, almost amused. She told me she was at home, alone. She seemed almost to challenge me, suggesting that wanting to be alone should not be seen as a crime. The apartment, surely a cube of glass and steel, suspended in the void at the top of a gray megatower, lost in a perpetually overcast sky. The floor is icy underfoot, polished concrete that amplifies the echo of every movement. Every detail breathes a calculated coldness, a life where the past seems frozen and the future nonexistent. An oppressive silence reigns, interrupted sometimes by the buzzing of a surveillance drone that passes slowly in front of the bay windows, as if to ensure that the inhabitant of this heatless space is always under control.",
       "script_es": null,
       "script_de": null
     },
     "video07": {
-      "video_file": "video 7",
-      "image_file": "video 7",
-      "script_fr": "J’imagine son appartement, sûrement un cube de verre et d’acier, suspendu dans le vide au sommet d’une mégatour grise, perdu dans un ciel perpétuellement couvert. Le sol est glacé sous les pieds, un béton poli qui amplifie l’écho de chaque mouvement. \r\nChaque détail respire une froideur calculée, une vie où le passé semble figé et le futur inexistant.\r\nUn silence oppressant règne, interrompu parfois par le bourdonnement d’un drone de surveillance qui passe lentement devant les baies vitrées, comme pour s'assurer que l’habitante de cet espace sans chaleur est toujours sous contrôle.\r\nJe lui dis : « Et mardi dernier, où étiez-vous ? » Sa réponse me semble calme, presque amusée. Elle me dit qu’elle était chez elle, seule. Elle semble presque me défier, suggérant que vouloir être seule ne devrait pas être vu comme un crime.",
+      "video_file": "video07",
+      "image_file": "video07",
+      "script_fr": "J’imagine son appartement, sûrement un cube de verre et d’acier, suspendu dans le vide au sommet d’une mégatour grise, perdu dans un ciel perpétuellement couvert. \r\nLe sol est glacé sous les pieds, un béton poli qui amplifie l’écho de chaque mouvement. \r\nChaque détail respire une froideur calculée, une vie où le passé semble figé et le futur inexistant.\r\nUn silence oppressant règne, interrompu parfois par le bourdonnement d’un drone de surveillance qui passe lentement devant les baies vitrées, comme pour s'assurer que l’habitante de cet espace sans chaleur est toujours sous contrôle.",
       "script_en": "She played with me. I tried to destabilize her, to get her to explain the chain of disappearances, by mentioning witnesses who had seen her in dark neighborhoods of the city.\nThis city, which some might describe as a calm place with gigantic avenues that stretch as far as the eye can see, parks covered with young poplars, pines and oaks, and finally small streets lit by braziers. But I only see this intense cold, where everything seems dead: the streets without lights, the monuments of another era, and the apartment towers with tiny windows, designed to prevent the weak heat of the homes from escaping.\nI remember my childhood before the cold set in, that time when life seemed simple. I often went with my brothers to the seaside. We played in the sand, carefree. Then, one day, the cold fell, brutally, like a shadow that swallows everything in its passage. It didn't just chill the air, it froze hearts and minds.\nWith this cold, came extreme behaviors, as if everyone was struggling to survive in a reality that had become hostile. The children we were grew up too fast, gradually losing the spark of innocence. We became hopeless adults.\nAggression replaced laughter and discussions. It became the only common language.\nAnd in this cold world for more than 35 years, she, Xian in her luxury car, on the lookout for a little human warmth, her face reflected on the window of her vehicle, advancing silently like an ice creature on its prey.",
       "script_es": null,
       "script_de": null
     },
     "video08": {
-      "video_file": "video 8",
-      "image_file": "video 8",
-      "script_fr": "Cette ville, que certains pourraient décrire comme un lieu calme avec des avenues gigantesques qui s’étendent à perte de vue, des parcs recouverts de jeunes peupliers, de pins et de chênes, et enfin des petites rues éclairées par des braseros. \r\nMais moi, je ne vois que ce froid intense, où tout semble mort : les rues sans lumières, les monuments d’une autre époque, et les tours d’habitation aux fenêtres minuscules, conçues pour empêcher la faible chaleur des logements de s’échapper.\r\nJe me souviens de mon enfance avant que le froid ne s’installe, cette époque où la vie semble simple. Je vais souvent avec mes frères au bord de la mer. Nous jouons dans le sable, insouciants. Puis, un jour, le froid tombe, brutalement, comme une ombre qui engloutit tout sur son passage. \r\nIl ne refroidit pas seulement l’air, il gèle les cœurs et les esprits.\r\nAvec ce froid, viennent des comportements extrêmes, comme si chacun lutte pour survivre dans une réalité devenue hostile. Les enfants que nous sommes grandissent trop vite, perdant peu à peu l’étincelle de l’innocence. Nous devenons des adultes sans espoir.\r\nL’agressivité remplace les rires et les discussions. Elle devient le seul langage commun. J’ai appris cette langue dans le sang, dans mon propre sang",
+      "video_file": "video08",
+      "image_file": "video08",
+      "script_fr": "Cette ville, que certains pourraient décrire comme un lieu calme avec des avenues gigantesques qui s’étendent à perte de vue, des parcs recouverts de jeunes peupliers, de pins et de chênes, et enfin des petites rues éclairées par des braseros. \r\nMais moi, je ne vois que ce froid intense, où tout semble mort : les rues sans lumières, les monuments d’une autre époque, et les tours d’habitation aux fenêtres minuscules, conçues pour empêcher la faible chaleur des logements de s’échapper.\r\nJe me souviens de mon enfance avant que le froid ne s’installe, cette époque où la vie semble simple. \r\nJe vais souvent avec mes frères au bord de la mer. Nous jouons dans le sable, insouciants. Puis, un jour, le froid tombe, brutalement, comme une ombre qui engloutit tout sur son passage. \r\nIl ne refroidit pas seulement l’air, il gèle les cœurs et les esprits.\r\nAvec ce froid, viennent des comportements extrêmes, comme si chacun lutte pour survivre dans une réalité devenue hostile. Les enfants que nous sommes grandissent trop vite, perdant peu à peu l’étincelle de l’innocence. \r\nNous devenons des adultes sans espoir.\r\nL’agressivité remplace les rires et les discussions. \r\nElle devient le seul langage commun. \r\nJ’ai appris cette langue dans le sang, dans mon propre sang",
       "script_en": "I asked her about Mr. Echo Draiven, the last one to disappear, after their meeting. I hoped for a reaction, something, a gesture, a movement in her eyes, a flaw that would have betrayed her coldness. But no, once again, she didn't deny it, she confirmed their meeting. And insisted once again that I stay still on my chair, perhaps a lever to destabilize her?\nShe even spoke to me about Mr. Echo Draiven in a haughty way, describing him as a charming and fragile man, with good taste. I insisted: no more genetic fingerprints, no presence sensors, nor the slightest trace in the recording videos of Mr. Echo Draiven after his visit to her home. And his gaze, always unfathomable.",
       "script_es": null,
       "script_de": null
     },
     "video09": {
-      "video_file": "video 9",
-      "image_file": "video 9",
-      "script_fr": "Dans ce monde froid depuis plus de 35 ans, elle, Xian, dans sa voiture de luxe, à l’affût d’un peu de chaleur humaine, son visage se reflète sur la vitre de son véhicule, avançant silencieusement comme une créature de glace sur sa proie. \r\nElle joue avec moi. Je tente de la déstabiliser, de l’amener à m’expliquer les disparitions en chaîne, en évoquant des témoins qui l’ont vue dans des quartiers sombres de la ville.",
+      "video_file": "video09",
+      "image_file": "video09",
+      "script_fr": "Dans ce monde froid depuis plus de 35 ans, elle, Xian, glisse dans sa voiture de luxe avec une fluidité fantomatique. Insaisissable, silencieuse, elle avance comme une créature de glace, traçant son chemin avec une précision chirurgicale. \r\nElle se faufile dans la nuit, ondulant à travers les ombres comme un serpent affamé. Son territoire est vaste, un labyrinthe de rues désertes et de lumières artificielles où elle évolue sans effort. \r\nSon regard perçant s’accroche aux silhouettes qu’elle croise, les jauge, les effleure, s’attarde sur celles qui frémissent sous son attention. Déjà, elle choisit. Déjà, elle resserre son emprise invisible.\r\nPuis elle joue. \r\nComme un serpent enroulant lentement ses anneaux autour de sa proie, elle tisse sa toile avec patience. \r\nElle approche, esquisse un sourire, murmure des mots qui s’infiltrent sous la peau. Sa voix est un souffle de velours, un sifflement hypnotique. Chaque phrase, chaque silence, est une morsure invisible qui injecte lentement son venin.\r\nLorsque la proie réalise qu’elle ne peut plus bouger, qu’elle est prise, il est déjà trop tard.\r\nEt moi.\r\nje sens son étreinte invisible, son venin glisser lentement dans mes veines…",
       "script_en": "Is Xian an angel or a demon? I thought for a moment that she could be a mental patient who devoured her guests, like all these sects that appeared with the cold. Each of them was distinguished by their particular accoutrements, strange outfits that seemed to reflect their vision of the world: dark and austere dresses for some, extravagant and almost grotesque ornaments for others. They presented themselves as guides, saviors, claiming to hold absolute truths in this icy chaos. They tirelessly repeated to us that we had to abandon what made us rational beings: no longer heal ourselves, as if the body had to bend to the will of a higher force, and no longer educate ourselves, as if knowledge itself were a threat. Everything had to go through them. Their message was clear: we had to listen blindly to their words, obey their absurd rules and never, ever, put anything back that it was in question.\nWhat was most terrifying was their power of attraction. Faced with the cold, the despair, and the loss of bearings, many gave in. They clung to these doctrines, however irrational they were, because they offered the illusion of certainty in a world where nothing made sense anymore. And so, these sects multiplied, fueled by fear and ignorance, weaving their web over already weakened societies, imposing silence and obedience where freedom of thought once reigned. Only the wars that followed made them disappear.\nBut she was playing with me. Her words were traps, detours to lead me astray, questioning me in turn about my buried secrets or the deeper parts of my being.",
       "script_es": null,
       "script_de": null
     },
     "video10": {
-      "video_file": "video 10",
-      "image_file": "video 10",
-      "script_fr": "Un mouvement dans ses yeux, une faille qui trahirait sa froideur, mais non.  je lui pose la question concernant monsieur Draiven, le dernier disparu, après leur rencontre. J’espère une réaction, quelque chose, un geste, , encore une fois, elle ne nie pas. \r\nElle me confirme leur rencontre. Et insiste encore une fois pour que je reste immobile sur ma chaise, peut-être un levier pour me déstabiliser ?\r\nElle me parle même de monsieur Draiven d’une manière hautaine, le décrivant comme un homme charmant et fragile, avec un bon goût. J’insiste : plus aucune empreinte génétique, aucun capteur de présence, ni la moindre trace dans les vidéos d’enregistrement de Monsieur Draiven après sa visite chez elle. \r\nEt son regard, toujours insondable.",
+      "video_file": "video10",
+      "image_file": "video10",
+      "script_fr": "Un mouvement dans ses yeux, une faille qui trahirait sa froideur, mais non.  \r\nje lui pose la question concernant monsieur Draiven, le dernier disparu, après leur rencontre. J’espère une réaction, quelque chose, un geste, encore une fois, elle ne nie pas. \r\nElle me confirme leur rencontre. \r\nEt insiste encore une fois pour que je reste immobile sur ma chaise, peut-être un levier pour me déstabiliser ?\r\nElle me parle même de monsieur Draiven d’une manière hautaine, le décrivant comme un homme charmant et fragile, avec un bon goût. \r\nJ’insiste : plus aucune empreinte génétique, aucun capteur de présence, ni la moindre trace dans les vidéos d’enregistrement de Monsieur Draiven après sa visite chez elle. \r\nEt son regard, toujours insondable.",
       "script_en": null,
       "script_es": null,
       "script_de": null
     },
     "video11": {
-      "video_file": "video 11",
-      "image_file": "video 11",
-      "script_fr": "Xian est-elle un ange ou un démon ? Je pense un instant qu’elle pourrait être une malade mentale qui dévore ses convives, Comme toutes ces sectes apparues avec le froid. \r\nChacune d’elles se distinguait par ses accoutrements particuliers : des tenues sombres et austères pour les unes, des ornements extravagants et presque grotesques pour les autres.\r\nElles se présentaient comme des guides, des sauveurs, prétendant détenir des vérités absolues dans ce chaos glacial. \r\nElles répétaient inlassablement que nous devions abandonner ce qui faisait de nous des êtres rationnels : ne plus nous soigner, comme si le corps devait se plier à la volonté d’une force supérieure, et ne plus nous éduquer, comme si la connaissance elle-même était une menace. \r\nTout passait par elles. Leur message était clair : il fallait écouter aveuglément leurs paroles, obéir à leurs règles absurdes et ne jamais, au grand jamais, remettre quoi que ce soit en question.\r\nCe qui était le plus terrifiant, c’était leur pouvoir d’attraction. Face au froid, au désespoir, et à la perte de repères, beaucoup cédaient. \r\nIls se raccrochaient à ces doctrines, aussi irrationnelles fussent-elles, parce qu’elles offraient l’illusion d’une certitude dans un monde où plus rien n’avait de sens. \r\nCes sectes se multipliaient, nourries par la peur et l’ignorance, tissant leur toile sur des sociétés déjà fragilisées, imposant le silence et l’obéissance...  \r\nJe ne les supportais pas. Je traînais la nuit en civil à leur recherche, pour leur fracturer les genoux, les bras, et bien plus…Seules les guerres qui suivent les ont fait disparaître.\r\nMais elle joue avec moi. Ses mots sont des pièges, des détours pour m’égarer, m’interrogeant à son tour sur mes secrets enfouis ou les plus profonds de mon être.",
+      "video_file": "video11",
+      "image_file": "video11",
+      "script_fr": "Xian est-elle un ange ou un démon ? Je pense un instant qu’elle pourrait être une malade mentale qui dévore ses convives, Comme toutes ces sectes apparues avec le froid. \r\nChacune d’elles se distinguait par ses accoutrements particuliers : des tenues sombres et austères pour les unes, des ornements extravagants et presque grotesques pour les autres.\r\nElles se présentaient comme des guides, des sauveurs, prétendant détenir des vérités absolues dans ce chaos glacial. \r\nElles répétaient inlassablement que nous devions abandonner ce qui faisait de nous des êtres rationnels : ne plus nous soigner, comme si le corps devait se plier à la volonté d’une force supérieure, et ne plus nous éduquer, comme si la connaissance elle-même était une menace. \r\nTout passait par elles. Leur message était clair : il fallait écouter aveuglément leurs paroles, obéir à leurs règles absurdes et ne jamais, au grand jamais, remettre quoi que ce soit en question.\r\nCe qui était le plus terrifiant, c’était leur pouvoir d’attraction. Face au froid, au désespoir, et à la perte de repères, beaucoup cédaient. \r\nIls se raccrochaient à ces doctrines, aussi irrationnelles fussent-elles, parce qu’elles offraient l’illusion d’une certitude dans un monde où plus rien n’avait de sens. \r\nCes sectes se multipliaient, nourries par la peur et l’ignorance, tissant leur toile sur des sociétés déjà fragilisées, imposant le silence et l’obéissance...  \r\nJe ne les supportais pas. Je traînais la nuit en civil à leur recherche, pour leur fracturer les genoux, les bras, et bien plus…Seules les guerres civiles qui ont suivit les ont fait disparaître.\r\nMais elle joue avec moi. Ses mots sont des pièges, des détours pour m’égarer, m’interrogeant à son tour sur mes secrets enfouis ou les plus profonds de mon être.",
       "script_en": null,
       "script_es": null,
       "script_de": null
     },
     "video12": {
-      "video_file": "video 12",
-      "image_file": "video 12",
+      "video_file": "video12",
+      "image_file": "video12",
       "script_fr": "Un hôpital et le silence pour moi, pendant 5 ans, car oui, il y a des secrets, des blessures, des choses que je n’ai jamais dites, jamais osées, pas même à mes collègues. \r\nComme cette douleur, cette perte : le décès de ma femme, après une longue maladie, reste une blessure que je porte encore en moi. \r\nDurant ces années d’épreuves, je suis resté à ses côtés, à lui tenir la main, à lui parler. Je l’ai fait. Mon travail mais relégué au deuxième plan, il n’était là que pour payer mes factures et pour me défouler. \r\nLa vérité, c’est que je ne fuis pas. Je ne me cache pas dans un silence gêné, incapable d’affronter la souffrance et mes propres émotions. \r\nÀ chaque visite à l’hôpital, j’abordais les conversations profondes, sans peur d’ouvrir des blessures encore plus grandes. Je me dis qu’il vaut mieux dire quelque chose maladroitement que de ne rien dire du tout.\r\nLes scientifiques ont trouvé le remède, mais trop tard, bien trop tard. Six mois après qu’elle soit partie. Et moi, là, avec ce vide, ce poids dans la poitrine. \r\nPourquoi la science est-elle toujours en retard pour sauver ceux qu’on aime ?",
       "script_en": null,
       "script_es": null,
       "script_de": null
     },
     "video13": {
-      "video_file": "video 13",
-      "image_file": "video 13",
-      "script_fr": "J’ai toujours aimé la boxe, j’ai commencé après mon enfances dans les mines.. Dans un ring, tout est simple : Pas de trahison possible,  Juste le combat, c’est toi contre l’autre. Pas besoin de parler. \r\nJuste tes poings, ton souffle, et ce bruit sourd quand ton poing trouve sa cible. Ce bruit... il y a quelque chose de presque apaisant là-dedans.\r\nQuand je suis devenu flic, je pensais que cette discipline allait m’aider, me cadrer.  Mais un jour où tout a basculé, je l’ai senti venir. Ce gars m’a provoqué, m’a craché au visage et un vide c’est créé. \r\nTout devient statique. Plus de bruit, plus de pensées, plus rien. Dans ces instants, je ne suis plus flic, plus homme, plus rien. Pas de colère, pas de douleur, pas même de satisfaction. Juste le vide. \r\nLe pire, c’est qu’après coup, quand tout redevient normal et je sais que j’ai dépassé la limite. Je vois les dégâts que j’ai laissés derrière moi. Mais même ça, ça ne m’atteint pas vraiment. Parce qu’au fond, j’attends déjà le prochain moment. Cette prochaine occasion où tout s’efface, où tout s’arrête.\r\nC’est ça qui me fait peur. Pas la bête, mais le fait que, d’une certaine manière, je recherche cette apesanteur.",
+      "video_file": "video13",
+      "image_file": "video13",
+      "script_fr": "J’ai toujours aimé la boxe, j’ai commencé après mon enfances dans les mines.. Dans un ring, tout est simple : Pas de trahison possible,  Juste le combat, c’est toi contre l’autre. \r\nPas besoin de parler. \r\nJuste tes poings, ton souffle, et ce bruit sourd quand ton poing trouve sa cible. Ce bruit... il y a quelque chose de presque apaisant là-dedans.\r\nQuand je suis devenu flic, je pensais que cette discipline allait m’aider, me cadrer.  Mais un jour où tout a basculé, je l’ai senti venir. Ce gars m’a provoqué, m’a craché au visage et un vide c’est créé. \r\nTout devient statique. Plus de bruit, plus de pensées, plus rien. Dans ces instants, je ne suis plus flic, plus homme, plus rien. Pas de colère, pas de douleur, pas même de satisfaction.\r\nJuste le vide. \r\nLe pire, c’est qu’après coup, quand tout redevient normal et je sais que j’ai dépassé la limite. Je vois les dégâts que j’ai laissés derrière moi. Mais même ça, ça ne m’atteint pas vraiment. Parce qu’au fond, j’attends déjà le prochain moment. \r\nCette prochaine occasion où tout s’efface, où tout s’arrête.\r\nC’est ça qui me fait peur, je recherche cette apesanteur.",
       "script_en": null,
       "script_es": null,
       "script_de": null
     },
     "video14": {
-      "video_file": "video 14",
-      "image_file": "video 14",
+      "video_file": "video14",
+      "image_file": "video14",
       "script_fr": "Elle montre la porte derrière moi, sourit, presque avec tendresse, et dit calmement :\r\n\"Elle est bloquée. Vous ne pouvez pas sortir, pas sans moi.\"\r\nSon visage devient grave.\r\n\"Je suis sérieuse. La porte ne s’ouvrira qu’avec un code. Et je suis la seule à le connaître.\"",
       "script_en": null,
       "script_es": null,
       "script_de": null
     },
     "video15": {
-      "video_file": "video 15",
-      "image_file": "video 15",
-      "script_fr": "Une explosion, une bombe, elle me dit \"Si vous vous levez de votre chaise pour vérifier, tout explose. Vous comprenez ?\" elle enchaîne d’un ton monocorde : Une bombe sous ma chaise. Elle délire, personne ne peut faire ça. \r\nPuis je pense : un agent va venir d’ici peu vérifier si tout va bien. Mais, comme si elle lit mes pensées, elle secoue la tête et me dit : \"Tous les habitants de cette planète vivent actuellement une épreuve comme la vôtre. Personne ne va venir.\"\r\nJ’imagine cette pièce exploser, mais mon instinct…",
+      "video_file": "video15",
+      "image_file": "video15",
+      "script_fr": "Une explosion, une bombe, elle me dit \"Si vous vous levez de votre chaise pour vérifier, tout explose. Vous comprenez ?\" elle enchaîne d’un ton monocorde : Une bombe sous ma chaise. \r\nElle délire, personne ne peut faire ça. \r\nPuis je pense : un agent va venir d’ici peu vérifier si tout va bien. Mais, comme si elle lit mes pensées, elle secoue la tête et me dit : \"Tous les habitants de cette planète vivent actuellement une épreuve comme la vôtre. Personne ne va venir.\"\r\nJ’imagine cette pièce exploser, mais mon instinct…",
       "script_en": null,
       "script_es": null,
       "script_de": null
     },
     "video16": {
-      "video_file": "video 16",
-      "image_file": "video 16",
+      "video_file": "video16",
+      "image_file": "video16",
       "script_fr": "J'ai l'impression que mon esprit se brise et mon instinct perd le contrôle. J’ai l’habitude de l’écouter. \r\nMon métier implique de lui faire confiance, comme lorsqu’il m’indique de me méfier d’une personne qui a appuyé son regard une fraction de seconde de trop sur mon arme pendant un interrogatoire, ou lorsqu’il me dit d’apprécier une personne même si elle évite de me regarder.\r\nL’apprécier, peut-être pas au final, mais au moins la laisser sortir sans fracture ouverte de la salle d’interrogatoire.",
       "script_en": null,
       "script_es": null,
       "script_de": null
     },
     "video17": {
-      "video_file": "video 17",
-      "image_file": "video 17",
-      "script_fr": "J'ai aimé au-delà de tout, Mais oui, j’ai aussi cette envie de me lever car elle n’est plus là. Et Xiam m’offre cette possibilité. Je doute. \r\nNon, pas aujourd’hui, du moins pas maintenant. Autant continuer, quitte à risquer le tout pour le tout",
+      "video_file": "video17",
+      "image_file": "video17",
+      "script_fr": "J'ai aimé au-delà de tout, Mais oui, j’ai aussi cette envie de me lever car elle n’est plus là. Et Xiam m’offre cette possibilité. Je doute. \r\nNon, pas aujourd’hui, du moins pas maintenant. \r\nAutant continuer, quitte à risquer le tout pour le tout",
       "script_en": null,
       "script_es": null,
       "script_de": null
     },
     "video18": {
-      "video_file": "video 18",
-      "image_file": "video 18",
-      "script_fr": "Elle me fixe sévèrement, elle lit dans mes pensées. Je la menace de me lever et de faire valser la table. elle me répond \"Croyez-moi, détective. Vous voulez sortir d’ici ? Vous devez résoudre le problème. Pas vous battre, pas vous lever. Juste réfléchir. Un test de patience, d’intelligence. \r\nSi vous ne comprenez pas ça, vous ne serez même pas capable de survivre assez longtemps pour voir la porte s’ouvrir.\"",
+      "video_file": "video18",
+      "image_file": "video18",
+      "script_fr": "Je vais exploser mais elle me fixe sévèrement, elle lit dans mes pensées. Je la menace de me lever et de faire valser la table. \r\nelle me répond \"Croyez-moi, détective. Vous voulez sortir d’ici ? Vous devez résoudre le problème. Pas vous battre, pas vous lever. \r\nJuste réfléchir. \r\nUn test de patience, d’intelligence. \r\nSi vous ne comprenez pas ça, vous ne serez même pas capable de survivre assez longtemps pour voir la porte s’ouvrir.\"",
       "script_en": null,
       "script_es": null,
       "script_de": null
     },
     "video19": {
-      "video_file": "video 19",
-      "image_file": "video 19",
-      "script_fr": "Je ne suis personne dans cette ville, dans ce silence oppressant, je sais qu’elle a gagné, sans avoir levé la main, sans même me toucher.. \r\nElle prend le contrôle. Dans quel but ? La ville tient debout par miracle et, surtout, je ne suis pas une personne qui a de la valeur pour les autres, quelqu’un à protéger. Personne ne va venir",
+      "video_file": "video19",
+      "image_file": "video19",
+      "script_fr": "Je ne suis personne dans cette ville, dans ce silence oppressant, je sais qu’elle a gagné, sans avoir levé la main, sans même me toucher.. \r\nElle prend le contrôle. Dans quel but ? La ville tient debout par miracle et, surtout, je ne suis pas une personne qui a de la valeur pour les autres, quelqu’un à protéger. \r\nPersonne ne va venir",
       "script_en": null,
       "script_es": null,
       "script_de": null
     },
     "video20": {
-      "video_file": "video 20",
-      "image_file": "video 20",
-      "script_fr": "La folie gagne mon esprit, et il m’est difficile de tout me rappeler. \r\nTout se mélange : les détails de cette salle d’interrogatoire. Elle pointe du doigt le néon vacillant, là, dans ce coin. C’est quoi, déjà ? Une lumière clignotante, un chiffre… quatre. Quatre. Je le vois, je le ressens avant même de l’identifier.\r\nMais ça ne s’arrête pas là. Non, il y a ces marques sur le mur, ces formes abstraites… un sept couché. Un sept, ou quelque chose qui y ressemble. Pourquoi un sept ?\r\nPuis les symboles au sol : ces trois points, ce cercle. Comment tout cela se connecte-t-il ? C’est comme un puzzle qui s’assemble devant moi, mais que je ne peux pas encore toucher.",
+      "video_file": "video20",
+      "image_file": "video20",
+      "script_fr": "La folie gagne mon esprit, et il m’est difficile de tout me rappeler. \r\nTout se mélange : les détails de cette salle d’interrogatoire. \r\nElle pointe du doigt le néon vacillant, là, dans ce coin. C’est quoi, déjà ? Une lumière clignotante, un chiffre… quatre. Quatre. \r\nJe le vois, je le ressens avant même de l’identifier.\r\nMais ça ne s’arrête pas là. \r\nNon, il y a ces marques sur le mur, ces formes abstraites… un sept couché. \r\nUn sept, ou quelque chose qui y ressemble. Pourquoi un sept ?\r\nPuis les symboles au sol : ces trois points, ce cercle. Comment tout cela se connecte-t-il ? \r\nC’est comme un puzzle qui s’assemble devant moi, mais que je ne peux pas encore toucher.",
       "script_en": null,
       "script_es": null,
       "script_de": null
     },
     "video21": {
-      "video_file": "video 21",
-      "image_file": "video 21",
-      "script_fr": "Autour de moi, tout devient silencieux. Dans ce bâtiment, le moindre bruit provoque un écho, qui donne l’étrange sensation d’être constamment surveillé, même en l’absence de caméras ou de surveillants. \r\nNos actes, nos gestes, deviennent des signaux de notre présence, chaque son produit trahit notre existence. \r\nOn finit par calculer chaque mouvement, Produisant parfois un bruit pour indiquer volontairement notre présence ou notre mécontentement. Mais surtout en évitant tout geste qui pourrait attirer l’attention des autres.\r\nMais là, il n’y a plus d’écho. Aucun son ne provient d’une autre salle d’interrogatoire, ni du passage d’un policier dans les couloirs glacés. Ce silence est anormal, presque oppressant, suspect.\r\nÀ l’extérieur, pas de bruit. Depuis la guerre de 2039, des débris de vieilles stations spatiales abandonnées ou de missiles de protection censés être stationnaires au-dessus des grandes villes tombent régulièrement, souvent sans causer de dégâts, dans un bruit sourd. Et je n’entends rien.",
+      "video_file": "video21",
+      "image_file": "video21",
+      "script_fr": "Autour de moi, tout devient silencieux. Dans ce bâtiment, le moindre bruit provoque un écho, qui donne l’étrange sensation d’être constamment surveillé, même en l’absence de caméras ou de surveillants. \r\nNos actes, nos gestes, deviennent des signaux de notre présence, chaque son produit trahit notre existence. \r\nOn finit par calculer chaque mouvement, Produisant parfois un bruit pour indiquer volontairement notre présence ou notre mécontentement. \r\nMais surtout en évitant tout geste qui pourrait attirer l’attention des autres.\r\nMais là, il n’y a plus d’écho. Aucun son ne provient d’une autre salle d’interrogatoire, ni du passage d’un policier dans les couloirs glacés. \r\nCe silence est anormal, presque oppressant, suspect.\r\nÀ l’extérieur, pas de bruit. Depuis la guerre de 2039, des débris de vieilles stations spatiales abandonnées ou de missiles de protection censés être stationnaires au-dessus des grandes villes tombent régulièrement, souvent sans causer de dégâts, dans un bruit sourd. \r\nEt je n’entends rien.",
       "script_en": null,
       "script_es": null,
       "script_de": null
     },
     "video22": {
-      "video_file": "video 22",
-      "image_file": "video 22",
-      "script_fr": "La mine ne te demande pas ton âge, que tu aies 8, 15, où 60 ans, elle te demande ton souffle, tes mains, et ta volonté de ne pas flancher. La guerre fait rage là-haut, mais pour nous, la guerre, elle est ici. Chaque jour, on se bat contre la pierre, contre la faim, contre les hommes parfois.\r\nJe me souviens de la première fois que la cage m’a emporté dans le ventre de la terre. Les chaînes grinçaient, le métal tremblait. Mon père était là, stoïque, son visage couvert de suie. Il n’a rien dit, mais ses yeux… ses yeux m’ont tout appris. \r\nJe me souviens d’un jour avant mon départ à mes 10ans. Piotr, le vieux Piotr, coincé sous une poutre brisée. Son cri résonne encore dans ma tête. \r\nPas un cri d’homme, non… J’ai voulu courir chercher de l’aide, mais il m’a arrêté \"Ne gaspille pas ton souffle, petit. Ici, personne ne vient.\" Alors je suis resté. Je l’ai regardé mourir, seul, dans cette obscurité.\r\nEt quand on remontait, ce n’était pas mieux. Le vent hurlait, la neige brûlait la peau, et les soldats… ils étaient là, fusils en main, prêts à écraser ce qui restait de nous. On avait peur, toujours peur. Un mot de travers, un regard mal placé, et c’était fini.\r\nAlors oui, j’ai grandi dans une mine. À 600 mètres sous terre. Où la guerre dévorait tout. Ce monde, il m’a forgé. Il m’a brisé et reconstruit, encore et encore. Si je suis encore debout aujourd’hui, je suis dans le noir.",
+      "video_file": "video22",
+      "image_file": "video22",
+      "script_fr": "La mine ne te demande pas ton âge, que tu aies 8, 15, où 60 ans, elle te demande ton souffle, tes mains, et ta volonté de ne pas flancher. La guerre fait rage là-haut, mais pour nous, la guerre, elle est ici. Chaque jour, on se bat contre la pierre, contre la faim, contre les hommes parfois.\r\nJe me souviens de la première fois que la cage m’a emporté dans le ventre de la terre. \r\nLes chaînes grinçaient, le métal tremblait. Mon père était là, stoïque, son visage couvert de suie. \r\nIl n’a rien dit, mais ses yeux… ses yeux m’ont tout appris. \r\nJe me souviens d’un jour avant mon départ à mes 10ans. Piotr, le vieux Piotr, coincé sous une poutre brisée. Son cri résonne encore dans ma tête. \r\nPas un cri d’homme, non… J’ai voulu courir chercher de l’aide, mais il m’a arrêté \"Ne gaspille pas ton souffle, petit. Ici, personne ne vient.\" Alors je suis resté. Je l’ai regardé mourir, seul, dans cette obscurité.\r\nEt quand on remontait, ce n’était pas mieux. Le vent hurlait, la neige brûlait la peau, et les soldats… ils étaient là, fusils en main, prêts à écraser ce qui restait de nous. \r\nOn avait peur, toujours peur. Un mot de travers, un regard mal placé, et c’était fini.\r\nAlors oui, j’ai grandi dans une mine. À 600 mètres sous terre. Où la guerre dévorait tout. \r\nCe monde, il m’a forgé. \r\nIl m’a brisé et reconstruit, encore et encore. \r\nSi je suis encore debout aujourd’hui, je suis dans le noir.\r\nAllez à la vidéo 23",
       "script_en": null,
       "script_es": null,
       "script_de": null
     },
     "video23": {
-      "video_file": "video 23",
-      "image_file": "video 23",
+      "video_file": "video23",
+      "image_file": "video23",
       "script_fr": "Elle m’explique que nous sommes tous à l’intérieur de bulles transparentes, regardant l’extérieur déformé par la paroi sphérique, et si l’on s’approche trop des bords, son propre reflet masque ce qui l’entoure. Voilà notre perception de l’univers. \r\nElle n’a qu’à rendre opaques ces sphères et introduire une question, une simple question, une question qui remplace tout et nous donne un unique sens à notre vie : y répondre. Et rajoute que certaines personnes ne sont même pas conscientes de traverser cette épreuve actuellement.\r\nJe lui demande si elle est un dieu ou un être venu d’un autre monde. Sa réponse n’est qu’un sourire et un chuchotement : « Bientôt, tu le seras. » Puis son sourire s’estompe et le code revient hanter mon esprit.\r\nUne épreuve que l’on doit réussir sous peine de mort, et cela pour tous les habitants de la Terre et en même temps… ? Elle sourit, comme une mère qui explique une nouvelle chose à son enfant. Peut-être est-ce la première fois qu’un peu d’humanité éclaire son visage.",
       "script_en": null,
       "script_es": null,
       "script_de": null
     },
     "video24": {
-      "video_file": "video 24",
-      "image_file": "video 24",
+      "video_file": "video24",
+      "image_file": "video24",
       "script_fr": "Je scrute Xiam en détail, je me souviens. Les indices. Le néon, les marques, les symboles. Je les scrute, cherche, décompose. Tout semble évident, mais hors de portée. Pourquoi ?\nPourquoi cela m’échappe-t-il encore ? Je pense avoir la combinaison : 4, 7, 3. C’est presque ça. Presque. C’est trop simple, trop direct, trop… cliché.\nElle dit, presque moqueuse : \"Peut-être que les chiffres ne sont pas dans le bon ordre.\"\nAlors, je reprends. Depuis le début. Chaque détail. Chaque mouvement. Le néon, les chaises dans la salle, les cadres dans le couloir. Tout cela, tous ces morceaux. \nTout s’emboîte. C’est ça, la clé, la progression logique.\nLe code suit un ordre précis. Le premier chiffre est le nombre de fenêtres dans le couloir avant la porte d’entrée. Le deuxième, le nombre de chaises. Et le troisième, le nombre de cadres accrochés au mur.\n3, 4, 7. Les chiffres se révèlent. J’ai le code ! Comme un chemin tracé devant moi. C’est presque naturel, facile, une fois que tout s’est assemblé.",
       "script_en": null,
       "script_es": null,
       "script_de": null
     },
     "video25": {
-      "video_file": "video 25",
-      "image_file": "video 25",
+      "video_file": "video25",
+      "image_file": "video25",
       "script_fr": "La porte vient de s'ouvrir. Un bruit martèle mon esprit, constant et étouffant. Il dérange tout, s’insinuant comme une gêne impossible à ignorer. Une cloche implacable qui résonne sans fin, rythmant chaque seconde de son écho lancinant. Puis le silence.\r\nLe code n’était que l’ordre chronologique des choses que j’avais rencontrées sur mon chemin. Tout n’était que la conséquence des chemins que l’on prend. Puis je me penche pour voir la bombe sous ma chaise, mais il n’y a rien. \r\nJe regarde Xian, presque déçu, et elle me dit : « La bombe a explosé à l’instant, fracassant en mille morceaux la bulle de cristal qui t’enfermait, toi et tous les autres. »",
       "script_en": null,
       "script_es": null,
       "script_de": null
     },
     "video26": {
-      "video_file": "video 26",
-      "image_file": "video 26",
+      "video_file": "video26",
+      "image_file": "video26",
       "script_fr": "Le monde, notre terre, je ressens tout,  Xian me dit de ne pas m’inquiéter pour les disparus comme monsieur Draiven : ils sont tous des êtres comme elle. \r\nElle m’explique qu’elle est l’espoir de tous les êtres vivants, que cet espoir a pris une forme, sa forme. Que cela est déjà arrivé, lorsque nous, les humains, avons décidé, à l’aube de l’humanité, de voir ce qu’il y avait derrière\r\nles montagnes ou les océans, animés par une curiosité qui nous a menés à de nouvelles connaissances.\r\nElle ajoute : « Le code n’est qu’une partie du voyage. Derrière cette ouverture, il y a encore plus de questions, alimentées par l’espoir. »",
       "script_en": null,
       "script_es": null,
       "script_de": null
     },
     "video27": {
-      "video_file": "video 27",
-      "image_file": "video 27",
-      "script_fr": "Un monde où la science n’a cessé d’évoluer depuis les débuts de l’humanité. Où chaque habitant de la Terre, quel que soit son lieu de naissance, a pu contribuer au progrès. \r\nCar la connaissance a souvent été freinée par des croyances obscures, et une partie de la population a été oubliée ou mise de côté : les femmes, ou ceux qui n’avaient pas accès à l’éducation à cause de leur lieu de naissance.\r\nLa connaissance naît partout, qu’importe, au final, qui nous la délivre, son apparence, son âge ou ses origines. Si ses propos sont vrais, et même s’ils déstabilisent nos convictions, nous devons l’accepter. Comme un poème, la connaissance peut nous émouvoir et nous déstabiliser.\r\nDonc derrière cette porte, il y a le même monde, mais avec des milliers d’années d’avance technologique. Un monde où la connaissance guide nos actes et l’art nourrit nos espoirs.",
+      "video_file": "video27",
+      "image_file": "video27",
+      "script_fr": "Un monde où la science ne va plus cessé d’évoluer. Où chaque habitant de la Terre, quel que soit son lieu de naissance, va contribuer au progrès. \r\nCar la connaissance a souvent été freinée par des croyances obscures, et une partie de la population a été oubliée ou mise de côté : les femmes, ou ceux qui n’avaient pas accès à l’éducation à cause de leur lieu de naissance.\r\nLa connaissance naît partout, qu’importe, au final, qui nous la délivre, son apparence, son âge ou ses origines. Si ses propos sont vrais, et même s’ils déstabilisent nos convictions, nous devons l’accepter. Comme un poème, la connaissance peut nous émouvoir et nous déstabiliser.\r\nDonc derrière cette porte, il y a le même monde avec une grande différence. Un monde où la connaissance guide nos actes et l’art nourrit nos espoirs.",
       "script_en": null,
       "script_es": null,
       "script_de": null
     },
     "video28": {
-      "video_file": "video 28",
-      "image_file": "video 28",
+      "video_file": "video28",
+      "image_file": "video28",
       "script_fr": "Tout est flou. Mais une chose est claire : Xian a déjà changé ma perception de tout cela. Ce n’est pas juste une porte. Ce n’est pas juste un test.\r\nNon, c’est une invitation. Une invitation à réinventer ma réalité. À voir, à sentir, à comprendre autrement. Mais suis-je prêt à franchir cette porte ?",
       "script_en": null,
       "script_es": null,
       "script_de": null
     }
   },
-  "episode2": {},
-  "episode3": {}
+  "episode2": {
+    "video29": {
+      "video_file": "video29",
+      "image_file": "video29",
+      "script_fr": "On a tous déjà entendu un jour dire que l’on vient seule au monde et que l’on meurt aussi seule.\r\nPeut-être.\r\nPeut-être pas.\r\nMoi, je suis née dans un monde en guerre. Vous pensez peut-être à une guerre entre deux nations, mais non.\r\nMa guerre, c’est celle que nous partageons toutes, habitantes de cette terre en 2098. Une guerre qui a précipité l’humanité dans un gouffre sans fond.\r\nPour certaines, ce gouffre a des parois dorées.\r\nLes ennemis ?\r\nNos voisins, nos amies, nos familles. Une guerre contre nous-mêmes.\r\nVisible pour certaines, lointaine pour d’autres. Mais toujours présente, tapie dans leurs regards.\r\nElle surgit quand le doute s’infiltre la nuit, après une nouvelle néfaste pour leur avenir.",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video30": {
+      "video_file": "video30",
+      "image_file": "video30",
+      "script_fr": "Je suis noyée dans une chaleur suffocante. La sueur coule sur ma peau, mes vêtements collent à mon corps, mais il n'y a rien à faire, la chaleur m’envahit, me comprime, m’étouffe.\r\nJe tremble, non pas de froid, mais de la peur qui me ronge à chaque instant et la chaufferie s’est dérèglée.\r\nMa jambe saigne, et bien que la chaleur m’enveloppe, le sang semble plus lourd à chaque battement de cœur, chaque seconde qui s’égrène.\r\nUn filet rouge qui laisse une trace indélébile sur la peau, un souvenir sanglant du prix de ma fuite.\r\nLe métal de la paroi est brûlant sous mes doigts, un soutien de fer qui me retire encore un peu plus de ce qu’il me reste de chaleur.\r\nChaque mouvement, aussi léger soit-il, est une torture. Chaque souffle, une lutte pour rester calme.\r\nMon visage se crispe sous la douleur, et je ne peux m’empêcher de revivre ce moment : celui où j’ai claqué cette porte.\r\nJe l’ai fermée juste à temps, juste avant que l’intrus ne puisse entrer.\r\nJe revois encore ses yeux, fixés sur moi à travers l’entrebâillement, brûlants de rage et de désespoir. Il y avait une folie indomptée dans son regard, une brutalité qui défigurait son visage.\r\nUne ombre prête à tout pour survivre.\r\nLe claquement de la serrure résonne dans ma tête, un bruit métallique, sec et inévitable.\r\nCe n’est pas juste une porte.\r\nC’est ma ligne de vie.\r\nElle est tout ce qui me sépare de la mort.\r\nJe suis loin, très loin, de la vie que j'avais espérée.\r\nJe sais qu’il est là, quelque part. Peut-être qu’il attend. Peut-être qu’il revient avec d’autres. En 2089, chaque abri est une forteresse, chaque refuge une cible.\r\nEt le mien n’échappe pas à la règle.",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video31": {
+      "video_file": "video31",
+      "image_file": "video31",
+      "script_fr": "Notre bunker est enfoui sous une épaisse couche de glace, de neige et de bois, normalement invisible à quiconque ne connaissant pas son emplacement exact.\r\nL’entrée, un sas métallique rongé par le froid et les années, s’ouvre sur un long couloir faiblement éclairé par des néons vacillants.\r\nLes murs, faits de béton brut, sont marqués par des fissures et des traces de condensation gelée.\r\nÀ l’intérieur, l’espace est étroit, mais fonctionnel.\r\nLa pièce principale sert à la fois de cuisine et de salle à manger, meublée de manière spartiate.\r\nUne table métallique rayée trône au centre, entourée de deux chaises. Sur une étagère fixée au mur, des boîtes de conserve, des outils et mes livres.\r\nLa chambre, séparée par un rideau épais, contient un lit rudimentaire fait de palettes et de matelas recouverts de couvertures en laine.\r\nUne lampe à huile, posée sur une caisse en bois, sert de chevet. Contre le mur, un petit placard abrite les vêtements soigneusement pliés pour économiser l’espace.\r\nLes seules ouvertures vers l’extérieur sont des canalisations étroites qui laissent passer un filet d’air glacial.",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video32": {
+      "video_file": "video32",
+      "image_file": "video32",
+      "script_fr": "Quand nous sommes arrivées avec Oiu, c’était un vieux bunker abandonné, un truc à moitié écrasé sous des tonnes de neige, de rouille et de moisissure.\r\nOiu a déverrouillé cette porte avec une énergie féroce.\r\nQuand la porte a cédé, elle a jeté un regard nerveux à l’intérieur, comme si, au fond d’elle, elle savait que ce qu’on allait découvrir n’était peut-être pas aussi sûr qu’on l’espérait.\r\nL’intérieur était un chaos figé dans le temps : des murs lézardés, un sol jonché de débris, des meubles éventrés par l’humidité. L’air empestait le métal oxydé et la poussière rance.\r\nOiu n’a pas hésité longtemps. Elle a balayé la pièce du regard, analysé chaque recoin, chaque objet qui pourrait être récupéré, transformé.\r\nElle savait déjà quoi faire, comme si un plan s’était instantanément dessiné dans sa tête.\r\nLa chaufferie était sa priorité. \"Sans elle, on meurt\", avait-elle dit.\r\nElle a fouillé les alentours, déniché des morceaux de tôle, des tuyaux tordus, un ventilateur brisé qu’elle a démonté avec une concentration féroce.\r\nSes mains noircies par la suie et la rouille, elle a rafistolé La chaufferie avec une détermination implacable.\r\nChaque pièce trouvée était une victoire, chaque connexion réussie, un pas de plus vers la survie.\r\nEnsuite, il fallait sécuriser l’endroit.\r\nLes fissures dans les murs ont été colmatées avec des lambeaux de tissu trempés dans une pâte improvisée de boue et de cendre.\r\nLes ouvertures trop larges ont été bloquées avec des planches récupérées.\r\nOiu a organisé l’espace : une zone pour le repos, une autre pour les provisions, un coin bricolage où elle entassait tout ce qui pouvait avoir une utilité future.\r\nRien n’était laissé au hasard.\r\nLà où je ne voyais que ruine, elle voyait un abri. Là où je sentais la peur, elle imposait un ordre, une logique implacable.\r\nCe bunker, autrefois un tombeau de métal froid, devenait sous ses mains un refuge, une base où nous pouvions tenir, où nous pouvions espérer.\r\nEt moi, je la regardais, fascinée, tentant de suivre son rythme, de comprendre cette manière qu’elle avait de dompter le chaos.",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video33": {
+      "video_file": "video33",
+      "image_file": "video33",
+      "script_fr": "Oiu est partie chercher des vivres, et elle n’a pas eu le choix.\r\nNos provisions sont épuisées, et je suis encore clouée au sol, incapable de l’accompagner.\r\nUne fièvre brûlante dévore mon corps, rivalisant avec la douleur lancinante de ma blessure. Cela fait des jours que je lutte pour rester consciente, pour ne pas sombrer complètement.\r\nOiu s’est aventurée vers la ville presque morte, ce champ de ruines qui se dresse à quelques kilomètres du bunker.\r\nLà-bas, il reste encore quelques ressources, des boutiques, des reliques éparses de ce monde brisé : de quoi manger, de quoi tenir quelques jours de plus.\r\nMais ce n’est pas un endroit sûr.\r\nUne tempête s’est levée, frappant sans relâche. Oiu connaît les dangers. Elle sait qu’elle doit observer les courants de vent, repérer les zones les plus froides et les éviter à tout prix. Ces endroits où la température chute si brutalement qu’un simple souffle peut devenir un supplice.\r\nÀ son retour, elle sentira immédiatement que quelque chose ne va pas.\r\nLe silence, trop lourd, pèsera comme une chape de plomb.\r\nSi elle parvient à repérer l’intrus avant qu’il ne la voie, elle pourra peut-être se faufiler, se dissimuler dans l’ombre.\r\nElle s’accrochera à cet espoir, celui de pouvoir éviter l’affrontement brutal qui l’attend. Mais la réalité ne lui laissera probablement pas ce luxe. Elle sait qu’il suffit d’un bruit, d’un craquement, d’un souffle mal maîtrisé pour que tout bascule. Si elle se retrouve acculée, si elle est piégée, il ne lui restera qu’une seule option : se battre.\r\nTuer cet intrus, sera son dernier recours. Une décision qu’elle n’aura pas le loisir de remettre en question. Car si cet intrus prend l’avantage, il n’y aura aucune hésitation de sa part. Il la tuera avec la froideur de quelqu’un qui a appris à ne pas s’embarrasser de conscience. Il arrachera la clé qu’elle protège, cette clé qui est bien plus qu’un simple objet. Elle représente l’espoir, la survie, une promesse de sécurité.",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video34": {
+      "video_file": "video34",
+      "image_file": "video34",
+      "script_fr": "Toi qui plonges sans hésitation dans les rivières glacées, défiant le froid avec l’instinct brut d’une sauvage. \r\nL’eau mord ta peau, s’accroche à toi comme un piège de glace, mais tu ne recules pas. \r\nTu l’affrontes, la défies, comme si chaque frisson était une provocation de plus à écraser.\r\nJe me souviens encore du moment où tu ressors de l’eau : tes joues enflammées par le froid, ton souffle saccadé, s’échappant en volutes blanches dans l’air vif. \r\nTon regard brûle, vif et perçant, comme une braise sous la cendre. \r\nL’adrénaline court sous ta peau, te rend plus vive, plus brutale. Tu éclates de rire, mais c’est un rire féroce, presque une menace. \r\nDans ces instants là, tu es imprévisible, électrique, prête à bondir. Le froid ne t’apaise pas—il t’exacerbe.\r\nIl y a en toi une énergie indomptable, un feu qui refuse de s’éteindre, même au cœur de l’hiver.",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video35": {
+      "video_file": "video35",
+      "image_file": "video35",
+      "script_fr": "Je connais la douleur, elle fait partie de moi depuis si longtemps. J’ai été l’esclave de pillardes. \r\nElles m’ont brisée, torturée, brûlée. Sans raison.\r\nJe sens ma force m’abandonner, elle s’intensifie à chaque respiration, me rappelant impitoyablement ma fragilité. \r\nJe dois l’admettre. Je n’ai pas le luxe de l’ignorance.\r\nJe dois me projeter sur un avenir à court terme, un avenir qui me convient, tenter de sauver Oiu. \r\nCet avenir, je veux le transformer en présent. C’est ma seule solution face à la douleur. \r\nVivre avec elle, l’accepter, l’ignorer quand cela est possible, mais surtout, la remplir d’un but. \r\nMais je suis fatiguée de lutter encore et encore pour un semblant de vie.",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video36": {
+      "video_file": "video36",
+      "image_file": "video36",
+      "script_fr": "Oiu connaît ce monde. Elle le connaît dans ses moindres détails, chaque ruine, chaque recoin glacé. \r\nElle a appris à se déplacer dans les décombres, à comprendre les bruits et les silences, à déchiffrer les signes de ceux qui l’ont précédée dans ce monde dévasté. \r\nQue chaque action doit être guidée par l’instinct et la nécessité. \r\nElle sait où trouver de la nourriture, comment éviter les dangers, comment faire face au froid impitoyable. \r\nMais parfois, quand elle se retrouve seule avec ses pensées, quelque chose en elle ne comprend plus ce monde.\r\nEt quand elle croise les rares survivants, cette douleur s’intensifie. Ils sont comme elle, tous pris dans ce même cycle d’erreurs et de survie. \r\nIl y a un conflit au fond d’elle. \r\nD’un côté, elle est la femme pragmatique, celle qui sait comment se protéger, comment gérer la situation immédiate. De l’autre, il y a cette partie d’elle qui cherche une réponse, un sens à tout ça, un but qui semble de plus en plus impossible à atteindre. Elle sait que la reconstruction n’est plus qu’un mirage. \r\nParce que dans ce monde froid, même quand on sait comment s’adapter, on n’échappe jamais à cette sensation d’être pris dans une toile d’araignée géante, où chaque mouvement est une question sans réponse.",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video37": {
+      "video_file": "video37",
+      "image_file": "video37",
+      "script_fr": "J’entends l'intrus. \r\nIl tourne autour du bunker, comme un prédateur. Ce n’est qu’une question de temps avant qu’il ne trouve une entrée. \r\nIl frappe contre les parois du bunker, une série de coups irréguliers qui résonnent dans le silence glacé. Parfois, il s’arrête et gratte le métal, comme s’il cherchait une faiblesse, un point d’entrée.\r\nIl peut peut-être rentrer par la canalisation d’air. Oui, mais je l’ai fermée… Après l’avoir réparée. \r\nJe l’ai fermée, n’est-ce pas ? La fièvre brûle en moi, brouillant la frontière entre ce que j’ai fait et ce que j’aurais dû faire. \r\nJe crois me souvenir de la sensation du métal froid sous mes doigts, des vis que j’ai serrées une à une. Mais était-ce hier ou avant-hier ? Je ne sais plus, la fièvre…\r\nPeut-être ai-je oublié de replacer une plaque. Il suffirait d’une erreur, une petite, pour que tout s’effondre.\r\nJe dois barricader cet accès de l’intérieur, mais si je le fais, il y a un risque qu’Oiu ne puisse plus rentrer. \r\nJe pourrais le barricader et retirer la barricade une fois qu’Oiu sera là, mais si je perds connaissance ou si je meurs, elle risque de ne plus pouvoir entrer. Que faire ? Protéger le bunker ? \r\nLaisser à Oiu une chance de pouvoir entrer, même si tu me retrouves morte à l’intérieur ? Je dois me décider, me protéger au risque de te laisser dehors ? Des larmes coulent sur mes joues, je suis sûrement une lâche qui se trouve des raisons de l’être.",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video38": {
+      "video_file": "video38",
+      "image_file": "video38",
+      "script_fr": "Oui, je repense à cette période où nous avons partagé un refuge qui tentait, un peu maladroitement, de se donner des airs d’hôtel de charme. \r\nC’était loin d’être parfait, bien loin même de ce qu’il prétendait offrir, mais à ce moment-là, ça suffisait. \r\nC’était notre coin, notre espace, même si tout autour de nous disait que ce n’était pas vraiment ça.\r\nTu m’as appris à aimer autrement. Pas à chercher à tout avoir, à tout contrôler, mais à laisser un peu de place pour que chacune puisse respirer. \r\nÀ comprendre que l’amour n’est pas une chose simple, ni un acquis, mais un équilibre fragile, avec ses contradictions, ses moments de complicité et ses zones d’incertitude.",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video39": {
+      "video_file": "video39",
+      "image_file": "video39",
+      "script_fr": "Je vais partir, tuée par l'intrus ou par ce monde qui a tant changé depuis ma naissance. \r\nLe froid, autrefois une saison parmi d’autres, est devenu une constante implacable. Il n’est pas assez glacial pour nous tuer sur le champ, mais suffisamment mordant pour nous rappeler que la nature tient désormais les rênes. Pourtant, elle semble nous accorder un sursis. \r\nDeux ou trois mois par an, il est moins puissant, la nature se régénère et nous aussi.",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video40": {
+      "video_file": "video40",
+      "image_file": "video40",
+      "script_fr": "Il y a une étrange beauté dans ce monde qui semble dénué de sens, une beauté qui naît de l’imperfection, du chaos, de cette absence de direction claire.\r\nLa nature, tout comme nous, fait face à sa propre absurdité. \r\nElle avance, et par son simple mouvement, elle devient une œuvre d'art, une sculpture façonnée par le vent. \r\nElle ne le fait pas pour nous, ni pour elle-même. Elle le fait parce qu’elle existe.\r\nNous sommes tous un peu comme ce monde qui nous entoure : nous existons, nous vivons, nous nous débattons, sans toujours savoir pourquoi. Parfois, nous croyons que nos actions, nos pensées, ont un sens. \r\nMais dans le fond, n'est-ce pas cette même errance, cette même quête de sens, qui fait de nous ce que nous sommes ?\r\nAlors, peut-être qu’il faut accepter ce non-sens. \r\nPeut-être qu’il est temps de comprendre que cette nature, qui semble errer sans but, qui ne suit aucune direction particulière, est en réalité plus en harmonie avec l’existence humaine que tout ce que nous pourrions concevoir.\r\nEt c’est là, dans ce non-sens, que nous pouvons réellement nous épanouir. \r\nNon pas en cherchant à tout comprendre, mais en nous laissant emporter par le flux de cette vie absurde et magnifique, comme un arbre qui se plie sous le vent sans jamais se demander pourquoi.",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video41": {
+      "video_file": "video41",
+      "image_file": "video41",
+      "script_fr": "Certains vivent dans de petits villages cachés, isolés dans des abris de fortune ou des refuges loin de tout, par peur des autres. Une peur qui les ronge, les pousse à se cacher dans l'ombre, toujours sur le qui-vive.\r\nLa guerre nous a laissés brisés, réduisant notre nombre à quelques milliards de survivants éparpillés sur une planète dévastée, où les ressources se font rares et où la violence règne.\r\nDans ce monde où les règles sont oubliées, il suffit d’un instant d’inattention pour que tout bascule. \r\nLes routes ne sont plus sûres. Les pillards rôdent, prêts à tout pour survivre, et la nature elle-même semble vouloir nous engloutir, avec des tempêtes violentes et des conditions de plus en plus extrêmes.\r\nC’est à peine suffisant pour maintenir un équilibre fragile, une ligne fine entre la fin de la civilisation et l’extinction pure et simple de l’humanité. \r\nMais dans ce chaos, une étrange forme de résilience naît. \r\nCeux qui ont choisi de se cacher ne fuient pas simplement, ils tentent aussi de préserver ce qui reste de notre humanité. \r\nPeut-être que dans cette survie silencieuse, ils parviendront à trouver un chemin pour reconstruire, même si chaque pas vers l'avenir semble un peu plus risqué que le précédent.",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video42": {
+      "video_file": "video42",
+      "image_file": "video42",
+      "script_fr": "Cependant, dans les villes, les choses sont un peu différentes. \r\nLà-bas, on essaie de maintenir un semblant de structure, un effort désespéré pour recréer un ordre au milieu du chaos. \r\nUne forme de police s’est mise en place, une force qui tente de garder un peu de sécurité et d’empêcher l’anarchie de tout engloutir. Mais cette illusion de protection ne fait qu’effleurer la réalité. \r\nLes habitants des villes vivent dans cette illusion de sécurité, cherchant à ignorer les fissures qui commencent à apparaître dans le système. Pourtant, même là-bas, la méfiance est omniprésente. Les regards sont suspicieux, les sourires rares. \r\nLa nature, implacable, nous rappelle sans cesse que nous ne sommes qu’un souffle éphémère dans son histoire. \r\nNous ne sommes que des invités sur cette planète, un fragment qui, tôt ou tard, sera effacé. \r\nElle survivra à nos peurs, à nos guerres, à nos efforts désespérés pour nous accrocher à ce qui reste.",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video43": {
+      "video_file": "video43",
+      "image_file": "video43",
+      "script_fr": "Je m’inquiète pour toi, Oiu. Tu dois être en route, pas loin du bunker, mais l’intrus vient de couper le courant, et chaque seconde semble s’étirer. Je suis dans l’obscurité totale, mes pensées qui tournent en rond. Le générateur de secours… \r\ns’il ne se déclenche pas, je suis fichue.\r\nChaque bruit. Est-ce toi ? Est-ce lui ? Le moindre écho dans cette nuit devient une menace. \r\nJe dois attendre, mais attendre quoi ? Je suis en boule au sol, comme un enfant...",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video44": {
+      "video_file": "video44",
+      "image_file": "video44",
+      "script_fr": "Cette subite nuit noire, ce silence pesant, me ramène à mes échecs. \r\nJe pense à cette femme de 50 ans que j’ai rencontrée il y a quelque temps, dans un sauna, seul lieu où la chaleur est constante. Elle vivait dans une grande ville, et notre discussion a rapidement évolué vers ses réflexions sur la vie et les illusions qu’elle avait perdues en chemin.\r\nAu début de notre conversation, elle avait une attitude de retrait, une volonté d’ignorer certaines de mes questions qu’elle trouvait trop douloureuses, mais surtout inutiles. \r\nElle m’a même précisé d’éviter de me poser trop de questions, car souvent beaucoup de questions sont des pièges de notre esprit qui a peur et qui veut nous freiner. \r\nElle m’a parlé de ses 20 ans, des rêves que l’on est censé avoir à cet âge et qu’elle n’avait pas. \r\nElle n’attendait déjà plus rien de ce monde. Puis, peu à peu, elle s’est laissée guider par deux ou trois envies simples qui lui ont permis d’avancer. \r\nÀ 30 ans, elle était devenue une femme ordinaire parmi tant d’autres. Seul son caractère la différenciait des autres, mais rien de plus, à part d’être l’une des rares autour d’elle qui n’avait pas la sensation d’échec, car elle n’avait pas cherché à imiter la vie des autres, ni à suivre un chemin qui ne lui convenait pas en espérant réussir. \r\nÀ 50 ans, son impatience avait totalement disparu et n’était plus une source de frustration.\r\nOui, elle avait sûrement renoncé à certains rêves impossibles à atteindre qu’elle refusait de me dire, et sûrement qu’elle avait dû affronter l’incompréhension et le jugement comme nous tous, mais elle n’avait pas renoncé à être en harmonie avec elle-même et à sourire.",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video45": {
+      "video_file": "video45",
+      "image_file": "video45",
+      "script_fr": "Je me souviens avoir essayé, et j’essaie encore. J’ai essayé maintes fois, comme on cultive un jardin dont la floraison tarde à venir, espérant que chaque graine trouve sa terre. \r\nJ’ai planté, arrosé, pris soin des pousses fragiles, et chaque jour apportait quelque chose.\r\nCes passants qui entraient dans ma boutique, je les voyais, cherchant un peu de beauté, une signification cachée dans les pétales. \r\nJe leur offrais ce que je pouvais : une couleur, un parfum, une harmonie. \r\nJe leur ai parlé du langage des fleurs, de l’éphémère et du renouveau, non pas comme de simples notions, mais comme des chemins à emprunter. \r\nEt ils écoutaient, non pas par habitude, mais parce que cela éveillait quelque chose en eux.\r\nJe croyais en ce que je faisais, même si parfois le doute s’installait. Car être fleuriste, ce n’est pas seulement composer des bouquets, c’est offrir un instant, une émotion, un espoir. J’ai rappelé qu’il y a toujours une saison pour refleurir. Et parfois, j’ai aperçu dans leurs regards une douceur nouvelle, une inspiration naissante.\r\nJe les ai vus repartir, apaisés, portant avec eux une part de ce que j’essayais de transmettre : une lueur de couleur dans un quotidien parfois trop gris. Alors, j’ai continué. Non plus par habitude, mais par conviction. Parce que parfois, une fleur, un geste, suffit. Et il reste toujours une raison d’espérer.",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video46": {
+      "video_file": "video46",
+      "image_file": "video46",
+      "script_fr": "Le générateur d’urgence vient de se déclencher.\r\n Cette lumière rouge en est la conséquence, mais elle ne durera pas. Voilà, l’intrus est dans les canalisations. \r\nJe l’entends distinctement maintenant. \r\nIl s’approche. Je le sens. Et s’il parvient jusqu’à moi, ce sera la fin. Ce ne sera pas seulement ma fin, mais aussi celle d’Oiu. \r\nElle n’aura aucune chance. \r\nElle rentrera, comme elle le fait toujours, en pensant être en sécurité derrière ces murs de métal. \r\nMais il l’attendra, invisible, patient, et au moment où elle baissera sa garde, il l’éliminera.\r\nJe dois bouger. Je dois faire quelque chose. Mais ma tête vacille. \r\nLa fièvre me dévore, brouillant mes pensées, rendant chaque idée incohérente, chaque plan impossible. \r\nEt pendant que je sombre dans cette folie, il continue de se rapprocher.\r\nJe barricade l’accès, je n’ai pas le choix. Si je ne le fais pas, tout est perdu. \r\nMais si je m’endors après… si je faiblis, Oiu meurt à l’extérieur.\r\nJe ne m’endors pas. Je ne m’évanouis pas, je me répète en boucle. Mais cela fait longtemps que je n’ai plus confiance en moi.\r\nLe courant est revenu dans le bunker. \r\nOiu a compris que le refuge est en danger et a rétabli l’électricité. \r\nJe me sens revivre. Oiu contrôle la situation.",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video47": {
+      "video_file": "video47",
+      "image_file": "video47",
+      "script_fr": "Je réalise à quel point je suis pathétique, mais la peur m’étouffe, m'engloutit. \r\nElle me ramène à cette crise, à celle que je ne peux oublier, celle avec Oiu. \r\nCette peur s'infiltre comme un poison, m’empêchant de respirer, me renvoyant dans la plus grande de nos nuits de terreur.\r\nC’était il y a une éternité, dans ces montagnes froides et inaccessibles.\r\nChaque pas semblait nous rapprocher de la fin, du vide absolu. \r\nIl n’y avait plus d’espoir. Nous étions à bout.\r\nNous avons trouvé cette tente, misérable, bien trop fragile pour nous protéger. Nous nous sommes entassées dedans, l’une contre l’autre, dans un dernier geste de survie. Mais ni la chaleur de nos corps, ni la proximité forcée ne parvenaient à apaiser la douleur de la fatigue qui pesait sur nous. \r\nLe froid était une bête sauvage, qui s’infiltrait partout, dans nos chairs, dans nos esprits, dans l’air que nous respirions. \r\nIl était là, tout autour, prêt à nous engloutir.\r\nLa forêt n’était plus qu’un cimetière à ciel ouvert, un lieu où la mort se tapit dans chaque ombre, prête à surgir à la moindre négligence.\r\nLes pillards approchaient. On les sentait. Ils étaient là, tout près, leurs pas sourds et leurs rires froids résonnant dans nos têtes. \r\nIls n’étaient pas là pour discuter. Ils étaient prêts à tout, prêts à tout effacer. \r\nNous n’étions rien, des fantômes, des proies dans une jungle de plus en plus sauvage, où la violence ne faisait plus de distinction entre les vivants et les morts.\r\nEt puis, à l’angle d’un sentier déchiqueté, dans cette mer de roches, nous avons vu ce bunker. Un monstre de béton, une silhouette énorme dans ce monde devenu fou.\r\nUn éclat d’espoir, lumineux et puissant, bien que fragile, surgit devant nous. \r\nUne promesse d’issue, même tardive, qui nous offrait la chance de nous relever. \r\nUne flamme vacillante dans la nuit noire, mais qui brûlait encore, pleine de potentiel. \r\nNos regards se sont croisés, hésitants mais porteurs d’une nouvelle force, d’une résilience que nous n’avions pas vue depuis longtemps. \r\nC’était la première fois depuis bien trop de temps que nos yeux se rencontraient, un regard chargé de tout ce que nous avons traversé, mais aussi de tout ce qui restait à construire. \r\nCet espoir, bien que timide, devenait un nouveau départ, une lumière qui nous guidait, loin de l’obscurité.",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video48": {
+      "video_file": "video48",
+      "image_file": "video48",
+      "script_fr": "Je viens de me réveiller. Combien de temps ai-je dormi ? Je me sens comme une traîtresse. \r\nDes coups de feu résonnent à l’extérieur, mais je suis là, immobile. Oiu n’a pas d’arme... Mais l’intrus… \r\nil n’était pas seul ? Une nouvelle détonation, suivie d’un silence assourdissant. \r\nIls viennent éliminer Oiu. Non. Mon esprit s’accroche à une infime lueur d’espoir. Je dois sortir. Je dois l’aider, même si tout semble perdu.\r\nElle est peut-être encore là. Peut-être qu’elle se cache. Je ne peux pas abandonner. \r\nTant qu’il me reste un souffle de vie, je dois espérer. \r\nSi je reste ici, figée par la peur, alors tout sera vraiment terminé. Je débarricade l’accès…",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video49": {
+      "video_file": "video49",
+      "image_file": "video49",
+      "script_fr": "Mais un autre bruit résonne dans ma tête, sourd et incessant. \r\nIl dérange, il perturbe tout. Une cloche qui ne s’arrête jamais. \r\nIl bouscule ma mémoire, mes pensées. Un son n’a pas ce pouvoir… Mais celui-ci, il persiste, il m’empoisonne l’esprit. Aigu, oppressant, je le sens au fond de moi.\r\nJe vois une image, floue. Moi, plus jeune, à côté de Oiu, mais aussi d’autres personnes, des ombres, des figures vagues… \r\nElles sont là, mais elles ne sont pas réelles. Je sais qu’elles ne sont pas des étrangères. Mais je n’arrive pas à les placer, à les situer. \r\nJe les ai vues, je suis sûre. Elles ressemblent à nous, à moi, à Oiu, à tous ceux que j’ai connus. Et pourtant…\r\nMais je ne peux pas les comprendre. La pensée de ces gens me dévore. Pourquoi cela me dérange-t-il tant ? \r\nPourquoi l'idée qu'elles soient « comme nous » m’effraie à ce point ? J’ai envie de m’échapper, de crier, mais la réalité m’enferme, me bloque.\r\nJe suis perdue dans une masse d’images confuses, un tourbillon de visages flous et d’histoires inachevées. \r\nJ’ai envie de dire « nous sommes comme ceci, comme cela », mais les mots se tordent dans ma gorge.\r\nMon cerveau s’éteint, lentement, mais sûrement. Je le sens se désagréger, chaque pensée, chaque souvenir qui se dérobe. \r\nLe concept même de « elles » devient flou, n’a plus de sens. Une frontière se fissure dans ma tête, et je suis prise entre deux mondes. Mon corps m’abandonne, je vais mourir ici et maintenant.",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video50": {
+      "video_file": "video50",
+      "image_file": "video50",
+      "script_fr": "Mes yeux s’ouvrent. Oiu est là, je me sens… étrangement calme. \r\nElle m’explique que j’ai dormi pendant trente-six heures, et qu’elle a aussi entendu ce bruit. \r\nDepuis, plus rien n’est pareil. \r\nLe monde semble changé, ou peut-être sommes-nous simplement changées, nous, les humains. \r\nCette inquiétude pour le bien-être des autres nous paraît aussi pesante que notre propre survie, ou celle de nos proches. \r\nMais cela reste flou, incertain, comme un équilibre précaire.",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video51": {
+      "video_file": "video51",
+      "image_file": "video51",
+      "script_fr": "Il y a aussi une autre femme. Elle se nomme Kaik, elle m’explique être la personne qui voulait entrer dans le bunker. Mais je ne comprends pas. Cette femme, Kaik... \r\nElle voulait nous éliminer, j’en suis certaine, enfin, j’étais certaine. \r\nMais elle n’a jamais été ouvertement hostile, pas directement dangereuse pour moi, pour nous. Mais avais-je vraiment le choix que de me protéger, de protéger le bunker ?\r\nKaik me sourit, et cette fois, quelque chose dans son regard devrait m’inquiéter, mais non. \r\nElle me dit qu’elle ne voulait pas le bunker. Elle voulait juste me donner des antibiotiques, qu’elle m'avait vue déblayer la neige devant le bunker il y a deux jours et tomber évanouie, la fièvre, et qu’elle a aidé Oiu lors de l’attaque d’un ours lorsqu’elle a réactivé le générateur. \r\nTout me semble flou, incertain.",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video52": {
+      "video_file": "video52",
+      "image_file": "video52",
+      "script_fr": "Elle a trente ans. La guerre lui a tout pris. La guerre n’épargne rien, ni personne. \r\nElle était encore une enfant quand elle a perdu ses parents. Elle a grandi dans les ruines, dans un pays dévasté, sans aucune illusion. \r\nMais il y a quelque chose en elle qui est resté intact, quelque chose que même la guerre n’a pas pu détruire.\r\nElle aurait pu devenir une de ces personnes qui se laissent engloutir par la colère, celles qui finissent par se laisser submerger par la douleur et l’injustice. \r\nMais elle, non. Elle a décidé de devenir infirmière : \"Je n’ai pas choisi ça par passion, mais par nécessité. J’avais besoin de faire quelque chose.\"\r\nMais elle n’a pas cessé de croire qu’il y avait encore de la beauté, même dans ce monde brisé : \"L’idéal n’existe pas. Mais peut-être que la beauté, elle, se trouve dans les petites choses. Dans les vies qu’on touche, dans les sourires qu’on provoque, dans les moments où, même pour un instant, on redonne un peu d’humanité.\"",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video53": {
+      "video_file": "video53",
+      "image_file": "video53",
+      "script_fr": "Qui sommes-nous devenues depuis ce bruit ? Sommes-nous réellement devenues des personnes qui ne diabolisent plus les autres… ou simplement des survivants, prêt à accepter ce qui reste de ce monde ?\r\nQuel phénomène a créé ce bruit qui nous a tous poussés dans cette direction ? \r\nJe ne sais pas. \r\nPeut-être rien n’a changé, et nous sommes juste devenues plus cyniques, plus résignés. Oui, peut-être que le monde est plus calme, mais je n’arrive pas à me débarrasser de cette sensation que ce n’est qu’une illusion, une tranquillité fragile.",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    }
+  },
+  "episode3": {
+    "video54": {
+      "video_file": "video54",
+      "image_file": "video54",
+      "script_fr": "Je les observe. Ces trois jeunes assis dans la pièce, chacun dans une posture qui les trahit. \r\nChacun semble absorbé par ses pensées, et pourtant, quelque chose dans l’air fait naître une impression d’agitation. \r\nIls attendent une décision qui va changer leur vie pour un an.\r\nChaque souffle venu du couloir augmente le danger invisible qui les guette. \r\nIls n’osent pas bouger, pas même respirer trop fort, comme si le moindre geste pouvait précipiter ce qu’ils redoutent.",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video55": {
+      "video_file": "video55",
+      "image_file": "video55",
+      "script_fr": "Je veux leur crier que ce n’est pas ma faute ! Ce n’est pas la faute d’ Iris ! \r\nEt je me sens coupable, on est tous coupables, Lyra et Jett. Mais coupables de quoi, au juste ? Et Lyra… Elle me regarde, là, derrière moi. \r\nJe le sens, comme si elle attendait quelque chose,  c’est trop lourd. Jett, de son côté, ne dit rien non plus. \r\nSon silence est pire que les mots. Il est là, il occupe l’espace. Je ne sais plus ce qu’ils pensent, ni même ce qu’ils veulent que je fasse. \r\nJe vais fuir non",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video56": {
+      "video_file": "video56",
+      "image_file": "video56",
+      "script_fr": "Ils savent ce que j’ai fait quand j’étais adolescent, ils ont mon dossier celui de Lyra Shade. \r\nJe panique, j’aime m’imaginer dans ce que je fais le mieux quand je panique. \r\nJe plonge dans la mer presque gelée, et d’un coup, tout disparaît. Le bruit, les voix, le monde au-dessus, tout s’efface. \r\nL’eau glacée, un choc brutal, elle me tire vers le bas, me mord, c’est à la fois un défi et une libération. \r\nJe me sens lourde, mes muscles se tendent, chaque mouvement devient un effort, ce froid qui me ronge. Pourtant, je continue.\r\nLa lumière est dingue ici, elle danse autour de moi, des rayons du soleil se tordent se cassent à chaque mouvement. \r\nLes silhouettes des autres, là-haut, me fascinent. Leurs corps bougent avec lenteur. \r\nJe retiens ma respiration, je sens mon cœur battre doucement. Le calme est total, mais je sais qu’il ne durera pas. \r\nJe vais devoir remonter, pas le choix. Mais pour l’instant, je profite. Je suis là, suspendue, entre deux mondes, tout est super simple.",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video57": {
+      "video_file": "video57",
+      "image_file": "video57",
+      "script_fr": "Mais qu’est-ce que je fais là ?\r\nLes gyrophares clignotent, bleu, rouge, bleu, rouge. \r\nÇa éclaire nos visages comme dans un mauvais film. Léa souffle, serre le volant. \"Reste calme, s'il te plaît.\" \r\nFacile à dire. \r\nMon cœur bat tellement fort que j’ai l’impression que tout le monde l’entend. \r\nMes mains sont moites, je fixe le rétroviseur, comme si je pouvais sortir de cette situation.\r\nLes portes s’ouvrent. Des pas lourds. Une voix autoritaire : \"Descendez du véhicule, les mains bien visibles.\"\r\nJe me force à bouger. Mes jambes tremblent. Il fait froid, ou c’est juste moi qui suis nerveuse ? \r\nJ’entends Léa dire quelque chose, elle essaie de jouer les insouciantes, mais moi, je baisse la tête. Je sens que le sol va bientôt se dérober sous mes pieds.\r\nLe commissariat, c’est encore pire que ce que je pensais. On nous pose des questions. \"Tu savais que la voiture était volée ?\" La vraie réponse ? Bien sûr que oui. \r\nMais ce qui me dérange, c’est que je ne l’ai même pas volée, moi. J’étais juste là. Mauvais endroit, mauvais moment. \r\nEt pourtant, c’est moi qui vais devoir en payer le prix.\r\nEt puis mes parents arrivent. Là, tout s’effondre. Le regard de ma mère, c’est un mélange de colère et de tristesse, mais surtout d’incompréhension. \r\nComme si elle ne me reconnaissait plus. Mon père, lui, serre la mâchoire. Il ne crie pas, il ne dit rien. Et c’est encore pire.\r\nRésultat ? Un casier. Un simple casier judiciaire pour une bêtise. Une erreur, et voilà, t’es cataloguée. \r\nComme si personne n’avait jamais fait d’erreur à 16 ans. Et maintenant, ça me suit. \r\nJ’essaie d’avancer, mais j’ai l’impression d’être coincée. Entre ce que j’étais avant et ce que je suis censée devenir. \r\nEntre le passé qui me colle à la peau et un futur incertain. Parfois, je me dis que cette histoire ne devrait pas me définir. \r\nQue je ne suis pas juste \"la fille qui s’est fait choper dans une voiture volée\". Mais dans le regard des autres, c’est pas aussi simple.\r\nEt moi, je fais quoi maintenant ? J’attends que ça passe ? Que ça s’efface ?",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video58": {
+      "video_file": "video58",
+      "image_file": "video58",
+      "script_fr": "Je me sens vraiment mal. Mal de ce que j’ai fait, mal de ce qu’on a fait avec Iris, même si, à ce moment-là, je croyais que c’était la bonne décision, un truc bien. Mais maintenant… \r\nje me demande : est-ce que ça va toujours être comme ça ? \r\nPrendre une décision et, à chaque fois, manquer d’air ?",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video59": {
+      "video_file": "video59",
+      "image_file": "video59",
+      "script_fr": "Je reste assis, comme toujours. Calme. Imperturbable. \r\nLes bruits viennent et passent. Ce bureau, ces murs, cette routine. Tout est calculé ici. Même les silences ont un rythme.\r\nIls viennent, un par un, leurs noms alignés sur des listes. \r\nMoi, je reste là, derrière ce bureau, détaché. Où ils iront, ce qu’ils feront, c’est ma décision. Pas la leur.\r\nJe prends un dossier, puis un autre. Je lis les noms, les affectations possibles. Nord, Sud, bureau, terrain. \r\nPeu importe. \r\nPour moi, ce ne sont que des cases à remplir. \r\nJe ne pense pas. \r\nDes affectations. Un dossier se ferme, un autre s’ouvre.",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video60": {
+      "video_file": "video60",
+      "image_file": "video60",
+      "script_fr": "J'ai fait l'armée, comme sniper, dans le Nord. Là, sous la neige, j'ai aimé me fondre dans le paysage, invisible, dans l'immensité glacée, le vent sifflant à travers mes sens, un silence lourd. \r\nJ'étais là, caché, attendant le moment de frapper, de rire dans l'ombre alors que mes yeux se fixaient sur des cibles au loin, comme des ombres, comme des vies que je pouvais effacer à distance. \r\nUn geste anodin, presque mécanique, mais avec une lourde signification. \r\nJ'avais trouvé ce moyen de commettre l'acte, d'imposer la mort, sans jamais me salir les mains. \r\nPas vraiment responsable. \r\nJuste un déclencheur, un observateur impassible dans une neige qui recouvre tout, même les fautes.\r\nJe me souviens de mes parents, de leur façon d’être, de cette tension qui vibrait toujours sous la surface. \r\nIls n’étaient pas nés riches. Ils avaient vendu leur âme pour un semblant de réussite, mais jamais suffisante. \r\nIls étaient de ceux qui réussissent sans jamais vraiment y parvenir, de ceux qui comptent les victoires des autres en cherchant à en minimiser l’éclat.\r\nLeur monde était un jeu où l’échec était un crime et la réussite, une dette à payer sans relâche. \r\nIls nous ont élevés avec cette idée fixe. Pas par amour. Quand je trébuchais, ils ne me relevaient pas. \r\nIls étaient vexants. Pour eux, l’échec n’était pas une leçon, c’était une insulte. L’amour ? \r\nIls n’en parlaient pas. L’affection ? Un luxe réservé à ceux qui avaient le temps de faiblir. \r\nOn ne ratait pas pour apprendre, on ratait pour leur faire honte.\r\nJ'ai vu cette dynamique se refléter ailleurs, dans ma propre vie. \r\nAujourd’hui, je suis là, derrière ce bureau. Parce qu’après tout, ça ne sert à rien de se battre contre ce qu’on est devenu. \r\nTout est calculé. Et, au fond, ça ne change rien. Ce vide… il est devenu une sorte de confort, une manière de vivre sans s’attacher, sans risquer d’en perdre trop. \r\nPourquoi se battre contre ce que l'on a appris à devenir ? \r\nOn continue à jouer ce jeu, à sourire, à se fondre dans les ombres, à faire ce qu'on nous dit de faire. Parce que, au fond, l'échec est une insulte et la réussite… \r\nune dette.",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video61": {
+      "video_file": "video61",
+      "image_file": "video61",
+      "script_fr": "Un bruit discret se fait entendre. \r\nLa porte s’ouvre, un agent passe, appelant un nom qui n’est pas celui des trois jeunes. \r\nUne brise légère traverse la pièce, mais à peine l’agent disparaît que la tension se renforce. La pièce redevient aussi silencieuse qu’avant.",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video62": {
+      "video_file": "video62",
+      "image_file": "video62",
+      "script_fr": "Mon père n’avait jamais été là, absent de nos vies, comme une silhouette floue qu’on efface sans vraiment chercher à la redessiner. \r\nSa présence n’avait jamais eu de poids. \r\nEt pourtant, malgré ce vide, ma mère était là, chaque jour, solide comme un roc. \r\nElle nous portait à bout de bras, sans jamais faiblir, même quand tout semblait difficile. \r\nMa mère nous aimait d’une manière qui n’avait rien à voir avec des mots. \r\nElle ne parlait pas beaucoup, mais ses actes étaient son langage. \r\nElle ne nous faisait pas de grandes promesses, mais son amour se construisait dans les petites choses : un repas préparé avec soin, un regard qui rassure, une main tendue sans condition. Elle avait ce mélange rare de courage brûlant et de douceur infinie. \r\nUn amour discret, mais profond, qui se manifestait dans chaque geste, dans chaque silence.\r\nMais parfois, dans le calme du matin, avant que tout le monde ne s’agite, je la voyais perdue dans ses pensées. \r\nIl y avait ces silences, lourds et mystérieux, comme des ombres dans la lumière. \r\nDes moments où ses yeux se fermaient un peu plus longtemps, comme si elle cherchait à remonter le fil du temps, à imaginer une autre version de sa vie. \r\nUne version où tout aurait été plus doux, plus facile. Mais même dans ces moments-là, elle restait là, implacable, et dans sa manière d’être, elle nous apprenait à survivre, à aimer, sans jamais se laisser abattre.\r\nC’était une femme de silence et de gestes, une force enveloppée de tendresse, elle qui savait que l’amour n’était pas qu’une parole, mais une promesse qu’on tenait avec le corps, avec le cœur. \r\nEt moi, je l’observais, en silence aussi, apprenant de son courage, de sa tendresse infinie, de sa capacité à avancer sans jamais se laisser submerger.\r\nJe ne me souviens pas de la guerre elle-même. \r\nÀ cinq ans, je n’avais pas les mots pour comprendre tout ça. Tout semblait suspendu, en attente de quelque chose. \r\nQuand j’ai eu 15 ans, je n’avais pas de grands rêves. \r\nJe ne savais pas encore où aller ni quoi faire de ma vie. On me disait parfois que c’était le moment de choisir, d’imaginer l’avenir. \r\nMais comment rêver grand quand le monde autour de toi porte encore les cicatrices d’hier ?\r\nAlors, j’ai pris mon temps. Là où d’autres se précipitaient, moi, j’observais. Là où certains voulaient courir, je préférais marcher. Peu à peu, j’ai compris que l’avenir n’était pas une ligne tracée, mais une route que l’on dessine soi-même, pas après pas.\r\nLe monde redémarrait, et moi, doucement, je trouvais enfin ma place dans ce mouvement.",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video63": {
+      "video_file": "video63",
+      "image_file": "video63",
+      "script_fr": "J’ai toujours cru que j’étais forte. Pas le genre à vaciller, pas le genre à avoir peur. \r\nMais là, je me demande… est-ce qu’elle sait ? Est-ce qu’Iris se rend compte à quel point je tiens à elle ? \r\nEt Jett, est-ce qu’il comprend ce qu’il représente pour moi ?\r\nMais, au fond, je sais que ce n’est pas de leur faute. \r\nC’est à moi de trouver la force de m’en libérer. \r\nSi je ne tiens pas bon, si je ne fais pas en sorte de montrer que je suis assez forte pour tout ça, je sais très bien ce qui va se passer. Ça va m’écraser.\r\nEt puis, il y a cette pensée qui me ronge. C’est toujours la même chose avec les autres, non ? \r\nIls s’indignent quand quelqu’un reçoit un passe-droit, quand la vie semble accorder un privilège à certains, mais dès que c’est à leur tour de profiter d’une situation favorable, ils ne voient plus rien. \r\nC’est comme si l’injustice n’existait que lorsqu’elle les concerne, mais si c’est eux qui en bénéficient, c’est soudainement bien mérité. \r\nTout le monde veut être égal, mais personne ne veut perdre. Personne ne veut être celui qui est laissé de côté.\r\nC’est une hypocrisie qu’on tait, qu’on cache derrière des sourires et des justifications. \"Ce n’est pas pareil pour moi\", \"J'ai fait mes preuves\", \"J’ai travaillé plus dur que les autres\". Ces mots, ces excuses… \r\ntout cela sonne tellement faux. Parce qu’au fond, tout le monde veut son petit avantage, son petit coin de paradis où les règles ne s'appliquent pas. \r\nEt moi, là-dedans, je suis coincée, à essayer de faire en sorte de ne pas être ce hypocrite qui se cache derrière ses propres faiblesses, mais qui, dans le même temps, cherche à s’accrocher aux miettes du privilège.\r\nAlors, je me dis… peut-être que c’est là la clé. Peut-être que, si je suis assez forte pour ne pas céder à cette tentation de jouer ce jeu, je serai enfin en paix avec moi-même. \r\nMais je sais que la vie n’est pas si simple. \r\nParce qu’à un moment donné, tout le monde finit par se demander : pourquoi pas moi ?",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video64": {
+      "video_file": "video64",
+      "image_file": "video64",
+      "script_fr": "Comme toujours, quand j’attends, je fais ce que je sais faire : Jett, il bouge !\r\nJe m’occupe quoi, mais je me fatigue sur cette chaise. Parce que rester immobile, ça me rend fou. \r\nEn vrai, ce que j’aime vraiment, c’est danser. Pas juste bouger pour rigoler en soirée, hein. Je parle de la vraie danse, celle où tu ressens la musique jusque dans tes tripes, où chaque mouvement raconte quelque chose.\r\nQuand je danse, c’est comme si tout s’arrêtait. \r\nJe me sens libre, vivant, moi-même. Mais mon rêve risque de s’arrêter si je ne m’entraine pas plus, et impossible si je dois partir un an, un an c’est long et même loin pour moi ...\r\nje suis mort, ma vie est foutu. \r\nBon ok je n’y crois pas trop mais je ne suis clairement pas content quoi",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video65": {
+      "video_file": "video65",
+      "image_file": "video65",
+      "script_fr": "Je les regarde et je me demande qui ils sont, ce qu’ils vivent dans ce moment. \r\nEst-ce que cette anxiété est la même que celle que j’avais à leur âge, cette peur d’une décision qui pourrait tout changer. \r\nEt je souris tristement, un peu, discrètement, tout en sachant qu’il leur faudra du temps pour comprendre que la vie, ce n’est pas un enchaînement de moments importants, mais plutôt l’ensemble de petites décisions, de petites actions qui, à la fin, finissent par nous façonner. \r\nEt eux ils sont en fin de liste des jeunes de 21ans de 2089, ils risquent d’être envoyés comme tous ceux de leur âge, dans les endroits les plus dangereux du pays : les mines creusées à 600 mètres sous terre, à surveiller les individus les plus dangereux du territoire, ou encore à rester en pleine mer dans des phares battus par des tempêtes si violentes qu’elles empêchent quiconque de dormir plus de 15 minutes",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video66": {
+      "video_file": "video66",
+      "image_file": "video66",
+      "script_fr": "J’ai toujours cru que j’étais forte. Pas le genre à vaciller, pas le genre à avoir peur. Mais là, je me demande… est-ce qu’elle sait ? \r\nEst-ce qu’Iris se rend compte à quel point je tiens à elle ? Et Jett, est-ce qu’il comprend ce qu’il représente pour moi ?\r\nMais, au fond, je sais que ce n’est pas de leur faute. C’est à moi de trouver la force de m’en libérer. \r\nSi je ne tiens pas bon, si je ne fais pas en sorte de montrer que je suis assez forte pour tout ça, je sais très bien ce qui va se passer. Ça va m’écraser.",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video67": {
+      "video_file": "video67",
+      "image_file": "video67",
+      "script_fr": "C’est fou, non ? Mais c’est sur ils vont m’affecter a un sous marin, un sous-marin sous les glaces. Comment on te prépare à ça ?\r\nSous l’eau, là-bas, sous ces glaciers, il n’y a rien. \r\nJuste nous, dans un vieux sous-marin qui grince et qui lutte pour ne pas se laisser couler. \r\nEt cette mission… aller chercher des vieilles mines de guerre, ces armes qui cognent les navires marchands.\r\nJe me demande ce que ça va me faire, tout ça. \r\nJ’imagine qu’être seul, ça va être dur. Un an dans ce trou noir… les jours tous les mêmes, les soirées sympas jamais. \r\nEst-ce que ces vieilles mines ont encore un sens ? Elles sont toujours actives ? Pourquoi moi ? \r\nParce qu’une fois là-bas, je ne serai plus le même",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video68": {
+      "video_file": "video68",
+      "image_file": "video68",
+      "script_fr": "J’entends clairement les bruits de l'autre côté. Ils viennent chercher un jeune. \r\nDès qu’il entend son nom, il craque. Un cri étranglé, une douleur qui éclate. \r\nJe me sens un instant déstabilisée. Il pleure. Un jeune de 21 ans, pleurant comme un enfant. \r\nJ’imagine sa peur, sa panique mais il n’a pas le choix. Il se retrouve là, seul avec son angoisse qui éclate au grand jour, tout ce qu’il a voulu peut-être cacher.\r\nLes trois jeunes ont tout entendu. \r\nIls se regardent, comme s’ils venaient de comprendre quelque chose qu’ils ne voulaient pas savoir. Ça les touche. La peur s’empare d’eux, comme une ombre qui s’étend lentement. \r\nMême ceux qui croient qu’ils sont assez forts, assez résistants. \r\nPeut-être qu’ils ont vu quelque chose en lui, quelque chose qu’ils craignent de voir un jour en eux.\r\nJe les observe, en silence. \r\nJ’aimerais pouvoir les protéger de ce qui se cache derrière cette peur, mais je sais que ce n’est pas possible.",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video69": {
+      "video_file": "video69",
+      "image_file": "video69",
+      "script_fr": "Ici le président change tous les quatre ans, mais il n’est pas élu directement par le peuple. \r\nNon, ici, c’est une histoire de liste, de partis politiques. Chaque citoyen, tous les trois ans, doit choisir quel parti sera en haut de la liste, et quel autre sera en bas. \r\nQuand j’y pense, ça pourrait être bien, non ?\r\nParce que, soyons honnêtes, parfois on se lasse. Le temps passe, et rien ne change. Mais là, si un parti fait du bon travail, il grimpe dans le classement. \r\nSi un autre déçoit, il descend. Et le peuple choisit. C’est comme une remise à zéro. Ce n’est pas un président pour toujours, un roi éternel. \r\nLe pouvoir ne reste pas figé, il tourne, il change.\r\nCar aucun parti ne peut être élu deux fois de suite ; s’il est premier, on prend celui qui vient juste après dans la liste.\r\nMais trois ans, c’est court, non ? Ça ne laisse pas vraiment le temps aux gens de s’habituer à une direction. \r\nEt à quoi sert de commencer quelque chose si, à peine le travail fait, il faut tout recommencer ? J’ai vu ça, tu sais, les gens qui se battent pour faire avancer quelque chose, et quand ils arrivent enfin à leur but, on leur dit : « Allez, maintenant, on repart à zéro, on change tout ». \r\nÇa épuise. \r\nÇa fait que les gens n’osent plus rien entreprendre. \r\nRien qui dure.\r\nD’un autre côté, je me dis qu’il y a des bons côtés à ce système. Après tout, c’est peut-être une chance pour les plus jeunes de se faire entendre. \r\nIls peuvent changer les règles, se battre pour faire évoluer les choses, sans attendre que tout se règle tout seul.\r\nMais peut-être qu’il y a un juste milieu, quelque part, une façon de donner un peu plus de pouvoir aux gens sans perdre la tête dans des changements trop rapides.",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video70": {
+      "video_file": "video70",
+      "image_file": "video70",
+      "script_fr": "Pourquoi il se met dans cet état ? Où est-ce qu’on va nous envoyer, sérieusement ? \r\nC’est un véritable poids, une spirale. Je me sens tellement ridicule. Je vais être envoyée, je ne sais même pas où, et en plus, je suis en train de compliquer les choses avec lui. \r\nJett m’a demandé de sortir avec lui, et je suis à deux doigts de craquer, de tout laisser exploser. \r\nJ’ai tellement peur que ça blesse Lyra, que tout s’effondre autour de moi.\r\nJe suis contente, oui, mais cette satisfaction est envahie par une sensation de malaise, comme si quelque chose de grave allait se passer. Une peur sourde, qui me dévore lentement, cette culpabilité de penser à Lyra alors que je me sens attirée par autre chose, quelque chose qui pourrait tout chambouler. \r\nC’est comme si j’étais prise dans un tourbillon, cette tornade de joie mêlée de peur, d'incertitude. \r\nJe n’arrive plus à respirer sans avoir cette angoisse, cette pression constante sur ma poitrine.\r\nJ’en veux à Jett, un peu, beaucoup. Parce que tout ça c’est un feu qui me consume. \r\nC’est un tiraillement infini entre ce bonheur que je pourrais avoir avec lui et la crainte insupportable de perdre quelque chose de bien plus grand, de bien plus fragile. \r\nCette amitié, cette confiance. \r\nPourquoi tout ça doit être si compliqué ? Pourquoi faut-il que chaque geste, chaque mot, me fasse douter encore plus ? \r\nC’est un enfer à l’intérieur, un chaos.\r\nEt puis… cette question qui me dévore. Pourquoi attendre, je ne sais pas, dans 30 ans ? Qu'est-ce qui me garantit que ma vie sera mieux, plus simple, plus tranquille à ce moment-là ? \r\nPourquoi repousser ma vie, attendre des circonstances parfaites, quand je pourrais la vivre pleinement, ici et maintenant ? \r\nPourquoi me laisser prisonnière de ce futur flou et incertain, alors que j’ai le pouvoir de tout prendre en main, de brûler les étapes, d’embrasser cette folie, cette peur, cette passion dès aujourd’hui ? \r\nPourquoi rester figée dans l’attente, quand je pourrais tout risquer, même si ça veut dire tout chambouler ? Pourquoi ne pas me lâcher, enfin ?\r\nJe suis piégée dans ce tourbillon, et plus rien ne me semble clair. \r\nEst-ce que je veux être heureuse ? \r\nJe crois que oui, mais cette angoisse… elle me dévore. \r\nElle ne me lâche pas. Pas ici. \r\nPas maintenant.",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video71": {
+      "video_file": "video71",
+      "image_file": "video71",
+      "script_fr": "C’est clair, je n’ai plus de doutes : il ne doit plus rester que des affectations complètement absurdes. \r\nJe vais partir dans le Nord, un an à patrouiller, à faire semblant de surveiller des frontières. \r\nOn m’a dit que c’était essentiel, qu’il fallait prouver qu’on est prêt à défendre, mais je sais très bien que tout ça, c’est du vent. \r\nCe pays voisin… c’est un allié, un ami. Des frontières ? Des lignes tracées sur une carte pour nous faire croire qu’on est séparés, mais c’est faux. On n’est pas séparés.\r\nEt pourtant, me voilà envoyée là-bas, dans le froid, à tourner en rond sur un terrain qui n’a aucune raison d’être surveillé.\r\nC’est ridicule, non ? Tout ce que je vais faire, c’est marcher dans le vent glacé, garder les yeux fixés sur des endroits où il n’y a aucune menace. \r\nCe n’est pas pour protéger des vies. Non, c’est juste pour jouer un rôle, pour faire semblant. Peut-être que ça va me rendre amère, ou peut-être que je vais juste finir par m’y habituer. \r\nPeut-être qu’après quelques mois, je vais adorer ça. Non, dans mes rêves… \r\nEt je sais qu’au fond, tout ça va me ronger. Parce qu’il n’y a rien de rationnel là-dedans, rien qui tienne debout. Et pourtant, on m’envoie là.",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video72": {
+      "video_file": "video72",
+      "image_file": "video72",
+      "script_fr": "J’ai cette sensation accablante de chuter, encore et encore, comme un poids lourd qui m’engloutit. L’amitié avec Iris et Lyra ? \r\nElle se brise lentement, comme un puzzle dont les pièces se dispersent, et je ne sais pas comment les rassembler. \r\nPourtant… ce sentiment, je le connais.\r\nJe me souviens de cet instant précis, celui où tout a basculé lors du concours de danse. \r\nMes pieds ont perdu le rythme, ma tête s’est remplie de panique, et tout mon corps s’est figé. Je suis tombé. Là, devant tout le monde. \r\nPas parce que je ne pouvais pas me relever, mais peut-être parce qu’à ce moment-là, je n’avais pas la force. \r\nOu peut-être, juste, je n’avais pas l’envie.\r\nEt si j’avais attendu ? Si, avant de tout risquer avec Iris, j’avais pris le temps de construire quelque chose de plus solide, quelque chose qui me permettrait de vivre sans être constamment dans l’urgence ? \r\nPeut-être que j’aurais dû m’assurer d’avoir des repères, une stabilité, avant de me jeter dans ce tourbillon. Peut-être que j’ai été trop pressé, trop impulsif, en pensant qu’il suffisait de foncer dans le vide sans réfléchir. \r\nSi j'avais pris le temps de poser des fondations, des bases solides pour ma vie, peut-être que je n’aurais pas eu à me battre contre cette sensation de vide, de précarité qui me ronge à chaque instant.\r\nAu lieu de ça, je me suis laissé emporter par l’instant, par l’envie de tout, tout de suite. J’ai voulu vivre intensément, sans penser à demain. \r\nJ’aurais pu bâtir une vie, une routine, quelque chose qui me donnerait la force de me lancer sans avoir peur de tout perdre à chaque faux pas. \r\nMais non, j’ai choisi de me jeter sans réfléchir, de me lancer dans cette aventure avec Iris, sans vraiment penser à ce qui se passera après, sans voir à quel point l’imprévu peut tout bouleverser.\r\nPeut-être qu’à force de vouloir vivre pleinement, de vivre tout de suite, \r\nj’ai négligé ce qui aurait dû être la priorité : m’assurer que j’avais les pieds bien ancrés avant de vouloir courir.",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video73": {
+      "video_file": "video73",
+      "image_file": "video73",
+      "script_fr": "Ce bruit… ce son. C’était comme une mélodie, mais pas une jolie mélodie. Non, quelque chose de déformé, de détestable. \r\nC’est presque comme si un instrument enragé se tordait sous une pression qu’il ne pouvait plus supporter. \r\nJ’ai regardé les trois jeunes autour de moi. Leur visage, un mélange d’incertitude et de peur, ils l’entendent aussi… Moi, je n’ai plus peux rien contrôler. \r\nComme si ma peau se fondait dans l’air, brûlait de manière invisible, et je ne pouvais rien y faire.\r\nje vois tout. Je percute le sol. \r\nMoi, j’ai été aimée, oui, mais pas comme les autres. Pas d’un amour subtil, dans la durée, pas de ces amours qu’on construit et qui grandissent avec le temps. \r\nNon, moi, j’ai connu la passion. Chaque baiser, chaque geste, chaque parole était un éclat fugace, un feu qui brûle tout mais qui ne laisse rien derrière.\r\nAu début, je croyais que c’était ça l’amour. \r\nJe croyais que c’était ça qu’on recherchait tous : une intensité brute, une chaleur immédiate. \r\nC’est ce que j’ai connu, c’est ce qui m’a enveloppée, ce qui m’a fait vibrer, mais je n’ai jamais cherché la permanence. \r\nJe ne voulais pas que cet amour dure, pas vraiment. Je savais au fond que tout finirait, mais ce n’était pas grave\r\nIl lui a fallu du temps pour accepter cela. Parce que comprendre que l’amour devait se vivre sans penser à l’après, c’était s’interdire de chercher la stabilité, de prévoir la suite.\r\nJe ne suis pas malheureuse de cet amour qui ne dure pas. Je le sais maintenant : ce n’est pas ce que je voulais, ce n’est pas ce que je recherchais. \r\nJ’ai voulu cette intensité, cet amour qui brûle tout\r\nParce qu’au fond, c’est la liberté de savoir que chaque rencontre, chaque passion est éphémère et que c’est justement cela qui en fait sa beauté.\r\nL’amour, parfois, c’est juste un feu qui brûle, rien de plus. Mais quel feu !",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video74": {
+      "video_file": "video74",
+      "image_file": "video74",
+      "script_fr": "Je viens d’entendre ce bruit. Et là, comme un déclic. Il était temps.\r\nOui, accepter l’idée de partir, d’être envoyée je ne sais où, sûrement un endroit pas franchement accueillant, pour un an. \r\nMais tu sais quoi ? \r\nC’est la fin de cette peur qui me collait à la peau. \r\nFini de me demander si je serai à la hauteur.\r\nParce que maintenant, je le sais : je le suis",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video75": {
+      "video_file": "video75",
+      "image_file": "video75",
+      "script_fr": "Un bruit a résonné, net, précis. Rien qui puisse réellement me déconcerter. \r\nPas un de ces bruits qui vous pousse à vous lever d’un bond ou à chercher son origine.",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video76": {
+      "video_file": "video76",
+      "image_file": "video76",
+      "script_fr": "Ce n’était pas juste un bruit, c’était… autre chose. Un déclic. \r\nEt là, d’un coup, comme si une énorme chaîne en fer que je traînais sans même le savoir venait de se briser. \r\nRésultat ? \r\nJe me sens plus légère, presque libre.\r\nOui, je pars. Oui, je vais être loin de tout ce que je connais, loin de ceux que j’aime. \r\nMais fini d’avoir peur qu’on m’oublie, qu’on m’abandonne. Ce bruit, ce moment… c’était comme un signal. \r\nIl m’a fait comprendre un truc essentiel : je suis assez forte. Assez forte pour affronter cette solitude, pour avancer sans toujours devoir m’accrocher aux autres.\r\nAlors, qu’il vienne, ce Nord. \r\nQu’il souffle, ce froid. Qu’elle se creuse, cette distance. \r\nJe suis prête.",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video77": {
+      "video_file": "video77",
+      "image_file": "video77",
+      "script_fr": "Des noms écrits à l’encre noire, rangés en colonnes bien droites. Des prénoms, des patronymes, des numéros. Rien de plus.\nLes deux gardes entreront bientôt. Toujours la même démarche, toujours la même routine. \nIls me regarderont brièvement, prendront la liste sans un mot. Ils savent quoi faire, où aller. \nIls appelleront les noms, un par un. Et ces jeunes, ceux dont le nom sera prononcé, se lèveront. \nLentement, peut-être, ou rapidement, selon le poids de leur peur ou leur résignation. \nIls sortiront, sans savoir exactement ce qui les attend. Loin. On les emmène loin, c’est tout ce qu’ils savent. \nJe ne vois que des lignes sur une feuille, pas des visages, pas des vies.\nLa liste est prête. Tout est en ordre. Les gardes arriveront, prendront ce papier, et la machine continuera de tourner. \nC’est une mécanique bien huilée. Rien de plus.",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video78": {
+      "video_file": "video78",
+      "image_file": "video78",
+      "script_fr": "Je me surprends à penser à elle. Iris. Sérieusement, c’est bizarre, non ? Mais tu sais quoi ? J’assume à 1000 % ! \r\nMême si le timing n’est pas bon, même si ça ne change rien pour elle… Moi, je sais. \r\nJe veux être avec elle. Point barre.\r\nMais bon, en attendant, c’est parti pour un an d’aventure forcée. \r\nOù ? Aucune idée. \r\nTout ce que je sais, c’est que ça va être top. \r\nMais tant pis, je suis prêt. Pas question de faire marche arrière. \r\nPas cette fois.\r\nIls vont appeler mon nom, c’est une évidence. \r\nJe vais me lever, les suivre, aller là où ils ont décidé. Mais dans ma tête, c’est clair : je ne serai pas totalement seul. \r\nAlors qu’ils m’appellent ! Je les attends de pied ferme.\r\nJe prends une grande inspiration, je lève les yeux, je regarde autour de moi… \r\nEt là, plot twist : la surveillante ? Disparue. \r\nGénial.",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video79": {
+      "video_file": "video79",
+      "image_file": "video79",
+      "script_fr": "Je suis assis là, comme toujours, à ce bureau. \r\nLa liste est prête. J’attends. \r\nIls doivent venir la chercher. \r\nMais personne ne vient. \r\nPas un bruit dans le couloir.\r\nMais quelque chose commence à grincer en moi. \r\nPourquoi suis-je encore là ? Pourquoi est-ce que je m’accroche à ce rôle, à cette mécanique vide ? \r\nJe le sais, au fond. Je n’aime pas ce métier. Je ne l’ai jamais aimé.\r\nJe suis resté parce que c’était plus simple. \r\nParce qu’on m’a dit que c’était mon rôle, que c’était là où je devais être. Alors, je me suis plié à l’ordre des choses. \r\nJ’ai appris à être froid, à être distant.\r\nJe regarde la liste une dernière fois. \r\nJe ne fais pas de bruit. \r\nPas besoin. \r\nJe sais maintenant que personne ne viendra. \r\nJe prends ma veste, je pousse la chaise contre le bureau, et je sors.",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    }
+  },
+  "episode4": {
+    "video80": {
+      "video_file": "video80",
+      "image_file": "video80",
+      "script_fr": "Une proie, un être sans choix. Un animal piégé, contraint d’avancer, toujours plus près du mur. \r\nLe froid pèse sur chaque mouvement, chaque pas devient plus lourd. La faim affaiblit, les forces diminuent. \r\nUn loup rôde, invisible dans la forêt, traquant sans relâche. Peu importe qui j’étais, peu importe ce que je suis devenu : à ses yeux, je ne suis qu’une proie. \r\nEt ce loup, n’a qu’une seule certitude : ma fin est inévitable.",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video81": {
+      "video_file": "video81",
+      "image_file": "video81",
+      "script_fr": "Le loup, son corps taillé pour l’endurance et la survie. Son pelage, mélange de gris cendré et de noir profond, se fond dans les ombres mouvantes du paysage. \r\nSes yeux, perçants et dorés, reflètent une intelligence brute, un instinct affûté par le froid et la faim.\r\nIl ne connaît ni repos ni hésitation. \r\nIl sent le vent porter des odeurs lointaines, devine la présence d’une proie avant même de l’apercevoir. \r\nSon souffle se mêle à l’air glacé, invisible, éphémère, tandis qu’il continue sa route, insensible à la fatigue.\r\nIl ne cherche pas la gloire, ne s’attarde pas sur le passé. Il suit un chemin que seuls ceux de son espèce comprennent, une route tracée par l’instinct, la nécessité.\r\nDans cet espace infini, il n’est ni maître ni serviteur. Il est une ombre en mouvement, une force que rien n’arrête.",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video82": {
+      "video_file": "video82",
+      "image_file": "video82",
+      "script_fr": "Avant 2089, ma vie suivait une mécanique précise. Chaque matin, la lumière artificielle du plafond s’allumait à heure fixe. \r\nUne pile de dossiers à traiter, minutieusement classés, attendant une approbation, une signature, une décision prise sans véritable réflexion.\r\nTout était encadré, ordonné. Les courriels s’enchaînaient avec la régularité d’un battement de métronome. \r\nLes réunions s’inscrivaient dans des créneaux fixes, des espaces calculés où chacun récitait des directives préétablies. \r\nOn rationalisait l’humain, on réduisait l’existence à des chiffres et des objectifs mesurables. Mon rôle n’était pas de questionner, encore moins de douter. \r\nIl suffisait de suivre la procédure, d’exécuter. J’étais un rouage bien huilé dans un système trop grand pour être remis en cause.\r\nJe dois penser à autre chose. Je dois avancer, sans regarder en arrière",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video83": {
+      "video_file": "video83",
+      "image_file": "video83",
+      "script_fr": "Nous avons changé depuis ce fameux jour de 2089. Aujourd’hui, en 2091, les choses ont changé : nous sommes moins agressifs, moins égoïstes, moins pessimistes. \r\nEt de grandes choses ont été faites, notamment dans la santé, l’éducation, mais surtout dans l’éradication de la pauvreté. \r\nCela peut sembler idyllique, mais au final, pas tant que ça. Ces changements nous ont aussi rendus plus libres, moins anxieux, et cela peut faire peur. \r\nPeur de devoir choisir son chemin sans aucune pression, mais aussi peur que cette sérénité pour l’avenir nous rendent, pour certains, moins entreprenants.\r\nL’humain est ainsi fait. il peut avoir besoin d’anxiété et de doutes pour avancer. C’est même l’essence du moteur qui l’anime. \r\nIl est difficile d’agir pour la beauté du geste, d’aimer sans craindre la chute une fois la passion passée.\r\nCe monde est donc clairement différent, mais des troubles persistent dans les esprits. Certes, il n’y a plus de guerres ni de conflits. \r\nComprenez bien que nous ne sommes pas devenus des robots heureux.",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video84": {
+      "video_file": "video84",
+      "image_file": "video84",
+      "script_fr": "Nous continuons à créer, Créer reste essentiel. L’écriture, le dessin, la photographie, ou simplement tracer les contours de sa propre vie — tous ces actes persistent. \r\nIls semblent parfois dérisoires face aux obstacles, mais ils existent comme une forme de résistance. \r\nChaque mot, chaque image est une affirmation.\r\nL’art ne protège ni du froid, ni de la faim, ni du doute, mais il préserve autre chose : une présence, une empreinte, la preuve que quelque chose subsiste au-delà du simple fait d’exister.",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video85": {
+      "video_file": "video85",
+      "image_file": "video85",
+      "script_fr": "Yuan est à un jour de marche. Un jour d’efforts calculés, de vigilance constante, de progression mesurée à travers un territoire où chaque détail compte. \r\nElle attend dans l’abri, un ancien avion de ligne écrasé dans la neige, transformé en refuge improvisé. \r\nAutour de lui, le vent glacial souffle sur un paysage figé, mais à l’intérieur, la chaleur reste une illusion fragile. \r\nC’est là qu’elle se cache, dans cet espace devenu à la fois un sanctuaire et une cage, conçu pour les moments où l’immobilité est une nécessité, non un luxe.\r\nIl est impératif d’y arriver dans les délais. Pas seulement parce que la route est dangereuse, mais parce que le temps est une lame acérée, toujours prête à nous trancher. \r\nChaque heure compte, chaque détour imprévu peut tout faire basculer. \r\nIl n’y a pas de place pour l’erreur. Pas ici, pas maintenant. L’itinéraire est gravé dans mon esprit, chaque point de repère mémorisé, chaque risque anticipé.\r\nYuan sait que notre mission dépasse le simple déplacement. Ce n’est pas un simple transfert d’objets ou d’informations. \r\nChaque étape est une pièce essentielle d’un mécanisme plus vaste, un engrenage dans un puzzle dont nous n’avons pas encore toutes les clés. \r\nCe que nous transportons, ce que nous défendons, ce que nous accomplissons a des conséquences qui vont bien au-delà de nos trajectoires individuelles.\r\nElle attend, et je dois avancer.",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video86": {
+      "video_file": "video86",
+      "image_file": "video86",
+      "script_fr": "La rivière est proche. Le bruit de l’eau est faible sous le froid, mais elle est là. Une fine couche de glace couvre sa surface, fragile par endroits. \r\nLa traversée est nécessaire. \r\nLa rivière doit être traversée avec prudence. Le courant sous la glace est traître. \r\nLes vêtements dans le sac sont protégés dans un emballage hermétique, préservant tout de l’humidité.\r\nLe froid mord la peau dès l’entrée dans l’eau. Les muscles se crispent sous l’effet du gel, mais la progression ne s’arrête pas. \r\nLa profondeur augmente, la pression devient plus forte, chaque pas est calculé. Enfin, la terre ferme. Trempée, il faut agir vite. \r\nDu bois sec repéré plus tôt permet de faire un feu. La chaleur revient lentement, les muscles se détendent, les vêtements sont remis un à un avec précaution. \r\nLa nuit sera froide, mais le feu brûle. Pour l’instant, seule cette chaleur compte.",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video87": {
+      "video_file": "video87",
+      "image_file": "video87",
+      "script_fr": "Une grotte, enfin. Une faille sombre dans la roche, à peine visible dans la nuit. \r\nUn pas rapide, un dernier regard derrière. c’est l’abri.\r\nL’air est lourd, chargé d’humidité. Odeur de pierre, de terre froide. \r\nLe silence, presque total. Juste le souffle du vent dehors. Les muscles se détendent légèrement, mais pas trop. Pas encore.\r\nFaire un feu rapidement.\r\nUn mouvement, au loin. Une ombre, fugace. Il est là. Il attend. Le loup.\r\nIl ne bouge pas, mais il existe, quelque part dans l’obscurité. \r\nIl sait que je suis là. Il sait que je n’irai pas plus loin cette nuit. Un jeu de patience.\r\nLes doigts glissent sur la roche, rugueuse, glacée. Pas de traces, pas de restes. \r\nPersonne ici depuis longtemps. \r\nAssis contre la paroi, respiration lente. \r\nL’esprit doit rester clair. Le froid ronge, mais ne doit pas gagner. \r\nUn jeu. \r\nUn exercice.\r\nObserver. Écouter.\r\nLe loup ne bougera pas pour rien. \r\nIl attendra une faille, une faiblesse. \r\nLes heures passeront. Le jour finira par revenir.",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video88": {
+      "video_file": "video88",
+      "image_file": "video88",
+      "script_fr": "La nuit est presque la, plongeant la forêt dans l’obscurité. Le temps presse. \r\nUn chêne massif se dresse non loin. \r\nL’ascension est la meilleure option. Grimper permet d’échapper aux prédateurs du sol. \r\nL’écorce rugueuse sous les doigts rend l’ascension difficile, mais nécessaire. \r\nLe silence s’installe, lourd, comme si la forêt elle-même ressentait la menace.\r\nUne fois en hauteur, un hamac est installé entre deux branches solides. \r\nLes gestes sont rapides, précis. Le vent change de direction, apportant une odeur caractéristique. \r\nLe loup est proche. L’obscurité masque sa présence, mais il est là, quelque part en bas.\r\nUne couverture chauffante est dépliée, procurant une chaleur temporaire, insuffisante face à l’humidité persistante. \r\nLe loup chasse la nuit. \r\nIl est capable de percevoir le moindre indice de présence étrangère. \r\nAucun mouvement n’est permis. \r\nLa priorité est de rester discret, de ne pas attirer l’attention.",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video89": {
+      "video_file": "video89",
+      "image_file": "video89",
+      "script_fr": "La nuit est longue, incertaine. \r\nL’aube pourrait marquer la fin de la menace. D’ici là, il ne reste qu’une chose à faire : attendre, immobile, à l’écoute du moindre son.",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video90": {
+      "video_file": "video90",
+      "image_file": "video90",
+      "script_fr": "Le matin se lève enfin. La forêt demeure silencieuse, l’immobilité règne. Le sentiment de perte se fait encore plus présent, mais il n’y a pas de place pour la panique. \r\nLa seule option reste d’avancer.\r\nUn moment de pause. \r\nLes oiseaux passent au-dessus, leurs trajectoires précises et confiantes. \r\nLeur vol indique la direction à suivre, une évidence dans leur mouvement. En les observant, l’on comprend : il suffit de se laisser guider, de ne pas douter.",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video91": {
+      "video_file": "video91",
+      "image_file": "video91",
+      "script_fr": "Le loup, patient, observe. Il sait que chaque mouvement, chaque décision prise dans cette forêt peut être son moment. \r\nEt bien qu'il ne se rapproche pas immédiatement, sa présence fait partie de la réalité de ce paysage.\r\nLe regard se porte à nouveau vers les oiseaux, vers leur vol impeccable. Leur direction reste la même. \r\nMalgré le danger omniprésent, malgré la menace qui rôde, la route demeure claire. Le loup est là, mais il n’arrête pas la marche. \r\nIl faut continuer, garder les yeux fixés sur l’horizon, sur ce qui guide. Guide.. Depuis 2089, j’ai rencontré beaucoup de personnes qui ont changé de chemin.",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video92": {
+      "video_file": "video92",
+      "image_file": "video92",
+      "script_fr": "Ils n’étaient pas faits pour ça. Rien, dans leur passé, ne les prédestinait à ces choix. Pourtant, un jour, quelque chose—un regard, un silence, une fracture imperceptible—les a fait basculer.\r\nTrois jeunes, sans liens particuliers avec le monde animal, marchaient dans la ville comme tant d’autres. \r\nPuis ils ont croisé un chien famélique, un chat recroquevillé sous un porche. Ce n’était qu’un instant, un battement de paupières. Mais cet instant les a marqués au fer rouge. \r\nIls ont commencé par un simple geste : un bol d’eau déposé sur un trottoir, une main tendue sous une pluie battante. \r\nIls auraient pu s’arrêter là. Mais ils ont continué. Un chien sauvé, puis deux. Un abri bricolé, puis un refuge entier. \r\nAujourd’hui, ils ne comptent plus les heures, ni les sacrifices. Ils se contentent d’observer, chaque jour, ces créatures brisées qui réapprennent à faire confiance. \r\nUne patte hésitante sur un sol sûr. Un regard qui, enfin, ne craint plus.\r\nIl traquait la vérité dans les ombres. Policier, détective, il fouillait dans le chaos, démêlait les fils invisibles des mensonges et des crimes. \r\nPuis, un jour, il a compris : la vérité la plus précieuse n’était pas cachée dans un dossier scellé ou dans un témoignage arraché à la peur. \r\nElle se transmettait, elle s’enseignait. Alors, il a posé son insigne. Fermé son dernier dossier. \r\nEt il a pris place derrière un bureau d’école. Désormais, il n’apprend plus à traquer les coupables, mais à observer, à comprendre, à penser. \r\nEt dans les yeux de ses élèves, il retrouve une étincelle qu’il croyait avoir perdue.\r\nIls vivaient sous terre. Non par choix, mais par peur. Le monde leur semblait trop vaste, trop bruyant, trop cruel. \r\nAlors ils avaient construit un bunker, un sanctuaire impénétrable. Mais l’isolement n’est jamais un remède, seulement un sursis. \r\nPeu à peu, ils ont compris : survivre n’est pas vivre. Alors ils ont entrouvert une porte, puis une autre. L’air extérieur s’est engouffré, chargé de promesses et d’incertitudes. \r\nIls ont transformé leur cachette en un refuge vivant. \r\nAujourd’hui, leur bunker est un havre où les âmes errantes peuvent poser leur fardeau. Moi, j’en suis la preuve.\r\nElle était l’ombre discrète dans les couloirs silencieux. Une surveillante, toujours présente, toujours alerte. \r\nElle devinait la fatigue dans un regard, l’angoisse dans un geste. Elle écoutait, veillait. Mais un jour, cela ne lui a plus suffi. \r\nElle voulait faire plus que consoler, plus que surveiller. Alors, elle a repris ses livres, affronté les nuits blanches, les doutes, les sacrifices. \r\nBientôt, elle sera médecin. Elle soignera non plus seulement par les mots, mais par le savoir, par les gestes, par l’engagement absolu envers la vie.\r\nQuand le poids du regard des autres s’allège, quand la peur de l’échec cesse de nous enchaîner, alors nous découvrons en nous une force insoupçonnée. \r\nCe n’est pas toujours le monde qui nous enferme. Ce sont souvent nos propres peurs, ces chaînes invisibles que nous nous imposons. \r\nMais il suffit d’un instant, d’un déclic, pour les briser et transformer une existence ordinaire en un chemin lumineux.",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video93": {
+      "video_file": "video93",
+      "image_file": "video93",
+      "script_fr": "Un bruit furtif, presque imperceptible, trouble le silence de la nuit. Un souffle lourd, tout proche. \r\nQuelque chose bouge dans la végétation, rapide, précis. Puis, l’attaque.\r\nLe loup surgit de l’ombre, son corps fuselé projeté avec une puissance maîtrisée. Ses crocs claquent, sa mâchoire se referme, mais ne mord que du vide et un pan de tissu.\r\nPuis un choc brutal dans le dos, une pression violente, calculée, mais pas fatale. Pas cette fois. \r\nL’impact suffit à déséquilibrer, à faire basculer le corps vers l’avant.\r\nL’instinct réagit avant la pensée. Une main se tend, accroche une branche basse. Un geste vif, automatique, pour éviter la chute. \r\nLe souffle saccadé, le regard balaye les ténèbres, traquant le moindre mouvement. Mais déjà, le loup s’est effacé. Une ombre qui recule aussi vite qu’elle est apparue.\r\nAu-dessus, les oiseaux continuent de voler, indifférents, libres. Comme si rien ne s’était passé. Comme si le monde poursuivait son cours, imperturbable. \r\nTout est encore possible. Mais pour l’instant, une seule chose compte : continuer.",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video94": {
+      "video_file": "video94",
+      "image_file": "video94",
+      "script_fr": "Quelques minutes après, l’abri est enfin en vue, un vieux fuselage d’avion abandonné, émergeant de la mer de neige et de bois, silencieux dans l’immensité. \r\nAutour, la neige garde les traces du passage du loup. Des empreintes profondes, irrégulières, marquent le sol, témoins muets de sa course furtive. \r\nElles serpentent entre les arbres, disparaissant parfois sous la neige soufflée par le vent, comme si elles étaient effacées à chaque instant. \r\nCertaines sont nettes, fraîches, d’autres plus anciennes, montrant qu’il rôde ici depuis un moment, qu’il connaît ce territoire mieux que tout autre.\r\nL’abri est là, à quelques mètres. Le vieux fuselage, désormais refuge, se dresse dans le froid, sa carcasse figée dans le temps. \r\nUn souffle tremblant s’échappe dans l’air glacé. Il faut avancer encore, ignorer la morsure du froid et l’inquiétude croissante que ces traces laissent derrière elles. \r\nLe loup n’est plus visible, mais la neige continue de raconter son histoire. \r\nIl était là. Et il reviendra.\r\nPour l’instant, seul le refuge compte.",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video95": {
+      "video_file": "video95",
+      "image_file": "video95",
+      "script_fr": "L’abri est vide. Aucun signe de Yuan. Pas de trace d’elle. Juste le silence oppressant du vieux fuselage, déformé et gisé sous la neige. \r\nÀ l’intérieur, les parois métalliques usées et la lumière grise qui filtre à travers les fissures du toit. L’absence est une lame froide, pénétrante.\r\nCalme. Respire. Ce n’est pas le moment de céder à la panique. Il faut garder l’esprit clair. Un coup d'œil rapide autour. L’horizon est figé. \r\nLa forêt, tout autour, reste immobile. Le loup n’est plus là, mais l’incertitude reste suspendue, dense, presque palpable. \r\nYuan n’est pas ici, mais elle pourrait être là, juste au-delà des arbres. Peut-être qu’elle cherche un autre abri. Peut-être un peu plus loin. \r\nOu peut-être, quelque part, elle se cache, attendant que le danger passe.",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video96": {
+      "video_file": "video96",
+      "image_file": "video96",
+      "script_fr": "Yuan aurait pu passer sa vie ailleurs, dans des tours de verre où les chiffres dansent sous des lumières artificielles, où l'on façonne le monde en équations parfaites. \r\nSon esprit l’aurait permis. Son cœur, jamais.\r\nAlors, elle a choisi la route, le vent, la poussière \r\nDe village en village, elle transporte plus que des colis : des espoirs en attente, des promesses emballées dans du tissu rêche, des fragments de futur glissés entre les pages d’un livre ou dans le moteur silencieux d’un drone réparé.\r\nElle aime la vie comme on aime une rivière, avec sa clarté et ses remous, ses torrents imprévisibles. \r\nElle lit les gens comme d’autres lisent les étoiles, devinant derrière un regard une tristesse retenue, derrière un silence un remerciement. \r\nSon intelligence ne se mesure pas en théorèmes, mais en gestes offerts au bon moment, en sourires compris sans un mot.\r\nYuan ne s’attarde jamais trop longtemps, mais elle laisse derrière elle des traces invisibles. Un outil qui retrouve son usage. \r\nUne serre qui reverdit. Un enfant qui lève les yeux vers elle avec l’envie, peut-être, un jour, de suivre le même chemin.",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video97": {
+      "video_file": "video97",
+      "image_file": "video97",
+      "script_fr": "Yuan n’est pas là. Mais la mission reste. L’objectif demeure, aussi intangible soit-il dans cette brume de confusion. \r\nChaque minute passée à hésiter est une minute perdue. \r\nAttendre ? Attendre quoi ? Pourquoi attendre ?\r\nChaque possibilité tourne en boucle, s’accroche à l’esprit comme un murmure lancinant. \r\nYuan est rentrée chez elle, épuisée, incapable de poursuivre. Ou bien elle a continué sans le colis, pressée par une urgence inconnue. \r\nOu pire encore, la forêt l’a avalée, et quelque part, le loup a refermé ses crocs sur elle.\r\nYuan a fait un choix, a décidé de s’approprier son destin. Il n'y a pas de place pour le doute ici. \r\nCe choix, c'est celui à respecter, la vie menée par la force des décisions prises. Une vie qui ne dépend de rien d’autre que de la volonté de ceux qui l’habitent.",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video98": {
+      "video_file": "video98",
+      "image_file": "video98",
+      "script_fr": "Sortir. Quitter cet espace trop étroit, trop immobile. La marche reprend, mécanique, guidée par l’instinct plus que par une certitude.\r\nPuis un bruit déchire le silence. Un grondement lointain, métallique, brise la monotonie du ciel.\r\nUn avion fend les nuages, silhouette effilée traversant l'immensité. Preuve qu’ailleurs, une autre vie continue. \r\nUn monde où le ciel appartient encore à ceux qui tracent des routes invisibles. \r\nRegarder l’avion disparaître, comprendre que l’errance n’a pas de fin. Yuan a choisi son chemin. L’accepter, et encore respecter ce choix, poursuivre la route. \r\nRien ne s’arrête. Rien n’attend.",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video99": {
+      "video_file": "video99",
+      "image_file": "video99",
+      "script_fr": "L’avion transporte sûrement des machines recyclées, des vivres, des livres et sûrement un ou deux ingénieurs pour aider les villages les plus reculés. Depuis 2048, notre comportement a changé. \r\nNous avons sorti des tiroirs ces vieux concepts oubliés de recyclage. \r\nLe plus étrange, c’est qu’on se retrouve désormais avec une certaine fierté à posséder les outils les plus anciens.\r\nJ’aime vraiment cette idée d’être fier de nos outils, de notre savoir et de leur histoire. \r\nMais oui, nous avançons aussi technologiquement : nous arrivons enfin à créer de l’énergie à partir de presque tout.",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video100": {
+      "video_file": "video100",
+      "image_file": "video100",
+      "script_fr": "L’air change imperceptiblement, porteur d’une présence humaine, d’une odeur de bois brûlé et de terre retournée. Un signe. \r\nUn souffle d’humanité dans l’étendue froide et indifférente.\r\nLes premières silhouettes des maisons se devinent à travers la brume du matin. Un chien aboie au loin, réponse aux pas qui approchent. \r\nPlus d’arbres pour cacher la solitude. Plus de forêt pour avaler les doutes. Juste l’entrée du village.",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video101": {
+      "video_file": "video101",
+      "image_file": "video101",
+      "script_fr": "Les maisons se dressent, modestes et robustes, sculptées par le froid et la nécessité. \r\nLe bois sombre de leurs façades porte les traces du temps, fendillé par les hivers trop rudes, poli par le vent qui souffle sans relâche. \r\nLes toits, alourdis par une neige ancienne ou par la simple mémoire des tempêtes passées, semblent ployer sous le poids des saisons.\r\nUne fumée fine s’élève de quelques cheminées, fragile ruban gris qui s’étire vers un ciel pâle. \r\nPreuve discrète que derrière ces murs austères, la vie persiste, accrochée à la chaleur d’un foyer, à la lente danse d’une flamme veillant sur ses habitants. \r\nL’odeur du bois brûlé flotte dans l’air glacial, se mêlant aux relents d’une terre gelée que le soleil peine à réveiller.\r\nLes derniers pas résonnent sur le sol dur, trahissant une présence dans ce matin silencieux. \r\nLes silhouettes des maisons s’alignent de part et d’autre du chemin principal, veillant, immobiles et résignées, sur ceux qui osent pénétrer dans ce territoire figé. \r\nL’entrée du village est franchie sans hésitation, mais une tension presque imperceptible flotte encore, comme si les pierres elles-mêmes jugeaient le nouvel arrivant, scrutant l’intrus avant de l’accepter, ou non.",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video102": {
+      "video_file": "video102",
+      "image_file": "video102",
+      "script_fr": "Au centre, une femme attend, silhouette droite malgré l’usure des années. Quarante ans, peut-être un peu plus, marquée par le temps, par le besoin constant de survivre. \r\nLes yeux scrutent, évaluent, cherchent à comprendre avant même que les mots ne soient échangés.\r\nLe colis est tendu, la main serrée autour un instant de plus, comme pour s’assurer que la mission arrive à son terme. \r\nUn regard de reconnaissance.\r\nPas de remerciements immédiats, juste un hochement de tête. Ici, les gestes parlent avant les mots. Ici, seul compte ce qui est fait.",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video103": {
+      "video_file": "video103",
+      "image_file": "video103",
+      "script_fr": "Dans ce petit colis repose une promesse. Des ressources inépuisables, des graines patientes prêtes à éclore en toute saison. \r\nEt puis, sûrement, un ou deux petits drones, discrets, précis, capables de redonner vie à ce qui semble perdu – une carte mère défectueuse, une antenne relais muette.\r\nDeux éléments, simples en apparence : de la nourriture et du savoir. Juste ce qu’il faut pour avancer, pour bâtir un demain plus habitable.\r\nJe me sens utile.",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video104": {
+      "video_file": "video104",
+      "image_file": "video104",
+      "script_fr": "Je pars, Le village s’efface derrière. Chaque pas éloigne un peu plus des murs de pierre et de bois, ramenant au silence de la forêt, à l’isolement de la route.\r\nPuis, une tâche sombre brise l’uniformité de la neige immaculée. Un contraste brutal, une marque laissée par quelque chose qui ne devrait pas être là. Approcher lentement, observer. \r\nUne traînée, des formes indistinctes. Du sang figé par le froid.\r\nLà, au centre de cette souillure écarlate, un corps. Pas humain. Fourrure éparse, plaies ouvertes, une carcasse dévorée par la nuit. Le loup.",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video105": {
+      "video_file": "video105",
+      "image_file": "video105",
+      "script_fr": "Le rouge s’étale sur le blanc, souille la neige d’une vérité brutale. Plus proche, la fourrure disparaît. Plus proche encore, la forme se dessine autrement. \r\nPas un animal. \r\nPas un loup.\r\nUn corps. \r\nYuan.\r\nL’immobilité est totale. Les yeux ouverts fixent un ciel qui ne répond plus. \r\nLa morsure du loup a laissé sa marque, les traces du combat racontent ce qui s’est joué ici. Plus de force pour fuir, plus d’options. Seule, face à la nature qui ne pardonne rien.\r\nLe souffle se bloque. Les doigts tremblent en approchant, comme pour nier l’évidence, refuser ce qui est là, devant. \r\nUn espoir absurde que ce corps se redresse, que cette peau glacée retrouve sa chaleur, que ce regard s’anime. \r\nMais la vérité est implacable. Yuan est tombée.",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    },
+    "video106": {
+      "video_file": "video106",
+      "image_file": "video106",
+      "script_fr": "Créer sa propre vie, dessiner son chemin… C’est une illusion qu’on s’efforce de nourrir. \r\nUne sorte de leurre auquel chacun se raccroche pour donner un sens à la marche du monde. \r\nMais cette liberté qu’on croit acquérir à chaque décision prise, cette sensation de contrôle, finit par dévoiler une vérité amère : elle est, en fin de compte, une série de risques. \r\nRien n’est jamais sous contrôle. Ce qu’on construit, à peine achevé, devient vulnérable. \r\nLa quête même de la liberté est un pari, une aventure où chaque pas en avant peut mener à l’abîme.\r\nLa forêt, la neige, le vent, tous ces éléments extérieurs ne sont que des reflets de cette réalité intérieure. \r\nLe froid qui mord la peau est aussi celui qui ronge l’âme. Chaque pas en avant est un pari que l’on fait avec l’inconnu, une tentative de prendre le contrôle, de fuir l’incertitude, mais l’incertitude reste là. Elle attend.\r\nLes yeux, rivés sur le vide, ne voient plus que l’évidence. \r\nLa fuite n’est pas un échappatoire. \r\nLa vie n’est pas un dessin que l’on peut tracer d’un trait net et précis. \r\nC’est un terrain mouvant, un chemin incertain, et les rares certitudes sont celles qu’on choisit d’affronter.\r\nMais choisir, encore, choisir de continuer. Peu importe à quel point ce choix semble futile. \r\nPeu importe la peur qui tord les entrailles. C’est ce qui reste. Se dire qu’en avançant, en acceptant cette instabilité, il est possible de trouver une forme de vérité, une forme de résistance face à l’imprévu.\r\nLe loup, la forêt, la solitude… \r\nTout se mêle en une seule chose : un chemin, fragile mais nécessaire.",
+      "script_en": null,
+      "script_es": null,
+      "script_de": null
+    }
+  }
 }
