@@ -36,6 +36,12 @@ public class StoryPlayer : MonoBehaviour
     private int choiceCount;
     private List<string> knots;
     private bool isFadingMusic;
+
+    public bool GetLastUnlockedVideo(int episode, out string videoID)
+    {
+        videoID = GameManager.instance.GetVideoIDs(episode).LastOrDefault(id => IsPathUnlocked(episode, id));
+        return !string.IsNullOrEmpty(videoID);
+    }
     
     public bool IsPathUnlocked(int episode, string videoID)
     {

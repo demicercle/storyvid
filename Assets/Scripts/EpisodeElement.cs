@@ -14,28 +14,42 @@ public class EpisodeElement : MonoBehaviour
     
     private GameManager gameManager => GameManager.instance;
     private Texture pathImage;
+    private string lastVideoID;
     
     private void Awake()
     {
         header.text = "Episode " + episodeIndex;
+
         if (playButton != null)
+        {
             playButton.onClick.AddListener(() =>
-        {
-            gameManager.PlayEpisode(episodeIndex);
-        });
+            {
+                gameManager.PlayEpisode(episodeIndex);
+            });
+        }
+        
         if (continueButton != null)
-            continueButton.onClick.AddListener(() =>
         {
-            gameManager.SetCurrentPanel(GameManager.Panels.SelectVideo);
-        });
+            continueButton.onClick.AddListener(() =>
+            {
+                gameManager.PlayVideo(episodeIndex, lastVideoID);
+                //gameManager.SetCurrentPanel(GameManager.Panels.SelectVideo);
+            });
+        }
     }
 
-    private void Update()
+    private void OnEnable()
     {
         if (pathImage == null)
         {
             gameManager.GetImageForVideo(out pathImage, episodeIndex);
             imageContainer.texture = pathImage;
+        }
+        
+        if (continueButton != null)
+        {
+            continueButton.interactable = gameManager.storyPlayer.GetLastUnlockedVideo(episodeIndex, out lastVideoID);
+            Debug.Log(episodeIndex + " lastVideoID:" + lastVideoID);
         }
     }
 }
