@@ -30,5 +30,6 @@ public static class EditorTools
         }
         
         AssetDatabase.SaveAssets();
+        AssetDatabase.Refresh();
     }
 }
