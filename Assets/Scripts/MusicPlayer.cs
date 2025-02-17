@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 
 public class MusicPlayer : MonoBehaviour
@@ -48,6 +49,7 @@ public class MusicPlayer : MonoBehaviour
     {
         audioSource.volume = 0.0f;
         audioSource.clip = audioClip;
+        audioSource.loop = true;
         audioSource.Play();
     }
 
