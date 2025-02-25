@@ -80,23 +80,23 @@
       "episode": 1,
       "video_from": "video02",
       "video_to": "video03",
-      "text_fr": "Me concentrer, la voir danser",
-      "text_es": null,
-      "text_de": null
-    },
-    {
-      "episode": 1,
-      "video_from": "video03",
-      "video_to": "video05",
       "text_fr": null,
       "text_es": null,
       "text_de": null
     },
     {
       "episode": 1,
-      "video_from": "video02",
+      "video_from": "video03",
       "video_to": "video04",
-      "text_fr": "elle risque quoi ?",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 1,
+      "video_from": "video04",
+      "video_to": "video05",
+      "text_fr": null,
       "text_es": null,
       "text_de": null
     },
@@ -110,16 +110,8 @@
     },
     {
       "episode": 1,
-      "video_from": "video07",
-      "video_to": "video08",
-      "text_fr": "découvrir la ville",
-      "text_es": null,
-      "text_de": null
-    },
-    {
-      "episode": 1,
-      "video_from": "video08",
-      "video_to": "video10",
+      "video_from": "video06",
+      "video_to": "video07",
       "text_fr": null,
       "text_es": null,
       "text_de": null
@@ -127,8 +119,16 @@
     {
       "episode": 1,
       "video_from": "video07",
+      "video_to": "video08",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 1,
+      "video_from": "video08",
       "video_to": "video09",
-      "text_fr": "elle qui chasse",
+      "text_fr": null,
       "text_es": null,
       "text_de": null
     },
@@ -144,7 +144,15 @@
       "episode": 1,
       "video_from": "video10",
       "video_to": "video11",
-      "text_fr": null,
+      "text_fr": "Connaître l'aménagement du bunker",
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 1,
+      "video_from": "video10",
+      "video_to": "video12",
+      "text_fr": "continuer",
       "text_es": null,
       "text_de": null
     },
@@ -152,22 +160,14 @@
       "episode": 1,
       "video_from": "video11",
       "video_to": "video12",
-      "text_fr": "mes blessures",
-      "text_es": null,
-      "text_de": null
-    },
-    {
-      "episode": 1,
-      "video_from": "video11",
-      "video_to": "video13",
-      "text_fr": "ma violence",
+      "text_fr": null,
       "text_es": null,
       "text_de": null
     },
     {
       "episode": 1,
       "video_from": "video12",
-      "video_to": "video14",
+      "video_to": "video13",
       "text_fr": null,
       "text_es": null,
       "text_de": null
@@ -200,15 +200,15 @@
       "episode": 1,
       "video_from": "video16",
       "video_to": "video17",
-      "text_fr": "Penser à ma femme et ne pas me lever ?",
+      "text_fr": null,
       "text_es": null,
       "text_de": null
     },
     {
       "episode": 1,
-      "video_from": "video16",
+      "video_from": "video17",
       "video_to": "video18",
-      "text_fr": "devenir violant ?",
+      "text_fr": "Connaître le passé de Oiu",
       "text_es": null,
       "text_de": null
     },
@@ -216,7 +216,7 @@
       "episode": 1,
       "video_from": "video17",
       "video_to": "video19",
-      "text_fr": null,
+      "text_fr": "continuer",
       "text_es": null,
       "text_de": null
     },
@@ -232,7 +232,15 @@
       "episode": 1,
       "video_from": "video19",
       "video_to": "video20",
-      "text_fr": null,
+      "text_fr": "il me repond",
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 1,
+      "video_from": "video19",
+      "video_to": "video21",
+      "text_fr": "continuer",
       "text_es": null,
       "text_de": null
     },
@@ -248,15 +256,7 @@
       "episode": 1,
       "video_from": "video21",
       "video_to": "video22",
-      "text_fr": "mon enfance dans les mines",
-      "text_es": null,
-      "text_de": null
-    },
-    {
-      "episode": 1,
-      "video_from": "video21",
-      "video_to": "video23",
-      "text_fr": "avoir des informations importantes",
+      "text_fr": null,
       "text_es": null,
       "text_de": null
     },
@@ -273,6 +273,22 @@
       "video_from": "video23",
       "video_to": "video24",
       "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 1,
+      "video_from": "video24",
+      "video_to": "video25",
+      "text_fr": "la beauté de la nature",
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 1,
+      "video_from": "video24",
+      "video_to": "video26",
+      "text_fr": "continuer",
       "text_es": null,
       "text_de": null
     },
@@ -303,13 +319,13 @@
     {
       "episode": 1,
       "video_from": "video28",
-      "video_to": null,
+      "video_to": "video29",
       "text_fr": null,
       "text_es": null,
       "text_de": null
     },
     {
-      "episode": 2,
+      "episode": 1,
       "video_from": "video29",
       "video_to": "video30",
       "text_fr": null,
@@ -317,7 +333,7 @@
       "text_de": null
     },
     {
-      "episode": 2,
+      "episode": 1,
       "video_from": "video30",
       "video_to": "video31",
       "text_fr": null,
@@ -325,23 +341,23 @@
       "text_de": null
     },
     {
-      "episode": 2,
+      "episode": 1,
       "video_from": "video31",
       "video_to": "video32",
-      "text_fr": "Connaître l'aménagement du bunker",
+      "text_fr": "mon passé",
       "text_es": null,
       "text_de": null
     },
     {
-      "episode": 2,
+      "episode": 1,
       "video_from": "video31",
-      "video_to": "video33",
+      "video_to": "video34",
       "text_fr": "continuer",
       "text_es": null,
       "text_de": null
     },
     {
-      "episode": 2,
+      "episode": 1,
       "video_from": "video32",
       "video_to": "video33",
       "text_fr": null,
@@ -349,7 +365,7 @@
       "text_de": null
     },
     {
-      "episode": 2,
+      "episode": 1,
       "video_from": "video33",
       "video_to": "video34",
       "text_fr": null,
@@ -357,7 +373,7 @@
       "text_de": null
     },
     {
-      "episode": 2,
+      "episode": 1,
       "video_from": "video34",
       "video_to": "video35",
       "text_fr": null,
@@ -365,23 +381,7 @@
       "text_de": null
     },
     {
-      "episode": 2,
-      "video_from": "video35",
-      "video_to": "video36",
-      "text_fr": "Connaître le passé de Oiu",
-      "text_es": null,
-      "text_de": null
-    },
-    {
-      "episode": 2,
-      "video_from": "video35",
-      "video_to": "video37",
-      "text_fr": "continuer",
-      "text_es": null,
-      "text_de": null
-    },
-    {
-      "episode": 2,
+      "episode": 1,
       "video_from": "video36",
       "video_to": "video37",
       "text_fr": null,
@@ -389,7 +389,7 @@
       "text_de": null
     },
     {
-      "episode": 2,
+      "episode": 1,
       "video_from": "video37",
       "video_to": "video38",
       "text_fr": null,
@@ -397,7 +397,7 @@
       "text_de": null
     },
     {
-      "episode": 2,
+      "episode": 1,
       "video_from": "video38",
       "video_to": "video39",
       "text_fr": null,
@@ -405,31 +405,23 @@
       "text_de": null
     },
     {
-      "episode": 2,
+      "episode": 1,
       "video_from": "video39",
-      "video_to": "video40",
-      "text_fr": "la beauté de la nature",
-      "text_es": null,
-      "text_de": null
-    },
-    {
-      "episode": 2,
-      "video_from": "video39",
-      "video_to": "video41",
-      "text_fr": "continuer",
-      "text_es": null,
-      "text_de": null
-    },
-    {
-      "episode": 2,
-      "video_from": "video40",
       "video_to": "video40",
       "text_fr": null,
       "text_es": null,
       "text_de": null
     },
     {
-      "episode": 2,
+      "episode": 1,
+      "video_from": "video40",
+      "video_to": "video41",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 1,
       "video_from": "video41",
       "video_to": "video42",
       "text_fr": null,
@@ -437,7 +429,7 @@
       "text_de": null
     },
     {
-      "episode": 2,
+      "episode": 1,
       "video_from": "video42",
       "video_to": "video43",
       "text_fr": null,
@@ -445,7 +437,7 @@
       "text_de": null
     },
     {
-      "episode": 2,
+      "episode": 1,
       "video_from": "video43",
       "video_to": "video44",
       "text_fr": null,
@@ -453,31 +445,31 @@
       "text_de": null
     },
     {
-      "episode": 2,
+      "episode": 1,
       "video_from": "video44",
       "video_to": "video45",
-      "text_fr": "mon passé",
-      "text_es": null,
-      "text_de": null
-    },
-    {
-      "episode": 2,
-      "video_from": "video44",
-      "video_to": "video46",
-      "text_fr": "continuer",
-      "text_es": null,
-      "text_de": null
-    },
-    {
-      "episode": 2,
-      "video_from": "video45",
-      "video_to": "video46",
       "text_fr": null,
       "text_es": null,
       "text_de": null
     },
     {
-      "episode": 2,
+      "episode": 1,
+      "video_from": "video45",
+      "video_to": "video46",
+      "text_fr": "Connaître le passé de Kaik",
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 1,
+      "video_from": "video45",
+      "video_to": "video47",
+      "text_fr": "continuer",
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 1,
       "video_from": "video46",
       "video_to": "video47",
       "text_fr": null,
@@ -485,10 +477,18 @@
       "text_de": null
     },
     {
-      "episode": 2,
+      "episode": 1,
       "video_from": "video47",
-      "video_to": "video48",
-      "text_fr": null,
+      "video_to": null,
+      "text_fr": "oui (1)",
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 1,
+      "video_from": "video47",
+      "video_to": null,
+      "text_fr": "non (0)",
       "text_es": null,
       "text_de": null
     },
@@ -520,22 +520,14 @@
       "episode": 2,
       "video_from": "video51",
       "video_to": "video52",
-      "text_fr": "Connaître le passé de Kaik",
-      "text_es": null,
-      "text_de": null
-    },
-    {
-      "episode": 2,
-      "video_from": "video51",
-      "video_to": "video53",
-      "text_fr": "continuer",
+      "text_fr": null,
       "text_es": null,
       "text_de": null
     },
     {
       "episode": 2,
       "video_from": "video52",
-      "video_to": "video52",
+      "video_to": "video53",
       "text_fr": null,
       "text_es": null,
       "text_de": null
@@ -543,13 +535,21 @@
     {
       "episode": 2,
       "video_from": "video53",
-      "video_to": null,
-      "text_fr": null,
+      "video_to": "video54",
+      "text_fr": "connaitre le passé de Lyra Shade",
       "text_es": null,
       "text_de": null
     },
     {
-      "episode": 3,
+      "episode": 2,
+      "video_from": "video53",
+      "video_to": "video57",
+      "text_fr": "continuer",
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 2,
       "video_from": "video54",
       "video_to": "video55",
       "text_fr": null,
@@ -557,7 +557,7 @@
       "text_de": null
     },
     {
-      "episode": 3,
+      "episode": 2,
       "video_from": "video55",
       "video_to": "video56",
       "text_fr": null,
@@ -565,23 +565,15 @@
       "text_de": null
     },
     {
-      "episode": 3,
+      "episode": 2,
       "video_from": "video56",
       "video_to": "video57",
-      "text_fr": "connaitre le passé de Lyra Shade",
+      "text_fr": null,
       "text_es": null,
       "text_de": null
     },
     {
-      "episode": 3,
-      "video_from": "video56",
-      "video_to": "video58",
-      "text_fr": "continuer",
-      "text_es": null,
-      "text_de": null
-    },
-    {
-      "episode": 3,
+      "episode": 2,
       "video_from": "video57",
       "video_to": "video58",
       "text_fr": null,
@@ -589,7 +581,7 @@
       "text_de": null
     },
     {
-      "episode": 3,
+      "episode": 2,
       "video_from": "video58",
       "video_to": "video59",
       "text_fr": null,
@@ -597,7 +589,7 @@
       "text_de": null
     },
     {
-      "episode": 3,
+      "episode": 2,
       "video_from": "video59",
       "video_to": "video60",
       "text_fr": "connaitre le passé l’homme du bureaux",
@@ -605,15 +597,15 @@
       "text_de": null
     },
     {
-      "episode": 3,
+      "episode": 2,
       "video_from": "video59",
-      "video_to": "video61",
+      "video_to": "video62",
       "text_fr": "continuer",
       "text_es": null,
       "text_de": null
     },
     {
-      "episode": 3,
+      "episode": 2,
       "video_from": "video60",
       "video_to": "video61",
       "text_fr": null,
@@ -621,31 +613,31 @@
       "text_de": null
     },
     {
-      "episode": 3,
+      "episode": 2,
       "video_from": "video61",
       "video_to": "video62",
-      "text_fr": "connaitre le passé de la surveillante",
-      "text_es": null,
-      "text_de": null
-    },
-    {
-      "episode": 3,
-      "video_from": "video61",
-      "video_to": "video63",
-      "text_fr": "continuer",
-      "text_es": null,
-      "text_de": null
-    },
-    {
-      "episode": 3,
-      "video_from": "video62",
-      "video_to": "video63",
       "text_fr": null,
       "text_es": null,
       "text_de": null
     },
     {
-      "episode": 3,
+      "episode": 2,
+      "video_from": "video62",
+      "video_to": "video63",
+      "text_fr": "connaitre le passé de la surveillante",
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 2,
+      "video_from": "video62",
+      "video_to": "video67",
+      "text_fr": "continuer",
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 2,
       "video_from": "video63",
       "video_to": "video64",
       "text_fr": null,
@@ -653,7 +645,7 @@
       "text_de": null
     },
     {
-      "episode": 3,
+      "episode": 2,
       "video_from": "video64",
       "video_to": "video65",
       "text_fr": null,
@@ -661,7 +653,7 @@
       "text_de": null
     },
     {
-      "episode": 3,
+      "episode": 2,
       "video_from": "video65",
       "video_to": "video66",
       "text_fr": null,
@@ -669,7 +661,7 @@
       "text_de": null
     },
     {
-      "episode": 3,
+      "episode": 2,
       "video_from": "video66",
       "video_to": "video67",
       "text_fr": null,
@@ -677,7 +669,7 @@
       "text_de": null
     },
     {
-      "episode": 3,
+      "episode": 2,
       "video_from": "video67",
       "video_to": "video68",
       "text_fr": null,
@@ -685,23 +677,15 @@
       "text_de": null
     },
     {
-      "episode": 3,
+      "episode": 2,
       "video_from": "video68",
       "video_to": "video69",
-      "text_fr": "connaitre le système politique",
+      "text_fr": null,
       "text_es": null,
       "text_de": null
     },
     {
-      "episode": 3,
-      "video_from": "video68",
-      "video_to": "video70",
-      "text_fr": "continuer",
-      "text_es": null,
-      "text_de": null
-    },
-    {
-      "episode": 3,
+      "episode": 2,
       "video_from": "video69",
       "video_to": "video70",
       "text_fr": null,
@@ -709,7 +693,7 @@
       "text_de": null
     },
     {
-      "episode": 3,
+      "episode": 2,
       "video_from": "video70",
       "video_to": "video71",
       "text_fr": null,
@@ -717,7 +701,7 @@
       "text_de": null
     },
     {
-      "episode": 3,
+      "episode": 2,
       "video_from": "video71",
       "video_to": "video72",
       "text_fr": null,
@@ -725,7 +709,7 @@
       "text_de": null
     },
     {
-      "episode": 3,
+      "episode": 2,
       "video_from": "video72",
       "video_to": "video73",
       "text_fr": null,
@@ -733,7 +717,7 @@
       "text_de": null
     },
     {
-      "episode": 3,
+      "episode": 2,
       "video_from": "video73",
       "video_to": "video74",
       "text_fr": null,
@@ -741,7 +725,7 @@
       "text_de": null
     },
     {
-      "episode": 3,
+      "episode": 2,
       "video_from": "video74",
       "video_to": "video75",
       "text_fr": null,
@@ -749,15 +733,23 @@
       "text_de": null
     },
     {
-      "episode": 3,
+      "episode": 2,
       "video_from": "video75",
       "video_to": "video76",
-      "text_fr": null,
+      "text_fr": "connaitre le système politique",
       "text_es": null,
       "text_de": null
     },
     {
-      "episode": 3,
+      "episode": 2,
+      "video_from": "video75",
+      "video_to": "video77",
+      "text_fr": "continuer",
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 2,
       "video_from": "video76",
       "video_to": "video77",
       "text_fr": null,
@@ -765,7 +757,7 @@
       "text_de": null
     },
     {
-      "episode": 3,
+      "episode": 2,
       "video_from": "video77",
       "video_to": "video78",
       "text_fr": null,
@@ -773,7 +765,7 @@
       "text_de": null
     },
     {
-      "episode": 3,
+      "episode": 2,
       "video_from": "video78",
       "video_to": "video79",
       "text_fr": null,
@@ -781,15 +773,15 @@
       "text_de": null
     },
     {
-      "episode": 3,
+      "episode": 2,
       "video_from": "video79",
-      "video_to": null,
+      "video_to": "video80",
       "text_fr": null,
       "text_es": null,
       "text_de": null
     },
     {
-      "episode": 4,
+      "episode": 2,
       "video_from": "video80",
       "video_to": "video81",
       "text_fr": null,
@@ -797,7 +789,7 @@
       "text_de": null
     },
     {
-      "episode": 4,
+      "episode": 2,
       "video_from": "video81",
       "video_to": "video82",
       "text_fr": null,
@@ -805,31 +797,23 @@
       "text_de": null
     },
     {
-      "episode": 4,
+      "episode": 2,
       "video_from": "video82",
       "video_to": "video83",
-      "text_fr": "Le monde depuis 2089",
-      "text_es": null,
-      "text_de": null
-    },
-    {
-      "episode": 4,
-      "video_from": "video82",
-      "video_to": "video84",
-      "text_fr": "penser à autre chose",
-      "text_es": null,
-      "text_de": null
-    },
-    {
-      "episode": 4,
-      "video_from": "video83",
-      "video_to": "video85",
       "text_fr": null,
       "text_es": null,
       "text_de": null
     },
     {
-      "episode": 4,
+      "episode": 2,
+      "video_from": "video83",
+      "video_to": "video84",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 2,
       "video_from": "video84",
       "video_to": "video85",
       "text_fr": null,
@@ -837,7 +821,7 @@
       "text_de": null
     },
     {
-      "episode": 4,
+      "episode": 2,
       "video_from": "video85",
       "video_to": "video86",
       "text_fr": null,
@@ -845,31 +829,23 @@
       "text_de": null
     },
     {
-      "episode": 4,
+      "episode": 2,
       "video_from": "video86",
       "video_to": "video87",
-      "text_fr": "Chercher une grotte où se réfugier",
-      "text_es": null,
-      "text_de": null
-    },
-    {
-      "episode": 4,
-      "video_from": "video86",
-      "video_to": "video88",
-      "text_fr": "Chercher un arbre où se réfugier",
-      "text_es": null,
-      "text_de": null
-    },
-    {
-      "episode": 4,
-      "video_from": "video87",
-      "video_to": "video89",
       "text_fr": null,
       "text_es": null,
       "text_de": null
     },
     {
-      "episode": 4,
+      "episode": 2,
+      "video_from": "video87",
+      "video_to": "video88",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 2,
       "video_from": "video88",
       "video_to": "video89",
       "text_fr": null,
@@ -877,7 +853,7 @@
       "text_de": null
     },
     {
-      "episode": 4,
+      "episode": 2,
       "video_from": "video89",
       "video_to": "video90",
       "text_fr": null,
@@ -885,31 +861,31 @@
       "text_de": null
     },
     {
-      "episode": 4,
+      "episode": 2,
       "video_from": "video90",
-      "video_to": "video91",
+      "video_to": null,
+      "text_fr": "oui (1)",
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 2,
+      "video_from": "video90",
+      "video_to": null,
+      "text_fr": "non (0)",
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 3,
+      "video_from": "video91",
+      "video_to": "video92",
       "text_fr": null,
       "text_es": null,
       "text_de": null
     },
     {
-      "episode": 4,
-      "video_from": "video91",
-      "video_to": "video92",
-      "text_fr": "mes rencontres",
-      "text_es": null,
-      "text_de": null
-    },
-    {
-      "episode": 4,
-      "video_from": "video91",
-      "video_to": "video93",
-      "text_fr": "continuer",
-      "text_es": null,
-      "text_de": null
-    },
-    {
-      "episode": 4,
+      "episode": 3,
       "video_from": "video92",
       "video_to": "video93",
       "text_fr": null,
@@ -917,7 +893,7 @@
       "text_de": null
     },
     {
-      "episode": 4,
+      "episode": 3,
       "video_from": "video93",
       "video_to": "video94",
       "text_fr": null,
@@ -925,39 +901,39 @@
       "text_de": null
     },
     {
-      "episode": 4,
+      "episode": 3,
       "video_from": "video94",
       "video_to": "video95",
-      "text_fr": null,
+      "text_fr": "Me concentrer, la voir danser",
       "text_es": null,
       "text_de": null
     },
     {
-      "episode": 4,
+      "episode": 3,
+      "video_from": "video94",
+      "video_to": "video96",
+      "text_fr": "elle risque quoi ?",
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 3,
       "video_from": "video95",
       "video_to": "video96",
-      "text_fr": "qui est Yuan ?",
-      "text_es": null,
-      "text_de": null
-    },
-    {
-      "episode": 4,
-      "video_from": "video95",
-      "video_to": "video97",
-      "text_fr": "Elle peut être où ??",
-      "text_es": null,
-      "text_de": null
-    },
-    {
-      "episode": 4,
-      "video_from": "video96",
-      "video_to": "video98",
       "text_fr": null,
       "text_es": null,
       "text_de": null
     },
     {
-      "episode": 4,
+      "episode": 3,
+      "video_from": "video96",
+      "video_to": "video97",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 3,
       "video_from": "video97",
       "video_to": "video98",
       "text_fr": null,
@@ -965,23 +941,15 @@
       "text_de": null
     },
     {
-      "episode": 4,
+      "episode": 3,
       "video_from": "video98",
       "video_to": "video99",
-      "text_fr": "où va l’avion ?",
+      "text_fr": null,
       "text_es": null,
       "text_de": null
     },
     {
-      "episode": 4,
-      "video_from": "video98",
-      "video_to": "video100",
-      "text_fr": "continuer la mission",
-      "text_es": null,
-      "text_de": null
-    },
-    {
-      "episode": 4,
+      "episode": 3,
       "video_from": "video99",
       "video_to": "video100",
       "text_fr": null,
@@ -989,15 +957,23 @@
       "text_de": null
     },
     {
-      "episode": 4,
+      "episode": 3,
       "video_from": "video100",
       "video_to": "video101",
-      "text_fr": null,
+      "text_fr": "découvrir la ville",
       "text_es": null,
       "text_de": null
     },
     {
-      "episode": 4,
+      "episode": 3,
+      "video_from": "video100",
+      "video_to": "video103",
+      "text_fr": "continuer",
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 3,
       "video_from": "video101",
       "video_to": "video102",
       "text_fr": null,
@@ -1005,23 +981,15 @@
       "text_de": null
     },
     {
-      "episode": 4,
+      "episode": 3,
       "video_from": "video102",
       "video_to": "video103",
-      "text_fr": "il y a quoi dans le colis ?",
+      "text_fr": null,
       "text_es": null,
       "text_de": null
     },
     {
-      "episode": 4,
-      "video_from": "video102",
-      "video_to": "video104",
-      "text_fr": "continuer la mission",
-      "text_es": null,
-      "text_de": null
-    },
-    {
-      "episode": 4,
+      "episode": 3,
       "video_from": "video103",
       "video_to": "video104",
       "text_fr": null,
@@ -1029,7 +997,7 @@
       "text_de": null
     },
     {
-      "episode": 4,
+      "episode": 3,
       "video_from": "video104",
       "video_to": "video105",
       "text_fr": null,
@@ -1037,7 +1005,7 @@
       "text_de": null
     },
     {
-      "episode": 4,
+      "episode": 3,
       "video_from": "video105",
       "video_to": "video106",
       "text_fr": null,
@@ -1045,10 +1013,682 @@
       "text_de": null
     },
     {
-      "episode": 4,
+      "episode": 3,
       "video_from": "video106",
-      "video_to": null,
+      "video_to": "video107",
       "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 3,
+      "video_from": "video107",
+      "video_to": "video108",
+      "text_fr": "mes blessures",
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 3,
+      "video_from": "video107",
+      "video_to": "video109",
+      "text_fr": "ma violence",
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 3,
+      "video_from": "video108",
+      "video_to": "video109",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 3,
+      "video_from": "video109",
+      "video_to": "video110",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 3,
+      "video_from": "video110",
+      "video_to": "video111",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 3,
+      "video_from": "video111",
+      "video_to": "video112",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 3,
+      "video_from": "video112",
+      "video_to": "video113",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 3,
+      "video_from": "video113",
+      "video_to": "video114",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 3,
+      "video_from": "video114",
+      "video_to": "video115",
+      "text_fr": "Penser à ma femme et ne pas me lever ?",
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 3,
+      "video_from": "video114",
+      "video_to": "video116",
+      "text_fr": "devenir violant ?",
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 3,
+      "video_from": "video115",
+      "video_to": "video116",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 3,
+      "video_from": "video116",
+      "video_to": "video117",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 3,
+      "video_from": "video117",
+      "video_to": "video118",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 3,
+      "video_from": "video118",
+      "video_to": "video119",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 3,
+      "video_from": "video119",
+      "video_to": "video120",
+      "text_fr": "mon enfance dans les mines",
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 3,
+      "video_from": "video119",
+      "video_to": "video123",
+      "text_fr": "avoir des informations importantes",
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 3,
+      "video_from": "video120",
+      "video_to": "video121",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 3,
+      "video_from": "video121",
+      "video_to": "video122",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 3,
+      "video_from": "video122",
+      "video_to": "video123",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 3,
+      "video_from": "video123",
+      "video_to": "video124",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 3,
+      "video_from": "video124",
+      "video_to": "video125",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 3,
+      "video_from": "video125",
+      "video_to": "video126",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 3,
+      "video_from": "video126",
+      "video_to": "video127",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 3,
+      "video_from": "video127",
+      "video_to": "video128",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 3,
+      "video_from": "video128",
+      "video_to": "video129",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 3,
+      "video_from": "video129",
+      "video_to": "video130",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 3,
+      "video_from": "video130",
+      "video_to": null,
+      "text_fr": "oui (1)",
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 3,
+      "video_from": "video130",
+      "video_to": null,
+      "text_fr": "non (0)",
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video131",
+      "video_to": "video132",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video132",
+      "video_to": "video133",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video133",
+      "video_to": "video134",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video134",
+      "video_to": "video135",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video135",
+      "video_to": "video136",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video136",
+      "video_to": "video137",
+      "text_fr": "Le monde depuis 2089",
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video136",
+      "video_to": "video139",
+      "text_fr": "penser à autre chose",
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video137",
+      "video_to": "video138",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video138",
+      "video_to": "video139",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video139",
+      "video_to": "video140",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video140",
+      "video_to": "video141",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video141",
+      "video_to": "video142",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video142",
+      "video_to": "video143",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video143",
+      "video_to": "video144",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video144",
+      "video_to": "video145",
+      "text_fr": "Chercher une grotte où se réfugier",
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video144",
+      "video_to": "video147",
+      "text_fr": "Chercher un arbre où se réfugier",
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video145",
+      "video_to": "video146",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video146",
+      "video_to": "video149",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video147",
+      "video_to": "video148",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video148",
+      "video_to": "video149",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video149",
+      "video_to": "video150",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video150",
+      "video_to": "video151",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video151",
+      "video_to": "video152",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video152",
+      "video_to": "video153",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video153",
+      "video_to": "video154",
+      "text_fr": "mes rencontres",
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video153",
+      "video_to": "video158",
+      "text_fr": "continuer",
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video154",
+      "video_to": "video155",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video155",
+      "video_to": "video156",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video156",
+      "video_to": "video157",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video157",
+      "video_to": "video158",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video158",
+      "video_to": "video159",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video159",
+      "video_to": "video160",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video160",
+      "video_to": "video161",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video161",
+      "video_to": "video162",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video162",
+      "video_to": "video163",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video163",
+      "video_to": "video164",
+      "text_fr": "qui est Yuan ?",
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video163",
+      "video_to": "video165",
+      "text_fr": "Elle peut être où ??",
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video164",
+      "video_to": "video165",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video165",
+      "video_to": "video166",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video166",
+      "video_to": "video167",
+      "text_fr": "où va l’avion ?",
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video166",
+      "video_to": "video169",
+      "text_fr": "continuer la mission",
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video167",
+      "video_to": "video168",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video168",
+      "video_to": "video169",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video169",
+      "video_to": "video170",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video170",
+      "video_to": "video171",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video171",
+      "video_to": "video172",
+      "text_fr": "il y a quoi dans le colis ?",
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video171",
+      "video_to": "video173",
+      "text_fr": "continuer la mission",
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video172",
+      "video_to": "video173",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video173",
+      "video_to": "video174",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video174",
+      "video_to": "video175",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video175",
+      "video_to": "video176",
+      "text_fr": "choix autre monde",
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video175",
+      "video_to": "video177",
+      "text_fr": "ici",
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video176",
+      "video_to": "video178",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video177",
+      "video_to": "video178",
+      "text_fr": null,
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video178",
+      "video_to": null,
+      "text_fr": "oui (1)",
+      "text_es": null,
+      "text_de": null
+    },
+    {
+      "episode": 4,
+      "video_from": "video178",
+      "video_to": null,
+      "text_fr": "non (0)",
       "text_es": null,
       "text_de": null
     }
@@ -1195,92 +1835,92 @@
       "music": "audiov1"
     },
     {
-      "episode": 2,
+      "episode": 1,
       "video": "video29",
       "music": "audiov1"
     },
     {
-      "episode": 2,
+      "episode": 1,
       "video": "video30",
       "music": "audiov1"
     },
     {
-      "episode": 2,
+      "episode": 1,
       "video": "video31",
       "music": "audiov1"
     },
     {
-      "episode": 2,
+      "episode": 1,
       "video": "video32",
       "music": "audiov1"
     },
     {
-      "episode": 2,
+      "episode": 1,
       "video": "video33",
       "music": "audiov1"
     },
     {
-      "episode": 2,
+      "episode": 1,
       "video": "video34",
       "music": "audiov1"
     },
     {
-      "episode": 2,
+      "episode": 1,
       "video": "video35",
       "music": "audiov1"
     },
     {
-      "episode": 2,
+      "episode": 1,
       "video": "video36",
       "music": "audiov1"
     },
     {
-      "episode": 2,
+      "episode": 1,
       "video": "video37",
       "music": "audiov1"
     },
     {
-      "episode": 2,
+      "episode": 1,
       "video": "video38",
       "music": "audiov1"
     },
     {
-      "episode": 2,
+      "episode": 1,
       "video": "video39",
       "music": "audiov1"
     },
     {
-      "episode": 2,
+      "episode": 1,
       "video": "video40",
       "music": "audiov1"
     },
     {
-      "episode": 2,
+      "episode": 1,
       "video": "video41",
       "music": "audiov1"
     },
     {
-      "episode": 2,
+      "episode": 1,
       "video": "video42",
       "music": "audiov1"
     },
     {
-      "episode": 2,
+      "episode": 1,
       "video": "video43",
       "music": "audiov1"
     },
     {
-      "episode": 2,
+      "episode": 1,
       "video": "video44",
       "music": "audiov1"
     },
     {
-      "episode": 2,
+      "episode": 1,
       "video": "video45",
       "music": "audiov1"
     },
     {
-      "episode": 2,
+      "episode": 1,
       "video": "video46",
       "music": "audiov1"
     },
@@ -1320,268 +1960,628 @@
       "music": "audiov1"
     },
     {
-      "episode": 3,
+      "episode": 2,
       "video": "video54",
       "music": "audiov1"
     },
     {
-      "episode": 3,
+      "episode": 2,
       "video": "video55",
       "music": "audiov1"
     },
     {
-      "episode": 3,
+      "episode": 2,
       "video": "video56",
       "music": "audiov1"
     },
     {
-      "episode": 3,
+      "episode": 2,
       "video": "video57",
       "music": "audiov1"
     },
     {
-      "episode": 3,
+      "episode": 2,
       "video": "video58",
       "music": "audiov1"
     },
     {
-      "episode": 3,
+      "episode": 2,
       "video": "video59",
       "music": "audiov1"
     },
     {
-      "episode": 3,
+      "episode": 2,
       "video": "video60",
       "music": "audiov1"
     },
     {
-      "episode": 3,
+      "episode": 2,
       "video": "video61",
       "music": "audiov1"
     },
     {
-      "episode": 3,
+      "episode": 2,
       "video": "video62",
       "music": "audiov1"
     },
     {
-      "episode": 3,
+      "episode": 2,
       "video": "video63",
       "music": "audiov1"
     },
     {
-      "episode": 3,
+      "episode": 2,
       "video": "video64",
       "music": "audiov1"
     },
     {
-      "episode": 3,
+      "episode": 2,
       "video": "video65",
       "music": "audiov1"
     },
     {
-      "episode": 3,
+      "episode": 2,
       "video": "video66",
       "music": "audiov1"
     },
     {
-      "episode": 3,
+      "episode": 2,
       "video": "video67",
       "music": "audiov1"
     },
     {
-      "episode": 3,
+      "episode": 2,
       "video": "video68",
       "music": "audiov1"
     },
     {
-      "episode": 3,
+      "episode": 2,
       "video": "video69",
       "music": "audiov1"
     },
     {
-      "episode": 3,
+      "episode": 2,
       "video": "video70",
       "music": "audiov1"
     },
     {
-      "episode": 3,
+      "episode": 2,
       "video": "video71",
       "music": "audiov1"
     },
     {
-      "episode": 3,
+      "episode": 2,
       "video": "video72",
       "music": "audiov1"
     },
     {
-      "episode": 3,
+      "episode": 2,
       "video": "video73",
       "music": "audiov1"
     },
     {
-      "episode": 3,
+      "episode": 2,
       "video": "video74",
       "music": "audiov1"
     },
     {
-      "episode": 3,
+      "episode": 2,
       "video": "video75",
       "music": "audiov1"
     },
     {
-      "episode": 3,
+      "episode": 2,
       "video": "video76",
       "music": "audiov1"
     },
     {
-      "episode": 3,
+      "episode": 2,
       "video": "video77",
       "music": "audiov1"
     },
     {
-      "episode": 3,
+      "episode": 2,
       "video": "video78",
       "music": "audiov1"
     },
     {
-      "episode": 3,
+      "episode": 2,
       "video": "video79",
       "music": "audiov1"
     },
     {
-      "episode": 4,
+      "episode": 2,
       "video": "video80",
       "music": "audiov1"
     },
     {
-      "episode": 4,
+      "episode": 2,
       "video": "video81",
       "music": "audiov1"
     },
     {
-      "episode": 4,
+      "episode": 2,
       "video": "video82",
       "music": "audiov1"
     },
     {
-      "episode": 4,
+      "episode": 2,
       "video": "video83",
       "music": "audiov1"
     },
     {
-      "episode": 4,
+      "episode": 2,
       "video": "video84",
       "music": "audiov1"
     },
     {
-      "episode": 4,
+      "episode": 2,
       "video": "video85",
       "music": "audiov1"
     },
     {
-      "episode": 4,
+      "episode": 2,
       "video": "video86",
       "music": "audiov1"
     },
     {
-      "episode": 4,
+      "episode": 2,
       "video": "video87",
       "music": "audiov1"
     },
     {
-      "episode": 4,
+      "episode": 2,
       "video": "video88",
       "music": "audiov1"
     },
     {
-      "episode": 4,
+      "episode": 2,
       "video": "video89",
       "music": "audiov1"
     },
     {
-      "episode": 4,
+      "episode": 2,
       "video": "video90",
       "music": "audiov1"
     },
     {
-      "episode": 4,
+      "episode": 3,
       "video": "video91",
       "music": "audiov1"
     },
     {
-      "episode": 4,
+      "episode": 3,
       "video": "video92",
       "music": "audiov1"
     },
     {
-      "episode": 4,
+      "episode": 3,
       "video": "video93",
       "music": "audiov1"
     },
     {
-      "episode": 4,
+      "episode": 3,
       "video": "video94",
       "music": "audiov1"
     },
     {
-      "episode": 4,
+      "episode": 3,
       "video": "video95",
       "music": "audiov1"
     },
     {
-      "episode": 4,
+      "episode": 3,
       "video": "video96",
       "music": "audiov1"
     },
     {
-      "episode": 4,
+      "episode": 3,
       "video": "video97",
       "music": "audiov1"
     },
     {
-      "episode": 4,
+      "episode": 3,
       "video": "video98",
       "music": "audiov1"
     },
     {
-      "episode": 4,
+      "episode": 3,
       "video": "video99",
       "music": "audiov1"
     },
     {
-      "episode": 4,
+      "episode": 3,
       "video": "video100",
       "music": "audiov1"
     },
     {
-      "episode": 4,
+      "episode": 3,
       "video": "video101",
       "music": "audiov1"
     },
     {
-      "episode": 4,
+      "episode": 3,
       "video": "video102",
       "music": "audiov1"
     },
     {
-      "episode": 4,
+      "episode": 3,
       "video": "video103",
       "music": "audiov1"
     },
     {
-      "episode": 4,
+      "episode": 3,
       "video": "video104",
       "music": "audiov1"
     },
     {
-      "episode": 4,
+      "episode": 3,
       "video": "video105",
       "music": "audiov1"
     },
     {
-      "episode": 4,
+      "episode": 3,
       "video": "video106",
+      "music": "audiov1"
+    },
+    {
+      "episode": 3,
+      "video": "video107",
+      "music": "audiov1"
+    },
+    {
+      "episode": 3,
+      "video": "video108",
+      "music": "audiov1"
+    },
+    {
+      "episode": 3,
+      "video": "video109",
+      "music": "audiov1"
+    },
+    {
+      "episode": 3,
+      "video": "video110",
+      "music": "audiov1"
+    },
+    {
+      "episode": 3,
+      "video": "video111",
+      "music": "audiov1"
+    },
+    {
+      "episode": 3,
+      "video": "video112",
+      "music": "audiov1"
+    },
+    {
+      "episode": 3,
+      "video": "video113",
+      "music": "audiov1"
+    },
+    {
+      "episode": 3,
+      "video": "video114",
+      "music": "audiov1"
+    },
+    {
+      "episode": 3,
+      "video": "video115",
+      "music": "audiov1"
+    },
+    {
+      "episode": 3,
+      "video": "video116",
+      "music": "audiov1"
+    },
+    {
+      "episode": 3,
+      "video": "video117",
+      "music": "audiov1"
+    },
+    {
+      "episode": 3,
+      "video": "video118",
+      "music": "audiov1"
+    },
+    {
+      "episode": 3,
+      "video": "video119",
+      "music": "audiov1"
+    },
+    {
+      "episode": 3,
+      "video": "video120",
+      "music": "audiov1"
+    },
+    {
+      "episode": 3,
+      "video": "video121",
+      "music": "audiov1"
+    },
+    {
+      "episode": 3,
+      "video": "video122",
+      "music": "audiov1"
+    },
+    {
+      "episode": 3,
+      "video": "video123",
+      "music": "audiov1"
+    },
+    {
+      "episode": 3,
+      "video": "video124",
+      "music": "audiov1"
+    },
+    {
+      "episode": 3,
+      "video": "video125",
+      "music": "audiov1"
+    },
+    {
+      "episode": 3,
+      "video": "video126",
+      "music": "audiov1"
+    },
+    {
+      "episode": 3,
+      "video": "video127",
+      "music": "audiov1"
+    },
+    {
+      "episode": 3,
+      "video": "video128",
+      "music": "audiov1"
+    },
+    {
+      "episode": 3,
+      "video": "video129",
+      "music": "audiov1"
+    },
+    {
+      "episode": 3,
+      "video": "video130",
+      "music": "audiov1"
+    },
+    {
+      "episode": 4,
+      "video": "video131",
+      "music": "audiov1"
+    },
+    {
+      "episode": 4,
+      "video": "video132",
+      "music": "audiov1"
+    },
+    {
+      "episode": 4,
+      "video": "video133",
+      "music": "audiov1"
+    },
+    {
+      "episode": 4,
+      "video": "video134",
+      "music": "audiov1"
+    },
+    {
+      "episode": 4,
+      "video": "video135",
+      "music": "audiov1"
+    },
+    {
+      "episode": 4,
+      "video": "video136",
+      "music": "audiov1"
+    },
+    {
+      "episode": 4,
+      "video": "video137",
+      "music": "audiov1"
+    },
+    {
+      "episode": 4,
+      "video": "video138",
+      "music": "audiov1"
+    },
+    {
+      "episode": 4,
+      "video": "video139",
+      "music": "audiov1"
+    },
+    {
+      "episode": 4,
+      "video": "video140",
+      "music": "audiov1"
+    },
+    {
+      "episode": 4,
+      "video": "video141",
+      "music": "audiov1"
+    },
+    {
+      "episode": 4,
+      "video": "video142",
+      "music": "audiov1"
+    },
+    {
+      "episode": 4,
+      "video": "video143",
+      "music": "audiov1"
+    },
+    {
+      "episode": 4,
+      "video": "video144",
+      "music": "audiov1"
+    },
+    {
+      "episode": 4,
+      "video": "video145",
+      "music": "audiov1"
+    },
+    {
+      "episode": 4,
+      "video": "video146",
+      "music": "audiov1"
+    },
+    {
+      "episode": 4,
+      "video": "video147",
+      "music": "audiov1"
+    },
+    {
+      "episode": 4,
+      "video": "video148",
+      "music": "audiov1"
+    },
+    {
+      "episode": 4,
+      "video": "video149",
+      "music": "audiov1"
+    },
+    {
+      "episode": 4,
+      "video": "video150",
+      "music": "audiov1"
+    },
+    {
+      "episode": 4,
+      "video": "video151",
+      "music": "audiov1"
+    },
+    {
+      "episode": 4,
+      "video": "video152",
+      "music": "audiov1"
+    },
+    {
+      "episode": 4,
+      "video": "video153",
+      "music": "audiov1"
+    },
+    {
+      "episode": 4,
+      "video": "video154",
+      "music": "audiov1"
+    },
+    {
+      "episode": 4,
+      "video": "video155",
+      "music": "audiov1"
+    },
+    {
+      "episode": 4,
+      "video": "video156",
+      "music": "audiov1"
+    },
+    {
+      "episode": 4,
+      "video": "video157",
+      "music": "audiov1"
+    },
+    {
+      "episode": 4,
+      "video": "video158",
+      "music": "audiov1"
+    },
+    {
+      "episode": 4,
+      "video": "video159",
+      "music": "audiov1"
+    },
+    {
+      "episode": 4,
+      "video": "video160",
+      "music": "audiov1"
+    },
+    {
+      "episode": 4,
+      "video": "video161",
+      "music": "audiov1"
+    },
+    {
+      "episode": 4,
+      "video": "video162",
+      "music": "audiov1"
+    },
+    {
+      "episode": 4,
+      "video": "video163",
+      "music": "audiov1"
+    },
+    {
+      "episode": 4,
+      "video": "video164",
+      "music": "audiov1"
+    },
+    {
+      "episode": 4,
+      "video": "video165",
+      "music": "audiov1"
+    },
+    {
+      "episode": 4,
+      "video": "video166",
+      "music": "audiov1"
+    },
+    {
+      "episode": 4,
+      "video": "video167",
+      "music": "audiov1"
+    },
+    {
+      "episode": 4,
+      "video": "video168",
+      "music": "audiov1"
+    },
+    {
+      "episode": 4,
+      "video": "video169",
+      "music": "audiov1"
+    },
+    {
+      "episode": 4,
+      "video": "video170",
+      "music": "audiov1"
+    },
+    {
+      "episode": 4,
+      "video": "video171",
+      "music": "audiov1"
+    },
+    {
+      "episode": 4,
+      "video": "video172",
+      "music": "audiov1"
+    },
+    {
+      "episode": 4,
+      "video": "video173",
+      "music": "audiov1"
+    },
+    {
+      "episode": 4,
+      "video": "video174",
+      "music": "audiov1"
+    },
+    {
+      "episode": 4,
+      "video": "video175",
+      "music": "audiov1"
+    },
+    {
+      "episode": 4,
+      "video": "video176",
+      "music": "audiov1"
+    },
+    {
+      "episode": 4,
+      "video": "video177",
+      "music": "audiov1"
+    },
+    {
+      "episode": 4,
+      "video": "video178",
       "music": "audiov1"
     }
   ],
@@ -2440,5 +3440,6 @@
       "script_es": null,
       "script_de": null
     }
-  }
+  },
+  "episode5": {}
 }
