@@ -40,6 +40,8 @@ public class EpisodeElement : MonoBehaviour
 
     private void OnEnable()
     {
+        gameManager.storyPlayer.GetLastUnlockedVideo(episodeIndex, out lastVideoID);
+        
         if (pathImage == null)
         {
             gameManager.GetImageForVideo(out pathImage, episodeIndex);
@@ -48,8 +50,7 @@ public class EpisodeElement : MonoBehaviour
         
         if (continueButton != null)
         {
-            continueButton.interactable = gameManager.storyPlayer.GetLastUnlockedVideo(episodeIndex, out lastVideoID);
-            Debug.Log(episodeIndex + " lastVideoID:" + lastVideoID);
+            continueButton.interactable = !string.IsNullOrEmpty(lastVideoID);
         }
     }
 }

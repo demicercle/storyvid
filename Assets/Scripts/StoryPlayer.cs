@@ -66,6 +66,8 @@ public class StoryPlayer : MonoBehaviour
         videoPlayer.time = 0;
         videoPlayer.Play();
 
+        Debug.Log("PlayVideo: " + file + " nextVideo: " + nextVideo);
+        StopCoroutine("Play");
         StartCoroutine("Play");
     }
 
@@ -78,6 +80,7 @@ public class StoryPlayer : MonoBehaviour
             videoPlayer.clip = null;
         }
         
+        Debug.Log("Stop Video");
         isPlaying = false;
     }
 
@@ -117,8 +120,6 @@ public class StoryPlayer : MonoBehaviour
 
     IEnumerator Play()
     {
-        Debug.Log(this + " Play");
-        
         lineIndex = 0;
         charIndex = 0;
         displayContent = lastContent = string.Empty;
@@ -180,9 +181,11 @@ public class StoryPlayer : MonoBehaviour
                 var firstLine = lineIndex == 0;
                 var lastLine = lineIndex + 1 >= lines.Count;
                 var hasLinks = links.Count > 1;
-                
-                nextButton.gameObject.SetActive(!lastLine || !hasLinks);
-                prevButton.gameObject.SetActive(!firstLine);
+
+                if (!firstLine)
+                {
+                    prevButton.gameObject.SetActive(true);
+                }
 
                 if (lastLine && hasLinks)
                 {
@@ -196,6 +199,10 @@ public class StoryPlayer : MonoBehaviour
                             btn.userData = links[i];
                         }
                     }
+                }
+                else
+                {
+                    nextButton.gameObject.SetActive(true);
                 }
                 
                 while (!string.IsNullOrWhiteSpace(lastContent))
