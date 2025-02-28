@@ -108,14 +108,15 @@ public class StoryPlayer : MonoBehaviour
                 displayContent = lastContent = string.Empty;
                 nextVideo = link.videoTo;
                 lineIndex = lines.Count;
-                if (link.points != 0)
-                    GameManager.instance.AddPoints(link.id, link.points);
+                GameManager.instance.SetVisitedLink(link.id, true);
             };
         });
     }
 
     IEnumerator Play()
     {
+        Debug.Log("PlayVideo: " + videoPlayer.clip + " nextVideo: " + nextVideo);
+        
         lineIndex = 0;
         charIndex = 0;
         displayContent = lastContent = string.Empty;

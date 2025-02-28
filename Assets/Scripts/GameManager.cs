@@ -9,15 +9,6 @@ using UnityEngine.Video;
 public class GameManager : MonoBehaviour
 {
     static public GameManager instance { get; private set; }
-
-    public List<StoryVar> variables = new List<StoryVar>();
-    
-    [System.Serializable]
-    public struct StoryVar
-    {
-        public string name;
-        public int value;
-    }
     
     public enum Panels
     {
@@ -30,6 +21,7 @@ public class GameManager : MonoBehaviour
 
     public StoryPlayer storyPlayer;
     public GameObject[] panels;
+    public List<int> visitedLinks;
     [FormerlySerializedAs("menuVideo")] public VideoClip menuVideoClip;
     
     public string language { get; private set; }
@@ -79,77 +71,47 @@ public class GameManager : MonoBehaviour
         PlayerPrefs.SetInt("episode" + episode + "." + videoID, 1);
     }
 
-    public bool FindVariable(string id, out StoryVar variable)
+    public void SaveVisitedLinks()
     {
-        foreach (var storyVar in variables)
-        {
-            if (storyVar.name == id)
-            {
-                variable = storyVar;
-                return true;
-            }
-        }
-
-        variable = default;
-        return false;
+        PlayerPrefs.SetString("VisitedLinks", string.Join(",", visitedLinks.ToArray()));
     }
 
-    public void SaveVariables()
+    public void LoadVisitedLinks()
     {
-        var json = string.Empty;
-        foreach (var storyVar in variables)
+        var savedLinks = PlayerPrefs.GetString("VisitedLinks").Split(',');
+        foreach (var savedLink in savedLinks)
         {
-            json += storyVar.name + "=" + storyVar.value + ",";
-        }
-        Debug.Log("SaveVariables: " + json);
-        PlayerPrefs.SetString("Variables", json);
-    }
-
-    public void LoadVariables()
-    {
-        var json = PlayerPrefs.GetString("Variables");
-        Debug.Log("LoadVariables: " + json);
-        
-        variables.Clear();
-        foreach (var keyValue in json.Split(','))
-        {
-            var split = keyValue.Trim(',', '.').Split('=');
-            if (split.Length >= 2 && int.TryParse(split.First(), out var id) && int.TryParse(split.Last(), out var value))
+            if (int.TryParse(savedLink, out var id))
             {
-                variables.Add(new StoryVar()
-                {
-                    name = "link" + id.ToString(),
-                    value = value
-                });
+                visitedLinks.Add(id);
             }
         }
     }
 
-    public void AddPoints(int id, int value)
+    public void SetVisitedLink(int id, bool value)
     {
-        if (FindVariable("link" + id, out var variable))
+        if (value)
         {
-            variable.value = value;
+            if (!visitedLinks.Contains(id))
+                visitedLinks.Add(id);
         }
         else
         {
-            variables.Add(new StoryVar()
-            {
-                name = "link" + id,
-                value = value
-            });
+            visitedLinks.Remove(id);
         }
         
-        SaveVariables();
+        SaveVisitedLinks();
     }
 
     public int GetPoints()
     {
         var count = 0;
-        foreach (var storyVar in variables)
+        foreach (var link in videoLinks)
         {
-            if (storyVar.name.StartsWith("link"))
-                count += storyVar.value;
+            if (visitedLinks.Contains(link.id))
+            {
+                count += link.points;
+            }
         }
         return count;
     }
@@ -208,7 +170,7 @@ public class GameManager : MonoBehaviour
         storyPlayer.episode = episode;
         storyPlayer.musicFile = GetMusicFile(episode, videoID);
         var videoFile = GetVideoFile(episode, videoID);
-        Debug.Log("PlayVideo: " + episode + " - " + videoID + " (file=" + videoFile + ")");
+       // Debug.Log("PlayVideo: " + episode + " - " + videoID + " (file=" + videoFile + ")");
         storyPlayer.PlayVideo(videoFile);
         UnlockPath(episode, videoID);
         SetCurrentPanel(Panels.PlayVideo);
@@ -259,6 +221,7 @@ public class GameManager : MonoBehaviour
         foreach (var data in linksData)
         {
             var link = new VideoLink();
+            link.id = int.Parse(data["id"].ToString());
             link.episode = int.Parse(data["episode"].ToString());
             link.videoFrom = data["video_from"].ToString();
             link.videoTo = data["video_to"].ToString();
@@ -356,7 +319,7 @@ public class GameManager : MonoBehaviour
         
         ParseJson();
         
-        LoadVariables();
+        LoadVisitedLinks();
         
         SetCurrentPanel(0);
 
