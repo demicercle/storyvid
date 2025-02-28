@@ -158,7 +158,7 @@ public class GameManager : MonoBehaviour
         var content = GetVideoContent(episode, videoID);
         storyPlayer.lines.Clear();
         storyPlayer.lines.AddRange(content.Split('\n'));
-        storyPlayer.links = GetLinks(episode, videoID);
+        storyPlayer.links = GetLinks(videoID);
         if (storyPlayer.links.Count == 1 && string.IsNullOrWhiteSpace(storyPlayer.links.First().text))
         {
             storyPlayer.nextVideo = storyPlayer.links[0].videoTo;
@@ -307,9 +307,9 @@ public class GameManager : MonoBehaviour
             return string.Empty;
     }
 
-    public List<VideoLink> GetLinks(int episode, string videoFrom)
+    public List<VideoLink> GetLinks(string videoFrom)
     {
-        return videoLinks.Where(link => link.episode == episode && link.videoFrom == videoFrom).ToList();
+        return videoLinks.Where(link => link.videoFrom == videoFrom).ToList();
     }
 
     private void Awake()
