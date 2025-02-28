@@ -11,6 +11,7 @@ public class EpisodeElement : MonoBehaviour
     public Button playButton;
     public Button continueButton;
     public RawImage imageContainer;
+    public GameObject unlockedOverlay;
     
     private GameManager gameManager => GameManager.instance;
     private Texture pathImage;
@@ -20,37 +21,29 @@ public class EpisodeElement : MonoBehaviour
     {
         header.text = "Episode " + episodeIndex;
 
-        if (playButton != null)
+        playButton.onClick.AddListener(() =>
         {
-            playButton.onClick.AddListener(() =>
-            {
-                gameManager.PlayEpisode(episodeIndex);
-            });
-        }
+            gameManager.PlayEpisode(episodeIndex);
+        });
         
-        if (continueButton != null)
+        continueButton.onClick.AddListener(() =>
         {
-            continueButton.onClick.AddListener(() =>
-            {
-                gameManager.PlayVideo(episodeIndex, lastVideoID);
-                //gameManager.SetCurrentPanel(GameManager.Panels.SelectVideo);
-            });
-        }
+            gameManager.PlayVideo(episodeIndex, lastVideoID);
+        });
     }
 
     private void OnEnable()
     {
-        gameManager.storyPlayer.GetLastUnlockedVideo(episodeIndex, out lastVideoID);
+        gameManager.GetLastUnlockedVideo(episodeIndex, out lastVideoID);
         
         if (pathImage == null)
         {
             gameManager.GetImageForVideo(out pathImage, episodeIndex);
             imageContainer.texture = pathImage;
         }
-        
-        if (continueButton != null)
-        {
-            continueButton.interactable = !string.IsNullOrEmpty(lastVideoID);
-        }
+
+        unlockedOverlay.SetActive(!gameManager.IsEpisodeUnlocked(episodeIndex));
+        playButton.interactable = !unlockedOverlay.activeSelf;
+        continueButton.interactable = !unlockedOverlay.activeSelf && !string.IsNullOrEmpty(lastVideoID);
     }
 }

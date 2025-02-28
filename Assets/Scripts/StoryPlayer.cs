@@ -37,22 +37,6 @@ public class StoryPlayer : MonoBehaviour
     private List<string> knots;
     private bool isFadingMusic;
 
-    public bool GetLastUnlockedVideo(int episode, out string videoID)
-    {
-        videoID = GameManager.instance.GetVideoIDs(episode).LastOrDefault(id => IsPathUnlocked(episode, id));
-        return !string.IsNullOrEmpty(videoID);
-    }
-    
-    public bool IsPathUnlocked(int episode, string videoID)
-    {
-        return PlayerPrefs.GetInt("episode" + episode + "." + videoID) != 0;
-    }
-
-    public void UnlockPath(int episode, string videoID)
-    {
-        PlayerPrefs.SetInt("episode" + episode + "." + videoID, 1);
-    }
-
     public void PlayVideo(string file)
     {
         if (videoPlayer.clip != null)
@@ -66,7 +50,11 @@ public class StoryPlayer : MonoBehaviour
         videoPlayer.time = 0;
         videoPlayer.Play();
 
-        Debug.Log("PlayVideo: " + file + " nextVideo: " + nextVideo);
+        if (videoPlayer.clip == null)
+        {
+            Debug.LogError("Unable to find video: " + file);
+        }
+
         StopCoroutine("Play");
         StartCoroutine("Play");
     }
@@ -87,6 +75,11 @@ public class StoryPlayer : MonoBehaviour
     public void StopMusic()
     {
         MusicPlayer.StopMusic();
+    }
+
+    public bool Skip()
+    {
+        return Application.isEditor && Input.GetKey(KeyCode.Backspace);
     }
 
     private void Awake()
@@ -111,9 +104,12 @@ public class StoryPlayer : MonoBehaviour
             btn.userData = choiceButtons.IndexOf(btn);
             btn.onClick += (userData) =>
             {
+                var link = (VideoLink)userData;
                 displayContent = lastContent = string.Empty;
-                nextVideo = ((VideoLink)userData).videoTo;
+                nextVideo = link.videoTo;
                 lineIndex = lines.Count;
+                if (link.points != 0)
+                    GameManager.instance.AddPoints(link.id, link.points);
             };
         });
     }
@@ -136,7 +132,7 @@ public class StoryPlayer : MonoBehaviour
             MusicPlayer.StopMusic();
         }
         
-        while (isPlaying)
+        while (videoPlayer.clip != null && isPlaying)
         {
             fader.Fade0();
             
@@ -145,7 +141,7 @@ public class StoryPlayer : MonoBehaviour
             
             while (lineIndex < lines.Count)
             {
-                Debug.Log("lineIndex: " + lineIndex + " / " + lines.Count);
+                Debug.Log("line: " + (lineIndex+1) + " / " + lines.Count);
                 lastContent = lines[lineIndex];
                 
                 charIndex = 0;
@@ -175,6 +171,12 @@ public class StoryPlayer : MonoBehaviour
                         displayContent = lastContent.Substring(0, charIndex);
                         charIndex++;
                         yield return Input.GetMouseButton(0) ? null : new WaitForSeconds(textDelay);
+                    }
+
+                    if (Skip())
+                    {
+                        displayContent = lastContent;
+                        charIndex = lastContent.Length;
                     }
                 }
 

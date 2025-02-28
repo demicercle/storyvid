@@ -9,6 +9,15 @@ using UnityEngine.Video;
 public class GameManager : MonoBehaviour
 {
     static public GameManager instance { get; private set; }
+
+    public List<StoryVar> variables = new List<StoryVar>();
+    
+    [System.Serializable]
+    public struct StoryVar
+    {
+        public string name;
+        public int value;
+    }
     
     public enum Panels
     {
@@ -54,6 +63,124 @@ public class GameManager : MonoBehaviour
         UpdatePanels();
     }
 
+    public bool GetLastUnlockedVideo(int episode, out string videoID)
+    {
+        videoID = GetVideoIDs(episode).LastOrDefault(id => IsPathUnlocked(episode, id));
+        return !string.IsNullOrEmpty(videoID);
+    }
+    
+    public bool IsPathUnlocked(int episode, string videoID)
+    {
+        return PlayerPrefs.GetInt("episode" + episode + "." + videoID) != 0;
+    }
+
+    public void UnlockPath(int episode, string videoID)
+    {
+        PlayerPrefs.SetInt("episode" + episode + "." + videoID, 1);
+    }
+
+    public bool FindVariable(string id, out StoryVar variable)
+    {
+        foreach (var storyVar in variables)
+        {
+            if (storyVar.name == id)
+            {
+                variable = storyVar;
+                return true;
+            }
+        }
+
+        variable = default;
+        return false;
+    }
+
+    public void SaveVariables()
+    {
+        var json = string.Empty;
+        foreach (var storyVar in variables)
+        {
+            json += storyVar.name + "=" + storyVar.value + ",";
+        }
+        Debug.Log("SaveVariables: " + json);
+        PlayerPrefs.SetString("Variables", json);
+    }
+
+    public void LoadVariables()
+    {
+        var json = PlayerPrefs.GetString("Variables");
+        Debug.Log("LoadVariables: " + json);
+        
+        variables.Clear();
+        foreach (var keyValue in json.Split(','))
+        {
+            var split = keyValue.Trim(',', '.').Split('=');
+            if (split.Length >= 2 && int.TryParse(split.First(), out var id) && int.TryParse(split.Last(), out var value))
+            {
+                variables.Add(new StoryVar()
+                {
+                    name = "link" + id.ToString(),
+                    value = value
+                });
+            }
+        }
+    }
+
+    public void AddPoints(int id, int value)
+    {
+        if (FindVariable("link" + id, out var variable))
+        {
+            variable.value = value;
+        }
+        else
+        {
+            variables.Add(new StoryVar()
+            {
+                name = "link" + id,
+                value = value
+            });
+        }
+        
+        SaveVariables();
+    }
+
+    public int GetPoints()
+    {
+        var count = 0;
+        foreach (var storyVar in variables)
+        {
+            if (storyVar.name.StartsWith("link"))
+                count += storyVar.value;
+        }
+        return count;
+    }
+
+    [ContextMenu("Log Points")]
+    public void LogPoints()
+    {
+        Debug.Log("Points: " + GetPoints());
+    }
+
+    public bool IsEpisodeCompleted(int episode)
+    {
+        return IsPathUnlocked(episode, GetVideoIDs(episode).LastOrDefault());
+    }
+
+    public bool IsEpisodeUnlocked(int episode)
+    {
+        if (episode == 4)
+        {
+            return (IsEpisodeCompleted(3) && GetPoints() >= 3) || IsEpisodeCompleted(5);
+        }
+        else if (episode == 5)
+        {
+            return (IsEpisodeCompleted(3) && GetPoints() < 3) || IsEpisodeCompleted(4);
+        }
+        else
+        {
+            return episode <= 1 || IsEpisodeCompleted(episode - 1);
+        }
+    }
+
     public string GetVideoID(int video)
     {
         return "video" + (video < 10 ? "0" : "") + video;
@@ -80,8 +207,10 @@ public class GameManager : MonoBehaviour
         }
         storyPlayer.episode = episode;
         storyPlayer.musicFile = GetMusicFile(episode, videoID);
-        storyPlayer.PlayVideo(GetVideoFile(episode, videoID));
-        storyPlayer.UnlockPath(episode, videoID);
+        var videoFile = GetVideoFile(episode, videoID);
+        Debug.Log("PlayVideo: " + episode + " - " + videoID + " (file=" + videoFile + ")");
+        storyPlayer.PlayVideo(videoFile);
+        UnlockPath(episode, videoID);
         SetCurrentPanel(Panels.PlayVideo);
     }
 
@@ -134,6 +263,8 @@ public class GameManager : MonoBehaviour
             link.videoFrom = data["video_from"].ToString();
             link.videoTo = data["video_to"].ToString();
             link.text = data["text_" + language].ToString();
+            if (int.TryParse(data["points"].ToString(), out var pts))
+                link.points = pts;
             videoLinks.Add(link);
         }
     }
@@ -224,6 +355,8 @@ public class GameManager : MonoBehaviour
         language = "fr";
         
         ParseJson();
+        
+        LoadVariables();
         
         SetCurrentPanel(0);
 

@@ -5,4 +5,6 @@ public struct VideoLink
     public string videoFrom;
     public string videoTo;
     public string text;
+    public int points;
+    public int id;
 }
