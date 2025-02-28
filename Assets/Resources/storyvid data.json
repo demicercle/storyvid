@@ -65,6 +65,12 @@
       "text_en": "Gallery",
       "text_es": null,
       "text_de": null
+    },
+    "volume": {
+      "text_fr": "Volume",
+      "text_en": "Volume",
+      "text_es": null,
+      "text_de": null
     }
   },
   "links": [

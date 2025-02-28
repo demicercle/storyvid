@@ -39,6 +39,8 @@ public class MusicPlayer : MonoBehaviour
     public bool isPlaying;
     public AudioSource audioSource;
     public AudioClip audioClip;
+
+    public float maxVolume => VolumeSlider.value;
     
     void Awake()
     {
@@ -57,7 +59,7 @@ public class MusicPlayer : MonoBehaviour
     {
         if (isPlaying)
         {
-            audioSource.volume = Mathf.MoveTowards(audioSource.volume, 1.0f, Time.deltaTime * fadeSpeed);
+            audioSource.volume = Mathf.MoveTowards(audioSource.volume, maxVolume, Time.deltaTime * fadeSpeed);
         }
         else
         {
