@@ -35,6 +35,7 @@ public class GameManager : MonoBehaviour
     
     public UnityEngine.UI.Button playButton;
     public UnityEngine.UI.Button quitButton;
+    public UnityEngine.UI.Button deleteGameButton;
     
     public TextAsset jsonAsset;
     public Newtonsoft.Json.Linq.JObject jsonData;
@@ -346,6 +347,11 @@ public class GameManager : MonoBehaviour
             UnityEditor.EditorApplication.isPlaying = false;
             #endif
             Application.Quit();
+        });
+        
+        deleteGameButton.onClick.AddListener(() =>
+        {
+            PlayerPrefs.DeleteAll();
         });
         
         UpdatePanels();

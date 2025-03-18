@@ -77,6 +77,12 @@
       "text_en": "Autoplay",
       "text_es": null,
       "text_de": null
+    },
+    "deletegame": {
+      "text_fr": "Effacer la partie",
+      "text_en": "Delete game",
+      "text_es": null,
+      "text_de": null
     }
   },
   "links": [
