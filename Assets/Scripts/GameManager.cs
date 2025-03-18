@@ -22,7 +22,7 @@ public class GameManager : MonoBehaviour
     public StoryPlayer storyPlayer;
     public GameObject[] panels;
     public List<int> visitedLinks;
-    [FormerlySerializedAs("menuVideo")] public VideoClip menuVideoClip;
+    public VideoClip menuVideoClip;
     
     public string language { get; private set; }
 
@@ -373,5 +373,11 @@ public class GameManager : MonoBehaviour
                 storyPlayer.videoPlayer.Play();
             }
         }
+    }
+
+    public List<string> availableLanguages = new List<string>();
+    public bool IsLanguageAvailable(string id)
+    {
+        return availableLanguages.Contains(id);
     }
 }

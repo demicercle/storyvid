@@ -17,6 +17,7 @@ public class LanguageButton : MonoBehaviour
         }
         
         var btn = GetComponent<Toggle>();
+        btn.interactable = GameManager.instance.IsLanguageAvailable(id);
         btn.group = toggleGroup;
         btn.isOn = GameManager.instance.language == id;
         btn.onValueChanged.AddListener((isOn) =>
