@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Video;
 using System.Linq;
+using UnityEngine.Serialization;
+using UnityEngine.UI;
 
 public class StoryPlayer : MonoBehaviour
 {
@@ -36,6 +38,14 @@ public class StoryPlayer : MonoBehaviour
     private int choiceCount;
     private List<string> knots;
     private bool isFadingMusic;
+
+    public bool autoPlay => autoPlayToggle.isOn;
+    
+    public bool canDoubleClick;
+    public Toggle autoPlayToggle;
+    
+    private float lastClickTime;
+    private bool doubleClicked;
 
     public void PlayVideo(string file)
     {
@@ -82,21 +92,31 @@ public class StoryPlayer : MonoBehaviour
         return Application.isEditor && Input.GetKey(KeyCode.Backspace);
     }
 
+    public void Next()
+    {
+        lineIndex += 1;
+        displayContent = lastContent = string.Empty;
+    }
+
+    public void Prev()
+    {
+        lineIndex = Mathf.Max(0, lineIndex - 1);
+        displayContent = lastContent = string.Empty;
+    }
+    
     private void Awake()
     {
-        nextButton.gameObject.SetActive(false);
-        nextButton.onClick.AddListener(() =>
+        autoPlayToggle.isOn = PlayerPrefs.GetInt("autoPlay", 0) == 1;
+        autoPlayToggle.onValueChanged.AddListener((isOn) =>
         {
-            lineIndex += 1;
-            displayContent = lastContent = string.Empty;
+            PlayerPrefs.SetInt("autoPlay", isOn ? 1 : 0);
         });
         
+        nextButton.gameObject.SetActive(false);
+        nextButton.onClick.AddListener(Next);
+        
         prevButton.gameObject.SetActive(false);
-        prevButton.onClick.AddListener(() =>
-        {
-            lineIndex = Mathf.Max(0, lineIndex - 1);
-            displayContent = lastContent = string.Empty;
-        });
+        prevButton.onClick.AddListener(Prev);
         
         choiceButtons.ForEach( (btn) =>
         {
@@ -207,10 +227,25 @@ public class StoryPlayer : MonoBehaviour
                 {
                     nextButton.gameObject.SetActive(true);
                 }
-                
-                while (!string.IsNullOrWhiteSpace(lastContent))
+
+                if (autoPlay && links.Count <= 1)
                 {
-                    yield return null;
+                    nextButton.gameObject.SetActive(false);
+                    prevButton.gameObject.SetActive(false);
+                    yield return new WaitForSeconds(1f);
+                    Next();
+                }
+                else
+                {
+                    while (!string.IsNullOrWhiteSpace(lastContent))
+                    {
+                        if (doubleClicked && links.Count <= 1)
+                        {
+                            Next();
+                        }
+                    
+                        yield return null;
+                    }
                 }
                     
                 nextButton.gameObject.SetActive(false);
@@ -228,9 +263,29 @@ public class StoryPlayer : MonoBehaviour
         storyComplete?.Invoke();
     }
 
+    private void Update()
+    {
+        if (canDoubleClick)
+        {
+            if (Input.GetMouseButtonUp(0))
+            {
+                if (Time.time - lastClickTime < .5f)
+                {
+                    doubleClicked = true;
+                    lastClickTime = 0;
+                }
+                else
+                {
+                    lastClickTime = Time.time;
+                }
+            }
+        }
+    }
+
     private void LateUpdate()
     {
         uiText.enabled = !string.IsNullOrWhiteSpace(displayContent);
         uiText.text = displayContent;
+        doubleClicked = false;
     }
 }
