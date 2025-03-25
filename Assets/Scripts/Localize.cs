@@ -1,6 +1,7 @@
 using System;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Localize : MonoBehaviour
 {
@@ -8,11 +9,21 @@ public class Localize : MonoBehaviour
 
     private void OnDrawGizmosSelected()
     {
-        id = id.ToLower();
-        UpdateText();
+        if (!Application.isPlaying)
+        {
+            id = id.ToLower();
+            if (TryGetComponent<TMPro.TMP_Text>(out var tmp))
+            {
+                tmp.text = id;
+            }
+            else if (TryGetComponent<Text>(out var text))
+            {
+                text.text = id;
+            }
 #if UNITY_EDITOR
-        UnityEditor.EditorUtility.SetDirty(gameObject);
+            UnityEditor.EditorUtility.SetDirty(gameObject);
 #endif
+        }
     }
 
     private void OnDisable()
@@ -28,10 +39,13 @@ public class Localize : MonoBehaviour
 
     private void UpdateText()
     {
-        var textComponent = GetComponent<TMPro.TMP_Text>();
-        if (textComponent != null)
+        if (TryGetComponent<TMPro.TMP_Text>(out var tmp))
         {
-            textComponent.text = Application.isPlaying ? GameManager.instance.GetLocalizedText(id) : id;
+            tmp.text = GameManager.instance.GetLocalizedText(id);
+        }
+        else if (TryGetComponent<Text>(out var text))
+        {
+            text.text = GameManager.instance.GetLocalizedText(id);
         }
     }
 }

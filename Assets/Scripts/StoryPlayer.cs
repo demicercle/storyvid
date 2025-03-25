@@ -9,8 +9,17 @@ using UnityEngine.UI;
 
 public class StoryPlayer : MonoBehaviour
 {
-    static public float textDelay => PlayerPrefs.GetFloat("StoryPlayer.textDelay", 0.1f);
-    static public float autoPlayDuration => PlayerPrefs.GetFloat("StoryPlayer.autoPlayDuration", 2f);
+    static public float[] speeds = new float[] { 2.0f, 1.0f, 0.5f };
+
+    static public int selectedSpeed
+    {
+        get => PlayerPrefs.GetInt("textSpeed", 0);
+        set => PlayerPrefs.SetInt("textSpeed", value);
+    }
+
+    static public float textDelay => speeds[selectedSpeed];
+
+    static public float autoPlayDuration => 2f;
     
     public VideoPlayer videoPlayer;
 
