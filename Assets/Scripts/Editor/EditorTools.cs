@@ -7,7 +7,12 @@ public static class EditorTools
     [MenuItem("Tools/Clear PlayerPrefs")]
     static public void ClearPlayerPrefs()
     {
-        PlayerPrefs.DeleteAll();
+        if (EditorUtility.DisplayDialog("Clear Player Prefs", "Are you sure?", "Yes", "No"))
+        {
+            PlayerPrefs.DeleteAll();
+            PlayerPrefs.Save();
+            Debug.Log("Player Prefs deleted");
+        }
     }
     
     [MenuItem("Tools/Save Selected Assets Thumbnails")]

@@ -559,7 +559,7 @@ MonoBehaviour:
   - {fileID: 1823762689}
   - {fileID: 589892149}
   visitedLinks: 
-  menuVideoClip: {fileID: 32900000, guid: bddd27f21cd374d46b50e63505d4077c, type: 3}
+  menuVideoClip: {fileID: 32900000, guid: 9456553492a5f4643aa3003263ee8397, type: 3}
   playButton: {fileID: 579927319}
   quitButton: {fileID: 1871781604}
   deleteGameButton: {fileID: 677965520}
@@ -5898,8 +5898,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 596737981}
   m_HandleRect: {fileID: 596737980}
   m_Direction: 2
-  m_Value: 1.0000005
-  m_Size: 0.8502723
+  m_Value: 1
+  m_Size: 0.6950858
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
