@@ -80,3 +80,4 @@ crashlytics-build.properties
 .DS_Store
 .idea
 .DS_Store
+.utmp
