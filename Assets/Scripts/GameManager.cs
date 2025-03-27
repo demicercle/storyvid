@@ -62,19 +62,25 @@ public class GameManager : MonoBehaviour
         return !string.IsNullOrEmpty(videoID);
     }
     
+    public string GetPath(int episode, string videoID) => "episode" + episode + "." + videoID;
+     
     public bool IsPathUnlocked(int episode, string videoID)
     {
-        return PlayerPrefs.GetInt("episode" + episode + "." + videoID) != 0;
+        return PlayerPrefs.GetInt(GetPath(episode, videoID)) != 0;
     }
 
     public void UnlockPath(int episode, string videoID)
     {
-        PlayerPrefs.SetInt("episode" + episode + "." + videoID, 1);
+        var path = GetPath(episode, videoID);
+        Debug.Log("UnlockPath: " + path);
+        PlayerPrefs.SetInt(path, 1);
+        PlayerPrefs.Save();
     }
 
     public void SaveVisitedLinks()
     {
         PlayerPrefs.SetString("VisitedLinks", string.Join(",", visitedLinks.ToArray()));
+        PlayerPrefs.Save();
     }
 
     public void LoadVisitedLinks()
@@ -125,7 +131,14 @@ public class GameManager : MonoBehaviour
 
     public bool IsEpisodeCompleted(int episode)
     {
-        return IsPathUnlocked(episode, GetVideoIDs(episode).LastOrDefault());
+        return PlayerPrefs.GetInt("episode" + episode) != 0;
+    }
+
+    public void SetEpisodeCompleted(int episode, bool value)
+    {
+        Debug.Log("EpisodeCompleted: " + episode);
+        PlayerPrefs.SetInt("episode" + episode, value ? 1 : 0);
+        PlayerPrefs.Save();
     }
 
     public bool IsEpisodeUnlocked(int episode)

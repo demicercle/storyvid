@@ -5812,7 +5812,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 596737980}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.8679533
+  m_Size: 0.89088863
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -17221,7 +17221,7 @@ GameObject:
   - component: {fileID: 1645643530}
   - component: {fileID: 1645643531}
   m_Layer: 5
-  m_Name: Slider
+  m_Name: VolumeSlider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

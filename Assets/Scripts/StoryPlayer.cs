@@ -9,12 +9,16 @@ using UnityEngine.UI;
 
 public class StoryPlayer : MonoBehaviour
 {
-    static public float[] speeds = new float[] { 2.0f, 1.0f, 0.5f };
+    static public float[] speeds = new float[] { 0.30f, 0.15f, 0.015f };
 
     static public int selectedSpeed
     {
         get => PlayerPrefs.GetInt("textSpeed", 0);
-        set => PlayerPrefs.SetInt("textSpeed", value);
+        set
+        {
+            PlayerPrefs.SetInt("textSpeed", value);
+            PlayerPrefs.Save();
+        }
     }
 
     static public float textDelay => speeds[selectedSpeed];
@@ -124,6 +128,7 @@ public class StoryPlayer : MonoBehaviour
         autoPlayToggle.onValueChanged.AddListener((isOn) =>
         {
             PlayerPrefs.SetInt("autoPlay", isOn ? 1 : 0);
+            PlayerPrefs.Save();
         });
         
         nextButton.gameObject.SetActive(false);
@@ -145,10 +150,13 @@ public class StoryPlayer : MonoBehaviour
 
     private void ChooseLink(VideoLink link)
     {
+        Debug.Log("ChooseLink: " + link.videoTo);
         displayContent = lastContent = string.Empty;
         nextVideo = link.videoTo;
         lineIndex = lines.Count;
         GameManager.instance.SetVisitedLink(link.id, true);
+        if (link.EpisodeComplete())
+            GameManager.instance.SetEpisodeCompleted(link.episode, true);
     }
 
     private bool waitVideoEnd;
@@ -182,9 +190,12 @@ public class StoryPlayer : MonoBehaviour
             
             while (lineIndex < lines.Count)
             {
-                Debug.Log("line #" + lineIndex + " / " + lines.Count);
-                lastContent = lines[lineIndex];
+                var lastLine = lineIndex + 1 >= lines.Count;
+                Debug.Log("line #" + lineIndex + " / " + lines.Count + " last:" + lastLine + " links:" + links.Count);
                 
+                yield return null;
+                
+                lastContent = lines[lineIndex];
                 charIndex = 0;
                 
                 while (charIndex < lastContent.Length)
@@ -245,52 +256,59 @@ public class StoryPlayer : MonoBehaviour
                     Debug.Log("Wait video end");
                     videoPlayer.isLooping = false;
                     while (videoPlayer.isPlaying)
+                    {
+                        if (Skip())
+                            break;
+                        
                         yield return null;
+                    }
                     videoPlayer.Pause();
                 }
 
-                var lastLine = lineIndex + 1 >= lines.Count;
-                if (links.Count <= 1)
+                if (autoPlay)
                 {
-                    if (autoPlay)
+                    Debug.Log("autoplay next video");
+                    yield return new WaitForSeconds(autoPlayDuration);
+                    NextLineAndClear();
+                }
+                else
+                {
+                    if (!lastLine || links.Count <= 1)
                     {
-                        if (!string.IsNullOrEmpty(lastContent)) // will be skipped if "wait video end"
-                            yield return new WaitForSeconds(autoPlayDuration);
-                        
-                        nextButton.onClick.Invoke();
-                    }
-                    else
-                    {
+                        Debug.Log("show next/prev buttons");
                         nextButton.gameObject.SetActive(true);
                         prevButton.gameObject.SetActive(lineIndex >= 1);
-                        
                         while (!string.IsNullOrEmpty(lastContent)) // will be skipped if "wait video end"
                         {
                             if (doubleClicked)
-                                nextButton.onClick.Invoke();
+                                NextLineAndClear();
                             
                             yield return null;
                         }
                     }
-
-                    if (lastLine && links.Count > 0)
-                    {
-                        ChooseLink(links.First());    
-                    }
                 }
-                else if (lastLine && links.Count > 1)
+                
+                if(lastLine)
                 {
-                    for (int i = 0; i < links.Count; i++)
-                    {
-                        var btn = choiceButtons[i];
-                        btn.gameObject.SetActive(true);
-                        btn.SetText(links[i].text);
-                        btn.userData = links[i];
-                    }
+                    if (links.Count > 1)
+                    {   
+                        Debug.Log("display choices: " + links.Count);
+                        for (int i = 0; i < links.Count; i++)
+                        {
+                            var btn = choiceButtons[i];
+                            btn.gameObject.SetActive(true);
+                            btn.SetText(links[i].text);
+                            btn.userData = links[i];
+                        }
                         
-                    while (!string.IsNullOrEmpty(lastContent))
+                        while (!string.IsNullOrEmpty(lastContent))
+                        {
+                            yield return null;
+                        }
+                    }
+                    else
                     {
-                        yield return null;
+                        ChooseLink(links.First()); 
                     }
                 }
                     

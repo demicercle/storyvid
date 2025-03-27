@@ -7,4 +7,6 @@ public struct VideoLink
     public string text;
     public int points;
     public int id;
+
+    public bool EpisodeComplete() => string.IsNullOrEmpty(videoTo);
 }
