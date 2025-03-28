@@ -9,6 +9,7 @@ using UnityEngine.UI;
 
 public class StoryPlayer : MonoBehaviour
 {
+    static public bool autoPlay;
     static public float[] speeds = new float[] { 0.30f, 0.15f, 0.015f };
 
     static public int selectedSpeed
@@ -54,10 +55,8 @@ public class StoryPlayer : MonoBehaviour
     private List<string> knots;
     private bool isFadingMusic;
 
-    public bool autoPlay => autoPlayToggle.isOn;
     
     public bool canDoubleClick;
-    public Toggle autoPlayToggle;
     
     private float lastClickTime;
     private bool doubleClicked;
@@ -124,13 +123,6 @@ public class StoryPlayer : MonoBehaviour
     
     private void Awake()
     {
-        autoPlayToggle.isOn = PlayerPrefs.GetInt("autoPlay", 0) == 1;
-        autoPlayToggle.onValueChanged.AddListener((isOn) =>
-        {
-            PlayerPrefs.SetInt("autoPlay", isOn ? 1 : 0);
-            PlayerPrefs.Save();
-        });
-        
         nextButton.gameObject.SetActive(false);
         nextButton.onClick.AddListener(NextLineAndClear);
         
@@ -280,7 +272,8 @@ public class StoryPlayer : MonoBehaviour
                         prevButton.gameObject.SetActive(lineIndex >= 1);
                         while (!string.IsNullOrEmpty(lastContent)) // will be skipped if "wait video end"
                         {
-                            if (doubleClicked)
+                            // wait click next
+                            if (doubleClicked || autoPlay)
                                 NextLineAndClear();
                             
                             yield return null;
