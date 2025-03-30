@@ -32,6 +32,7 @@ public class StoryPlayer : MonoBehaviour
     public TMPro.TMP_Text uiText;
     public Button nextButton;
     public Button prevButton;
+    public Button backMenuButton;
     public List<CustomButton> choiceButtons;
     
     public bool isPlaying { get; private set; }
@@ -128,6 +129,12 @@ public class StoryPlayer : MonoBehaviour
         
         prevButton.gameObject.SetActive(false);
         prevButton.onClick.AddListener(PrevLineAndClear);
+        
+        backMenuButton.onClick.AddListener(() =>
+        {
+            StopVideo();
+            GameManager.instance.SetCurrentPanel(GameManager.Panels.Home);
+        });
         
         choiceButtons.ForEach( (btn) =>
         {
