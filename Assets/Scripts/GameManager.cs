@@ -47,6 +47,8 @@ public class GameManager : MonoBehaviour
     public void SetCurrentPanel(Panels panel)
     {
         currentPanel = (int)panel;
+        if (currentPanel != (int)Panels.PlayVideo)
+            MusicPlayer.StopMusic();
         UpdatePanels();
     }
 
@@ -153,7 +155,8 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            return episode <= 1 || IsEpisodeCompleted(episode - 1);
+            return true;
+            // return episode <= 1 || IsEpisodeCompleted(episode - 1);
         }
     }
 
@@ -193,7 +196,7 @@ public class GameManager : MonoBehaviour
     public void StopVideo()
     {
         storyPlayer.StopVideo();
-        storyPlayer.StopMusic();
+        MusicPlayer.StopMusic();
         SetCurrentPanel(Panels.SelectEpisode);
     }
 

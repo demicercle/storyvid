@@ -98,11 +98,6 @@ public class StoryPlayer : MonoBehaviour
         isPlaying = false;
     }
 
-    public void StopMusic()
-    {
-        MusicPlayer.StopMusic();
-    }
-
     public bool Skip()
     {
         return Application.isEditor && Input.GetKey(KeyCode.Backspace);
@@ -151,6 +146,7 @@ public class StoryPlayer : MonoBehaviour
     {
         Debug.Log("ChooseLink: " + link.videoTo);
         displayContent = lastContent = string.Empty;
+        choiceButtons.ForEach(btn => btn.gameObject.SetActive(false));
         nextVideo = link.videoTo;
         lineIndex = lines.Count;
         GameManager.instance.SetVisitedLink(link.id, true);
@@ -301,7 +297,7 @@ public class StoryPlayer : MonoBehaviour
                             btn.userData = links[i];
                         }
                         
-                        while (!string.IsNullOrEmpty(lastContent))
+                        while (choiceButtons.Any(btn => btn.gameObject.activeInHierarchy))
                         {
                             yield return null;
                         }
