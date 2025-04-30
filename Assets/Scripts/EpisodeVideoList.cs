@@ -32,7 +32,7 @@ public class EpisodeVideoList : MonoBehaviour
 
     private void Start()
     {
-        header.text = "Episode " + episodeIndex.ToString();
+        header.text = header.text.Replace("#", episodeIndex.ToString());
 
         var lastVideoElement = 0;
         foreach (string videoID in gameManager.GetVideoIDs(episodeIndex))

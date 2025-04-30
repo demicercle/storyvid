@@ -1,9 +1,10 @@
 using System;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 [RequireComponent(typeof(Toggle))]
-public class AutoplayToggle : MonoBehaviour
+public class AutoplayToggle : MonoBehaviour, IPointerClickHandler
 {
     private Toggle toggle;
 
@@ -17,5 +18,10 @@ public class AutoplayToggle : MonoBehaviour
             PlayerPrefs.SetInt("autoplay", isOn ? 1 : 0);
             PlayerPrefs.Save();
         });
+    }
+
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        toggle.isOn = !toggle.isOn;
     }
 }

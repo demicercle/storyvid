@@ -45,5 +45,7 @@ public class EpisodeElement : MonoBehaviour
         unlockedOverlay.SetActive(!gameManager.IsEpisodeUnlocked(episodeIndex));
         playButton.interactable = !unlockedOverlay.activeSelf;
         continueButton.interactable = !unlockedOverlay.activeSelf && !string.IsNullOrEmpty(lastVideoID);
+        
+        imageContainer.texture = Resources.Load<Texture2D>("Textures/portrait" + episodeIndex);
     }
 }
