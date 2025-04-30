@@ -41,6 +41,7 @@ public class StoryPlayer : MonoBehaviour
 
     public List<string> lines = new List<string>();
     public List<VideoLink> links = new List<VideoLink>();
+    public RawImage rawImage;
     
     public int episode;
     public string nextVideo;
@@ -70,16 +71,30 @@ public class StoryPlayer : MonoBehaviour
             Resources.UnloadAsset(videoPlayer.clip);
         }
 
-        isPlaying = true;
-        videoPlayer.clip = Resources.Load<VideoClip>("Videos/" + file) as VideoClip;
-        videoPlayer.isLooping = true;
-        videoPlayer.time = 0;
-        videoPlayer.Play();
-
-        if (videoPlayer.clip == null)
+        var asset = Resources.Load("Videos/" + file);
+        if (asset is VideoClip clip)
         {
-            Debug.LogError("Unable to find video: " + file);
+            rawImage.enabled = false;
+
+            videoPlayer.clip = clip;
+            videoPlayer.isLooping = true;
+            videoPlayer.time = 0;
+            videoPlayer.Play();
         }
+        else if (asset is Texture2D tex)
+        {
+            rawImage.texture = tex;
+            rawImage.enabled = true;
+
+            videoPlayer.enabled = false;
+        }
+        else
+        {
+            Debug.LogError(this + " unknown file type: " + asset + " at path " + file);
+            return;
+        }
+        
+        isPlaying = true;
 
         StopCoroutine("Play");
         StartCoroutine("Play");

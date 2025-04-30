@@ -3,14 +3,12 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-[RequireComponent(typeof(Toggle))]
 public class AutoplayToggle : MonoBehaviour, IPointerClickHandler
 {
-    private Toggle toggle;
+    public Toggle toggle;
 
     private void Awake()
     {
-        toggle = GetComponent<Toggle>();
         toggle.isOn = StoryPlayer.autoPlay = PlayerPrefs.GetInt("autoplay") > 0;
         toggle.onValueChanged.AddListener((isOn) =>
         {

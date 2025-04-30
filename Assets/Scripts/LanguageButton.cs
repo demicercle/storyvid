@@ -1,26 +1,22 @@
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
-[RequireComponent(typeof(Toggle))]
 public class LanguageButton : MonoBehaviour
 {
-    private static ToggleGroup toggleGroup;
-    
+    public Toggle toggle;
+    public ToggleGroup group;
     public string id;
     
     void Start()
     {
-        if (toggleGroup == null)
-        {
-            toggleGroup = new GameObject("LanguageToggle").AddComponent<ToggleGroup>();
-            toggleGroup.allowSwitchOff = false;
-        }
+        if (group == null)
+            group = GetComponentInParent<ToggleGroup>();
         
-        var btn = GetComponent<Toggle>();
-        btn.interactable = GameManager.instance.IsLanguageAvailable(id);
-        btn.group = toggleGroup;
-        btn.isOn = GameManager.instance.language == id;
-        btn.onValueChanged.AddListener((isOn) =>
+        toggle.interactable = GameManager.instance.IsLanguageAvailable(id);
+        toggle.group = group;
+        toggle.isOn = GameManager.instance.language == id;
+        toggle.onValueChanged.AddListener((isOn) =>
         {
             if (isOn)
                 GameManager.instance.SetLanguage(id);
