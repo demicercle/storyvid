@@ -132,6 +132,20 @@
       "text_es": "Fullscreen",
       "text_de": "Fullscreen",
       "text_cn": "Fullscreen"
+    },
+    "concept": {
+      "text_fr": "Concept",
+      "text_en": "Concept",
+      "text_es": "Concept",
+      "text_de": "Concept",
+      "text_cn": "Concept"
+    },
+    "concept_text": {
+      "text_fr": "Do you see any Teletubbies in here? Do you see a slender plastic tag clipped to my shirt with my name printed on it? Do you see a little Asian child with a blank expression on his face sitting outside on a mechanical helicopter that shakes when you put quarters in it? No? Well, that's what you see at a toy store. And you must think you're in a toy store, because you're here shopping for an infant named Jeb.",
+      "text_en": null,
+      "text_es": null,
+      "text_de": null,
+      "text_cn": null
     }
   },
   "links": [

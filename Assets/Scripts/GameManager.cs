@@ -16,7 +16,8 @@ public class GameManager : MonoBehaviour
         SelectEpisode,
         SelectVideo,
         PlayVideo,
-        Options
+        Options,
+        Concept
     }
 
     public StoryPlayer storyPlayer;
