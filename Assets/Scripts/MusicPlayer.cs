@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MusicPlayer : MonoBehaviour
 {
-    static public float fadeSpeed = 0.6f;
+    static public float fadeSpeed = 1.0f;
     static private MusicPlayer lastMusic;
 
     static public void PlayMusic(string file)
@@ -16,15 +16,21 @@ public class MusicPlayer : MonoBehaviour
             return;
         }
 
-        if (lastMusic != null && lastMusic.audioClip == audioClip)
+        if (lastMusic != null)
         {
-            return;
+            if (lastMusic.audioClip == audioClip)
+            {
+                Debug.Log("music " + file + " already playing" );
+                return;
+            }
+
+            StopMusic();
         }
         
-        StopMusic();
         lastMusic = new GameObject("MusicPlayer (" + file + ")").AddComponent<MusicPlayer>();
         lastMusic.isPlaying = true;
         lastMusic.audioClip = audioClip;
+        Debug.Log("PlayMusic: " + audioClip);
     }
 
     static public void StopMusic()
@@ -44,6 +50,7 @@ public class MusicPlayer : MonoBehaviour
     
     void Awake()
     {
+        DontDestroyOnLoad(gameObject);
         audioSource = gameObject.AddComponent<AudioSource>();
     }
 

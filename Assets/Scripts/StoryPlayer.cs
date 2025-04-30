@@ -10,7 +10,7 @@ using UnityEngine.UI;
 public class StoryPlayer : MonoBehaviour
 {
     static public bool autoPlay;
-    static public float[] speeds = new float[] { 0.30f, 0.15f, 0.015f };
+    static public float[] speeds = new float[] { 0.10f, 0.05f, 0.01f };
 
     static public int selectedSpeed
     {

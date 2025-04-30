@@ -141,10 +141,38 @@
       "text_cn": "Concept"
     },
     "concept_text": {
-      "text_fr": "Do you see any Teletubbies in here? Do you see a slender plastic tag clipped to my shirt with my name printed on it? Do you see a little Asian child with a blank expression on his face sitting outside on a mechanical helicopter that shakes when you put quarters in it? No? Well, that's what you see at a toy store. And you must think you're in a toy store, because you're here shopping for an infant named Jeb.",
-      "text_en": null,
-      "text_es": null,
-      "text_de": null,
+      "text_fr": "Vous voyez des Télétubbies ici ? Vous voyez une fine étiquette en plastique accrochée à mon t-shirt avec mon nom imprimé dessus ? Vous voyez un petit enfant asiatique au visage impassible assis dehors sur un hélicoptère mécanique qui tremble quand on y met des pièces ? Non ? Eh bien, c'est ce qu'on voit dans un magasin de jouets. Et vous devez vous croire dans un magasin de jouets, car vous êtes là en train d'acheter un bébé nommé Jeb.",
+      "text_en": "Do you see any Teletubbies in here? Do you see a slender plastic tag clipped to my shirt with my name printed on it? Do you see a little Asian child with a blank expression on his face sitting outside on a mechanical helicopter that shakes when you put quarters in it? No? Well, that's what you see at a toy store. And you must think you're in a toy store, because you're here shopping for an infant named Jeb.",
+      "text_es": "¿Ves algún Teletubbie aquí? ¿Ves una etiqueta de plástico fina pegada a mi camisa con mi nombre impreso? ¿Ves a un niño asiático con cara de pocos amigos sentado afuera en un helicóptero mecánico que tiembla cuando le metes monedas? ¿No? Bueno, eso es lo que ves en una juguetería. Y debes pensar que estás en una juguetería, porque estás aquí comprando un bebé llamado Jeb.",
+      "text_de": "Sehen Sie hier Teletubbies? Sehen Sie ein schmales Plastikschild an meinem Hemd mit meinem Namen darauf? Sehen Sie ein kleines asiatisches Kind mit leerem Gesichtsausdruck, das draußen auf einem mechanischen Hubschrauber sitzt, der wackelt, wenn man Vierteldollarmünzen hineinwirft? Nein? So etwas sieht man in einem Spielzeugladen. Und Sie müssen denken, Sie sind in einem Spielzeugladen, denn Sie kaufen hier ein Baby namens Jeb.ll.",
+      "text_cn": null
+    },
+    "warning": {
+      "text_fr": "Attention !",
+      "text_en": "Warning !",
+      "text_es": "advertencia",
+      "text_de": "Warnung",
+      "text_cn": null
+    },
+    "are_you_sure": {
+      "text_fr": "Etes vous sûr ?",
+      "text_en": "Are you sure ?",
+      "text_es": "Estas segura",
+      "text_de": "Bist du sicher ?",
+      "text_cn": null
+    },
+    "yes": {
+      "text_fr": "Oui",
+      "text_en": "Yes",
+      "text_es": "Si",
+      "text_de": "Ja",
+      "text_cn": null
+    },
+    "no": {
+      "text_fr": "Non",
+      "text_en": "No",
+      "text_es": "No",
+      "text_de": "Nein",
       "text_cn": null
     }
   },

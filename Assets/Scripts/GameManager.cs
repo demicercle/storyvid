@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -33,7 +34,8 @@ public class GameManager : MonoBehaviour
         language = key;
         onLanguageChanged?.Invoke();
     }
-    
+
+    public Popup popup;
     public UnityEngine.UI.Button playButton;
     public UnityEngine.UI.Button quitButton;
     public UnityEngine.UI.Button deleteGameButton;
@@ -48,8 +50,6 @@ public class GameManager : MonoBehaviour
     public void SetCurrentPanel(Panels panel)
     {
         currentPanel = (int)panel;
-        if (currentPanel != (int)Panels.PlayVideo)
-            MusicPlayer.StopMusic();
         UpdatePanels();
     }
 
@@ -368,15 +368,20 @@ public class GameManager : MonoBehaviour
         
         deleteGameButton.onClick.AddListener(() =>
         {
-            PlayerPrefs.DeleteAll();
+            popup.DisplayYesNo(() =>
+            {
+                PlayerPrefs.DeleteAll();
+            });
         });
         
         UpdatePanels();
     }
 
+
     private void UpdatePanels()
     {
         currentPanel = Mathf.Clamp(currentPanel, 0, panels.Length - 1);
+        
         for (int i = 0; i < panels.Length; ++i)
         {
             panels[i].SetActive(i == currentPanel);
@@ -387,8 +392,12 @@ public class GameManager : MonoBehaviour
             if (storyPlayer.videoPlayer.clip != menuVideoClip)
             {
                 storyPlayer.videoPlayer.clip = menuVideoClip;
+                storyPlayer.videoPlayer.isLooping = true;
                 storyPlayer.videoPlayer.Play();
             }
+            
+            if (currentPanel == 0)
+                MusicPlayer.PlayMusic("musiquemenu");
         }
     }
 

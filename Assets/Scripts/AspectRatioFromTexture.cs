@@ -11,7 +11,8 @@ public class AspectRatioFromTexture : MonoBehaviour
     [ContextMenu("Update Layout")]
     public void UpdateLayout()
     {
-        aspectRatioFitter.aspectRatio = (float)rawImage.texture.width / (float)rawImage.texture.height;
+        if (rawImage.texture != null)
+            aspectRatioFitter.aspectRatio = (float)rawImage.texture.width / (float)rawImage.texture.height;
     }
 
     private void Update()
