@@ -9,4 +9,9 @@ public struct VideoLink
     public int id;
 
     public bool EpisodeComplete() => string.IsNullOrEmpty(videoTo);
+
+    public override string ToString()
+    {
+        return "VideoLink (" + episode + ", " + videoFrom + ">" + videoTo + ")";
+    }
 }

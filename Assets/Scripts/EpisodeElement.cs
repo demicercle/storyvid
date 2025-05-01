@@ -10,6 +10,7 @@ public class EpisodeElement : MonoBehaviour
     public TMPro.TMP_Text header;
     public Button playButton;
     public Button continueButton;
+    public Toggle lockedToggle;
     public RawImage imageContainer;
     public GameObject unlockedOverlay;
     
@@ -42,9 +43,12 @@ public class EpisodeElement : MonoBehaviour
             imageContainer.texture = pathImage;
         }
 
-        unlockedOverlay.SetActive(!gameManager.IsEpisodeUnlocked(episodeIndex));
+        lockedToggle.isOn = !gameManager.IsEpisodeUnlocked(episodeIndex);
+        unlockedOverlay.SetActive(lockedToggle.isOn);
         playButton.interactable = !unlockedOverlay.activeSelf;
         continueButton.interactable = !unlockedOverlay.activeSelf && !string.IsNullOrEmpty(lastVideoID);
+        continueButton.gameObject.SetActive(continueButton.interactable);
+        playButton.gameObject.SetActive(!continueButton.interactable);
         
         imageContainer.texture = Resources.Load<Texture2D>("Textures/portrait" + episodeIndex);
     }

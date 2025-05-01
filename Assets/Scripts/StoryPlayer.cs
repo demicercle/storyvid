@@ -24,7 +24,7 @@ public class StoryPlayer : MonoBehaviour
 
     static public float textDelay => speeds[selectedSpeed];
 
-    static public float autoPlayDuration => 2f;
+    static public float autoPlayDuration => 1f;
     
     public VideoPlayer videoPlayer;
 
@@ -168,6 +168,10 @@ public class StoryPlayer : MonoBehaviour
         GameManager.instance.SetVisitedLink(link.id, true);
         if (link.EpisodeComplete())
             GameManager.instance.SetEpisodeCompleted(link.episode, true);
+        if (string.IsNullOrEmpty(nextVideo))
+        {
+            GameManager.instance.SetCurrentPanel(GameManager.Panels.SelectEpisode);
+        }
     }
 
     private bool waitVideoEnd;
@@ -203,7 +207,8 @@ public class StoryPlayer : MonoBehaviour
             while (lineIndex < lines.Count)
             {
                 var lastLine = lineIndex + 1 >= lines.Count;
-                Debug.Log("line #" + lineIndex + " / " + lines.Count + " last:" + lastLine + " links:" + links.Count);
+                Debug.Log("line #" + lineIndex + " / " + lines.Count + " last:" + lastLine + " links:" +
+                          string.Join(',', links));
                 
                 yield return null;
                 
