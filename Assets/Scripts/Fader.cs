@@ -17,6 +17,16 @@ public class Fader : MonoBehaviour
         targetAlpha = 0.0f;
     }
 
+    public void Alpha0()
+    {
+        targetAlpha = currentAlpha = 0;
+    }
+
+    public void Alpha1()
+    {
+        targetAlpha = currentAlpha = 1;
+    }
+
     public bool isFading => currentAlpha != targetAlpha;
 
     private Image imageComponent;

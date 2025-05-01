@@ -394,6 +394,7 @@ public class GameManager : MonoBehaviour
                 storyPlayer.videoPlayer.clip = menuVideoClip;
                 storyPlayer.videoPlayer.isLooping = true;
                 storyPlayer.videoPlayer.Play();
+                Debug.Log(this + " play menu video " + menuVideoClip);
             }
             
             if (currentPanel == 0)

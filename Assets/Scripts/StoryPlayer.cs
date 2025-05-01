@@ -65,28 +65,25 @@ public class StoryPlayer : MonoBehaviour
 
     public void PlayVideo(string file)
     {
-        if (videoPlayer.clip != null)
-        {
-            videoPlayer.Stop();
-            Resources.UnloadAsset(videoPlayer.clip);
-        }
-
+        StopVideo();
+        
         var asset = Resources.Load("Videos/" + file);
         if (asset is VideoClip clip)
         {
             rawImage.enabled = false;
-
+            videoPlayer.enabled = true;
             videoPlayer.clip = clip;
-            videoPlayer.isLooping = true;
             videoPlayer.time = 0;
+            videoPlayer.isLooping = true;
             videoPlayer.Play();
+            Debug.Log(this + " play video " + clip);
         }
         else if (asset is Texture2D tex)
         {
             rawImage.texture = tex;
             rawImage.enabled = true;
-
             videoPlayer.enabled = false;
+            Debug.Log(this + " show tex " + tex);
         }
         else
         {
@@ -102,15 +99,19 @@ public class StoryPlayer : MonoBehaviour
 
     public void StopVideo()
     {
-        if (videoPlayer.isPlaying)
+        if (isPlaying)
         {
-            videoPlayer.Stop();
-            Resources.UnloadAsset(videoPlayer.clip);
-            videoPlayer.clip = null;
-        }
+            if (videoPlayer.clip != null)
+            {
+                videoPlayer.Stop();
+                Resources.UnloadAsset(videoPlayer.clip);
+                videoPlayer.clip = null;
+            }
         
-        Debug.Log("Stop Video");
-        isPlaying = false;
+            StopCoroutine("Play");
+            isPlaying = false;
+            Debug.Log("Stop Video");
+        }
     }
 
     public bool Skip()
@@ -173,8 +174,7 @@ public class StoryPlayer : MonoBehaviour
     private const string CINEMATIC = "cinematique";
     IEnumerator Play()
     {
-        Debug.Log("PlayVideo: " + videoPlayer.clip + " nextVideo: " + nextVideo);
-        
+        waitVideoEnd = false;
         lineIndex = 0;
         charIndex = 0;
         displayContent = lastContent = string.Empty;
@@ -191,7 +191,9 @@ public class StoryPlayer : MonoBehaviour
             MusicPlayer.StopMusic();
         }
         
-        while (videoPlayer.clip != null && isPlaying)
+        fader.Alpha1();
+        
+        while (isPlaying)
         {
             fader.Fade0();
             
@@ -272,6 +274,7 @@ public class StoryPlayer : MonoBehaviour
                         
                         yield return null;
                     }
+                    Debug.Log("Pause video");
                     videoPlayer.Pause();
                 }
 
