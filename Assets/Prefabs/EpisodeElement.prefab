@@ -60,7 +60,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.80784315}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.95686275}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -199,6 +199,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rawImage: {fileID: 572432833123556142}
   aspectRatioFitter: {fileID: 782119242750901075}
+  autoUpdate: 0
 --- !u!1 &1621728572299313882
 GameObject:
   m_ObjectHideFlags: 0
@@ -611,8 +612,8 @@ RectTransform:
   m_GameObject: {fileID: 4300389332284211011}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.089569, y: 0.089569, z: 0.089569}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.26631, y: 0.26631, z: 0.26631}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 989848530880357661}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -642,7 +643,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.7019608}
+  m_Color: {r: 0.24528301, g: 0.24528301, b: 0.24528301, a: 0.7019608}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
