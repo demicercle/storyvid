@@ -1,21 +1,34 @@
 using System;
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.UI;
 
 public class VolumeSlider : MonoBehaviour
 {
-    static public float value { get; private set; }
-    
     public Slider slider;
+    public AudioMixer mixer;
+    public AnimationCurve curve;
 
-    private void Awake()
+    private float value;
+
+    private void UpdateMixer()
+    {
+        mixer.SetFloat("Volume", curve.Evaluate(value));
+    }
+    
+    private void Start()
     {
         value = PlayerPrefs.GetFloat("Volume", 0.8f);
-        slider.onValueChanged.AddListener((newValue) =>
+        UpdateMixer();
+        if (slider != null)
         {
-            value = newValue;
-            PlayerPrefs.SetFloat("Volume", value);
-            PlayerPrefs.Save();
-        });
+            slider.onValueChanged.AddListener((newValue) =>
+            {
+                value = newValue;
+                UpdateMixer();
+                PlayerPrefs.SetFloat("Volume", value);
+                PlayerPrefs.Save();
+            });
+        }
     }
 }

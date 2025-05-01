@@ -1,6 +1,9 @@
 using System;
 using System.Collections;
+using System.Linq;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class MusicPlayer : MonoBehaviour
 {
@@ -18,7 +21,7 @@ public class MusicPlayer : MonoBehaviour
 
         if (lastMusic != null)
         {
-            if (lastMusic.audioClip == audioClip)
+            if (lastMusic.audioSource.clip == audioClip)
             {
                 Debug.Log("music " + file + " already playing" );
                 return;
@@ -27,9 +30,12 @@ public class MusicPlayer : MonoBehaviour
             StopMusic();
         }
         
-        lastMusic = new GameObject("MusicPlayer (" + file + ")").AddComponent<MusicPlayer>();
+        lastMusic = new GameObject("MusicPlayer (" + audioClip.name + ")").AddComponent<MusicPlayer>();
         lastMusic.isPlaying = true;
-        lastMusic.audioClip = audioClip;
+        lastMusic.audioSource.volume = 0.0f;
+        lastMusic.audioSource.clip = audioClip;
+        lastMusic.audioSource.loop = true;
+        lastMusic.audioSource.Play();
         Debug.Log("PlayMusic: " + audioClip);
     }
 
@@ -44,22 +50,15 @@ public class MusicPlayer : MonoBehaviour
 
     public bool isPlaying;
     public AudioSource audioSource;
-    public AudioClip audioClip;
-
-    public float maxVolume => VolumeSlider.value;
+    
+    public float maxVolume => 1;
     
     void Awake()
     {
         DontDestroyOnLoad(gameObject);
         audioSource = gameObject.AddComponent<AudioSource>();
-    }
-
-    void Start()
-    {
-        audioSource.volume = 0.0f;
-        audioSource.clip = audioClip;
-        audioSource.loop = true;
-        audioSource.Play();
+        audioSource.outputAudioMixerGroup =
+            Resources.Load<AudioMixer>("AudioMixer").FindMatchingGroups("Music").First();
     }
 
     void Update()
