@@ -7,6 +7,11 @@ public class CustomScrollview : MonoBehaviour, IDragHandler, IBeginDragHandler, 
 {
     public ScrollRect scrollRect;
     
+    public void MoveHorizontal(float delta)
+    {
+        scrollRect.horizontalNormalizedPosition += delta;
+    }
+    
     public void OnDrag(PointerEventData eventData)
     {
         scrollRect.horizontalNormalizedPosition += eventData.delta.x / Screen.width;

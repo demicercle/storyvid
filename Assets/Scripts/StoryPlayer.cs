@@ -33,7 +33,6 @@ public class StoryPlayer : MonoBehaviour
     public Graphic textBackground;
     public Button nextButton;
     public Button prevButton;
-    public Button backMenuButton;
     public List<CustomButton> choiceButtons;
     
     public bool isPlaying { get; private set; }
@@ -141,12 +140,6 @@ public class StoryPlayer : MonoBehaviour
         
         prevButton.gameObject.SetActive(false);
         prevButton.onClick.AddListener(PrevLineAndClear);
-        
-        backMenuButton.onClick.AddListener(() =>
-        {
-            StopVideo();
-            GameManager.instance.SetCurrentPanel(GameManager.Panels.Home);
-        });
         
         choiceButtons.ForEach( (btn) =>
         {
@@ -377,6 +370,11 @@ public class StoryPlayer : MonoBehaviour
                     lastClickTime = Time.time;
                 }
             }
+        }
+
+        if (GameManager.instance.currentPanel != (int)GameManager.Panels.PlayVideo)
+        {
+            StopVideo();
         }
     }
 

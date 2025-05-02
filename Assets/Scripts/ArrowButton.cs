@@ -5,8 +5,9 @@ using UnityEngine.UI;
 
 public class ArrowButton : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 {
-    public ScrollRect scrollRect;
+    public CustomScrollview scrollView;
     public float speed;
+    public float speedScale;
 
     private bool mouseDown;
     
@@ -23,6 +24,6 @@ public class ArrowButton : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     private void Update()
     {
         if (mouseDown)
-            scrollRect.horizontalNormalizedPosition += speed * Time.deltaTime;
+            scrollView.MoveHorizontal(speedScale * speed * Time.deltaTime);
     }
 }
