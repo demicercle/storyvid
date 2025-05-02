@@ -253,6 +253,7 @@ GameObject:
   - component: {fileID: 7899494883159283936}
   - component: {fileID: 8722129201317069543}
   - component: {fileID: 375111513059666372}
+  - component: {fileID: 7045577063762490157}
   m_Layer: 0
   m_Name: VideoElement
   m_TagString: Untagged
@@ -371,6 +372,20 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &7045577063762490157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4605590423897458355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70c29d19ee254cea8e2d04b09df954bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clip: {fileID: 8300000, guid: 694ab57a243a9574a86f22dfe570edde, type: 3}
+  playOnClick: 1
 --- !u!1 &8457767655673818734
 GameObject:
   m_ObjectHideFlags: 0

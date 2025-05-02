@@ -104,6 +104,10 @@ PrefabInstance:
       propertyPath: m_text
       value: back
       objectReference: {fileID: 0}
+    - target: {fileID: 6850141209691022585, guid: bffa449f7f5fd4bf389d811254e10131, type: 3}
+      propertyPath: clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 53fd5b3157fadbc44baa61c5bd8f5825, type: 3}
     - target: {fileID: 6894505488470203877, guid: bffa449f7f5fd4bf389d811254e10131, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1

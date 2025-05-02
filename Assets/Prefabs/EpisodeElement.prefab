@@ -910,6 +910,10 @@ PrefabInstance:
       propertyPath: m_fontSizeBase
       value: 18
       objectReference: {fileID: 0}
+    - target: {fileID: 6850141209691022585, guid: bffa449f7f5fd4bf389d811254e10131, type: 3}
+      propertyPath: clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 694ab57a243a9574a86f22dfe570edde, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1072,6 +1076,10 @@ PrefabInstance:
       propertyPath: m_fontSizeBase
       value: 18
       objectReference: {fileID: 0}
+    - target: {fileID: 6850141209691022585, guid: bffa449f7f5fd4bf389d811254e10131, type: 3}
+      propertyPath: clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 694ab57a243a9574a86f22dfe570edde, type: 3}
     - target: {fileID: 6894505488470203877, guid: bffa449f7f5fd4bf389d811254e10131, type: 3}
       propertyPath: m_Colors.m_DisabledColor.a
       value: 0.5176471
