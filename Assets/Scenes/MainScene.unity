@@ -10446,7 +10446,7 @@ MonoBehaviour:
   videoPlayer: {fileID: 1701982731}
   fader: {fileID: 1680581302}
   uiText: {fileID: 1471730882}
-  textBackground: {fileID: 0}
+  textBackground: {fileID: 342426366}
   nextButton: {fileID: 2134162081}
   prevButton: {fileID: 2020463643}
   backMenuButton: {fileID: 2137021244}

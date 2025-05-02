@@ -43,7 +43,6 @@ public class EpisodeElement : MonoBehaviour
             imageContainer.texture = pathImage;
         }
 
-        lockedToggle.isOn = !gameManager.IsEpisodeUnlocked(episodeIndex);
         unlockedOverlay.SetActive(lockedToggle.isOn);
         playButton.interactable = !unlockedOverlay.activeSelf;
         continueButton.interactable = !unlockedOverlay.activeSelf && !string.IsNullOrEmpty(lastVideoID);
@@ -51,5 +50,10 @@ public class EpisodeElement : MonoBehaviour
         playButton.gameObject.SetActive(!continueButton.interactable);
         
         imageContainer.texture = Resources.Load<Texture2D>("Textures/portrait" + episodeIndex);
+    }
+
+    private void Update()
+    {
+        lockedToggle.isOn = !gameManager.IsEpisodeUnlocked(episodeIndex);
     }
 }

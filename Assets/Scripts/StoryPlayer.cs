@@ -329,9 +329,17 @@ public class StoryPlayer : MonoBehaviour
                             yield return null;
                         }
                     }
+                    else if (links.Count > 0)
+                    {
+                        Debug.Log("choose first link");
+                        ChooseLink(links.First()); 
+                    }
                     else
                     {
-                        ChooseLink(links.First()); 
+                        Debug.Log(" no link");
+                        nextVideo = string.Empty;
+                        lineIndex = lines.Count;
+                        GameManager.instance.SetEpisodeCompleted(episode, true);
                     }
                 }
                     
@@ -349,6 +357,7 @@ public class StoryPlayer : MonoBehaviour
             StopVideo();
         }
         
+        Debug.Log("story complete");
         storyComplete?.Invoke();
     }
 

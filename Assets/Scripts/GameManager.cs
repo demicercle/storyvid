@@ -146,13 +146,13 @@ public class GameManager : MonoBehaviour
 
     public bool IsEpisodeUnlocked(int episode)
     {
-        if (episode == 4)
+        if (episode == 5)
         {
-            return (IsEpisodeCompleted(3) && GetPoints() >= 3) || IsEpisodeCompleted(5);
+            return (IsEpisodeCompleted(3) && GetPoints() >= 3) || IsEpisodeCompleted(4);
         }
-        else if (episode == 5)
+        else if (episode == 4)
         {
-            return (IsEpisodeCompleted(3) && GetPoints() < 3) || IsEpisodeCompleted(4);
+            return (IsEpisodeCompleted(3) && GetPoints() < 3) || IsEpisodeCompleted(5);
         }
         else
         {
