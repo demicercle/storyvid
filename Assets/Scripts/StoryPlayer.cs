@@ -24,12 +24,13 @@ public class StoryPlayer : MonoBehaviour
 
     static public float textDelay => speeds[selectedSpeed];
 
-    static public float autoPlayDuration => 1f;
+    public float autoPlayDuration = 2f;
     
     public VideoPlayer videoPlayer;
 
     public Fader fader;
     public TMPro.TMP_Text uiText;
+    public Graphic textBackground;
     public Button nextButton;
     public Button prevButton;
     public Button backMenuButton;
@@ -206,6 +207,8 @@ public class StoryPlayer : MonoBehaviour
             
             while (lineIndex < lines.Count)
             {
+                textBackground.enabled = true;
+                
                 var lastLine = lineIndex + 1 >= lines.Count;
                 Debug.Log("line #" + lineIndex + " / " + lines.Count + " last:" + lastLine + " links:" +
                           string.Join(',', links));
@@ -269,6 +272,7 @@ public class StoryPlayer : MonoBehaviour
 
                 if (waitVideoEnd)
                 {
+                    textBackground.enabled = false;
                     waitVideoEnd = false;
                     Debug.Log("Wait video end");
                     videoPlayer.isLooping = false;
