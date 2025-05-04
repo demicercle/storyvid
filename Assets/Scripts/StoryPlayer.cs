@@ -34,6 +34,7 @@ public class StoryPlayer : MonoBehaviour
     public Button nextButton;
     public Button prevButton;
     public List<CustomButton> choiceButtons;
+    public PanelButton backButton;
     
     public bool isPlaying { get; private set; }
 

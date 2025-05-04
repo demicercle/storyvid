@@ -191,6 +191,8 @@ public class GameManager : MonoBehaviour
        // Debug.Log("PlayVideo: " + episode + " - " + videoID + " (file=" + videoFile + ")");
         storyPlayer.PlayVideo(videoFile);
         UnlockPath(episode, videoID);
+        playedFromGallery = currentPanel == (int)Panels.SelectVideo;
+        storyPlayer.backButton.panel = playedFromGallery ? Panels.SelectVideo : Panels.SelectEpisode;
         SetCurrentPanel(Panels.PlayVideo);
     }
 
@@ -330,6 +332,7 @@ public class GameManager : MonoBehaviour
         return videoLinks.Where(link => link.videoFrom == videoFrom).ToList();
     }
 
+    private bool playedFromGallery;
     private void Awake()
     {
         instance = this;
@@ -343,13 +346,14 @@ public class GameManager : MonoBehaviour
 
         storyPlayer.storyComplete += () =>
         {
-            if (!string.IsNullOrEmpty(storyPlayer.nextVideo))
+            if (!playedFromGallery && !string.IsNullOrEmpty(storyPlayer.nextVideo))
             {
                 PlayVideo(storyPlayer.episode, storyPlayer.nextVideo);
             }
             else
             {
                 StopVideo();
+                SetCurrentPanel(playedFromGallery ? Panels.SelectVideo : Panels.SelectEpisode);
             }
         };
         
