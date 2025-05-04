@@ -33,9 +33,11 @@ public class EpisodeElement : MonoBehaviour
         });
     }
 
-    private void OnEnable()
+    private void Update()
     {
         gameManager.GetLastUnlockedVideo(episodeIndex, out lastVideoID);
+        
+        lockedToggle.isOn = !gameManager.savedGame.IsEpisodeUnlocked(episodeIndex);
         
         if (pathImage == null)
         {
@@ -44,16 +46,12 @@ public class EpisodeElement : MonoBehaviour
         }
 
         unlockedOverlay.SetActive(lockedToggle.isOn);
-        playButton.interactable = !unlockedOverlay.activeSelf;
-        continueButton.interactable = !unlockedOverlay.activeSelf && !string.IsNullOrEmpty(lastVideoID);
+        playButton.interactable = !lockedToggle.isOn;
+        continueButton.interactable = !lockedToggle.isOn && !string.IsNullOrEmpty(lastVideoID);
         continueButton.gameObject.SetActive(continueButton.interactable);
         playButton.gameObject.SetActive(!continueButton.interactable);
         
         imageContainer.texture = Resources.Load<Texture2D>("Textures/portrait" + episodeIndex);
-    }
-
-    private void Update()
-    {
-        lockedToggle.isOn = !gameManager.IsEpisodeUnlocked(episodeIndex);
+        
     }
 }

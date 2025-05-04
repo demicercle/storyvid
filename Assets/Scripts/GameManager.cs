@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -61,104 +62,8 @@ public class GameManager : MonoBehaviour
 
     public bool GetLastUnlockedVideo(int episode, out string videoID)
     {
-        videoID = GetVideoIDs(episode).LastOrDefault(id => IsPathUnlocked(episode, id));
+        videoID = GetVideoIDs(episode).LastOrDefault(id => savedGame.IsPathUnlocked(episode, id));
         return !string.IsNullOrEmpty(videoID);
-    }
-    
-    public string GetPath(int episode, string videoID) => "episode" + episode + "." + videoID;
-     
-    public bool IsPathUnlocked(int episode, string videoID)
-    {
-        return PlayerPrefs.GetInt(GetPath(episode, videoID)) != 0;
-    }
-
-    public void UnlockPath(int episode, string videoID)
-    {
-        var path = GetPath(episode, videoID);
-        Debug.Log("UnlockPath: " + path);
-        PlayerPrefs.SetInt(path, 1);
-        PlayerPrefs.Save();
-    }
-
-    public void SaveVisitedLinks()
-    {
-        PlayerPrefs.SetString("VisitedLinks", string.Join(",", visitedLinks.ToArray()));
-        PlayerPrefs.Save();
-    }
-
-    public void LoadVisitedLinks()
-    {
-        var savedLinks = PlayerPrefs.GetString("VisitedLinks").Split(',');
-        foreach (var savedLink in savedLinks)
-        {
-            if (int.TryParse(savedLink, out var id))
-            {
-                visitedLinks.Add(id);
-            }
-        }
-    }
-
-    public void SetVisitedLink(int id, bool value)
-    {
-        if (value)
-        {
-            if (!visitedLinks.Contains(id))
-                visitedLinks.Add(id);
-        }
-        else
-        {
-            visitedLinks.Remove(id);
-        }
-        
-        SaveVisitedLinks();
-    }
-
-    public int GetPoints()
-    {
-        var count = 0;
-        foreach (var link in videoLinks)
-        {
-            if (visitedLinks.Contains(link.id))
-            {
-                count += link.points;
-            }
-        }
-        return count;
-    }
-
-    [ContextMenu("Log Points")]
-    public void LogPoints()
-    {
-        Debug.Log("Points: " + GetPoints());
-    }
-
-    public bool IsEpisodeCompleted(int episode)
-    {
-        return PlayerPrefs.GetInt("episode" + episode) != 0;
-    }
-
-    public void SetEpisodeCompleted(int episode, bool value)
-    {
-        Debug.Log("EpisodeCompleted: " + episode);
-        PlayerPrefs.SetInt("episode" + episode, value ? 1 : 0);
-        PlayerPrefs.Save();
-    }
-
-    public bool IsEpisodeUnlocked(int episode)
-    {
-        if (episode == 5)
-        {
-            return (IsEpisodeCompleted(3) && GetPoints() >= 3) || IsEpisodeCompleted(4);
-        }
-        else if (episode == 4)
-        {
-            return (IsEpisodeCompleted(3) && GetPoints() < 3) || IsEpisodeCompleted(5);
-        }
-        else
-        {
-            return true;
-            // return episode <= 1 || IsEpisodeCompleted(episode - 1);
-        }
     }
 
     public string GetVideoID(int video)
@@ -190,7 +95,7 @@ public class GameManager : MonoBehaviour
         var videoFile = GetVideoFile(episode, videoID);
        // Debug.Log("PlayVideo: " + episode + " - " + videoID + " (file=" + videoFile + ")");
         storyPlayer.PlayVideo(videoFile);
-        UnlockPath(episode, videoID);
+        savedGame.UnlockPath(episode, videoID);
         playedFromGallery = currentPanel == (int)Panels.SelectVideo;
         storyPlayer.backButton.panel = playedFromGallery ? Panels.SelectVideo : Panels.SelectEpisode;
         SetCurrentPanel(Panels.PlayVideo);
@@ -332,6 +237,7 @@ public class GameManager : MonoBehaviour
         return videoLinks.Where(link => link.videoFrom == videoFrom).ToList();
     }
 
+    public SavedGame savedGame { get; private set; }
     private bool playedFromGallery;
     private void Awake()
     {
@@ -340,7 +246,8 @@ public class GameManager : MonoBehaviour
         
         ParseJson();
         
-        LoadVisitedLinks();
+        savedGame = new SavedGame();
+        savedGame.Load();
         
         SetCurrentPanel(0);
 
@@ -374,7 +281,7 @@ public class GameManager : MonoBehaviour
         {
             popup.DisplayYesNo(() =>
             {
-                PlayerPrefs.DeleteAll();
+                savedGame.DeleteSave();
             });
         });
         
@@ -403,6 +310,14 @@ public class GameManager : MonoBehaviour
             
             if (currentPanel == 0)
                 MusicPlayer.PlayMusic("musiquemenu");
+        }
+    }
+
+    private void LateUpdate()
+    {
+        if (savedGame.changed)
+        {
+            savedGame.Save();
         }
     }
 

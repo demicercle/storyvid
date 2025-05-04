@@ -4,6 +4,19 @@ using UnityEditor;
 
 public static class EditorTools 
 {
+    
+    [MenuItem("Tools/Open Persistent Data Path")]
+    static void OpenPersistentDataPath()
+    {
+        string path = Application.persistentDataPath;
+
+#if UNITY_EDITOR_OSX
+        System.Diagnostics.Process.Start("open", $"\"{path}\"");
+#else
+        Application.OpenURL("file://" + path);
+#endif
+    }
+    
     [MenuItem("Tools/Clear PlayerPrefs")]
     static public void ClearPlayerPrefs()
     {

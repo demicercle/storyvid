@@ -160,9 +160,9 @@ public class StoryPlayer : MonoBehaviour
         choiceButtons.ForEach(btn => btn.gameObject.SetActive(false));
         nextVideo = link.videoTo;
         lineIndex = lines.Count;
-        GameManager.instance.SetVisitedLink(link.id, true);
+        GameManager.instance.savedGame.SetLinkVisited(link.id, true);
         if (link.EpisodeComplete())
-            GameManager.instance.SetEpisodeCompleted(link.episode, true);
+            GameManager.instance.savedGame.SetEpisodeCompleted(link.episode, true);
         if (string.IsNullOrEmpty(nextVideo))
         {
             GameManager.instance.SetCurrentPanel(GameManager.Panels.SelectEpisode);
@@ -333,7 +333,7 @@ public class StoryPlayer : MonoBehaviour
                         Debug.Log(" no link");
                         nextVideo = string.Empty;
                         lineIndex = lines.Count;
-                        GameManager.instance.SetEpisodeCompleted(episode, true);
+                        GameManager.instance.savedGame.SetEpisodeCompleted(episode, true);
                     }
                 }
                     
