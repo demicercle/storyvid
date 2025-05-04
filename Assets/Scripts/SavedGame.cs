@@ -20,7 +20,8 @@ public class SavedGame
     {
         if (System.IO.File.Exists(filePath))
         {
-            json = SaveEncryptionUtility.LoadDecrypted(filePath);
+            var cryptedJson = System.IO.File.ReadAllText(filePath);
+            var json = EncryptionService.DecryptWithDeviceId<string>(cryptedJson);
             Debug.Log(this + " Load: " + json);
             JsonUtility.FromJsonOverwrite(json, this);
         }
@@ -34,7 +35,8 @@ public class SavedGame
     {
         var json = JsonUtility.ToJson(this);
         Debug.Log(this + " Save: " + json);
-        SaveEncryptionUtility.SaveEncrypted(filePath, json);
+        var cryptedJson = EncryptionService.EncryptWithDeviceId(json);
+        System.IO.File.WriteAllText(filePath, cryptedJson);
         changed = false;
     }
 
