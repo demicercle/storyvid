@@ -282,6 +282,7 @@ public class GameManager : MonoBehaviour
             popup.DisplayYesNo(() =>
             {
                 savedGame.DeleteSave();
+                savedGame = new SavedGame();
             });
         });
         

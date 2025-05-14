@@ -33,6 +33,7 @@ public class StoryPlayer : MonoBehaviour
     public Graphic textBackground;
     public Button nextButton;
     public Button prevButton;
+    public List<Button> clickableBackgroundButtons = new List<Button>();
     public List<CustomButton> choiceButtons;
     public PanelButton backButton;
     
@@ -57,7 +58,7 @@ public class StoryPlayer : MonoBehaviour
     private int choiceCount;
     private List<string> knots;
     private bool isFadingMusic;
-
+    private bool clickedBackground;
     
     public bool canDoubleClick;
     
@@ -136,11 +137,25 @@ public class StoryPlayer : MonoBehaviour
     
     private void Awake()
     {
+        foreach (var btn in clickableBackgroundButtons)
+        {
+            btn.onClick.AddListener(() =>
+            {
+                clickedBackground = true;
+            });
+        }
+        
         nextButton.gameObject.SetActive(false);
-        nextButton.onClick.AddListener(NextLineAndClear);
+        nextButton.onClick.AddListener(() =>
+        {
+            if (nextButton.interactable) NextLineAndClear();
+        });
         
         prevButton.gameObject.SetActive(false);
-        prevButton.onClick.AddListener(PrevLineAndClear);
+        prevButton.onClick.AddListener(() =>
+        {
+            if (prevButton.interactable) PrevLineAndClear();
+        });
         
         choiceButtons.ForEach( (btn) =>
         {
@@ -293,7 +308,9 @@ public class StoryPlayer : MonoBehaviour
                     {
                         Debug.Log("show next/prev buttons");
                         nextButton.gameObject.SetActive(true);
-                        prevButton.gameObject.SetActive(lineIndex >= 1);
+                        prevButton.gameObject.SetActive(true);
+                        nextButton.interactable = true;
+                        prevButton.interactable = lineIndex >= 1;
                         while (!string.IsNullOrEmpty(lastContent)) // will be skipped if "wait video end"
                         {
                             // wait click next
@@ -357,22 +374,6 @@ public class StoryPlayer : MonoBehaviour
 
     private void Update()
     {
-        if (canDoubleClick)
-        {
-            if (Input.GetMouseButtonUp(0))
-            {
-                if (Time.time - lastClickTime < .5f)
-                {
-                    doubleClicked = true;
-                    lastClickTime = 0;
-                }
-                else
-                {
-                    lastClickTime = Time.time;
-                }
-            }
-        }
-
         if (GameManager.instance.currentPanel != (int)GameManager.Panels.PlayVideo)
         {
             StopVideo();
@@ -383,6 +384,6 @@ public class StoryPlayer : MonoBehaviour
     {
         uiText.enabled = !string.IsNullOrWhiteSpace(displayContent);
         uiText.text = displayContent;
-        doubleClicked = false;
+        clickedBackground = false;
     }
 }
