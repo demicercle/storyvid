@@ -237,6 +237,11 @@ public class GameManager : MonoBehaviour
         return videoLinks.Where(link => link.videoFrom == videoFrom).ToList();
     }
 
+    public List<VideoLink> GetPreviousLinks(string videoTo)
+    {
+        return videoLinks.Where(link => link.videoTo == videoTo && savedGame.IsLinkVisited(link.id)).ToList();
+    }
+
     public SavedGame savedGame { get; private set; }
     private bool playedFromGallery;
     private void Awake()

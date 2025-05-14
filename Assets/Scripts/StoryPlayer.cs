@@ -46,6 +46,7 @@ public class StoryPlayer : MonoBehaviour
     public RawImage rawImage;
     
     public int episode;
+    public string videoFile;
     public string nextVideo;
     public string musicFile;
     
@@ -68,6 +69,8 @@ public class StoryPlayer : MonoBehaviour
     public void PlayVideo(string file)
     {
         StopVideo();
+
+        videoFile = file;
         
         var asset = Resources.Load("Videos/" + file);
         if (asset is VideoClip clip)
@@ -130,9 +133,24 @@ public class StoryPlayer : MonoBehaviour
 
     public void PrevLineAndClear()
     {
-        lineIndex = Mathf.Max(0, lineIndex - 1);
-        Debug.Log("prev line: " + lineIndex);
-        displayContent = lastContent = string.Empty;
+        lineIndex -= 1;
+        if (lineIndex >= 0)
+        {
+            Debug.Log("prev line: " + lineIndex);
+            displayContent = lastContent = string.Empty;
+        }
+        else
+        {
+            var previousLinks = GameManager.instance.GetPreviousLinks(videoFile);
+            foreach (var link in previousLinks)
+            {
+                Debug.Log("play previous video: " + link.videoFrom);
+                GameManager.instance.PlayVideo(link.episode, link.videoFrom);
+                return;
+            }
+
+            backButton?.OnPointerClick(null);
+        }
     }
     
     private void Awake()
@@ -146,16 +164,10 @@ public class StoryPlayer : MonoBehaviour
         }
         
         nextButton.gameObject.SetActive(false);
-        nextButton.onClick.AddListener(() =>
-        {
-            if (nextButton.interactable) NextLineAndClear();
-        });
+        nextButton.onClick.AddListener(NextLineAndClear);
         
         prevButton.gameObject.SetActive(false);
-        prevButton.onClick.AddListener(() =>
-        {
-            if (prevButton.interactable) PrevLineAndClear();
-        });
+        prevButton.onClick.AddListener(PrevLineAndClear);
         
         choiceButtons.ForEach( (btn) =>
         {
@@ -216,8 +228,6 @@ public class StoryPlayer : MonoBehaviour
             
             while (lineIndex < lines.Count)
             {
-                textBackground.enabled = true;
-                
                 var lastLine = lineIndex + 1 >= lines.Count;
                 Debug.Log("line #" + lineIndex + " / " + lines.Count + " last:" + lastLine + " links:" +
                           string.Join(',', links));
@@ -281,7 +291,6 @@ public class StoryPlayer : MonoBehaviour
 
                 if (waitVideoEnd)
                 {
-                    textBackground.enabled = false;
                     waitVideoEnd = false;
                     Debug.Log("Wait video end");
                     videoPlayer.isLooping = false;
@@ -309,8 +318,6 @@ public class StoryPlayer : MonoBehaviour
                         Debug.Log("show next/prev buttons");
                         nextButton.gameObject.SetActive(true);
                         prevButton.gameObject.SetActive(true);
-                        nextButton.interactable = true;
-                        prevButton.interactable = lineIndex >= 1;
                         while (!string.IsNullOrEmpty(lastContent)) // will be skipped if "wait video end"
                         {
                             // wait click next
@@ -374,6 +381,8 @@ public class StoryPlayer : MonoBehaviour
 
     private void Update()
     {
+        textBackground.enabled = !string.IsNullOrEmpty(displayContent);
+        
         if (GameManager.instance.currentPanel != (int)GameManager.Panels.PlayVideo)
         {
             StopVideo();
