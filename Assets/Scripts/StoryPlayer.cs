@@ -228,11 +228,7 @@ public class StoryPlayer : MonoBehaviour
             
             while (lineIndex < lines.Count)
             {
-                var lastLine = lineIndex + 1 >= lines.Count;
-                Debug.Log("line #" + lineIndex + " / " + lines.Count + " last:" + lastLine + " links:" +
-                          string.Join(',', links));
-                
-                yield return null;
+                Debug.Log("line " + (lineIndex+1) + " / " + lines.Count);
                 
                 lastContent = lines[lineIndex];
                 charIndex = 0;
@@ -288,6 +284,8 @@ public class StoryPlayer : MonoBehaviour
                         charIndex = lastContent.Length;
                     }
                 }
+                
+                // text end animation
 
                 if (waitVideoEnd)
                 {
@@ -307,29 +305,12 @@ public class StoryPlayer : MonoBehaviour
 
                 if (autoPlay)
                 {
-                    Debug.Log("autoplay next video");
+                    Debug.Log("autoplay next line");
                     yield return new WaitForSeconds(autoPlayDuration);
                     NextLineAndClear();
                 }
-                else
-                {
-                    if (!lastLine || links.Count <= 1)
-                    {
-                        Debug.Log("show next/prev buttons");
-                        nextButton.gameObject.SetActive(true);
-                        prevButton.gameObject.SetActive(true);
-                        while (!string.IsNullOrEmpty(lastContent)) // will be skipped if "wait video end"
-                        {
-                            // wait click next
-                            if (doubleClicked || autoPlay)
-                                NextLineAndClear();
-                            
-                            yield return null;
-                        }
-                    }
-                }
                 
-                if(lastLine)
+                if(lineIndex + 1 == lines.Count)
                 {
                     if (links.Count > 1)
                     {   
@@ -360,6 +341,20 @@ public class StoryPlayer : MonoBehaviour
                         GameManager.instance.savedGame.SetEpisodeCompleted(episode, true);
                     }
                 }
+                else
+                {
+                    if (!autoPlay && links.Count <= 1)
+                    {
+                        Debug.Log("show next/prev buttons");
+                        nextButton.gameObject.SetActive(true);
+                        prevButton.gameObject.SetActive(true);
+                        while (!string.IsNullOrEmpty(lastContent)) // will be skipped if "wait video end"
+                        {
+                            // wait click next
+                            yield return null;
+                        }
+                    }
+                }
                     
                 nextButton.gameObject.SetActive(false);
                 prevButton.gameObject.SetActive(false);
@@ -382,11 +377,6 @@ public class StoryPlayer : MonoBehaviour
     private void Update()
     {
         textBackground.enabled = !string.IsNullOrEmpty(displayContent);
-        
-        if (GameManager.instance.currentPanel != (int)GameManager.Panels.PlayVideo)
-        {
-            StopVideo();
-        }
     }
 
     private void LateUpdate()

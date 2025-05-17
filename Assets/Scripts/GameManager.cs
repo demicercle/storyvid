@@ -306,16 +306,12 @@ public class GameManager : MonoBehaviour
 
         if (currentPanel != (int)Panels.PlayVideo)
         {
-            if (storyPlayer.videoPlayer.clip != menuVideoClip)
-            {
-                storyPlayer.videoPlayer.clip = menuVideoClip;
-                storyPlayer.videoPlayer.isLooping = true;
-                storyPlayer.videoPlayer.Play();
-                Debug.Log(this + " play menu video " + menuVideoClip);
-            }
-            
-            if (currentPanel == 0)
-                MusicPlayer.PlayMusic("musiquemenu");
+            storyPlayer.videoPlayer.enabled = true;
+            storyPlayer.videoPlayer.clip = menuVideoClip;
+            storyPlayer.videoPlayer.isLooping = true;
+            storyPlayer.videoPlayer.Play();
+            Debug.Log(this + " play menu video " + menuVideoClip);
+            MusicPlayer.PlayMusic("musiquemenu");
         }
     }
 

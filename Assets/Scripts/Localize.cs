@@ -47,5 +47,7 @@ public class Localize : MonoBehaviour
         {
             text.text = GameManager.instance.GetLocalizedText(id);
         }
+        
+        GetComponent<RectTransform>().ForceUpdateRectTransforms();
     }
 }
