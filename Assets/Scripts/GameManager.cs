@@ -80,7 +80,8 @@ public class GameManager : MonoBehaviour
     {
         var content = GetVideoContent(episode, videoID);
         storyPlayer.lines.Clear();
-        storyPlayer.lines.AddRange(content.Split('\n'));
+        storyPlayer.lines.AddRange(content.Replace("\r", "\n").Split('\n'));
+        storyPlayer.lines = storyPlayer.lines.Where(l => !string.IsNullOrWhiteSpace(l)).ToList();
         storyPlayer.links = GetLinks(videoID);
         if (storyPlayer.links.Count == 1 && string.IsNullOrWhiteSpace(storyPlayer.links.First().text))
         {

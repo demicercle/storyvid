@@ -133,6 +133,7 @@ public class StoryPlayer : MonoBehaviour
 
     public void PrevLineAndClear()
     {
+        choiceButtons.ForEach(btn => btn.gameObject.SetActive(false));
         lineIndex -= 1;
         if (lineIndex >= 0)
         {
@@ -176,6 +177,7 @@ public class StoryPlayer : MonoBehaviour
             btn.onClick += (userData) =>
             {
                 ChooseLink((VideoLink)userData);
+                choiceButtons.ForEach(btn => btn.gameObject.SetActive(false));
             };
         });
     }
@@ -310,10 +312,24 @@ public class StoryPlayer : MonoBehaviour
                     NextLineAndClear();
                 }
                 
-                if(lineIndex + 1 == lines.Count)
+                else if (lineIndex + 1 < lines.Count)
+                {
+                    Debug.Log("show next/prev buttons");
+                    nextButton.gameObject.SetActive(true);
+                    prevButton.gameObject.SetActive(true);
+                    while (!string.IsNullOrEmpty(lastContent)) // will be skipped if "wait video end"
+                    {
+                        // wait click next
+                        yield return null;
+                    }
+                }
+                
+                else if(lineIndex + 1 >= lines.Count)
                 {
                     if (links.Count > 1)
                     {   
+                        prevButton.gameObject.SetActive(true);
+                        nextButton.gameObject.SetActive(false);
                         Debug.Log("display choices: " + links.Count);
                         for (int i = 0; i < links.Count; i++)
                         {
@@ -339,20 +355,6 @@ public class StoryPlayer : MonoBehaviour
                         nextVideo = string.Empty;
                         lineIndex = lines.Count;
                         GameManager.instance.savedGame.SetEpisodeCompleted(episode, true);
-                    }
-                }
-                else
-                {
-                    if (!autoPlay && links.Count <= 1)
-                    {
-                        Debug.Log("show next/prev buttons");
-                        nextButton.gameObject.SetActive(true);
-                        prevButton.gameObject.SetActive(true);
-                        while (!string.IsNullOrEmpty(lastContent)) // will be skipped if "wait video end"
-                        {
-                            // wait click next
-                            yield return null;
-                        }
                     }
                 }
                     
