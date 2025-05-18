@@ -5,14 +5,18 @@ using UnityEngine.UI;
 public class AspectRatioFromTexture : MonoBehaviour
 {
     public RawImage rawImage;
+    public Texture texture;
     public AspectRatioFitter aspectRatioFitter;
     public bool autoUpdate;
     
     [ContextMenu("Update Layout")]
     public void UpdateLayout()
     {
-        if (rawImage.texture != null)
-            aspectRatioFitter.aspectRatio = (float)rawImage.texture.width / (float)rawImage.texture.height;
+        if (rawImage != null)
+            texture = rawImage.texture;
+        
+        if (texture != null)
+            aspectRatioFitter.aspectRatio = (float)texture.width / (float)texture.height;
     }
 
     private void Update()

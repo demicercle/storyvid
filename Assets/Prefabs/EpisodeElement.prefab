@@ -198,6 +198,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rawImage: {fileID: 572432833123556142}
+  texture: {fileID: 0}
   aspectRatioFitter: {fileID: 782119242750901075}
   autoUpdate: 0
 --- !u!1 &1621728572299313882

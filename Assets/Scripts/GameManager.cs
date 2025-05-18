@@ -24,8 +24,8 @@ public class GameManager : MonoBehaviour
 
     public StoryPlayer storyPlayer;
     public GameObject[] panels;
-    public List<int> visitedLinks;
-    public VideoClip menuVideoClip;
+    public GameObject menuImage;
+    public VideoPlayer menuVideoPlayer;
     
     public string language { get; private set; }
 
@@ -291,7 +291,10 @@ public class GameManager : MonoBehaviour
                 savedGame = new SavedGame();
             });
         });
-        
+    }
+
+    private void Start()
+    {
         UpdatePanels();
     }
 
@@ -299,23 +302,50 @@ public class GameManager : MonoBehaviour
     private void UpdatePanels()
     {
         currentPanel = Mathf.Clamp(currentPanel, 0, panels.Length - 1);
-        
+
         for (int i = 0; i < panels.Length; ++i)
         {
             panels[i].SetActive(i == currentPanel);
         }
 
+        menuImage.SetActive(false);
+        
         if (currentPanel != (int)Panels.PlayVideo)
         {
-            storyPlayer.videoPlayer.enabled = true;
-            storyPlayer.videoPlayer.clip = menuVideoClip;
-            storyPlayer.videoPlayer.isLooping = true;
-            storyPlayer.videoPlayer.Play();
-            Debug.Log(this + " play menu video " + menuVideoClip);
+            StopCoroutine("PlayMenuVideo");
+            StartCoroutine("PlayMenuVideo");
             MusicPlayer.PlayMusic("musiquemenu");
+        }
+        else
+        {
+            menuVideoPlayer.Stop();
         }
     }
 
+    private IEnumerator PlayMenuVideo()
+    {
+        if (storyPlayer.videoPlayer.isPlaying)
+        {
+            Debug.Log("Stop story video player");
+            storyPlayer.videoPlayer.Stop();
+        }
+        
+        if (!menuVideoPlayer.isPlaying)
+        {
+            Debug.Log("Prepare Menu Video");
+            menuVideoPlayer.Prepare();
+            while (!menuVideoPlayer.isPrepared)
+            {
+                menuImage.SetActive(true);
+                yield return null;
+            }
+
+            menuImage.SetActive(false);
+            menuVideoPlayer.Play();
+            Debug.Log("Play Menu Video");
+        }
+    }
+    
     private void LateUpdate()
     {
         if (savedGame.changed)

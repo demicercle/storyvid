@@ -23,7 +23,7 @@ public class MusicPlayer : MonoBehaviour
         {
             if (lastMusic.audioSource.clip == audioClip)
             {
-                Debug.Log("music " + file + " already playing" );
+                //Debug.Log("music " + file + " already playing" );
                 return;
             }
 
