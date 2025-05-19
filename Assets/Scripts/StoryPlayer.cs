@@ -9,7 +9,6 @@ using UnityEngine.UI;
 
 public class StoryPlayer : MonoBehaviour
 {
-    static public bool autoPlay;
     static public float[] speeds = new float[] { 0.10f, 0.05f, 0.01f };
 
     static public int selectedSpeed
@@ -337,7 +336,7 @@ public class StoryPlayer : MonoBehaviour
                     videoPlayer.Pause();
                 }
 
-                if (autoPlay || cinematicMode)
+                if (AutoplayToggle.IsOn || cinematicMode)
                 {
                     Debug.Log("autoplay next line");
                     yield return new WaitForSeconds(autoPlayDuration);
