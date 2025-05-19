@@ -7,16 +7,23 @@ public class PlayAudioClip : MonoBehaviour, IPointerClickHandler
 {
     public AudioClip clip;
     public bool playOnClick;
+
+    private AudioSource audioSource;
     
     public void PlaySound()
     {
-        if (clip != null)
-            AudioSource.PlayClipAtPoint(clip, FindObjectsByType<AudioListener>(FindObjectsSortMode.None).FirstOrDefault().transform.position);
+        audioSource.clip = clip;
+        audioSource.Play();
     }
 
     public void OnPointerClick(PointerEventData eventData)
     {
         if (playOnClick)
             PlaySound();
+    }
+
+    void Awake()
+    {
+        audioSource = GameObject.Find("AudioSourceUI").GetComponent<AudioSource>();
     }
 }

@@ -24,7 +24,6 @@ public class GameManager : MonoBehaviour
 
     public StoryPlayer storyPlayer;
     public GameObject[] panels;
-    public GameObject menuImage;
     public VideoPlayer menuVideoPlayer;
     
     public string language { get; private set; }
@@ -240,7 +239,7 @@ public class GameManager : MonoBehaviour
 
     public List<VideoLink> GetPreviousLinks(string videoTo)
     {
-        return videoLinks.Where(link => link.videoTo == videoTo && savedGame.IsLinkVisited(link.id)).ToList();
+        return videoLinks.Where(link => link.videoTo == videoTo).ToList();
     }
 
     public SavedGame savedGame { get; private set; }
@@ -307,11 +306,12 @@ public class GameManager : MonoBehaviour
         {
             panels[i].SetActive(i == currentPanel);
         }
-
-        menuImage.SetActive(false);
         
         if (currentPanel != (int)Panels.PlayVideo)
         {
+            storyPlayer.StopVideo();
+            if (storyPlayer.videoPlayer.isPlaying)
+                storyPlayer.videoPlayer.Stop();
             StopCoroutine("PlayMenuVideo");
             StartCoroutine("PlayMenuVideo");
             MusicPlayer.PlayMusic("musiquemenu");
@@ -324,23 +324,15 @@ public class GameManager : MonoBehaviour
 
     private IEnumerator PlayMenuVideo()
     {
-        if (storyPlayer.videoPlayer.isPlaying)
-        {
-            Debug.Log("Stop story video player");
-            storyPlayer.videoPlayer.Stop();
-        }
-        
         if (!menuVideoPlayer.isPlaying)
         {
             Debug.Log("Prepare Menu Video");
             menuVideoPlayer.Prepare();
             while (!menuVideoPlayer.isPrepared)
             {
-                menuImage.SetActive(true);
                 yield return null;
             }
 
-            menuImage.SetActive(false);
             menuVideoPlayer.Play();
             Debug.Log("Play Menu Video");
         }

@@ -2,15 +2,13 @@
 using System;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-[RequireComponent(typeof(Button))]
-public class CustomButton : MonoBehaviour
+public class CustomButton : MonoBehaviour, IPointerClickHandler, IPointerDownHandler, IPointerUpHandler, IPointerEnterHandler, IPointerExitHandler
 {
     public object userData;
-    public System.Action<object> onClick;
-
-    private Button button;
+    public System.Action<object> onClick, onPress, onRelease, onEnter, onExit;
 
     public void SetText(string newText)
     {
@@ -19,13 +17,29 @@ public class CustomButton : MonoBehaviour
             text.text = newText;
         });
     }
-    
-    private void Awake()
+
+    public void OnPointerClick(PointerEventData eventData)
     {
-        button = GetComponent<Button>();
-        button.onClick.AddListener(() =>
-        {
-            onClick?.Invoke(userData);
-        });
+        onClick?.Invoke(userData);
+    }
+
+    public void OnPointerDown(PointerEventData eventData)
+    {
+        onPress?.Invoke(userData);
+    }
+
+    public void OnPointerUp(PointerEventData eventData)
+    {
+        onRelease?.Invoke(userData);
+    }
+
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        onEnter?.Invoke(userData);
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        onExit?.Invoke(userData);
     }
 }

@@ -33,7 +33,7 @@ public class StoryPlayer : MonoBehaviour
     public Graphic textBackground;
     public Button nextButton;
     public Button prevButton;
-    public List<Button> clickableBackgroundButtons = new List<Button>();
+    public List<CustomButton> clickableBackgroundButtons = new List<CustomButton>();
     public List<CustomButton> choiceButtons;
     public PanelButton backButton;
     
@@ -59,7 +59,7 @@ public class StoryPlayer : MonoBehaviour
     private int choiceCount;
     private List<string> knots;
     private bool isFadingMusic;
-    private bool clickedBackground;
+    private bool mouseOverBackground;
     
     public bool canDoubleClick;
     
@@ -140,7 +140,7 @@ public class StoryPlayer : MonoBehaviour
             Debug.Log("prev line: " + lineIndex);
             displayContent = lastContent = string.Empty;
         }
-        else
+        /*else
         {
             var previousLinks = GameManager.instance.GetPreviousLinks(videoFile);
             foreach (var link in previousLinks)
@@ -151,35 +151,69 @@ public class StoryPlayer : MonoBehaviour
             }
 
             backButton?.OnPointerClick(null);
-        }
+        }*/
     }
     
     private void Awake()
     {
-        foreach (var btn in clickableBackgroundButtons)
-        {
-            btn.onClick.AddListener(() =>
-            {
-                clickedBackground = true;
-            });
-        }
-        
         nextButton.gameObject.SetActive(false);
         nextButton.onClick.AddListener(NextLineAndClear);
         
         prevButton.gameObject.SetActive(false);
         prevButton.onClick.AddListener(PrevLineAndClear);
+    }
+
+    private void OnEnable()
+    {
+        foreach (var btn in clickableBackgroundButtons)
+        {
+            btn.onEnter += MouseEnterBackground;
+            btn.onExit += MouseExitBackground;
+        }
         
-        choiceButtons.ForEach( (btn) =>
+        foreach(var btn in choiceButtons)
         {
             btn.gameObject.SetActive(false);
             btn.userData = choiceButtons.IndexOf(btn);
-            btn.onClick += (userData) =>
-            {
-                ChooseLink((VideoLink)userData);
-                choiceButtons.ForEach(btn => btn.gameObject.SetActive(false));
-            };
-        });
+            btn.onClick += ClickedChoice;
+        }
+    }
+
+    private void OnDisable()
+    {
+        foreach (var btn in clickableBackgroundButtons)
+        {
+            btn.onEnter -= MouseEnterBackground;
+            btn.onExit -= MouseExitBackground;
+        }
+        
+        foreach(var btn in choiceButtons)
+        {
+            btn.onClick -= ClickedChoice;
+        }
+    }
+
+    private void MouseEnterBackground(object userData)
+    {
+ //       Debug.Log("MouseEnterBackground");
+        mouseOverBackground = true;
+    }
+
+    private void MouseExitBackground(object userData)
+    {
+//        Debug.Log("MouseExitBackground");
+        mouseOverBackground = false;
+    }
+
+    private void ClickedChoice(object userData)
+    {
+        ChooseLink((VideoLink)userData);
+        choiceButtons.ForEach(btn => btn.gameObject.SetActive(false));
+    }
+
+    private bool SpeedUpText()
+    {
+        return mouseOverBackground && Input.GetMouseButton(0);
     }
 
     private void ChooseLink(VideoLink link)
@@ -198,11 +232,11 @@ public class StoryPlayer : MonoBehaviour
         }
     }
 
-    private bool waitVideoEnd;
+    private bool cinematicMode;
     private const string CINEMATIC = "cinematique";
     IEnumerator Play()
     {
-        waitVideoEnd = false;
+        cinematicMode = false;
         lineIndex = 0;
         charIndex = 0;
         displayContent = lastContent = string.Empty;
@@ -245,7 +279,7 @@ public class StoryPlayer : MonoBehaviour
                         if (lastContent.Substring(charIndex, CINEMATIC.Length) == CINEMATIC)
                         {
                             lastContent = string.Empty;
-                            waitVideoEnd = true;
+                            cinematicMode = true;
                         }
                         
                         else if (int.TryParse(lastContent.Substring(charIndex, 1), out var _))
@@ -277,7 +311,8 @@ public class StoryPlayer : MonoBehaviour
                     {
                         displayContent = lastContent.Substring(0, charIndex + 1);
                         charIndex++;
-                        yield return Input.GetMouseButton(0) ? null : new WaitForSeconds(textDelay);
+//                        Debug.Log(mouseOverBackground ? "MouseOverBackground" : "MouseExitBackground");
+                        yield return SpeedUpText() ? null : new WaitForSeconds(textDelay);
                     }
 
                     if (Skip())
@@ -289,9 +324,8 @@ public class StoryPlayer : MonoBehaviour
                 
                 // text end animation
 
-                if (waitVideoEnd)
+                if (cinematicMode)
                 {
-                    waitVideoEnd = false;
                     Debug.Log("Wait video end");
                     videoPlayer.isLooping = false;
                     while (videoPlayer.isPlaying)
@@ -305,18 +339,18 @@ public class StoryPlayer : MonoBehaviour
                     videoPlayer.Pause();
                 }
 
-                if (autoPlay)
+                if (autoPlay || cinematicMode)
                 {
                     Debug.Log("autoplay next line");
                     yield return new WaitForSeconds(autoPlayDuration);
                     NextLineAndClear();
                 }
                 
-                else if (lineIndex + 1 < lines.Count)
+                else if (lineIndex + 1 < lines.Count || links.Count <= 1)
                 {
                     Debug.Log("show next/prev buttons");
                     nextButton.gameObject.SetActive(true);
-                    prevButton.gameObject.SetActive(true);
+                    prevButton.gameObject.SetActive(lineIndex - 1 >= 0);
                     while (!string.IsNullOrEmpty(lastContent)) // will be skipped if "wait video end"
                     {
                         // wait click next
@@ -361,6 +395,7 @@ public class StoryPlayer : MonoBehaviour
                 nextButton.gameObject.SetActive(false);
                 prevButton.gameObject.SetActive(false);
                 choiceButtons.ForEach(btn => btn.gameObject.SetActive(false));
+                cinematicMode = false;
                 
                 yield return null;
             }
@@ -385,6 +420,5 @@ public class StoryPlayer : MonoBehaviour
     {
         uiText.enabled = !string.IsNullOrWhiteSpace(displayContent);
         uiText.text = displayContent;
-        clickedBackground = false;
     }
 }
