@@ -96,6 +96,7 @@ public class GameManager : MonoBehaviour
         savedGame.UnlockPath(episode, videoID);
        // Debug.Log("PlayVideo: " + episode + " - " + videoID + " (file=" + videoFile + ")");
         playedFromGallery = currentPanel == (int)Panels.SelectVideo;
+        Debug.Log(this + " playedFromGallery=" + playedFromGallery);
         storyPlayer.backButton.panel = playedFromGallery ? Panels.SelectVideo : Panels.SelectEpisode;
         storyPlayer.fader.Fade1(1f, () =>
         {
@@ -299,7 +300,7 @@ public class GameManager : MonoBehaviour
         else
         {
             StopVideo();
-            SetCurrentPanel(playedFromGallery ? Panels.SelectVideo : Panels.SelectEpisode);
+            BackToMenu(Panels.SelectVideo);
         }
     }
 
