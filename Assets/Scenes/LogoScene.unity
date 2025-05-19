@@ -163,6 +163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d912e2d9dacc40aab33a987b278b0825, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioListener: {fileID: 569861587}
   logoClip: {fileID: 32900000, guid: 9608e8d58f693a24aa4928ee9ae35bc8, type: 3}
   videoPlayer: {fileID: 1005696154}
   fader: {fileID: 812771742}

@@ -93,12 +93,15 @@ public class GameManager : MonoBehaviour
         storyPlayer.episode = episode;
         storyPlayer.musicFile = GetMusicFile(episode, videoID);
         var videoFile = GetVideoFile(episode, videoID);
-       // Debug.Log("PlayVideo: " + episode + " - " + videoID + " (file=" + videoFile + ")");
-        storyPlayer.PlayVideo(videoFile);
         savedGame.UnlockPath(episode, videoID);
+       // Debug.Log("PlayVideo: " + episode + " - " + videoID + " (file=" + videoFile + ")");
         playedFromGallery = currentPanel == (int)Panels.SelectVideo;
         storyPlayer.backButton.panel = playedFromGallery ? Panels.SelectVideo : Panels.SelectEpisode;
-        SetCurrentPanel(Panels.PlayVideo);
+        storyPlayer.fader.Fade1(1f, () =>
+        {
+            storyPlayer.PlayVideo(videoFile);
+            SetCurrentPanel((int)Panels.PlayVideo);
+        });
     }
 
     public void StopVideo()
@@ -255,48 +258,86 @@ public class GameManager : MonoBehaviour
         savedGame.Load();
         
         SetCurrentPanel(0);
+    }
 
-        storyPlayer.storyComplete += () =>
+    private void OnEnable()
+    {
+        storyPlayer.storyComplete += StoryComplete;
+        playButton.onClick.AddListener(ClickSelectEpisode);
+        quitButton.onClick.AddListener(QuitGame);
+        deleteGameButton.onClick.AddListener(ClickDeleteGame);
+    }
+
+    private void OnDisable()
+    {
+        storyPlayer.storyComplete -= StoryComplete;
+        playButton.onClick.RemoveListener(ClickSelectEpisode);
+        quitButton.onClick.RemoveListener(QuitGame);
+        deleteGameButton.onClick.RemoveListener(ClickDeleteGame);
+    }
+
+    private void ClickDeleteGame()
+    {
+        popup.DisplayYesNo(() =>
         {
-            if (!playedFromGallery && !string.IsNullOrEmpty(storyPlayer.nextVideo))
-            {
-                PlayVideo(storyPlayer.episode, storyPlayer.nextVideo);
-            }
-            else
-            {
-                StopVideo();
-                SetCurrentPanel(playedFromGallery ? Panels.SelectVideo : Panels.SelectEpisode);
-            }
-        };
-        
-        playButton.onClick.AddListener(() =>
-        {
-            SetCurrentPanel((int)Panels.SelectEpisode);
+            savedGame.DeleteSave();
+            savedGame = new SavedGame();
         });
-        
-        quitButton.onClick.AddListener(() =>
+    }
+
+    private void ClickSelectEpisode()
+    {
+        SetCurrentPanel((int)Panels.SelectEpisode);
+    }
+
+    private void StoryComplete()
+    {
+        if (!playedFromGallery && !string.IsNullOrEmpty(storyPlayer.nextVideo))
         {
-            #if UNITY_EDITOR
+            PlayVideo(storyPlayer.episode, storyPlayer.nextVideo);
+        }
+        else
+        {
+            StopVideo();
+            SetCurrentPanel(playedFromGallery ? Panels.SelectVideo : Panels.SelectEpisode);
+        }
+    }
+
+    private void QuitGame()
+    {
+        storyPlayer.fader.Fade1(1f, () =>
+        {
+#if UNITY_EDITOR
             UnityEditor.EditorApplication.isPlaying = false;
-            #endif
+#endif
             Application.Quit();
         });
-        
-        deleteGameButton.onClick.AddListener(() =>
-        {
-            popup.DisplayYesNo(() =>
-            {
-                savedGame.DeleteSave();
-                savedGame = new SavedGame();
-            });
-        });
     }
 
-    private void Start()
+    private IEnumerator Start()
     {
         UpdatePanels();
+        
+        storyPlayer.fader.Fade1(0f);
+        Debug.Log("Prepare Menu Video");
+        menuVideoPlayer.Prepare();
+        
+        do
+        {
+            yield return new WaitForSeconds(1.5f);
+        } while (!menuVideoPlayer.isPrepared);
+        
+        Debug.Log("Play Menu Video");
+        menuVideoPlayer.Play();
+        
+        do
+        {
+            yield return new WaitForSeconds(1.5f);
+        } while (menuVideoPlayer.time <= 0.5);
+        
+        Debug.Log("Set Panel and Fade Out");
+        storyPlayer.fader.Fade0();
     }
-
 
     private void UpdatePanels()
     {
@@ -309,33 +350,46 @@ public class GameManager : MonoBehaviour
         
         if (currentPanel != (int)Panels.PlayVideo)
         {
-            storyPlayer.StopVideo();
-            if (storyPlayer.videoPlayer.isPlaying)
-                storyPlayer.videoPlayer.Stop();
-            StopCoroutine("PlayMenuVideo");
-            StartCoroutine("PlayMenuVideo");
             MusicPlayer.PlayMusic("musiquemenu");
         }
         else
         {
+            Debug.Log("Stop Menu Video");
             menuVideoPlayer.Stop();
         }
     }
 
-    private IEnumerator PlayMenuVideo()
+    public void BackToMenu(Panels newPanel)
     {
-        if (!menuVideoPlayer.isPlaying)
-        {
-            Debug.Log("Prepare Menu Video");
-            menuVideoPlayer.Prepare();
-            while (!menuVideoPlayer.isPrepared)
-            {
-                yield return null;
-            }
+        currentPanel = (int)newPanel;
+        StopCoroutine("BackToMenuCoroutine");
+        StartCoroutine("BackToMenuCoroutine");
+    }
 
-            menuVideoPlayer.Play();
-            Debug.Log("Play Menu Video");
-        }
+    private IEnumerator BackToMenuCoroutine()
+    {
+        var fader = storyPlayer.fader;
+
+        fader.Fade1();
+        while (fader.isFading)
+            yield return null;
+
+        Debug.Log("Stop story player");
+        storyPlayer.StopVideo();
+        
+        UpdatePanels();
+            
+        Debug.Log("Prepare Menu Video");
+        menuVideoPlayer.Prepare();
+        while (!menuVideoPlayer.isPrepared)
+            yield return null;
+
+        Debug.Log("Play Menu Video");
+        menuVideoPlayer.Play();
+        
+        fader.Fade0();
+        while (storyPlayer.fader.isFading)
+            yield return null;
     }
     
     private void LateUpdate()

@@ -8,6 +8,7 @@ using UnityEngine.SceneManagement;
 
 public class Logo : MonoBehaviour
 {
+    public AudioListener audioListener;
     public VideoClip logoClip;
     public VideoPlayer videoPlayer;
     public Graphic fader;
@@ -16,6 +17,7 @@ public class Logo : MonoBehaviour
     
     IEnumerator Start()
     {
+        Cursor.visible = false;
         Debug.Log(this + " start");
         MusicPlayer.PlayMusic("musiquelogo");
         DontDestroyOnLoad(gameObject);
@@ -29,6 +31,7 @@ public class Logo : MonoBehaviour
         fader.DOFade(1, fadeDuration);
         yield return new WaitForSeconds(fadeDuration);
         videoPlayer.enabled = false;
+        Destroy(audioListener);
         Debug.Log(this + " load main scene");
         var asyncOp = SceneManager.LoadSceneAsync(sceneToLoad, LoadSceneMode.Additive);
         while (!asyncOp.isDone)
@@ -36,6 +39,7 @@ public class Logo : MonoBehaviour
         Debug.Log(this + " fade and destroy");
         fader.DOFade(0, fadeDuration);
         yield return new WaitForSeconds(fadeDuration);
+        Cursor.visible = true;
         SceneManager.UnloadSceneAsync(0);
     }
 }

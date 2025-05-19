@@ -1,17 +1,23 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class PanelButton : MonoBehaviour, IPointerClickHandler
 {
     public GameManager.Panels panel;
 
-    public void SetPanel(int newPanel)
-    {
-        panel = (GameManager.Panels)newPanel;
-    }
-
     public void OnPointerClick(PointerEventData eventData)
     {
-        GameManager.instance.SetCurrentPanel(panel);
+        if (GameManager.instance.storyPlayer.fader.isFading)
+            return;
+        
+        if (GameManager.instance.currentPanel == (int)GameManager.Panels.PlayVideo)
+        {
+            GameManager.instance.BackToMenu(panel);
+        }
+        else
+        {
+            GameManager.instance.SetCurrentPanel(panel);
+        }
     }
 }

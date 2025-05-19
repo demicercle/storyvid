@@ -1,4 +1,5 @@
 using System;
+using DG.Tweening;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,41 +8,32 @@ public class Fader : MonoBehaviour
 {
     private const float SPEED = 1f;
 
-    public void Fade1()
+    public void Fade1(float speed = SPEED, System.Action callback=null)
     {
-        targetAlpha = 1.0f;
+        imageComponent.DOComplete();
+        tween = imageComponent.DOFade(1f, speed)
+            .OnComplete(() => callback?.Invoke());
     }
 
-    public void Fade0()
+    public void Fade0(float speed = SPEED, System.Action callback=null)
     {
-        targetAlpha = 0.0f;
+        imageComponent.DOComplete();
+        tween = imageComponent.DOFade(0f, speed)
+            .OnComplete(() => callback?.Invoke());
     }
 
-    public void Alpha0()
-    {
-        targetAlpha = currentAlpha = 0;
-    }
-
-    public void Alpha1()
-    {
-        targetAlpha = currentAlpha = 1;
-    }
-
-    public bool isFading => currentAlpha != targetAlpha;
+    public bool isFading => tween != null && tween.IsActive();
 
     private Image imageComponent;
-    private float currentAlpha = 1f;
-    private float targetAlpha = 1f;
+    private Tween tween;
 
     private void Awake()
     {
         imageComponent = GetComponent<Image>();
     }
 
-    void Update()
+    private void Update()
     {
-        currentAlpha = Mathf.MoveTowards(currentAlpha, targetAlpha, Time.unscaledDeltaTime * SPEED);
-        imageComponent.color = new Color(0, 0, 0, currentAlpha);
-        imageComponent.raycastTarget = currentAlpha > 0.01f;
+        imageComponent.raycastTarget = isFading;
     }
 }

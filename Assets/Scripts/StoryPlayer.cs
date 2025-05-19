@@ -253,8 +253,6 @@ public class StoryPlayer : MonoBehaviour
             MusicPlayer.StopMusic();
         }
         
-        fader.Alpha1();
-        
         while (isPlaying)
         {
             fader.Fade0();
@@ -396,6 +394,9 @@ public class StoryPlayer : MonoBehaviour
                 prevButton.gameObject.SetActive(false);
                 choiceButtons.ForEach(btn => btn.gameObject.SetActive(false));
                 cinematicMode = false;
+                
+                while (fader.isFading)
+                    yield return null;
                 
                 yield return null;
             }
