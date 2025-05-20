@@ -1,10 +1,8 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Video;
 using System.Linq;
-using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 public class StoryPlayer : MonoBehaviour
@@ -118,52 +116,33 @@ public class StoryPlayer : MonoBehaviour
         }
     }
 
-    public bool Skip()
-    {
-        return Application.isEditor && Input.GetKey(KeyCode.Backspace);
-    }
-
     public void NextLineAndClear()
     {
+        HideButtons();
         lineIndex += 1;
         Debug.Log(this + " NextLineAndClear: " + lineIndex);
-        displayContent = lastContent = string.Empty;
     }
 
     public void PrevLineAndClear()
     {
-        choiceButtons.ForEach(btn => btn.gameObject.SetActive(false));
-        lineIndex -= 1;
-        if (lineIndex >= 0)
-        {
-            Debug.Log(this + "PrevLineAndClear: " + lineIndex);
-            displayContent = lastContent = string.Empty;
-        }
-        /*else
-        {
-            var previousLinks = GameManager.instance.GetPreviousLinks(videoFile);
-            foreach (var link in previousLinks)
-            {
-                Debug.Log("play previous video: " + link.videoFrom);
-                GameManager.instance.PlayVideo(link.episode, link.videoFrom);
-                return;
-            }
-
-            backButton?.OnPointerClick(null);
-        }*/
+        HideButtons();
+        if (lineIndex >= lines.Count)
+            lineIndex -= 2;
+        else 
+            lineIndex -= 1;
+        Debug.Log(this + "PrevLineAndClear: " + lineIndex);
     }
     
     private void Awake()
     {
-        nextButton.gameObject.SetActive(false);
-        nextButton.onClick.AddListener(NextLineAndClear);
-        
-        prevButton.gameObject.SetActive(false);
-        prevButton.onClick.AddListener(PrevLineAndClear);
+        HideButtons();
     }
 
     private void OnEnable()
     {
+        nextButton.onClick.AddListener(NextLineAndClear);
+        prevButton.onClick.AddListener(PrevLineAndClear);
+        
         foreach (var btn in clickableBackgroundButtons)
         {
             btn.onEnter += MouseEnterBackground;
@@ -180,6 +159,9 @@ public class StoryPlayer : MonoBehaviour
 
     private void OnDisable()
     {
+        nextButton.onClick.RemoveListener(NextLineAndClear);
+        prevButton.onClick.RemoveListener(PrevLineAndClear);
+        
         foreach (var btn in clickableBackgroundButtons)
         {
             btn.onEnter -= MouseEnterBackground;
@@ -207,7 +189,7 @@ public class StoryPlayer : MonoBehaviour
     private void ClickedChoice(object userData)
     {
         ChooseLink((VideoLink)userData);
-        choiceButtons.ForEach(btn => btn.gameObject.SetActive(false));
+        HideButtons();
     }
 
     private bool SpeedUpText()
@@ -215,6 +197,13 @@ public class StoryPlayer : MonoBehaviour
         return mouseOverBackground && Input.GetMouseButton(0);
     }
 
+    private void HideButtons()
+    {
+        choiceButtons.ForEach(btn => btn.gameObject.SetActive(false));
+        nextButton.gameObject.SetActive(false);
+        prevButton.gameObject.SetActive(false);
+    }
+    
     private void ChooseLink(VideoLink link)
     {
         Debug.Log(this + " ChooseLink: " + link.videoTo);
@@ -314,56 +303,48 @@ public class StoryPlayer : MonoBehaviour
                     {
                         displayContent = lastContent.Substring(0, charIndex + 1);
                         charIndex++;
-//                        Debug.Log(mouseOverBackground ? "MouseOverBackground" : "MouseExitBackground");
+                       // Debug.Log(this + " displayContent=" + displayContent);
                         yield return SpeedUpText() ? null : new WaitForSeconds(textDelay);
-                    }
-
-                    if (Skip())
-                    {
-                        displayContent = lastContent;
-                        charIndex = lastContent.Length;
                     }
                 }
                 
                 // text end animation
-
                 if (cinematicMode)
                 {
                     Debug.Log(this + " cinematic mode");
                     videoPlayer.isLooping = false;
                     while (videoPlayer.isPlaying)
                     {
-                        if (Skip())
-                            break;
-                        
                         yield return null;
                     }
                     videoPlayer.Pause();
                 }
 
-                if (AutoplayToggle.IsChecked || cinematicMode)
+                var autoplay = AutoplayToggle.IsChecked;
+                
+                if (autoplay || cinematicMode)
                 {
                     Debug.Log(this + " autoplay next line");
                     yield return new WaitForSeconds(autoPlayDuration);
-                    NextLineAndClear();
+                    lineIndex += 1;
+                    Debug.Log(this + " autoplay lineIndex=" + lineIndex);
                 }
                 
-                if (!AutoplayToggle.IsChecked && (lineIndex + 1 < lines.Count || links.Count <= 1))
+                if (!autoplay && (lineIndex + 1 < lines.Count || links.Count <= 1))
                 {
                     Debug.Log(this + " show next/prev buttons");
                     nextButton.gameObject.SetActive(true);
                     prevButton.gameObject.SetActive(lineIndex - 1 >= 0);
-                    while (!string.IsNullOrEmpty(lastContent)) // will be skipped if "wait video end"
+                    while (nextButton.gameObject.activeSelf || prevButton.gameObject.activeSelf) // will be skipped if "wait video end"
                     {
                         // wait click next
                         clickedNextLine = true;
                         yield return null;
                     }
                 }
-
-                if (!AutoplayToggle.IsChecked && !clickedNextLine && lineIndex + 1 >= lines.Count && links.Count > 1)
+                else if (!(autoplay || cinematicMode))
                 {
-                    Debug.Log(this + " go next line to display choices");
+                    Debug.Log(this + " auto go next line");
                     lineIndex += 1;
                 }
                 
@@ -382,7 +363,7 @@ public class StoryPlayer : MonoBehaviour
                             btn.userData = links[i];
                         }
                         
-                        while (choiceButtons.Any(btn => btn.gameObject.activeInHierarchy))
+                        while (choiceButtons.Any(btn => btn.gameObject.activeSelf))
                         {
                             yield return null;
                         }

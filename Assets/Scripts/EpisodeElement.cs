@@ -21,7 +21,7 @@ public class EpisodeElement : MonoBehaviour
     
     private void Awake()
     {
-        header.text = "Episode " + episodeIndex;
+        header.text = GameManager.instance.GetEpisodeHeader(episodeIndex);
 
         playButton.onClick.AddListener(() =>
         {

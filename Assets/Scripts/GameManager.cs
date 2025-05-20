@@ -421,4 +421,12 @@ public class GameManager : MonoBehaviour
     {
         return availableLanguages.Contains(id);
     }
+
+    public string GetEpisodeHeader(int episodeIndex)
+    {
+        var header = GetLocalizedText("episode"  + episodeIndex);
+        if (string.IsNullOrEmpty(header))
+            header = "Episode " + episodeIndex;
+        return header;
+    }
 }

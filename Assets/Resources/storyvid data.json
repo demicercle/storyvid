@@ -140,6 +140,41 @@
       "text_de": "Concept",
       "text_cn": "Concept"
     },
+    "episode1": {
+      "text_fr": "Maria et Oiu",
+      "text_en": "Maria et Oiu",
+      "text_es": "Maria et Oiu",
+      "text_de": "Maria et Oiu",
+      "text_cn": null
+    },
+    "episode2": {
+      "text_fr": "Xian et Yaragon",
+      "text_en": "Xian et Yaragon",
+      "text_es": "Xian et Yaragon",
+      "text_de": "Xian et Yaragon",
+      "text_cn": null
+    },
+    "episode3": {
+      "text_fr": "Lyra, Jett et Iris",
+      "text_en": "Lyra, Jett et Iris",
+      "text_es": "Lyra, Jett et Iris",
+      "text_de": "Lyra, Jett et Iris",
+      "text_cn": null
+    },
+    "episode4": {
+      "text_fr": "Yuan et Noah",
+      "text_en": "Yuan et Noah",
+      "text_es": "Yuan et Noah",
+      "text_de": "Yuan et Noah",
+      "text_cn": null
+    },
+    "episode5": {
+      "text_fr": "B1J1-NHU",
+      "text_en": "B1J1-NHU",
+      "text_es": "B1J1-NHU",
+      "text_de": "B1J1-NHU",
+      "text_cn": null
+    },
     "concept_text": {
       "text_fr": "Plongez dans cinq histoires mystérieuses, où chaque récit est marqué par un étrange murmure venu de très loin. Ce son ténu traverse les frontières du ciel, du temps et de l’espace. À peine perceptible, il semble surgir d’un passé oublié, perturbant chaque être qui l’entend.\nLes personnages de ces cinq récits ne se connaissent pas, mais il existe un lien insaisissable entre eux. Chacun avance à sa manière, hésitant, faisant des choix. Et pourtant, une force invisible semble les pousser à agir ensemble, à influencer le cours des événements. Peut-être que ce que nous vivons aujourd'hui n'est que l'écho d'un événement ancien… ou, peut-être, l'annonce de ce qui est à venir ?\n\nÀ travers vos choix, vous aurez l’opportunité de découvrir davantage sur les personnages et l'univers dans lequel chaque histoire prend place. À la fin de chacune des trois premières histoires, vous devrez faire un choix qui ouvrira la voie à l’une des deux fins possibles. Une fois que vous aurez exploré la première fin, vous débloquerez l’accès à la seconde, vous permettant ainsi de voir les différentes perspectives de cette aventure.",
       "text_en": "Immerse yourself in five mysterious stories, each marked by a strange whisper from far away. This faint sound crosses the boundaries of sky, time, and space. Barely perceptible, it seems to emerge from a forgotten past, disturbing every being who hears it.\nThe characters in these five stories don't know each other, but there is an elusive bond between them. Each moves forward in their own way, hesitating, making choices. And yet, an invisible force seems to push them to act together, to influence the course of events. Perhaps what we are experiencing today is only the echo of an ancient event... or perhaps, a harbinger of what is to come?\n\nThrough your choices, you will have the opportunity to discover more about the characters and the universe in which each story takes place. At the end of each of the first three stories, you will have to make a choice that will open the way to one of two possible endings. Once you have explored the first ending, you You will unlock access to the second, allowing you to see the different perspectives of this adventure.",
@@ -1182,100 +1217,100 @@
       "image_file": "ep1v01",
       "image": false,
       "script_fr": "@cinematique",
-      "script_en": null,
+      "script_en": "@cinematique",
       "script_es": "@cinematique",
-      "script_de": null,
-      "script_cn": null
+      "script_de": "@cinematique",
+      "script_cn": "@cinematique"
     },
     "ep1v02": {
       "video_file": "ep1v02",
       "image_file": "ep1v02",
       "image": false,
       "script_fr": "ep1v02 ligne 1/3 musique2 image \nep1v02 ligne 2/3 musique2 image \nep1v02 ligne 3/3 musique2 image",
-      "script_en": null,
-      "script_es": "ep1v02 ligne 1/2 musique2 image \nep1v02 ligne 2/2 musique2 image",
-      "script_de": null,
-      "script_cn": null
+      "script_en": "UK    ep1v02 ligne 1/2 musique2 image \nep1v02 ligne 2/2 musique2 image",
+      "script_es": "ES ep1v02 ligne 1/2 musique2 image \nep1v02 ligne 2/2 musique2 image",
+      "script_de": "DE ep1v02 ligne 1/2 musique2 image \nep1v02 ligne 2/2 musique2 image",
+      "script_cn": "CHINOIS ep1v02 ligne 1/2 musique2 image \nep1v02 ligne 2/2 musique2 image"
     },
     "ep1v03": {
       "video_file": "ep1v03",
       "image_file": "ep1v03",
       "image": false,
       "script_fr": "ep1v03 ligne 1/3 musique3 image \nep1v03 ligne 2/3 musique3 image \nep1v03 ligne 3/3 musique3 image",
-      "script_en": null,
+      "script_en": "ep1v03 ligne 1/2 musique3 image \nep1v03 ligne 2/2 musique3 image",
       "script_es": "ep1v03 ligne 1/2 musique3 image \nep1v03 ligne 2/2 musique3 image",
-      "script_de": null,
-      "script_cn": null
+      "script_de": "ep1v03 ligne 1/2 musique3 image \nep1v03 ligne 2/2 musique3 image",
+      "script_cn": "ep1v03 ligne 1/2 musique3 image \nep1v03 ligne 2/2 musique3 image"
     },
     "ep1v04": {
       "video_file": "ep1v04",
       "image_file": "ep1v04",
       "image": true,
       "script_fr": "ep1v04 ligne 1/3 musique3 image \nep1v04 ligne 2/3 musique3 image \nep1v04 ligne 3/3 musique3 image",
-      "script_en": null,
+      "script_en": "ep1v04 ligne 1/3 musique3 image \nep1v04 ligne 2/3 musique3 image \nep1v04 ligne 3/3 musique3 image",
       "script_es": "ep1v04 ligne 1/3 musique3 image \nep1v04 ligne 2/3 musique3 image \nep1v04 ligne 3/3 musique3 image",
-      "script_de": null,
-      "script_cn": null
+      "script_de": "ep1v04 ligne 1/3 musique3 image \nep1v04 ligne 2/3 musique3 image \nep1v04 ligne 3/3 musique3 image",
+      "script_cn": "ep1v04 ligne 1/3 musique3 image \nep1v04 ligne 2/3 musique3 image \nep1v04 ligne 3/3 musique3 image"
     },
     "ep1v05": {
       "video_file": "ep1v05",
       "image_file": "ep1v05",
       "image": false,
       "script_fr": "@cinematique",
-      "script_en": null,
+      "script_en": "@cinematique",
       "script_es": "@cinematique",
-      "script_de": null,
-      "script_cn": null
+      "script_de": "@cinematique",
+      "script_cn": "@cinematique"
     },
     "ep1v06": {
       "video_file": "ep1v06",
       "image_file": "ep1v06",
       "image": true,
       "script_fr": "ep1v06 ligne 1/3 musique 2  image \nep1v06  ligne 2/3 musique 2  image \nep1v06  ligne 3/3 musique 2  image",
-      "script_en": null,
+      "script_en": "ep1v06 ligne 1/3 musique 2  image \nep1v06  ligne 2/3 musique 2  image \nep1v06  ligne 3/3 musique 2  image",
       "script_es": "ep1v06 ligne 1/3 musique 2  image \nep1v06  ligne 2/3 musique 2  image \nep1v06  ligne 3/3 musique 2  image",
-      "script_de": null,
-      "script_cn": null
+      "script_de": "ep1v06 ligne 1/3 musique 2  image \nep1v06  ligne 2/3 musique 2  image \nep1v06  ligne 3/3 musique 2  image",
+      "script_cn": "ep1v06 ligne 1/3 musique 2  image \nep1v06  ligne 2/3 musique 2  image \nep1v06  ligne 3/3 musique 2  image"
     },
     "ep1v07": {
       "video_file": "ep1v07",
       "image_file": "ep1v07",
       "image": false,
       "script_fr": "ep1v07 ligne 1/3 musique 3 video\nep1v07 ligne 2/3 musique 3 video\nep1v07 ligne 3/3 musique 3 video",
-      "script_en": null,
+      "script_en": "ep1v07 ligne 1/3 musique 3 video\nep1v07 ligne 2/3 musique 3 video\nep1v07 ligne 3/3 musique 3 video",
       "script_es": "ep1v07 ligne 1/3 musique 3 video\nep1v07 ligne 2/3 musique 3 video\nep1v07 ligne 3/3 musique 3 video",
-      "script_de": null,
-      "script_cn": null
+      "script_de": "ep1v07 ligne 1/3 musique 3 video\nep1v07 ligne 2/3 musique 3 video\nep1v07 ligne 3/3 musique 3 video",
+      "script_cn": "ep1v07 ligne 1/3 musique 3 video\nep1v07 ligne 2/3 musique 3 video\nep1v07 ligne 3/3 musique 3 video"
     },
     "ep1v08": {
       "video_file": "ep1v08",
       "image_file": "ep1v08",
       "image": true,
       "script_fr": "ep1v08 ligne 1/3 musique 3  image \nep1v08 ligne 2/3 musique 3 image \nep1v08 ligne 3/3 musique 3,  image",
-      "script_en": null,
+      "script_en": "ep1v08 ligne 1/3 musique 3  image \nep1v08 ligne 2/3 musique 3 image \nep1v08 ligne 3/3 musique 3,  image",
       "script_es": "ep1v08 ligne 1/3 musique 3  image \nep1v08 ligne 2/3 musique 3 image \nep1v08 ligne 3/3 musique 3,  image",
-      "script_de": null,
-      "script_cn": null
+      "script_de": "ep1v08 ligne 1/3 musique 3  image \nep1v08 ligne 2/3 musique 3 image \nep1v08 ligne 3/3 musique 3,  image",
+      "script_cn": "ep1v08 ligne 1/3 musique 3  image \nep1v08 ligne 2/3 musique 3 image \nep1v08 ligne 3/3 musique 3,  image"
     },
     "ep1v09": {
       "video_file": "ep1v09",
       "image_file": "ep1v09",
       "image": false,
       "script_fr": "@cinematique",
-      "script_en": null,
+      "script_en": "@cinematique",
       "script_es": "@cinematique",
-      "script_de": null,
-      "script_cn": null
+      "script_de": "@cinematique",
+      "script_cn": "@cinematique"
     },
     "ep1v10": {
       "video_file": "ep1v10",
       "image_file": "ep1v10",
       "image": false,
       "script_fr": "@cinematique",
-      "script_en": null,
+      "script_en": "@cinematique",
       "script_es": "@cinematique",
-      "script_de": null,
-      "script_cn": null
+      "script_de": "@cinematique",
+      "script_cn": "@cinematique"
     }
   },
   "episode2": {
@@ -1284,100 +1319,100 @@
       "image_file": "ep2v01",
       "image": false,
       "script_fr": "@cinematique",
-      "script_en": null,
+      "script_en": "@cinematique",
       "script_es": "@cinematique",
-      "script_de": null,
-      "script_cn": null
+      "script_de": "@cinematique",
+      "script_cn": "@cinematique"
     },
     "ep2v02": {
       "video_file": "ep2v02",
       "image_file": "ep2v02",
       "image": false,
       "script_fr": "ep2v02 ligne 1/3 musique3 video\nep2v02 ligne 2/3 musique3 video\nep2v02 ligne 3/3 musique3 video",
-      "script_en": null,
-      "script_es": "ep2v02 musique3 es\nep2v02\nep2v02",
-      "script_de": null,
-      "script_cn": null
+      "script_en": "UK  ep2v02 ligne 1/3 musique3 video\nep2v02 ligne 2/3 musique3 video\nep2v02 ligne 3/3 musique3 video",
+      "script_es": "ES ep2v02 musique3 es\nep2v02\nep2v02",
+      "script_de": "DE ep2v02 ligne 1/3 musique3 video\nep2v02 ligne 2/3 musique3 video\nep2v02 ligne 3/3 musique3 video",
+      "script_cn": "CHUNOIS ep2v02 ligne 1/3 musique3 video\nep2v02 ligne 2/3 musique3 video\nep2v02 ligne 3/3 musique3 video"
     },
     "ep2v03": {
       "video_file": "ep2v03",
       "image_file": "ep2v03",
       "image": true,
       "script_fr": "ep2v03 ligne 1/3 musique4 image\nep2v03 ligne 1/3 musique4 image\nep2v03 ligne 1/3 musique4 image",
-      "script_en": null,
+      "script_en": "ep2v03 ligne 1/3 musique4 image\nep2v03 ligne 1/3 musique4 image\nep2v03 ligne 1/3 musique4 image",
       "script_es": "ep2v03 musique4 es",
-      "script_de": null,
-      "script_cn": null
+      "script_de": "ep2v03 ligne 1/3 musique4 image\nep2v03 ligne 1/3 musique4 image\nep2v03 ligne 1/3 musique4 image",
+      "script_cn": "ep2v03 ligne 1/3 musique4 image\nep2v03 ligne 1/3 musique4 image\nep2v03 ligne 1/3 musique4 image"
     },
     "ep2v04": {
       "video_file": "ep2v04",
       "image_file": "ep2v04",
       "image": true,
       "script_fr": "ep2v04  ligne 1/3 musique1 image\nep2v04  ligne 2/3 musique1 image\nep2v04  ligne 3/3 musique1 image",
-      "script_en": null,
+      "script_en": "ep2v04  ligne 1/3 musique1 image\nep2v04  ligne 2/3 musique1 image\nep2v04  ligne 3/3 musique1 image",
       "script_es": "ep2v04 musique1 es",
-      "script_de": null,
-      "script_cn": null
+      "script_de": "ep2v04  ligne 1/3 musique1 image\nep2v04  ligne 2/3 musique1 image\nep2v04  ligne 3/3 musique1 image",
+      "script_cn": "ep2v04  ligne 1/3 musique1 image\nep2v04  ligne 2/3 musique1 image\nep2v04  ligne 3/3 musique1 image"
     },
     "ep2v05": {
       "video_file": "ep2v05",
       "image_file": "ep2v05",
       "image": true,
       "script_fr": "ep2v05  ligne 1/2 musique1 image\nep2v05  ligne 2/2 musique1 image",
-      "script_en": null,
+      "script_en": "ep2v05  ligne 1/2 musique1 image\nep2v05  ligne 2/2 musique1 image",
       "script_es": "ep2v05 musique1 es\nep2v05\nep2v05",
-      "script_de": null,
-      "script_cn": null
+      "script_de": "ep2v05  ligne 1/2 musique1 image\nep2v05  ligne 2/2 musique1 image",
+      "script_cn": "ep2v05  ligne 1/2 musique1 image\nep2v05  ligne 2/2 musique1 image"
     },
     "ep2v06": {
       "video_file": "ep2v06",
       "image_file": "ep2v06",
       "image": false,
       "script_fr": "@cinematique",
-      "script_en": null,
+      "script_en": "@cinematique",
       "script_es": "@cinematique",
-      "script_de": null,
-      "script_cn": null
+      "script_de": "@cinematique",
+      "script_cn": "@cinematique"
     },
     "ep2v07": {
       "video_file": "ep2v07",
       "image_file": "ep2v07",
       "image": true,
       "script_fr": "ep2v07  ligne 1/3 musique 3 image\nep2v07  ligne 2/3 musique 3 image\nep2v07  ligne 3/3 musique 3 image",
-      "script_en": null,
+      "script_en": "ep2v07  ligne 1/3 musique 3 image\nep2v07  ligne 2/3 musique 3 image\nep2v07  ligne 3/3 musique 3 image",
       "script_es": "ep2v07 musique3 es\nep2v07\nep2v07",
-      "script_de": null,
-      "script_cn": null
+      "script_de": "ep2v07  ligne 1/3 musique 3 image\nep2v07  ligne 2/3 musique 3 image\nep2v07  ligne 3/3 musique 3 image",
+      "script_cn": "ep2v07  ligne 1/3 musique 3 image\nep2v07  ligne 2/3 musique 3 image\nep2v07  ligne 3/3 musique 3 image"
     },
     "ep2v08": {
       "video_file": "ep2v08",
       "image_file": "ep2v08",
       "image": true,
       "script_fr": "ep2v08 ligne 1/3 musique 1 image\nep2v08 ligne 2/3 musique 1 image\nep2v08 ligne 31/3 musique 1 image",
-      "script_en": null,
+      "script_en": "ep2v08 ligne 1/3 musique 1 image\nep2v08 ligne 2/3 musique 1 image\nep2v08 ligne 31/3 musique 1 image",
       "script_es": "ep2v08 musique1 es\nep2v08\nep2v08",
-      "script_de": null,
-      "script_cn": null
+      "script_de": "ep2v08 ligne 1/3 musique 1 image\nep2v08 ligne 2/3 musique 1 image\nep2v08 ligne 31/3 musique 1 image",
+      "script_cn": "ep2v08 ligne 1/3 musique 1 image\nep2v08 ligne 2/3 musique 1 image\nep2v08 ligne 31/3 musique 1 image"
     },
     "ep2v09": {
       "video_file": "ep2v09",
       "image_file": "ep2v09",
       "image": false,
       "script_fr": "@cinematique",
-      "script_en": null,
+      "script_en": "@cinematique",
       "script_es": "@cinematique",
-      "script_de": null,
-      "script_cn": null
+      "script_de": "@cinematique",
+      "script_cn": "@cinematique"
     },
     "ep2v10": {
       "video_file": "ep2v10",
       "image_file": "ep2v10",
       "image": false,
       "script_fr": "@cinematique",
-      "script_en": null,
+      "script_en": "@cinematique",
       "script_es": "@cinematique",
-      "script_de": null,
-      "script_cn": null
+      "script_de": "@cinematique",
+      "script_cn": "@cinematique"
     }
   },
   "episode3": {
@@ -1386,100 +1421,100 @@
       "image_file": "ep3v01",
       "image": false,
       "script_fr": "@cinematique",
-      "script_en": null,
+      "script_en": "@cinematique",
       "script_es": "@cinematique",
-      "script_de": null,
-      "script_cn": null
+      "script_de": "@cinematique",
+      "script_cn": "@cinematique"
     },
     "ep3v02": {
       "video_file": "ep3v02",
       "image_file": "ep3v02",
       "image": true,
       "script_fr": "ep3v02  ligne 1/2 musique3 image\nep3v02  ligne 2/2 musique3 image",
-      "script_en": null,
-      "script_es": "ep3v02 musique3 es\nep3v02\nep3v02",
-      "script_de": null,
-      "script_cn": null
+      "script_en": "UK ep3v02  ligne 1/2 musique3 image\nep3v02  ligne 2/2 musique3 image",
+      "script_es": "ES ep3v02 musique3 es\nep3v02\nep3v02",
+      "script_de": "DE ep3v02  ligne 1/2 musique3 image\nep3v02  ligne 2/2 musique3 image",
+      "script_cn": "chinois UK ep3v02  ligne 1/2 musique3 image\nep3v02  ligne 2/2 musique3 image"
     },
     "ep3v03": {
       "video_file": "ep3v03",
       "image_file": "ep3v03",
       "image": true,
       "script_fr": "ep3v03  ligne 1/2 musique4 image\nep3v03  ligne 2/2 musique4 image",
-      "script_en": null,
+      "script_en": "ep3v03  ligne 1/2 musique4 image\nep3v03  ligne 2/2 musique4 image",
       "script_es": "ep3v03 musique4 es\nep3v03\nep3v03",
-      "script_de": null,
-      "script_cn": null
+      "script_de": "ep3v03  ligne 1/2 musique4 image\nep3v03  ligne 2/2 musique4 image",
+      "script_cn": "ep3v03  ligne 1/2 musique4 image\nep3v03  ligne 2/2 musique4 image"
     },
     "ep3v04": {
       "video_file": "ep3v04",
       "image_file": "ep3v04",
       "image": true,
       "script_fr": "ep3v04  ligne 1/2 musique 1 image\nep3v04  ligne 2/2 musique 1 image",
-      "script_en": null,
+      "script_en": "ep3v04  ligne 1/2 musique 1 image\nep3v04  ligne 2/2 musique 1 image",
       "script_es": "ep3v04 musique1 es\nep3v04\nep3v04",
-      "script_de": null,
-      "script_cn": null
+      "script_de": "ep3v04  ligne 1/2 musique 1 image\nep3v04  ligne 2/2 musique 1 image",
+      "script_cn": "ep3v04  ligne 1/2 musique 1 image\nep3v04  ligne 2/2 musique 1 image"
     },
     "ep3v05": {
       "video_file": "ep3v05",
       "image_file": "ep3v05",
       "image": true,
       "script_fr": "ep3v05  ligne 1/1 musique1 image",
-      "script_en": null,
+      "script_en": "ep3v05  ligne 1/1 musique1 image",
       "script_es": "ep3v05 musique 1 es",
-      "script_de": null,
-      "script_cn": null
+      "script_de": "ep3v05  ligne 1/1 musique1 image",
+      "script_cn": "ep3v05  ligne 1/1 musique1 image"
     },
     "ep3v06": {
       "video_file": "ep3v06",
       "image_file": "ep3v06",
       "image": true,
       "script_fr": "ep3v06  ligne 1/2 musique 2  image\nep3v06  ligne 2/2 musique 2 image",
-      "script_en": null,
+      "script_en": "ep3v06  ligne 1/2 musique 2  image\nep3v06  ligne 2/2 musique 2 image",
       "script_es": "ep3v06 musique2 es\nep3v06\nep3v06",
-      "script_de": null,
-      "script_cn": null
+      "script_de": "ep3v06  ligne 1/2 musique 2  image\nep3v06  ligne 2/2 musique 2 image",
+      "script_cn": "ep3v06  ligne 1/2 musique 2  image\nep3v06  ligne 2/2 musique 2 image"
     },
     "ep3v07": {
       "video_file": "ep3v07",
       "image_file": "ep3v07",
       "image": true,
       "script_fr": "ep3v07  ligne 1/2 musique 3 image\nep3v07  ligne 2/2 musique 3 image",
-      "script_en": null,
+      "script_en": "ep3v07  ligne 1/2 musique 3 image\nep3v07  ligne 2/2 musique 3 image",
       "script_es": "ep3v07 musique3 es\nep3v07\nep3v07",
-      "script_de": null,
-      "script_cn": null
+      "script_de": "ep3v07  ligne 1/2 musique 3 image\nep3v07  ligne 2/2 musique 3 image",
+      "script_cn": "ep3v07  ligne 1/2 musique 3 image\nep3v07  ligne 2/2 musique 3 image"
     },
     "ep3v08": {
       "video_file": "ep3v08",
       "image_file": "ep3v08",
       "image": true,
       "script_fr": "ep3v08  ligne 1/2 musique 2 image\nep3v08  ligne 2/2 musique3 image",
-      "script_en": null,
+      "script_en": "ep3v08  ligne 1/2 musique 2 image\nep3v08  ligne 2/2 musique3 image",
       "script_es": "ep3v08 musique2 es\nep3v08\nep3v08",
-      "script_de": null,
-      "script_cn": null
+      "script_de": "ep3v08  ligne 1/2 musique 2 image\nep3v08  ligne 2/2 musique3 image",
+      "script_cn": "ep3v08  ligne 1/2 musique 2 image\nep3v08  ligne 2/2 musique3 image"
     },
     "ep3v09": {
       "video_file": "ep3v09",
       "image_file": "ep3v09",
       "image": false,
       "script_fr": "@cinematique",
-      "script_en": null,
+      "script_en": "@cinematique",
       "script_es": "@cinematique",
-      "script_de": null,
-      "script_cn": null
+      "script_de": "@cinematique",
+      "script_cn": "@cinematique"
     },
     "ep3v10": {
       "video_file": "ep3v10",
       "image_file": "ep3v10",
       "image": false,
       "script_fr": "@cinematique",
-      "script_en": null,
+      "script_en": "@cinematique",
       "script_es": "@cinematique",
-      "script_de": null,
-      "script_cn": null
+      "script_de": "@cinematique",
+      "script_cn": "@cinematique"
     }
   },
   "episode4": {
@@ -1488,100 +1523,100 @@
       "image_file": "ep4v01",
       "image": false,
       "script_fr": "@cinematique",
-      "script_en": null,
+      "script_en": "@cinematique",
       "script_es": "@cinematique",
-      "script_de": null,
-      "script_cn": null
+      "script_de": "@cinematique",
+      "script_cn": "@cinematique"
     },
     "ep4v02": {
       "video_file": "ep4v02",
       "image_file": "ep4v02",
       "image": true,
       "script_fr": "ep4v02 ligne 1/2 musique 1 image\nep4v02 ligne 2/2 musique 1 image",
-      "script_en": null,
-      "script_es": "ep4v02 musique1 es\nep4v02\nep4v02",
-      "script_de": null,
-      "script_cn": null
+      "script_en": "UK ep4v02 ligne 1/2 musique 1 image\nep4v02 ligne 2/2 musique 1 image",
+      "script_es": "ES ep4v02 musique1 es\nep4v02\nep4v02",
+      "script_de": "DE ep4v02 musique1 es\nep4v02\nep4v02",
+      "script_cn": "CHINOI ep4v02 musique1 es\nep4v02\nep4v02"
     },
     "ep4v03": {
       "video_file": "ep4v03",
       "image_file": "ep4v03",
       "image": false,
       "script_fr": "@cinematique",
-      "script_en": null,
+      "script_en": "@cinematique",
       "script_es": "@cinematique",
-      "script_de": null,
-      "script_cn": null
+      "script_de": "@cinematique",
+      "script_cn": "@cinematique"
     },
     "ep4v04": {
       "video_file": "ep4v04",
       "image_file": "ep4v04",
       "image": true,
       "script_fr": "ep4v04 ligne 1/2 musique 2 image\nep4v04 ligne 2/2 musique 2 image",
-      "script_en": null,
+      "script_en": "ep4v04 ligne 1/2 musique 2 image\nep4v04 ligne 2/2 musique 2 image",
       "script_es": "ep4v04 musique2 es\nep4v04\nep4v04",
-      "script_de": null,
-      "script_cn": null
+      "script_de": "ep4v04 musique2 es\nep4v04\nep4v04",
+      "script_cn": "ep4v04 musique2 es\nep4v04\nep4v04"
     },
     "ep4v05": {
       "video_file": "ep4v05",
       "image_file": "ep4v05",
       "image": true,
       "script_fr": "ep4v05 ligne 1/2 musique 3 image\nep4v05 ligne 2/2 musique 3 image",
-      "script_en": null,
+      "script_en": "ep4v05 ligne 1/2 musique 3 image\nep4v05 ligne 2/2 musique 3 image",
       "script_es": "ep4v05 musique3 es\nep4v05\nep4v05",
-      "script_de": null,
-      "script_cn": null
+      "script_de": "ep4v05 musique3 es\nep4v05\nep4v05",
+      "script_cn": "ep4v05 musique3 es\nep4v05\nep4v05"
     },
     "ep4v06": {
       "video_file": "ep4v06",
       "image_file": "ep4v06",
       "image": true,
       "script_fr": "ep4v06 ligne 1/2 musique 1 image\nep4v06 ligne 2/2 musique 1 image",
-      "script_en": null,
+      "script_en": "ep4v06 ligne 1/2 musique 1 image\nep4v06 ligne 2/2 musique 1 image",
       "script_es": "ep4v06 musique1 es\nep4v06\nep4v06",
-      "script_de": null,
-      "script_cn": null
+      "script_de": "ep4v06 musique1 es\nep4v06\nep4v06",
+      "script_cn": "ep4v06 musique1 es\nep4v06\nep4v06"
     },
     "ep4v07": {
       "video_file": "ep4v07",
       "image_file": "ep4v07",
       "image": false,
       "script_fr": "@cinematique",
-      "script_en": null,
+      "script_en": "@cinematique",
       "script_es": "@cinematique",
-      "script_de": null,
-      "script_cn": null
+      "script_de": "@cinematique",
+      "script_cn": "@cinematique"
     },
     "ep4v08": {
       "video_file": "ep4v08",
       "image_file": "ep4v08",
       "image": true,
       "script_fr": "ep4v08 ligne 1/2 musique 3 image\nep4v08 ligne 2/2 musique 3 image",
-      "script_en": null,
+      "script_en": "ep4v08 ligne 1/2 musique 3 image\nep4v08 ligne 2/2 musique 3 image",
       "script_es": "ep4v08 musique3 es\nep4v08\nep4v08",
-      "script_de": null,
-      "script_cn": null
+      "script_de": "ep4v08 musique3 es\nep4v08\nep4v08",
+      "script_cn": "ep4v08 musique3 es\nep4v08\nep4v08"
     },
     "ep4v09": {
       "video_file": "ep4v09",
       "image_file": "ep4v09",
       "image": true,
       "script_fr": "ep4v09 ligne 1/2 musique 3 image\nep4v09 ligne 2/2 musique 3 image",
-      "script_en": null,
+      "script_en": "ep4v09 ligne 1/2 musique 3 image\nep4v09 ligne 2/2 musique 3 image",
       "script_es": "ep4v09 musique3 es\nep4v09\nep4v09",
-      "script_de": null,
-      "script_cn": null
+      "script_de": "ep4v09 musique3 es\nep4v09\nep4v09",
+      "script_cn": "ep4v09 musique3 es\nep4v09\nep4v09"
     },
     "ep4v10": {
       "video_file": "ep4v10",
       "image_file": "ep4v10",
       "image": false,
       "script_fr": "@cinematique",
-      "script_en": null,
+      "script_en": "@cinematique",
       "script_es": "@cinematique",
-      "script_de": null,
-      "script_cn": null
+      "script_de": "@cinematique",
+      "script_cn": "@cinematique"
     }
   },
   "episode5": {
@@ -1590,100 +1625,100 @@
       "image_file": "ep5v01",
       "image": false,
       "script_fr": "@cinematique",
-      "script_en": null,
+      "script_en": "@cinematique",
       "script_es": "@cinematique",
-      "script_de": null,
-      "script_cn": null
+      "script_de": "@cinematique",
+      "script_cn": "@cinematique"
     },
     "ep5v02": {
       "video_file": "ep5v02",
       "image_file": "ep5v02",
       "image": true,
       "script_fr": "ep5v02 ligne 1/2 musique 1 image\nep5v02 ligne 2/2 musique 1 image",
-      "script_en": null,
-      "script_es": "ep5v02 musique1 es\nep5v02\nep5v02",
-      "script_de": null,
-      "script_cn": null
+      "script_en": "UK ep5v02 ligne 1/2 musique 1 image\nep5v02 ligne 2/2 musique 1 image",
+      "script_es": "ES ep5v02 musique1 es\nep5v02\nep5v02",
+      "script_de": "DE  ep5v02 ligne 1/2 musique 1 image\nep5v02 ligne 2/2 musique 1 image",
+      "script_cn": "Chinois ep5v02 ligne 1/2 musique 1 image\nep5v02 ligne 2/2 musique 1 image"
     },
     "ep5v03": {
       "video_file": "ep5v03",
       "image_file": "ep5v03",
       "image": false,
       "script_fr": "@cinematique",
-      "script_en": null,
+      "script_en": "@cinematique",
       "script_es": "@cinematique",
-      "script_de": null,
-      "script_cn": null
+      "script_de": "@cinematique",
+      "script_cn": "@cinematique"
     },
     "ep5v04": {
       "video_file": "ep5v04",
       "image_file": "ep5v04",
       "image": false,
       "script_fr": "@cinematique",
-      "script_en": null,
+      "script_en": "@cinematique",
       "script_es": "@cinematique",
-      "script_de": null,
-      "script_cn": null
+      "script_de": "@cinematique",
+      "script_cn": "@cinematique"
     },
     "ep5v05": {
       "video_file": "ep5v05",
       "image_file": "ep5v05",
       "image": true,
       "script_fr": "ep5v05 ligne 1/2 musique 3 image\nep5v05 ligne 2/2 musique 3 image",
-      "script_en": null,
+      "script_en": "ep5v05 ligne 1/2 musique 3 image\nep5v05 ligne 2/2 musique 3 image",
       "script_es": "ep5v05 musique3 es\nep5v05\nep5v05",
-      "script_de": null,
-      "script_cn": null
+      "script_de": "ep5v05 ligne 1/2 musique 3 image\nep5v05 ligne 2/2 musique 3 image",
+      "script_cn": "ep5v05 ligne 1/2 musique 3 image\nep5v05 ligne 2/2 musique 3 image"
     },
     "ep5v06": {
       "video_file": "ep5v06",
       "image_file": "ep5v06",
       "image": true,
       "script_fr": "ep5v06 ligne 1/2 musique 3 image\nep5v06 ligne 2/2 musique 3 image",
-      "script_en": null,
+      "script_en": "ep5v06 ligne 1/2 musique 3 image\nep5v06 ligne 2/2 musique 3 image",
       "script_es": "ep5v06 musique3 es\nep5v06\nep5v06",
-      "script_de": null,
-      "script_cn": null
+      "script_de": "ep5v06 ligne 1/2 musique 3 image\nep5v06 ligne 2/2 musique 3 image",
+      "script_cn": "ep5v06 ligne 1/2 musique 3 image\nep5v06 ligne 2/2 musique 3 image"
     },
     "ep5v07": {
       "video_file": "ep5v07",
       "image_file": "ep5v07",
       "image": false,
       "script_fr": "@cinematique",
-      "script_en": null,
+      "script_en": "@cinematique",
       "script_es": "@cinematique",
-      "script_de": null,
-      "script_cn": null
+      "script_de": "@cinematique",
+      "script_cn": "@cinematique"
     },
     "ep5v08": {
       "video_file": "ep5v08",
       "image_file": "ep5v08",
       "image": true,
       "script_fr": "ep5v08 ligne 1/2 musique 1 image\nep5v08 ligne 2/2 musique 1 image",
-      "script_en": null,
+      "script_en": "ep5v08 ligne 1/2 musique 1 image\nep5v08 ligne 2/2 musique 1 image",
       "script_es": "ep5v08 musique1 es\nep5v08\nep5v08",
-      "script_de": null,
-      "script_cn": null
+      "script_de": "ep5v08 ligne 1/2 musique 1 image\nep5v08 ligne 2/2 musique 1 image",
+      "script_cn": "ep5v08 ligne 1/2 musique 1 image\nep5v08 ligne 2/2 musique 1 image"
     },
     "ep5v09": {
       "video_file": "ep5v09",
       "image_file": "ep5v09",
       "image": true,
       "script_fr": "ep5v09 ligne 1/2 musique 1 image\nep5v09 ligne 2/2 musique 1 image",
-      "script_en": null,
+      "script_en": "ep5v09 ligne 1/2 musique 1 image\nep5v09 ligne 2/2 musique 1 image",
       "script_es": "ep5v09 musique1 es\nep5v09\nep5v09",
-      "script_de": null,
-      "script_cn": null
+      "script_de": "ep5v09 ligne 1/2 musique 1 image\nep5v09 ligne 2/2 musique 1 image",
+      "script_cn": "ep5v09 ligne 1/2 musique 1 image\nep5v09 ligne 2/2 musique 1 image"
     },
     "ep5v10": {
       "video_file": "ep5v10",
       "image_file": "ep5v10",
       "image": false,
       "script_fr": "@cinematique",
-      "script_en": null,
+      "script_en": "@cinematique",
       "script_es": "@cinematique",
-      "script_de": null,
-      "script_cn": null
+      "script_de": "@cinematique",
+      "script_cn": "@cinematique"
     }
   }
 }
