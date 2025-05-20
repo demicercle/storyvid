@@ -17,6 +17,7 @@ public class EpisodeElement : MonoBehaviour
     private GameManager gameManager => GameManager.instance;
     private Texture pathImage;
     private string lastVideoID;
+    private bool doUpdate;
     
     private void Awake()
     {
@@ -33,8 +34,16 @@ public class EpisodeElement : MonoBehaviour
         });
     }
 
-    private void Update()
+    private void OnEnable()
     {
+        doUpdate = true;
+    }
+
+    private void LateUpdate()
+    {
+        if (!doUpdate) return;
+        
+        doUpdate = false;
         gameManager.GetLastUnlockedVideo(episodeIndex, out lastVideoID);
         
         lockedToggle.isOn = !gameManager.savedGame.IsEpisodeUnlocked(episodeIndex);
@@ -52,6 +61,5 @@ public class EpisodeElement : MonoBehaviour
         playButton.gameObject.SetActive(!continueButton.interactable);
         
         imageContainer.texture = Resources.Load<Texture2D>("Textures/portrait" + episodeIndex);
-        
     }
 }

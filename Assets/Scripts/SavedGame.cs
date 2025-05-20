@@ -74,6 +74,7 @@ public class SavedGame
 
     public void SetEpisodeCompleted(int episode, bool value)
     {
+        Debug.Log(this + " SetEpisodeCompleted " + episode + " " + value);
         if (value && !episodes.Contains(episode))
             episodes.Add(episode);
         else if (!value && episodes.Contains(episode))
@@ -98,11 +99,11 @@ public class SavedGame
     {
         if (episode == 5)
         {
-            return (IsEpisodeCompleted(3) && GetPoints() >= 3) || IsEpisodeCompleted(4);
+            return (IsEpisodeCompleted(3) && GetPoints() < 3) || IsEpisodeCompleted(4);
         }
         else if (episode == 4)
         {
-            return (IsEpisodeCompleted(3) && GetPoints() < 3) || IsEpisodeCompleted(5);
+            return (IsEpisodeCompleted(3) && GetPoints() >= 3) || IsEpisodeCompleted(5);
         }
         else
         {

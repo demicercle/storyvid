@@ -114,7 +114,7 @@ public class StoryPlayer : MonoBehaviour
         
             StopCoroutine("Play");
             isPlaying = false;
-            Debug.Log("Stop Video");
+            Debug.Log(this + " Stop Video");
         }
     }
 
@@ -126,7 +126,7 @@ public class StoryPlayer : MonoBehaviour
     public void NextLineAndClear()
     {
         lineIndex += 1;
-        Debug.Log("next line: " + lineIndex);
+        Debug.Log(this + " NextLineAndClear: " + lineIndex);
         displayContent = lastContent = string.Empty;
     }
 
@@ -136,7 +136,7 @@ public class StoryPlayer : MonoBehaviour
         lineIndex -= 1;
         if (lineIndex >= 0)
         {
-            Debug.Log("prev line: " + lineIndex);
+            Debug.Log(this + "PrevLineAndClear: " + lineIndex);
             displayContent = lastContent = string.Empty;
         }
         /*else
@@ -217,21 +217,22 @@ public class StoryPlayer : MonoBehaviour
 
     private void ChooseLink(VideoLink link)
     {
-        Debug.Log("ChooseLink: " + link.videoTo);
+        Debug.Log(this + " ChooseLink: " + link.videoTo);
         displayContent = lastContent = string.Empty;
         choiceButtons.ForEach(btn => btn.gameObject.SetActive(false));
         nextVideo = link.videoTo;
         lineIndex = lines.Count;
         GameManager.instance.savedGame.SetLinkVisited(link.id, true);
-        if (link.EpisodeComplete())
+        if (link.completeEpisode)
             GameManager.instance.savedGame.SetEpisodeCompleted(link.episode, true);
         if (string.IsNullOrEmpty(nextVideo))
         {
-            GameManager.instance.SetCurrentPanel(GameManager.Panels.SelectEpisode);
+            GameManager.instance.BackToMenu(GameManager.instance.playedFromGallery ? GameManager.Panels.SelectVideo : GameManager.Panels.SelectEpisode);
         }
     }
 
     private bool cinematicMode;
+    private bool clickedNextLine;
     private const string CINEMATIC = "cinematique";
     IEnumerator Play()
     {
@@ -252,6 +253,8 @@ public class StoryPlayer : MonoBehaviour
             MusicPlayer.StopMusic();
         }
         
+        Debug.Log(this + " links " + string.Join(", ", links));
+        
         while (isPlaying)
         {
             fader.Fade0();
@@ -261,9 +264,12 @@ public class StoryPlayer : MonoBehaviour
             
             while (lineIndex < lines.Count)
             {
-                Debug.Log("line " + (lineIndex+1) + " / " + lines.Count);
+                while (fader.isFading)
+                    yield return null;
                 
+                clickedNextLine = false;
                 lastContent = lines[lineIndex];
+                Debug.Log(this + " lineIndex=" + lineIndex + " lineCount=" + lines.Count + " links=" + links.Count + "\nlastContent=" + lastContent);
                 charIndex = 0;
                 
                 while (charIndex < lastContent.Length)
@@ -290,18 +296,18 @@ public class StoryPlayer : MonoBehaviour
                             
                             if (int.TryParse(delayStr, out var delay))
                             {
-                                Debug.Log("Wait: " + delay);
+                                Debug.Log(this + " Wait: " + delay);
                                 yield return new WaitForSeconds((float)delay / 100f);
                             }
                             else
                             {
-                                Debug.LogError("Unable to parse delay " + delayStr + " in content: " + lastContent);
+                                Debug.LogError(this + " ERROR: Unable to parse delay " + delayStr + " in content: " + lastContent);
                             }
                         }
                         
                         else
                         {
-                            Debug.LogError("Unknown command @" + lastContent.Substring(charIndex));
+                            Debug.LogError(this + " ERROR: Unknown command @" + lastContent.Substring(charIndex));
                         }
                     }
                     else
@@ -323,7 +329,7 @@ public class StoryPlayer : MonoBehaviour
 
                 if (cinematicMode)
                 {
-                    Debug.Log("Wait video end");
+                    Debug.Log(this + " cinematic mode");
                     videoPlayer.isLooping = false;
                     while (videoPlayer.isPlaying)
                     {
@@ -332,36 +338,42 @@ public class StoryPlayer : MonoBehaviour
                         
                         yield return null;
                     }
-                    Debug.Log("Pause video");
                     videoPlayer.Pause();
                 }
 
-                if (AutoplayToggle.IsOn || cinematicMode)
+                if (AutoplayToggle.IsChecked || cinematicMode)
                 {
-                    Debug.Log("autoplay next line");
+                    Debug.Log(this + " autoplay next line");
                     yield return new WaitForSeconds(autoPlayDuration);
                     NextLineAndClear();
                 }
                 
-                else if (lineIndex + 1 < lines.Count || links.Count <= 1)
+                if (!AutoplayToggle.IsChecked && (lineIndex + 1 < lines.Count || links.Count <= 1))
                 {
-                    Debug.Log("show next/prev buttons");
+                    Debug.Log(this + " show next/prev buttons");
                     nextButton.gameObject.SetActive(true);
                     prevButton.gameObject.SetActive(lineIndex - 1 >= 0);
                     while (!string.IsNullOrEmpty(lastContent)) // will be skipped if "wait video end"
                     {
                         // wait click next
+                        clickedNextLine = true;
                         yield return null;
                     }
                 }
+
+                if (!AutoplayToggle.IsChecked && !clickedNextLine && lineIndex + 1 >= lines.Count && links.Count > 1)
+                {
+                    Debug.Log(this + " go next line to display choices");
+                    lineIndex += 1;
+                }
                 
-                else if(lineIndex + 1 >= lines.Count)
+                if(lineIndex >= lines.Count)
                 {
                     if (links.Count > 1)
                     {   
                         prevButton.gameObject.SetActive(true);
                         nextButton.gameObject.SetActive(false);
-                        Debug.Log("display choices: " + links.Count);
+                        Debug.Log(this + " display choices: " + links.Count);
                         for (int i = 0; i < links.Count; i++)
                         {
                             var btn = choiceButtons[i];
@@ -377,15 +389,17 @@ public class StoryPlayer : MonoBehaviour
                     }
                     else if (links.Count > 0)
                     {
-                        Debug.Log("choose first link");
+                        Debug.Log(this + " choose default first link");
                         ChooseLink(links.First()); 
                     }
-                    else
+                }
+
+                foreach (var link in links)
+                {
+                    if (link.completeEpisode)
                     {
-                        Debug.Log(" no link");
-                        nextVideo = string.Empty;
-                        lineIndex = lines.Count;
                         GameManager.instance.savedGame.SetEpisodeCompleted(episode, true);
+                        break;
                     }
                 }
                     
@@ -394,12 +408,10 @@ public class StoryPlayer : MonoBehaviour
                 choiceButtons.ForEach(btn => btn.gameObject.SetActive(false));
                 cinematicMode = false;
                 
-                while (fader.isFading)
-                    yield return null;
-                
                 yield return null;
             }
-
+            
+            Debug.Log(this + " end of story, fade out");
             fader.Fade1();
             while (fader.isFading)
                 yield return null;

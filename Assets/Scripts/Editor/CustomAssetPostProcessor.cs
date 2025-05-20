@@ -14,6 +14,15 @@ public class CustomAssetPostProcessor : AssetPostprocessor
             }
         }
         
+        if (assetImporter.assetPath.Contains("Resources"))
+        {
+            var texImporter = assetImporter as TextureImporter;
+            if (texImporter != null)
+            {
+                texImporter.isReadable = true;
+            }
+        }
+        
         if (assetImporter is VideoClipImporter videoImporter)
         {
             // Vérifie que le chemin contient "/Resources/"

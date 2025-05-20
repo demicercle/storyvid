@@ -77,6 +77,7 @@ public class GameManager : MonoBehaviour
     
     public void PlayVideo(int episode, string videoID)
     {
+        Debug.Log(this + " PlayVideo: " + episode + " - " + videoID);
         var content = GetVideoContent(episode, videoID);
         storyPlayer.lines.Clear();
         storyPlayer.lines.AddRange(content.Replace("\r", "\n").Split('\n'));
@@ -94,15 +95,20 @@ public class GameManager : MonoBehaviour
         storyPlayer.musicFile = GetMusicFile(episode, videoID);
         var videoFile = GetVideoFile(episode, videoID);
         savedGame.UnlockPath(episode, videoID);
-       // Debug.Log("PlayVideo: " + episode + " - " + videoID + " (file=" + videoFile + ")");
         playedFromGallery = currentPanel == (int)Panels.SelectVideo;
-        Debug.Log(this + " playedFromGallery=" + playedFromGallery);
         storyPlayer.backButton.panel = playedFromGallery ? Panels.SelectVideo : Panels.SelectEpisode;
-        storyPlayer.fader.Fade1(1f, () =>
+        if ((Panels)currentPanel != Panels.PlayVideo)
+        {
+            storyPlayer.fader.Fade1(1f, () =>
+            {
+                storyPlayer.PlayVideo(videoFile);
+                SetCurrentPanel((int)Panels.PlayVideo);
+            });
+        }
+        else
         {
             storyPlayer.PlayVideo(videoFile);
-            SetCurrentPanel((int)Panels.PlayVideo);
-        });
+        }
     }
 
     public void StopVideo()
@@ -154,9 +160,11 @@ public class GameManager : MonoBehaviour
             link.episode = int.Parse(data["episode"].ToString());
             link.videoFrom = data["video_from"].ToString();
             link.videoTo = data["video_to"].ToString();
+            link.completeEpisode = data["complete_episode"].ToString().ToLower() == "true";
             link.text = data["text_" + language].ToString();
             if (int.TryParse(data["points"].ToString(), out var pts))
                 link.points = pts;
+            link.name = link.ToString();
             videoLinks.Add(link);
         }
     }
@@ -247,7 +255,7 @@ public class GameManager : MonoBehaviour
     }
 
     public SavedGame savedGame { get; private set; }
-    private bool playedFromGallery;
+    public bool playedFromGallery { get; private set; }
     private void Awake()
     {
         instance = this;
@@ -293,6 +301,7 @@ public class GameManager : MonoBehaviour
 
     private void StoryComplete()
     {
+        Debug.Log(this + " StoryComplete() nextVideo=" + storyPlayer.nextVideo + " playedFromGallery=" + playedFromGallery);
         if (!playedFromGallery && !string.IsNullOrEmpty(storyPlayer.nextVideo))
         {
             PlayVideo(storyPlayer.episode, storyPlayer.nextVideo);
@@ -300,7 +309,7 @@ public class GameManager : MonoBehaviour
         else
         {
             StopVideo();
-            BackToMenu(Panels.SelectVideo);
+            BackToMenu(playedFromGallery ? Panels.SelectVideo : Panels.SelectEpisode);
         }
     }
 
@@ -358,6 +367,9 @@ public class GameManager : MonoBehaviour
             Debug.Log("Stop Menu Video");
             menuVideoPlayer.Stop();
         }
+        
+        
+        Debug.Log("GetPoints: " + savedGame.GetPoints());
     }
 
     public void BackToMenu(Panels newPanel)
@@ -371,9 +383,12 @@ public class GameManager : MonoBehaviour
     {
         var fader = storyPlayer.fader;
 
-        fader.Fade1();
-        while (fader.isFading)
-            yield return null;
+        Debug.Log("BackToMenuCoroutine: fade out: " + fader.fade1);
+        if (!fader.fade1)
+        {
+            fader.Fade1();
+            while (fader.isFading) yield return null;
+        }
 
         Debug.Log("Stop story player");
         storyPlayer.StopVideo();

@@ -3,33 +3,34 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class AutoplayToggle : MonoBehaviour, IPointerClickHandler
+public class AutoplayToggle : MonoBehaviour
 {
-    static public bool IsOn
+    static public bool IsChecked
     {
-        get => PlayerPrefs.GetInt("autoplay", 0) == 1;
+        get => PlayerPrefs.GetInt("autoplay", 0) != 0;
         set 
         {
-            if (value != IsOn)
+            if (value != IsChecked)
             {
-                PlayerPrefs.SetInt("autoplay", IsOn ? 1 : 0);
+                PlayerPrefs.SetInt("autoplay", value ? 1 : 0);
                 PlayerPrefs.Save();
+                Debug.Log("AutoplayToggle IsOn " + value);
             }
         }
     }
-
-
 	
     public Toggle toggle;
 
     private void Awake()
     {
-        toggle.isOn = IsOn;
-        toggle.onValueChanged.AddListener((isOn) => IsOn = isOn);
+        toggle.onValueChanged.AddListener((isOn) =>
+        {
+            IsChecked = isOn;
+        });
     }
 
-    public void OnPointerClick(PointerEventData eventData)
+    private void Start()
     {
-        toggle.isOn = !toggle.isOn;
+        toggle.isOn = IsChecked;
     }
 }
