@@ -185,6 +185,7 @@
       "complete_episode": false,
       "points": null,
       "text_fr": null,
+      "text_en": null,
       "text_es": null,
       "text_de": null,
       "text_cn": null
@@ -197,6 +198,7 @@
       "complete_episode": false,
       "points": null,
       "text_fr": null,
+      "text_en": null,
       "text_es": null,
       "text_de": null,
       "text_cn": null
@@ -209,6 +211,7 @@
       "complete_episode": false,
       "points": null,
       "text_fr": null,
+      "text_en": null,
       "text_es": null,
       "text_de": null,
       "text_cn": null
@@ -221,6 +224,7 @@
       "complete_episode": false,
       "points": null,
       "text_fr": null,
+      "text_en": null,
       "text_es": null,
       "text_de": null,
       "text_cn": null
@@ -233,6 +237,7 @@
       "complete_episode": false,
       "points": null,
       "text_fr": null,
+      "text_en": null,
       "text_es": null,
       "text_de": null,
       "text_cn": null
@@ -245,6 +250,7 @@
       "complete_episode": false,
       "points": null,
       "text_fr": null,
+      "text_en": null,
       "text_es": null,
       "text_de": null,
       "text_cn": null
@@ -257,6 +263,7 @@
       "complete_episode": false,
       "points": null,
       "text_fr": null,
+      "text_en": null,
       "text_es": null,
       "text_de": null,
       "text_cn": null
@@ -269,6 +276,7 @@
       "complete_episode": false,
       "points": 1,
       "text_fr": "oui",
+      "text_en": "yes",
       "text_es": "si",
       "text_de": null,
       "text_cn": null
@@ -281,6 +289,7 @@
       "complete_episode": false,
       "points": 0,
       "text_fr": "non",
+      "text_en": "no",
       "text_es": "no",
       "text_de": null,
       "text_cn": null
@@ -293,6 +302,7 @@
       "complete_episode": true,
       "points": null,
       "text_fr": null,
+      "text_en": null,
       "text_es": null,
       "text_de": null,
       "text_cn": null
@@ -305,6 +315,7 @@
       "complete_episode": true,
       "points": null,
       "text_fr": null,
+      "text_en": null,
       "text_es": null,
       "text_de": null,
       "text_cn": null
@@ -317,6 +328,7 @@
       "complete_episode": false,
       "points": null,
       "text_fr": null,
+      "text_en": null,
       "text_es": null,
       "text_de": null,
       "text_cn": null
@@ -329,6 +341,7 @@
       "complete_episode": false,
       "points": null,
       "text_fr": "aller video 03",
+      "text_en": "go video 03",
       "text_es": "ir a la 03",
       "text_de": null,
       "text_cn": null
@@ -341,6 +354,7 @@
       "complete_episode": false,
       "points": null,
       "text_fr": "aller video 04",
+      "text_en": "go video 04",
       "text_es": "ir a la 04",
       "text_de": null,
       "text_cn": null
@@ -353,6 +367,7 @@
       "complete_episode": false,
       "points": null,
       "text_fr": null,
+      "text_en": null,
       "text_es": null,
       "text_de": null,
       "text_cn": null
@@ -365,6 +380,7 @@
       "complete_episode": false,
       "points": null,
       "text_fr": null,
+      "text_en": null,
       "text_es": null,
       "text_de": null,
       "text_cn": null
@@ -377,6 +393,7 @@
       "complete_episode": false,
       "points": null,
       "text_fr": null,
+      "text_en": null,
       "text_es": null,
       "text_de": null,
       "text_cn": null
@@ -389,6 +406,7 @@
       "complete_episode": false,
       "points": null,
       "text_fr": null,
+      "text_en": null,
       "text_es": null,
       "text_de": null,
       "text_cn": null
@@ -401,6 +419,7 @@
       "complete_episode": false,
       "points": null,
       "text_fr": null,
+      "text_en": null,
       "text_es": null,
       "text_de": null,
       "text_cn": null
@@ -413,6 +432,7 @@
       "complete_episode": false,
       "points": 1,
       "text_fr": "oui",
+      "text_en": "yes",
       "text_es": "si",
       "text_de": null,
       "text_cn": null
@@ -425,6 +445,7 @@
       "complete_episode": false,
       "points": 0,
       "text_fr": "non",
+      "text_en": "no",
       "text_es": "no",
       "text_de": null,
       "text_cn": null
@@ -437,6 +458,7 @@
       "complete_episode": true,
       "points": null,
       "text_fr": null,
+      "text_en": null,
       "text_es": null,
       "text_de": null,
       "text_cn": null
@@ -449,6 +471,7 @@
       "complete_episode": true,
       "points": null,
       "text_fr": null,
+      "text_en": null,
       "text_es": null,
       "text_de": null,
       "text_cn": null
@@ -461,6 +484,7 @@
       "complete_episode": false,
       "points": null,
       "text_fr": null,
+      "text_en": null,
       "text_es": null,
       "text_de": null,
       "text_cn": null
@@ -473,6 +497,7 @@
       "complete_episode": false,
       "points": null,
       "text_fr": "aller video 03",
+      "text_en": "go video 03",
       "text_es": "ir a la 03",
       "text_de": null,
       "text_cn": null
@@ -485,6 +510,7 @@
       "complete_episode": false,
       "points": null,
       "text_fr": "aller video 04",
+      "text_en": "go video 04",
       "text_es": "ir a la 04",
       "text_de": null,
       "text_cn": null
@@ -497,6 +523,7 @@
       "complete_episode": false,
       "points": null,
       "text_fr": null,
+      "text_en": null,
       "text_es": null,
       "text_de": null,
       "text_cn": null
@@ -509,6 +536,7 @@
       "complete_episode": false,
       "points": null,
       "text_fr": null,
+      "text_en": null,
       "text_es": null,
       "text_de": null,
       "text_cn": null
@@ -521,6 +549,7 @@
       "complete_episode": false,
       "points": null,
       "text_fr": null,
+      "text_en": null,
       "text_es": null,
       "text_de": null,
       "text_cn": null
@@ -533,6 +562,7 @@
       "complete_episode": false,
       "points": null,
       "text_fr": null,
+      "text_en": null,
       "text_es": null,
       "text_de": null,
       "text_cn": null
@@ -545,6 +575,7 @@
       "complete_episode": false,
       "points": null,
       "text_fr": null,
+      "text_en": null,
       "text_es": null,
       "text_de": null,
       "text_cn": null
@@ -557,6 +588,7 @@
       "complete_episode": false,
       "points": 1,
       "text_fr": "oui",
+      "text_en": "yes",
       "text_es": "si",
       "text_de": null,
       "text_cn": null
@@ -569,6 +601,7 @@
       "complete_episode": false,
       "points": 0,
       "text_fr": "non",
+      "text_en": "no",
       "text_es": "no",
       "text_de": null,
       "text_cn": null
@@ -581,6 +614,7 @@
       "complete_episode": true,
       "points": null,
       "text_fr": null,
+      "text_en": null,
       "text_es": null,
       "text_de": null,
       "text_cn": null
@@ -593,6 +627,7 @@
       "complete_episode": true,
       "points": null,
       "text_fr": null,
+      "text_en": null,
       "text_es": null,
       "text_de": null,
       "text_cn": null
@@ -605,6 +640,7 @@
       "complete_episode": false,
       "points": null,
       "text_fr": null,
+      "text_en": null,
       "text_es": null,
       "text_de": null,
       "text_cn": null
@@ -617,6 +653,7 @@
       "complete_episode": false,
       "points": null,
       "text_fr": null,
+      "text_en": null,
       "text_es": null,
       "text_de": null,
       "text_cn": null
@@ -629,6 +666,7 @@
       "complete_episode": false,
       "points": null,
       "text_fr": null,
+      "text_en": null,
       "text_es": null,
       "text_de": null,
       "text_cn": null
@@ -641,6 +679,7 @@
       "complete_episode": false,
       "points": null,
       "text_fr": "aller video 5",
+      "text_en": "go video 5",
       "text_es": "ir a la 05",
       "text_de": null,
       "text_cn": null
@@ -653,6 +692,7 @@
       "complete_episode": false,
       "points": null,
       "text_fr": "aller video 6",
+      "text_en": "go video 6",
       "text_es": "ir a la 06",
       "text_de": null,
       "text_cn": null
@@ -665,6 +705,7 @@
       "complete_episode": false,
       "points": null,
       "text_fr": null,
+      "text_en": null,
       "text_es": null,
       "text_de": null,
       "text_cn": null
@@ -677,6 +718,7 @@
       "complete_episode": false,
       "points": null,
       "text_fr": null,
+      "text_en": null,
       "text_es": null,
       "text_de": null,
       "text_cn": null
@@ -689,6 +731,7 @@
       "complete_episode": false,
       "points": null,
       "text_fr": null,
+      "text_en": null,
       "text_es": null,
       "text_de": null,
       "text_cn": null
@@ -701,6 +744,7 @@
       "complete_episode": false,
       "points": null,
       "text_fr": "aller video 9",
+      "text_en": "go video 9",
       "text_es": "ir a la 09",
       "text_de": null,
       "text_cn": null
@@ -713,6 +757,7 @@
       "complete_episode": false,
       "points": null,
       "text_fr": "aller video 10",
+      "text_en": "go video 10",
       "text_es": "ir a la 10",
       "text_de": null,
       "text_cn": null
@@ -725,6 +770,7 @@
       "complete_episode": true,
       "points": null,
       "text_fr": null,
+      "text_en": null,
       "text_es": null,
       "text_de": null,
       "text_cn": null
@@ -737,6 +783,7 @@
       "complete_episode": true,
       "points": null,
       "text_fr": null,
+      "text_en": null,
       "text_es": null,
       "text_de": null,
       "text_cn": null
@@ -749,6 +796,7 @@
       "complete_episode": false,
       "points": null,
       "text_fr": null,
+      "text_en": null,
       "text_es": null,
       "text_de": null,
       "text_cn": null
@@ -761,6 +809,7 @@
       "complete_episode": false,
       "points": null,
       "text_fr": null,
+      "text_en": null,
       "text_es": null,
       "text_de": null,
       "text_cn": null
@@ -773,6 +822,7 @@
       "complete_episode": false,
       "points": null,
       "text_fr": null,
+      "text_en": null,
       "text_es": null,
       "text_de": null,
       "text_cn": null
@@ -785,6 +835,7 @@
       "complete_episode": false,
       "points": null,
       "text_fr": null,
+      "text_en": null,
       "text_es": null,
       "text_de": null,
       "text_cn": null
@@ -797,6 +848,7 @@
       "complete_episode": false,
       "points": null,
       "text_fr": null,
+      "text_en": null,
       "text_es": null,
       "text_de": null,
       "text_cn": null
@@ -809,6 +861,7 @@
       "complete_episode": false,
       "points": null,
       "text_fr": null,
+      "text_en": null,
       "text_es": null,
       "text_de": null,
       "text_cn": null
@@ -821,6 +874,7 @@
       "complete_episode": false,
       "points": null,
       "text_fr": null,
+      "text_en": null,
       "text_es": null,
       "text_de": null,
       "text_cn": null
@@ -833,6 +887,7 @@
       "complete_episode": false,
       "points": null,
       "text_fr": null,
+      "text_en": null,
       "text_es": null,
       "text_de": null,
       "text_cn": null
@@ -845,6 +900,7 @@
       "complete_episode": false,
       "points": null,
       "text_fr": null,
+      "text_en": null,
       "text_es": null,
       "text_de": null,
       "text_cn": null
@@ -857,6 +913,7 @@
       "complete_episode": true,
       "points": null,
       "text_fr": null,
+      "text_en": null,
       "text_es": null,
       "text_de": null,
       "text_cn": null
