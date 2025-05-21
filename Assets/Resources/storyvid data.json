@@ -131,84 +131,84 @@
       "text_en": "Fullscreen",
       "text_es": "Fullscreen",
       "text_de": "Fullscreen",
-      "text_cn": "Fullscreen"
+      "text_cn": "全屏"
     },
     "concept": {
       "text_fr": "Concept",
       "text_en": "Concept",
       "text_es": "Concept",
       "text_de": "Concept",
-      "text_cn": "Concept"
+      "text_cn": "概念"
     },
     "episode1": {
       "text_fr": "Maria et Oiu",
-      "text_en": "Maria et Oiu",
-      "text_es": "Maria et Oiu",
-      "text_de": "Maria et Oiu",
-      "text_cn": null
+      "text_en": "Maria and Oiu",
+      "text_es": "Maria y Oiu",
+      "text_de": "Maria und Oiu",
+      "text_cn": "玛丽亚和是的"
     },
     "episode2": {
       "text_fr": "Xian et Yaragon",
-      "text_en": "Xian et Yaragon",
-      "text_es": "Xian et Yaragon",
-      "text_de": "Xian et Yaragon",
-      "text_cn": null
+      "text_en": "Xian and Yaragon",
+      "text_es": "Xian y Yaragon",
+      "text_de": "Xian und Yaragon",
+      "text_cn": "西安和亚拉贡"
     },
     "episode3": {
       "text_fr": "Lyra, Jett et Iris",
-      "text_en": "Lyra, Jett et Iris",
-      "text_es": "Lyra, Jett et Iris",
-      "text_de": "Lyra, Jett et Iris",
-      "text_cn": null
+      "text_en": "Lyra, Jett and Iris",
+      "text_es": "Lyra, Jett y Iris",
+      "text_de": "Lyra, Jett und Iris",
+      "text_cn": "Lyra、Jett 和 Iris"
     },
     "episode4": {
       "text_fr": "Yuan et Noah",
-      "text_en": "Yuan et Noah",
-      "text_es": "Yuan et Noah",
-      "text_de": "Yuan et Noah",
-      "text_cn": null
+      "text_en": "Yuan and Noah",
+      "text_es": "Yuan y Noah",
+      "text_de": "Yuan und Noah",
+      "text_cn": "袁和诺亚"
     },
     "episode5": {
       "text_fr": "B1J1-NHU",
       "text_en": "B1J1-NHU",
       "text_es": "B1J1-NHU",
       "text_de": "B1J1-NHU",
-      "text_cn": null
+      "text_cn": "B1J1-NHU"
     },
     "concept_text": {
       "text_fr": "Plongez dans cinq histoires mystérieuses, où chaque récit est marqué par un étrange murmure venu de très loin. Ce son ténu traverse les frontières du ciel, du temps et de l’espace. À peine perceptible, il semble surgir d’un passé oublié, perturbant chaque être qui l’entend.\nLes personnages de ces cinq récits ne se connaissent pas, mais il existe un lien insaisissable entre eux. Chacun avance à sa manière, hésitant, faisant des choix. Et pourtant, une force invisible semble les pousser à agir ensemble, à influencer le cours des événements. Peut-être que ce que nous vivons aujourd'hui n'est que l'écho d'un événement ancien… ou, peut-être, l'annonce de ce qui est à venir ?\n\nÀ travers vos choix, vous aurez l’opportunité de découvrir davantage sur les personnages et l'univers dans lequel chaque histoire prend place. À la fin de chacune des trois premières histoires, vous devrez faire un choix qui ouvrira la voie à l’une des deux fins possibles. Une fois que vous aurez exploré la première fin, vous débloquerez l’accès à la seconde, vous permettant ainsi de voir les différentes perspectives de cette aventure.",
       "text_en": "Immerse yourself in five mysterious stories, each marked by a strange whisper from far away. This faint sound crosses the boundaries of sky, time, and space. Barely perceptible, it seems to emerge from a forgotten past, disturbing every being who hears it.\nThe characters in these five stories don't know each other, but there is an elusive bond between them. Each moves forward in their own way, hesitating, making choices. And yet, an invisible force seems to push them to act together, to influence the course of events. Perhaps what we are experiencing today is only the echo of an ancient event... or perhaps, a harbinger of what is to come?\n\nThrough your choices, you will have the opportunity to discover more about the characters and the universe in which each story takes place. At the end of each of the first three stories, you will have to make a choice that will open the way to one of two possible endings. Once you have explored the first ending, you You will unlock access to the second, allowing you to see the different perspectives of this adventure.",
       "text_es": "Sumérgete en cinco historias misteriosas, cada una marcada por un extraño susurro lejano. Este tenue sonido traspasa las fronteras del cielo, el tiempo y el espacio. Apenas perceptible, parece surgir de un pasado olvidado, perturbando a todo ser que lo escucha.\nLos personajes de estas cinco historias no se conocen entre sí, pero existe un vínculo esquivo entre ellos. Cada uno avanza a su manera, dudando, tomando decisiones. Y, sin embargo, una fuerza invisible parece empujarlos a actuar juntos, a influir en el curso de los acontecimientos. Tal vez lo que estamos viviendo hoy sea sólo un eco de un acontecimiento antiguo... ¿o tal vez un presagio de lo que está por venir?\n\nA través de tus elecciones, tendrás la oportunidad de descubrir más sobre los personajes y el universo en el que se desarrolla cada historia. Al final de cada una de las tres primeras historias, tendrás que hacer una elección que abrirá el camino a uno de dos finales posibles. Una vez que explores el primer final, desbloquearás el acceso al segundo, lo que te permitirá ver las diferentes perspectivas de esta aventura.\n\"",
       "text_de": "Tauchen Sie ein in fünf geheimnisvolle Geschichten, in denen jede Erzählung von einem seltsamen Flüstern geprägt ist, das aus weiter Ferne zu kommen scheint. Dieses leise Geräusch durchdringt die Grenzen von Himmel, Zeit und Raum. Kaum hörbar, wirkt es wie ein Echo aus einer vergessenen Vergangenheit, das jeden erschüttert, der es vernimmt.\n\nDie Figuren dieser fünf Geschichten kennen einander nicht, und doch besteht eine schwer fassbare Verbindung zwischen ihnen. Jede geht ihren eigenen Weg, zögernd, entscheidend. Und dennoch scheint eine unsichtbare Kraft sie dazu zu drängen, gemeinsam zu handeln und den Lauf der Ereignisse zu beeinflussen. Vielleicht ist das, was wir heute erleben, nur das Echo eines uralten Ereignisses … oder vielleicht die Ankündigung dessen, was noch kommen wird?\n\nDurch Ihre Entscheidungen erhalten Sie die Möglichkeit, mehr über die Figuren und das Universum, in dem jede Geschichte spielt, zu erfahren. Am Ende jeder der ersten drei Geschichten müssen Sie eine Wahl treffen, die den Weg zu einem von zwei möglichen Enden eröffnet. Nachdem Sie das erste Ende erkundet haben, wird das zweite freigeschaltet, sodass Sie die verschiedenen Perspektiven dieses Abenteuers entdecken können.",
-      "text_cn": null
+      "text_cn": "深入探索五个神秘故事，每个故事都围绕着一道来自遥远的奇异低语展开。这道微弱的声音跨越了天空、时间和空间的界限。它几乎难以察觉，仿佛来自一段被遗忘的过去，扰乱着每一个听到它的生灵。\n这五个故事中的人物彼此并不认识，但他们之间却有着难以捉摸的联系。每个人都以自己的方式前进，犹豫，选择。然而，似乎有一股无形的力量在推动他们共同行动，影响事态的发展。也许我们今天所经历的只是一个古老事件的回响……或者是即将发生的事情的预兆? 通过您的选择，您将有机会发现更多有关每个故事发生的人物和宇宙的信息。在前三个故事的结尾，您都必须做出选择，从而打开两个可能结局之一。一旦您探索了第一个结局，您将解锁第二个结局，让您看到这次冒险的不同视角。"
     },
     "warning": {
       "text_fr": "Attention !",
       "text_en": "Warning !",
       "text_es": "advertencia",
       "text_de": "Warnung",
-      "text_cn": null
+      "text_cn": "注意力 ！"
     },
     "are_you_sure": {
       "text_fr": "Etes vous sûr ?",
       "text_en": "Are you sure ?",
       "text_es": "Estas segura",
       "text_de": "Bist du sicher ?",
-      "text_cn": null
+      "text_cn": "你确定吗？"
     },
     "yes": {
       "text_fr": "Oui",
       "text_en": "Yes",
       "text_es": "Si",
       "text_de": "Ja",
-      "text_cn": null
+      "text_cn": "是的"
     },
     "no": {
       "text_fr": "Non",
       "text_en": "No",
       "text_es": "No",
       "text_de": "Nein",
-      "text_cn": null
+      "text_cn": "不"
     }
   },
   "links": [

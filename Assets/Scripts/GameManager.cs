@@ -28,10 +28,19 @@ public class GameManager : MonoBehaviour
     
     public string language { get; private set; }
 
-   static public System.Action onLanguageChanged;
+    static public System.Action onLanguageChanged;
+
+    public bool GetLanguageTMPFontAsset(out TMPro.TMP_FontAsset font)
+    {
+        font = Resources.LoadAll<TMPro.TMP_FontAsset>("Fonts/" + language).FirstOrDefault();
+        return font != null;
+    }
+    
     public void SetLanguage(string key)
     {
         language = key;
+        PlayerPrefs.SetString("language", language);
+        PlayerPrefs.Save();
         onLanguageChanged?.Invoke();
     }
 
@@ -265,8 +274,6 @@ public class GameManager : MonoBehaviour
         
         savedGame = new SavedGame();
         savedGame.Load();
-        
-        SetCurrentPanel(0);
     }
 
     private void OnEnable()
@@ -326,7 +333,8 @@ public class GameManager : MonoBehaviour
 
     private IEnumerator Start()
     {
-        UpdatePanels();
+        SetLanguage(PlayerPrefs.GetString("language", "fr"));
+        SetCurrentPanel(0);
         
         storyPlayer.fader.Fade1(0f);
         Debug.Log("Prepare Menu Video");

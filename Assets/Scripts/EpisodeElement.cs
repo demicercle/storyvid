@@ -21,8 +21,6 @@ public class EpisodeElement : MonoBehaviour
     
     private void Awake()
     {
-        header.text = GameManager.instance.GetEpisodeHeader(episodeIndex);
-
         playButton.onClick.AddListener(() =>
         {
             gameManager.PlayEpisode(episodeIndex);
@@ -38,12 +36,21 @@ public class EpisodeElement : MonoBehaviour
     {
         doUpdate = true;
     }
+    
+    private TMPro.TMP_FontAsset defaultFont;
+    private void LanguageChanged()
+    {
+        if (defaultFont == null) defaultFont = header.font;
+        header.font = GameManager.instance.GetLanguageTMPFontAsset(out var newFont) ? newFont : defaultFont;
+        header.text = GameManager.instance.GetEpisodeHeader(episodeIndex);
+    }
 
     private void LateUpdate()
     {
         if (!doUpdate) return;
-        
         doUpdate = false;
+        
+        LanguageChanged();
         gameManager.GetLastUnlockedVideo(episodeIndex, out lastVideoID);
         
         lockedToggle.isOn = !gameManager.savedGame.IsEpisodeUnlocked(episodeIndex);

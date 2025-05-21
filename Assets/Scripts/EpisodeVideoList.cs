@@ -15,7 +15,6 @@ public class EpisodeVideoList : MonoBehaviour
 
     private void Awake()
     {
-
         videoElements = new List<EpisodeVideoElement>();
         videoElements.AddRange(GetComponentsInChildren<EpisodeVideoElement>());
         
@@ -28,12 +27,17 @@ public class EpisodeVideoList : MonoBehaviour
         {
             gameManager.PlayEpisode(episodeIndex);
         });
+        
+        GameManager.onLanguageChanged += LanguageChanged;
+    }
+
+    private void OnDestroy()
+    {
+        GameManager.onLanguageChanged -= LanguageChanged;
     }
 
     private void Start()
     {
-        header.text = header.text.Replace("#", episodeIndex.ToString());
-
         var lastVideoElement = 0;
         foreach (string videoID in gameManager.GetVideoIDs(episodeIndex))
         {
@@ -44,5 +48,13 @@ public class EpisodeVideoList : MonoBehaviour
             videoElements[lastVideoElement].UpdateImage();
             lastVideoElement++;
         }
+    }
+
+    private TMPro.TMP_FontAsset defaultFont;
+    private void LanguageChanged()
+    {
+        if (defaultFont == null) defaultFont = header.font;
+        header.font = GameManager.instance.GetLanguageTMPFontAsset(out var newFont) ? newFont : defaultFont;
+        header.text = GameManager.instance.GetEpisodeHeader(episodeIndex);
     }
 }

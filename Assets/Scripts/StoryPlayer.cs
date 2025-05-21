@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Video;
 using System.Linq;
+using TMPro;
 using UnityEngine.UI;
 
 public class StoryPlayer : MonoBehaviour
@@ -140,6 +141,8 @@ public class StoryPlayer : MonoBehaviour
 
     private void OnEnable()
     {
+        GameManager.onLanguageChanged += LanguageChanged;
+        
         nextButton.onClick.AddListener(NextLineAndClear);
         prevButton.onClick.AddListener(PrevLineAndClear);
         
@@ -159,6 +162,8 @@ public class StoryPlayer : MonoBehaviour
 
     private void OnDisable()
     {
+        GameManager.onLanguageChanged -= LanguageChanged;
+        
         nextButton.onClick.RemoveListener(NextLineAndClear);
         prevButton.onClick.RemoveListener(PrevLineAndClear);
         
@@ -172,6 +177,13 @@ public class StoryPlayer : MonoBehaviour
         {
             btn.onClick -= ClickedChoice;
         }
+    }
+
+    private TMP_FontAsset defaultFont;
+    private void LanguageChanged()
+    {
+        if (defaultFont == null) defaultFont = uiText.font;
+        uiText.font = GameManager.instance.GetLanguageTMPFontAsset(out var newFont) ? newFont : defaultFont;
     }
 
     private void MouseEnterBackground(object userData)

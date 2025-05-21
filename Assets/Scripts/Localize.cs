@@ -6,24 +6,14 @@ using UnityEngine.UI;
 public class Localize : MonoBehaviour
 {
     public string id;
+    
+    private TMPro.TMP_Text tmpText;
+    private TMPro.TMP_FontAsset defaultFont;
 
-    private void OnDrawGizmosSelected()
+    private void Awake()
     {
-        if (!Application.isPlaying)
-        {
-            id = id.ToLower();
-            if (TryGetComponent<TMPro.TMP_Text>(out var tmp))
-            {
-                tmp.text = id;
-            }
-            else if (TryGetComponent<Text>(out var text))
-            {
-                text.text = id;
-            }
-#if UNITY_EDITOR
-            UnityEditor.EditorUtility.SetDirty(gameObject);
-#endif
-        }
+        tmpText = GetComponent<TMPro.TMP_Text>();
+        defaultFont = tmpText.font;
     }
 
     private void OnDisable()
@@ -39,15 +29,8 @@ public class Localize : MonoBehaviour
 
     private void UpdateText()
     {
-        if (TryGetComponent<TMPro.TMP_Text>(out var tmp))
-        {
-            tmp.text = GameManager.instance.GetLocalizedText(id);
-        }
-        else if (TryGetComponent<Text>(out var text))
-        {
-            text.text = GameManager.instance.GetLocalizedText(id);
-        }
-        
+        tmpText.font = GameManager.instance.GetLanguageTMPFontAsset(out var newFont) ? newFont : defaultFont;
+        tmpText.text = GameManager.instance.GetLocalizedText(id);
         GetComponent<RectTransform>().ForceUpdateRectTransforms();
     }
 }
